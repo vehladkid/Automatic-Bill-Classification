@@ -1,0 +1,49 @@
+{
+ "passed": 255,
+ "issues": [],
+ "headings": [
+  "4.1 Parameters, data and testing",
+  "4.2 Results obtained",
+  "4.3 Comparative analysis",
+  "4.4 Comparative Evaluation of OCR and Text Classification Approaches",
+  "4.4.1 Objective",
+  "4.4.2 Methodology",
+  "4.4.3 OCR recognition comparison",
+  "4.4.4 Text-classification comparison",
+  "4.4.5 Graphical analysis",
+  "4.4.6 Interpretation",
+  "4.4.7 Limitations of this comparison",
+  "4.4.8 Conclusion of the comparison",
+  "4.5 Limitations"
+ ],
+ "figure_numbers": [
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10,
+  11,
+  12,
+  13
+ ],
+ "table_numbers": [
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9
+ ],
+ "superiority_sentences": [
+  "Stage 1 reaches 0.907 real accuracy and 0.839 real macro-F1 with calibrated confidence (93.0% auto-coverage at 0.944 precision), and the hybrid extractor reaches 0.663 real micro-F1, significantly above the rule baseline."
+ ],
+ "embedded_images": 13
+}

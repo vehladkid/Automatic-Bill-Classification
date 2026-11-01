@@ -1,0 +1,27 @@
+{
+ "_note": "Employee-document taxonomy layered ON TOP of the unchanged 16-class Task A expense_category. None of the NEW labels is a trained model class: they are produced by rule evidence (config/tax_suggest.json phrases + deterministic field checks) and are marked model_support=rules_only. They become 'trained' only after labelled real documents exist (see data_needed).",
+ "expense_category_source": "Task A fusion model (models/taskA), unchanged",
+ "legacy_document_types": ["receipt", "invoice", "utility_bill", "travel_document", "hotel_bill", "fuel_receipt", "medical_bill", "non_expense_document", "other"],
+ "outcomes": ["needs_review", "unknown", "other"],
+ "benefit_categories": ["ev_benefit", "meal_benefit", "hra_rent", "education_fee", "investment_80c", "health_insurance", "loan", "other_benefit", "none"],
+ "profiles": {
+  "hra_rent":            {"document_type": "rent_receipt",              "benefit_category": "hra_rent",       "tax_section_candidates": ["HRA"],                          "required_fields": ["landlord_name", "amount", "rental_period_or_date", "tenant_name"],
+                          "data_needed": "real Indian rent receipts / rent agreements (none exist in the dataset: datasets/indian/rent is empty)"},
+  "meal_voucher":        {"document_type": "meal_coupon_statement",     "benefit_category": "meal_benefit",   "tax_section_candidates": ["meal_vouchers"],                 "required_fields": ["provider", "amount"],
+                          "data_needed": "real Sodexo/Pluxee statements and coupon invoices"},
+  "school_fee":          {"document_type": "school_fee_receipt",        "benefit_category": "education_fee",  "tax_section_candidates": ["80C(tuition)"],                  "required_fields": ["institution", "student_name", "amount", "doc_number", "doc_date"],
+                          "data_needed": "real school/college fee receipts with fee breakups"},
+  "invest_80c":          {"document_type": "investment_proof_80c",      "benefit_category": "investment_80c", "tax_section_candidates": ["80C"],                          "required_fields": ["provider", "amount", "doc_date"],
+                          "data_needed": "real PPF/ELSS/LIC/NSC statements and receipts"},
+  "health_insurance":    {"document_type": "insurance_premium_receipt", "benefit_category": "health_insurance","tax_section_candidates": ["80D"],                         "required_fields": ["insurer", "policy_number", "amount", "doc_date"],
+                          "data_needed": "real health-insurance premium receipts / certificates"},
+  "home_loan_interest":  {"document_type": "loan_interest_certificate", "benefit_category": "loan",           "tax_section_candidates": ["24(b)", "80C(principal)"],      "required_fields": ["lender", "loan_type", "interest_amount", "period"],
+                          "data_needed": "real lender interest certificates / repayment statements"},
+  "education_loan_interest": {"document_type": "loan_interest_certificate", "benefit_category": "loan",       "tax_section_candidates": ["80E"],                          "required_fields": ["lender", "loan_type", "interest_amount", "period"],
+                          "data_needed": "real education-loan interest certificates"},
+  "ev_loan_interest":    {"document_type": "loan_interest_certificate", "benefit_category": "ev_benefit",     "tax_section_candidates": ["80EEB"],                         "required_fields": ["lender", "loan_type", "interest_amount", "period", "sanction_date"],
+                          "data_needed": "real EV-loan certificates"},
+  "ev_lease":            {"document_type": "ev_purchase_or_lease_doc",  "benefit_category": "ev_benefit",     "tax_section_candidates": [],                               "required_fields": ["provider", "amount"],
+                          "data_needed": "real EV lease agreements / employer EV policy letters; treatment is never auto-decided"}
+ }
+}

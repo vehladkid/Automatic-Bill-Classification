@@ -1,0 +1,198 @@
+{
+ "bilstm vs tfidf": {
+  "macro_f1": {
+   "mean": -0.23569384568810361,
+   "ci95": [
+    -0.3161143544849899,
+    -0.15598867038184847
+   ],
+   "ci_bonferroni": [
+    -0.344893439473556,
+    -0.1274365004569885
+   ],
+   "excludes_zero_95": true,
+   "excludes_zero_bonferroni": true
+  },
+  "accuracy": {
+   "mean": -0.17115039052031777,
+   "ci95": [
+    -0.2157745767666835,
+    -0.1282051282051282
+   ],
+   "ci_bonferroni": [
+    -0.23298429319371727,
+    -0.1113989637305699
+   ],
+   "excludes_zero_95": true,
+   "excludes_zero_bonferroni": true
+  }
+ },
+ "bilstm_attn vs tfidf": {
+  "macro_f1": {
+   "mean": -0.14985993950477006,
+   "ci95": [
+    -0.22218845528393424,
+    -0.07735483719766052
+   ],
+   "ci_bonferroni": [
+    -0.24941255859663172,
+    -0.04914179620586651
+   ],
+   "excludes_zero_95": true,
+   "excludes_zero_bonferroni": true
+  },
+  "accuracy": {
+   "mean": -0.10602131455879464,
+   "ci95": [
+    -0.14720812182741116,
+    -0.06544502617801051
+   ],
+   "ci_bonferroni": [
+    -0.16230366492146597,
+    -0.05235602094240843
+   ],
+   "excludes_zero_95": true,
+   "excludes_zero_bonferroni": true
+  }
+ },
+ "lexrank vs tfidf": {
+  "macro_f1": {
+   "mean": -0.025208866128091034,
+   "ci95": [
+    -0.06050757345783013,
+    0.0011004277331319553
+   ],
+   "ci_bonferroni": [
+    -0.08146518814109197,
+    0.008600840685371737
+   ],
+   "excludes_zero_95": false,
+   "excludes_zero_bonferroni": false
+  },
+  "accuracy": {
+   "mean": -0.030984409803563814,
+   "ci95": [
+    -0.05277721092773517,
+    -0.010471204188481686
+   ],
+   "ci_bonferroni": [
+    -0.061538461538461466,
+    -0.005181347150259086
+   ],
+   "excludes_zero_95": true,
+   "excludes_zero_bonferroni": true
+  }
+ },
+ "xlmr vs tfidf": {
+  "macro_f1": {
+   "mean": 0.056961505237965664,
+   "ci95": [
+    -0.004248048673417741,
+    0.12701429174430082
+   ],
+   "ci_bonferroni": [
+    -0.028427671856328794,
+    0.15888955172399644
+   ],
+   "excludes_zero_95": false,
+   "excludes_zero_bonferroni": false
+  },
+  "accuracy": {
+   "mean": 0.015417381110363164,
+   "ci95": [
+    -0.015544041450777257,
+    0.04615384615384621
+   ],
+   "ci_bonferroni": [
+    -0.02617801047120416,
+    0.05699481865284972
+   ],
+   "excludes_zero_95": false,
+   "excludes_zero_bonferroni": false
+  }
+ },
+ "layoutlmv3 vs tfidf": {
+  "macro_f1": {
+   "mean": -0.12712161115007278,
+   "ci95": [
+    -0.21276592906746694,
+    -0.040501085052685064
+   ],
+   "ci_bonferroni": [
+    -0.2447033689218789,
+    -0.008055191439406912
+   ],
+   "excludes_zero_95": true,
+   "excludes_zero_bonferroni": true
+  },
+  "accuracy": {
+   "mean": -0.02085152702179209,
+   "ci95": [
+    -0.06153846153846154,
+    0.015706806282722585
+   ],
+   "ci_bonferroni": [
+    -0.07614213197969544,
+    0.031088082901554404
+   ],
+   "excludes_zero_95": false,
+   "excludes_zero_bonferroni": false
+  }
+ },
+ "fusion vs tfidf": {
+  "macro_f1": {
+   "mean": 0.00802965260064448,
+   "ci95": [
+    -0.04018468562083506,
+    0.05529724120727597
+   ],
+   "ci_bonferroni": [
+    -0.06858434670232033,
+    0.07959493615125302
+   ],
+   "excludes_zero_95": false,
+   "excludes_zero_bonferroni": false
+  },
+  "accuracy": {
+   "mean": 0.023238473113064054,
+   "ci95": [
+    -0.002590673575129543,
+    0.04973821989528793
+   ],
+   "ci_bonferroni": [
+    -0.015075376884422065,
+    0.060209424083769614
+   ],
+   "excludes_zero_95": false,
+   "excludes_zero_bonferroni": false
+  }
+ },
+ "bilstm_attn vs bilstm": {
+  "macro_f1": {
+   "mean": 0.08583390618333356,
+   "ci95": [
+    -0.0013910129587806851,
+    0.17305882679608034
+   ],
+   "ci_bonferroni": [
+    -0.03169873033287329,
+    0.20508611042621894
+   ],
+   "excludes_zero_95": false,
+   "excludes_zero_bonferroni": false
+  },
+  "accuracy": {
+   "mean": 0.0651290759615231,
+   "ci95": [
+    0.01538461538461533,
+    0.11518324607329844
+   ],
+   "ci_bonferroni": [
+    -0.002564102564102555,
+    0.13350785340314142
+   ],
+   "excludes_zero_95": true,
+   "excludes_zero_bonferroni": false
+  }
+ }
+}

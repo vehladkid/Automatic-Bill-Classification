@@ -1,0 +1,31 @@
+# TEMPLATE - not installed, not enabled. Copy to ~/.config/systemd/user/ (or /etc/systemd/system/ with a dedicated service account), edit the two paths, then follow docs/EMAIL_INGESTION_OPERATIONS.md.
+# One instance only: the worker holds an exclusive lock on $HRBC_OUT/hr/worker.lock and refuses to start twice.
+[Unit]
+Description=HR Bill Classifier - email ingestion worker
+After=network-online.target
+Wants=network-online.target
+StartLimitIntervalSec=600
+StartLimitBurst=5
+# Never start with an incomplete configuration: check-config exits non-zero and the unit does not start.
+ConditionPathExists=%h/.config/hrbc/worker.env
+
+[Service]
+Type=simple
+WorkingDirectory=/home/tejvir-singh/Desktop/ML-project/app
+EnvironmentFile=%h/.config/hrbc/worker.env
+ExecStartPre=/home/tejvir-singh/Desktop/ML-project/.venv/bin/python -m ingest.run check-config
+ExecStart=/home/tejvir-singh/Desktop/ML-project/.venv/bin/python -m ingest.run worker --imap --interval 60
+# SIGTERM = finish the current job, record a clean stop, release the lock; SIGKILL only after the timeout (a job in flight is then recovered by its lease)
+KillSignal=SIGTERM
+TimeoutStopSec=300
+Restart=on-failure
+RestartSec=30
+UMask=0077
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=full
+ProtectHome=read-only
+ReadWritePaths=/home/tejvir-singh/Desktop/ML-project/outputs
+
+[Install]
+WantedBy=default.target

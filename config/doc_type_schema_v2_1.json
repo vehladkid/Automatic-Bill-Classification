@@ -1,0 +1,293 @@
+{
+ "schema_version": "doc-type-schema-v2",
+ "created": "2026-10-19",
+ "why_a_separate_schema": [
+  "Task A (16 expense categories) answers 'what was the money spent on'. Rent receipts, school-fee receipts, insurance premium receipts, loan certificates, Form 16 and salary slips are not expense categories: a school-fee receipt is expense_category 'miscellaneous', an insurance premium receipt may be 'medical' or 'miscellaneous'. Forcing them into Task A would conflate 'what it is' with 'what it was spent on'.",
+  "config/taxonomy.json (document profile) holds rule evidence for employee-benefit documents and is NOT a trained model. This schema is the label space for a future TRAINED document-type classifier and for the evaluation manifest; it does not replace Task A and does not replace the profile rules, it complements them.",
+  "Tax evidence (axis C) is derived from document_type + rule evidence + employee data. It is never predicted as an eligibility decision."
+ ],
+ "axes": {
+  "A_document_type": {
+   "cardinality": "single-label (hierarchical: family -> type)",
+   "families": {
+    "commercial_bill": [
+     "invoice",
+     "receipt",
+     "utility_bill",
+     "fuel_receipt",
+     "hotel_bill",
+     "medical_bill",
+     "travel_document"
+    ],
+    "employee_tax_evidence": [
+     "rent_receipt",
+     "rental_agreement",
+     "insurance_premium_receipt",
+     "school_fee_receipt",
+     "loan_interest_certificate",
+     "loan_statement",
+     "investment_certificate",
+     "meal_voucher_statement",
+     "ev_document",
+     "form_16",
+     "salary_slip"
+    ],
+    "financial_statement": [
+     "bank_statement",
+     "cheque"
+    ],
+    "other": [
+     "other"
+    ]
+   },
+   "outcomes": [
+    "needs_review",
+    "unknown"
+   ]
+  },
+  "B_expense_category": {
+   "cardinality": "single-label",
+   "source": "Task A, unchanged (16 classes, models/taskA)"
+  },
+  "C_tax_evidence": {
+   "cardinality": "multi-label, DERIVED (not an independently trained classifier)",
+   "labels": [
+    "hra_evidence",
+    "section_80c_evidence",
+    "section_80d_evidence",
+    "loan_interest_evidence",
+    "ev_benefit_evidence",
+    "meal_benefit_evidence",
+    "income_evidence",
+    "none"
+   ],
+   "eligibility_status": "always 'pending_verification'; tax eligibility is decided by app/tax/engine.py from employee data and verified by HR - never by classification",
+   "default_derivation": {
+    "rent_receipt": [
+     "hra_evidence"
+    ],
+    "rental_agreement": [
+     "hra_evidence"
+    ],
+    "insurance_premium_receipt": [
+     "section_80d_evidence",
+     "section_80c_evidence"
+    ],
+    "school_fee_receipt": [
+     "section_80c_evidence"
+    ],
+    "loan_interest_certificate": [
+     "loan_interest_evidence"
+    ],
+    "investment_certificate": [
+     "section_80c_evidence"
+    ],
+    "meal_voucher_statement": [
+     "meal_benefit_evidence"
+    ],
+    "ev_document": [
+     "ev_benefit_evidence",
+     "loan_interest_evidence"
+    ],
+    "form_16": [
+     "income_evidence"
+    ],
+    "salary_slip": [
+     "income_evidence"
+    ],
+    "loan_statement": [
+     "loan_interest_evidence"
+    ]
+   },
+   "note": "insurance premium receipts can be life (80C) or health (80D) - the document type alone cannot tell; both candidates are listed and the rule layer / human decides",
+   "subtype_derivation_v2_1": {
+    "insurance_premium_receipt/health": [
+     "section_80d_evidence"
+    ],
+    "insurance_premium_receipt/life": [
+     "section_80c_evidence"
+    ],
+    "ev_document": [
+     "ev_benefit_evidence"
+    ]
+   }
+  }
+ },
+ "multi_label_policy": "document_type is single-label with a 'needs_review' outcome; a document that fits two types (e.g. combined home-loan interest + principal certificate) keeps ONE primary document_type plus secondary_types[]; tax evidence is multi-label by construction.",
+ "document_type_definitions": {
+  "invoice": "business-to-business or GST tax invoice with line items and tax breakup",
+  "receipt": "point-of-sale / retail / restaurant receipt",
+  "utility_bill": "electricity, water, gas, internet/telecom bill",
+  "fuel_receipt": "petrol/diesel/EV-charging receipt from a fuel or charging station",
+  "hotel_bill": "lodging folio/invoice",
+  "medical_bill": "hospital, pharmacy, diagnostics bill",
+  "travel_document": "flight/train/bus/ride ticket or e-ticket",
+  "rent_receipt": "receipt from a landlord for rent paid for a period (HRA supporting document)",
+  "rental_agreement": "lease / rent agreement (HRA supporting document)",
+  "insurance_premium_receipt": "insurer's premium receipt or premium certificate (life or health)",
+  "school_fee_receipt": "school / college fee receipt, ideally with a fee breakup",
+  "loan_interest_certificate": "lender's certificate or statement of interest and/or principal repaid (housing, education, vehicle)",
+  "investment_certificate": "statement/receipt for PPF, ELSS, NSC, SSY, tax-saver FD, LIC premium etc.",
+  "meal_voucher_statement": "Sodexo / Pluxee / equivalent meal-card or coupon statement or invoice",
+  "ev_document": "EV purchase/lease invoice, charging invoice, EV loan or employer EV policy letter",
+  "form_16": "TDS certificate issued by an employer (Part A/B)",
+  "salary_slip": "employer payslip",
+  "bank_statement": "account statement",
+  "cheque": "bank cheque image",
+  "other": "anything else / not a financial document",
+  "loan_statement": "lender's loan account statement showing EMI, principal/interest split and balance (supporting evidence only)"
+ },
+ "source_label_map": {
+  "_comment": "mapping of SOURCE labels already present in datasets/metadata/manifest.jsonl to document_type; the original label is always kept next to the mapped one. Rules are by source label only - no visual re-labelling.",
+  "manifest.document_type": {
+   "receipt": "receipt",
+   "invoice": "invoice",
+   "utility_bill": "utility_bill",
+   "fuel_receipt": "fuel_receipt",
+   "hotel_bill": "hotel_bill",
+   "medical_bill": "medical_bill",
+   "travel_document": "travel_document",
+   "non_expense_document": "other"
+  },
+  "in_financial.subcategory": {
+   "Salary Slip": "salary_slip",
+   "ITR_Form 16": "form_16",
+   "Bank Statement": "bank_statement",
+   "Check": "cheque"
+  },
+  "rvl_cdip(label)": {
+   "invoice": "invoice",
+   "_all_other_classes": "other"
+  },
+  "AgamiAI/Indian-Bank-Statements": {
+   "*": "bank_statement"
+  },
+  "fatura(zenodo 8261508)": {
+   "*": "invoice"
+  },
+  "synthgen-v1 (project generator)": {
+   "*": "doc_type recorded by the generator from the structured record that rendered the image"
+  }
+ },
+ "coverage_requirements": {
+  "min_real_train_per_class_to_train": 150,
+  "min_real_val_per_class_to_report_metrics": 30,
+  "min_real_test_per_class_to_report_metrics": 30,
+  "min_real_indian_docs_per_class_for_indian_claims": 30,
+  "note": "thresholds are a project policy for 'meaningful evaluation', not a statistical guarantee"
+ },
+ "supersedes": "doc-type-schema-v1 (kept unchanged for reproducibility)",
+ "changes_vs_v1": [
+  "added document_type loan_statement (loan account/EMI statement) next to loan_interest_certificate",
+  "added subtypes per document type (only those backed by a source label or a generator subtype)",
+  "added record_fields (required manifest columns incl. split_basis, review_status, label_confidence, protected-asset flag)",
+  "added synthetic-data policy: synthetic documents never count toward real coverage or real metrics",
+  "source_label_map extended for FATURA, AgamiAI and the project generator (synthgen-v1)"
+ ],
+ "subtypes": {
+  "rent_receipt": [
+   "single_month",
+   "multi_month"
+  ],
+  "rental_agreement": [
+   "residential"
+  ],
+  "insurance_premium_receipt": [
+   "health",
+   "life"
+  ],
+  "school_fee_receipt": [
+   "tuition_only",
+   "with_other_fees"
+  ],
+  "investment_certificate": [
+   "ppf",
+   "elss",
+   "tax_saver_fd",
+   "savings_certificate",
+   "ssy"
+  ],
+  "meal_voucher_statement": [
+   "statement",
+   "invoice"
+  ],
+  "ev_document": [
+   "purchase_invoice",
+   "charging_receipt",
+   "lease_letter"
+  ],
+  "loan_interest_certificate": [
+   "summary",
+   "with_schedule"
+  ],
+  "loan_statement": [
+   "account_statement"
+  ],
+  "salary_slip": [
+   "monthly"
+  ],
+  "form_16": [
+   "part_a_b"
+  ],
+  "bank_statement": [
+   "digital_type1",
+   "digital_type2",
+   "scanned_type1",
+   "scanned_type2"
+  ],
+  "invoice": [
+   "fatura_template"
+  ],
+  "_note": "subtypes exist only where a source label or the generator provides them; real documents from legacy sources carry subtype null"
+ },
+ "record_fields": [
+  "doc_id",
+  "source",
+  "file_path",
+  "pages",
+  "n_pages",
+  "sha256",
+  "page_sha256",
+  "doc_type",
+  "subtype",
+  "family",
+  "secondary_types",
+  "mapping_rule",
+  "label_basis",
+  "original",
+  "expense_category",
+  "tax_evidence_candidates",
+  "eligibility_status",
+  "country",
+  "language",
+  "synthetic",
+  "license",
+  "license_register_id",
+  "group_id",
+  "split",
+  "split_basis",
+  "eval_eligible",
+  "in_protected_task_test",
+  "review_status",
+  "label_confidence",
+  "generator_version",
+  "seed",
+  "layout",
+  "ocr_available",
+  "ann_path"
+ ],
+ "review_status_values": {
+  "source_label": "label taken from the source dataset's own label or folder",
+  "generator_exact": "label produced by the generator that rendered the document (exact)",
+  "needs_mapping_review": "mapping rule not yet reviewed by a human (applies to collection-rule labels, e.g. all 'receipt')",
+  "flagged_for_review": "OCR text cues contradict the mapped label; needs a human decision"
+ },
+ "synthetic_policy": "Generated/synthetic documents are marked synthetic=true, eval_eligible=false, carry generator version and seed, are split by issuer/template groups, and are reported in separate synthetic manifests. They support development and pipeline checks only; real-world performance may be claimed only from real labelled documents.",
+ "splits": {
+  "real": "unchanged from v2 (inherited from datasets/metadata/manifest.jsonl; protected Task A/B test docs stay test-only)",
+  "synthetic_generated": "v2.1 TEMPLATE-held-out per doc_type: layout D=test, one rotating layout of A/B/C=val, other two=train; group_id = template (doc_type x layout)",
+  "fatura": "by template (unchanged)",
+  "agami": "by template: Scanned_Type2=val, Digital_Type2=test, Digital_Type1+Scanned_Type1=train"
+ },
+ "version": "doc-type-schema-v2.1"
+}

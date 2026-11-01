@@ -1,0 +1,615 @@
+[
+ {
+  "kind": "held-out test (GT)",
+  "document_id": "receiptbench__2_CarBusTicket_20",
+  "country": "IN",
+  "category": "bus",
+  "file": "public/receiptbench/images/2_CarBusTicket_20.jpg",
+  "rows": [
+   {
+    "field": "merchant_name",
+    "predicted": "redBus",
+    "confidence": 0.5,
+    "gt": "indiachennai",
+    "correct": false
+   },
+   {
+    "field": "invoice_number",
+    "predicted": "TMD525483984",
+    "confidence": 0.66,
+    "gt": "TMD525483984",
+    "correct": true
+   },
+   {
+    "field": "total_amount",
+    "predicted": 2362.5,
+    "confidence": 0.71,
+    "gt": 2362.5,
+    "correct": true
+   },
+   {
+    "field": "currency",
+    "predicted": "INR",
+    "confidence": null,
+    "gt": "INR",
+    "correct": true
+   },
+   {
+    "field": "gstin",
+    "predicted": null,
+    "confidence": null,
+    "gt": "33ABAFM3706A1Z2",
+    "correct": null
+   },
+   {
+    "field": "origin",
+    "predicted": "Chennai",
+    "confidence": 0.2,
+    "gt": "chenn",
+    "correct": false
+   },
+   {
+    "field": "destination",
+    "predicted": "→Melur",
+    "confidence": 0.67,
+    "gt": "melur",
+    "correct": true
+   },
+   {
+    "field": "travel_date",
+    "predicted": null,
+    "confidence": null,
+    "gt": "2018-12-11",
+    "correct": null
+   }
+  ]
+ },
+ {
+  "kind": "held-out test (GT)",
+  "document_id": "receiptbench__1_PurchaseTicket_105",
+  "country": "IN",
+  "category": "food",
+  "file": "public/receiptbench/images/1_PurchaseTicket_105.jpg",
+  "rows": [
+   {
+    "field": "merchant_name",
+    "predicted": "THE POTBELLY CAFE",
+    "confidence": 0.5,
+    "gt": "thepotbellycafe",
+    "correct": true
+   },
+   {
+    "field": "invoice_number",
+    "predicted": "3088",
+    "confidence": 0.67,
+    "gt": null,
+    "correct": false
+   },
+   {
+    "field": "invoice_date",
+    "predicted": "2017-09-08",
+    "confidence": 0.89,
+    "gt": "2017-09-08",
+    "correct": true
+   },
+   {
+    "field": "total_amount",
+    "predicted": 1635.0,
+    "confidence": 0.86,
+    "gt": 1635.0,
+    "correct": true
+   },
+   {
+    "field": "currency",
+    "predicted": null,
+    "confidence": null,
+    "gt": "INR",
+    "correct": null
+   },
+   {
+    "field": "gstin",
+    "predicted": "07AAHFT3972H1ZV",
+    "confidence": 0.99,
+    "gt": "07AAHFT3972H1ZV",
+    "correct": true
+   },
+   {
+    "field": "cgst",
+    "predicted": 124.74,
+    "confidence": 0.99,
+    "gt": null,
+    "correct": false
+   },
+   {
+    "field": "sgst",
+    "predicted": 124.74,
+    "confidence": 0.99,
+    "gt": null,
+    "correct": false
+   }
+  ]
+ },
+ {
+  "kind": "held-out test (GT)",
+  "document_id": "receiptbench__3_BusTicket_89",
+  "country": "IN",
+  "category": "bus",
+  "file": "public/receiptbench/images/3_BusTicket_89.png",
+  "rows": [
+   {
+    "field": "merchant_name",
+    "predicted": "abhibus",
+    "confidence": 0.31,
+    "gt": "svrtourstravelsabhibus",
+    "correct": false
+   },
+   {
+    "field": "total_amount",
+    "predicted": 1762.2,
+    "confidence": 0.76,
+    "gt": 1762.2,
+    "correct": true
+   },
+   {
+    "field": "currency",
+    "predicted": null,
+    "confidence": null,
+    "gt": "INR",
+    "correct": null
+   },
+   {
+    "field": "gstin",
+    "predicted": "36ADLFS5002J1ZZ",
+    "confidence": 0.99,
+    "gt": "36ADLFS5002J1ZZ",
+    "correct": true
+   },
+   {
+    "field": "origin",
+    "predicted": "Hyderabad",
+    "confidence": 0.18,
+    "gt": "hyderabad",
+    "correct": true
+   },
+   {
+    "field": "destination",
+    "predicted": "Srikakulam",
+    "confidence": 0.67,
+    "gt": "srikakulam",
+    "correct": true
+   },
+   {
+    "field": "travel_date",
+    "predicted": null,
+    "confidence": null,
+    "gt": "2023-01-08",
+    "correct": null
+   }
+  ]
+ },
+ {
+  "kind": "held-out test (GT)",
+  "document_id": "receiptbench__2_PurchaseTicket_102",
+  "country": "IN",
+  "category": "food",
+  "file": "public/receiptbench/images/2_PurchaseTicket_102.jpeg",
+  "rows": [
+   {
+    "field": "merchant_name",
+    "predicted": "VERONAITALICA",
+    "confidence": 0.31,
+    "gt": "veronaitalica",
+    "correct": true
+   },
+   {
+    "field": "invoice_number",
+    "predicted": "02816888666",
+    "confidence": 0.3,
+    "gt": "15823",
+    "correct": false
+   },
+   {
+    "field": "invoice_date",
+    "predicted": "2017-03-08",
+    "confidence": 0.88,
+    "gt": "2017-03-08",
+    "correct": true
+   },
+   {
+    "field": "total_amount",
+    "predicted": 464.0,
+    "confidence": 0.88,
+    "gt": 464.28,
+    "correct": false
+   },
+   {
+    "field": "currency",
+    "predicted": null,
+    "confidence": null,
+    "gt": "INR",
+    "correct": null
+   }
+  ]
+ },
+ {
+  "kind": "held-out test (GT)",
+  "document_id": "receiptbench__2_HotelBill_09",
+  "country": "CA",
+  "category": "hotel",
+  "file": "public/receiptbench/images/2_HotelBill_09.jpg",
+  "rows": [
+   {
+    "field": "merchant_name",
+    "predicted": "RAMADA AIRDRIE",
+    "confidence": 0.83,
+    "gt": "ramadaairdrie",
+    "correct": true
+   },
+   {
+    "field": "invoice_date",
+    "predicted": "2017-07-14",
+    "confidence": 0.67,
+    "gt": "2017-07-14",
+    "correct": true
+   },
+   {
+    "field": "total_amount",
+    "predicted": null,
+    "confidence": null,
+    "gt": 458.01,
+    "correct": null
+   },
+   {
+    "field": "currency",
+    "predicted": "USD",
+    "confidence": null,
+    "gt": "CAD",
+    "correct": false
+   },
+   {
+    "field": "check_in",
+    "predicted": "2017-07-11",
+    "confidence": 0.99,
+    "gt": "2017-07-11",
+    "correct": true
+   },
+   {
+    "field": "check_out",
+    "predicted": null,
+    "confidence": null,
+    "gt": "2017-07-14",
+    "correct": null
+   }
+  ]
+ },
+ {
+  "kind": "held-out test (GT)",
+  "document_id": "sroie__X51005442378",
+  "country": "MY",
+  "category": "unlabeled",
+  "file": "public/sroie/extracted/SROIE2019/train/img/X51005442378.jpg",
+  "rows": [
+   {
+    "field": "merchant_name",
+    "predicted": "PAGOHRESTAND",
+    "confidence": 0.2,
+    "gt": "pagohrestandservicearea",
+    "correct": false
+   },
+   {
+    "field": "merchant_address",
+    "predicted": null,
+    "confidence": null,
+    "gt": "lotr1kwsrehatrawatpagoharahutarasimpangampatpagohlebuhrayautaraselatan84600pagohjohor",
+    "correct": null
+   },
+   {
+    "field": "invoice_date",
+    "predicted": null,
+    "confidence": null,
+    "gt": "2018-03-23",
+    "correct": null
+   },
+   {
+    "field": "total_amount",
+    "predicted": 10.0,
+    "confidence": 0.76,
+    "gt": 10.0,
+    "correct": true
+   }
+  ]
+ },
+ {
+  "kind": "held-out test (GT)",
+  "document_id": "cord__test_0052",
+  "country": "ID",
+  "category": "unlabeled",
+  "file": "interim/cord/images/test_0052.jpg",
+  "rows": [
+   {
+    "field": "subtotal",
+    "predicted": 40.0,
+    "confidence": 0.5,
+    "gt": 40000.0,
+    "correct": false
+   },
+   {
+    "field": "total_amount",
+    "predicted": 40.0,
+    "confidence": 0.86,
+    "gt": 40000.0,
+    "correct": false
+   }
+  ]
+ },
+ {
+  "kind": "held-out test (GT)",
+  "document_id": "invoices_pt__20210507_220108",
+  "country": "PT",
+  "category": "food",
+  "file": "public/invoices_receipts_pt/images/20210507_220108.jpg",
+  "rows": [
+   {
+    "field": "merchant_name",
+    "predicted": "RNAACOR",
+    "confidence": 0.32,
+    "gt": "tabernaacor",
+    "correct": false
+   },
+   {
+    "field": "merchant_address",
+    "predicted": "RUA DOS MERCRDORES 41 9SO0-O92 PONTA DELGAO9",
+    "confidence": 0.01,
+    "gt": "ruadosmercadores419500092pontadelgada",
+    "correct": false
+   },
+   {
+    "field": "invoice_number",
+    "predicted": null,
+    "confidence": null,
+    "gt": "A54681",
+    "correct": null
+   },
+   {
+    "field": "invoice_date",
+    "predicted": null,
+    "confidence": null,
+    "gt": "2017-11-09",
+    "correct": null
+   },
+   {
+    "field": "tax_total",
+    "predicted": null,
+    "confidence": null,
+    "gt": 1.37,
+    "correct": null
+   },
+   {
+    "field": "total_amount",
+    "predicted": 44.95,
+    "confidence": 0.71,
+    "gt": 44.95,
+    "correct": true
+   }
+  ]
+ },
+ {
+  "kind": "unseen user Indian bill (no GT)",
+  "document_id": "Screenshot from 2026-09-20 14-20-12.png",
+  "country": "IN",
+  "category": "food",
+  "file": "indian/food/Screenshot from 2026-09-20 14-20-12.png",
+  "rows": [
+   {
+    "field": "merchant_name",
+    "predicted": "DeliciousBites",
+    "confidence": 0.31,
+    "source": "layoutlmv3"
+   },
+   {
+    "field": "invoice_number",
+    "predicted": "139",
+    "confidence": 0.67,
+    "source": "layoutlmv3"
+   },
+   {
+    "field": "invoice_date",
+    "predicted": "2024-10-12",
+    "confidence": 0.99,
+    "source": "layoutlmv3"
+   },
+   {
+    "field": "total_amount",
+    "predicted": 210.0,
+    "confidence": 0.76,
+    "source": "layoutlmv3"
+   }
+  ]
+ },
+ {
+  "kind": "unseen user Indian bill (no GT)",
+  "document_id": "Screenshot from 2026-09-20 13-48-33.png",
+  "country": "IN",
+  "category": "fuel",
+  "file": "indian/fuel/Screenshot from 2026-09-20 13-48-33.png",
+  "rows": [
+   {
+    "field": "merchant_name",
+    "predicted": "WHITE FIELD MAIN ROAD",
+    "confidence": 0.32,
+    "source": "layoutlmv3"
+   },
+   {
+    "field": "invoice_number",
+    "predicted": "F7395",
+    "confidence": 0.99,
+    "source": "layoutlmv3"
+   },
+   {
+    "field": "invoice_date",
+    "predicted": "2023-06-12",
+    "confidence": 0.78,
+    "source": "layoutlmv3"
+   },
+   {
+    "field": "total_amount",
+    "predicted": 101.94,
+    "confidence": 0.71,
+    "source": "layoutlmv3"
+   },
+   {
+    "field": "currency",
+    "predicted": "INR",
+    "confidence": null,
+    "source": "baseline"
+   }
+  ]
+ },
+ {
+  "kind": "unseen user Indian bill (no GT)",
+  "document_id": "pune_chinta_jpg.rf.Ejm1bh0H1bfv4CBT0G6T.jpg",
+  "country": "IN",
+  "category": "electricity",
+  "file": "indian/electricity/pune_chinta_jpg.rf.Ejm1bh0H1bfv4CBT0G6T.jpg",
+  "rows": [
+   {
+    "field": "merchant_name",
+    "predicted": "MAHAVITARAN",
+    "confidence": 0.32,
+    "source": "layoutlmv3"
+   },
+   {
+    "field": "invoice_number",
+    "predicted": "000000470852713",
+    "confidence": 0.32,
+    "source": "layoutlmv3"
+   },
+   {
+    "field": "invoice_date",
+    "predicted": "2019-06-29",
+    "confidence": 0.67,
+    "source": "layoutlmv3"
+   },
+   {
+    "field": "subtotal",
+    "predicted": 170003538870.0,
+    "confidence": 0.82,
+    "source": "ranker"
+   },
+   {
+    "field": "tax_total",
+    "predicted": 90.0,
+    "confidence": 0.86,
+    "source": "ranker"
+   },
+   {
+    "field": "total_amount",
+    "predicted": 3030.0,
+    "confidence": 0.76,
+    "source": "layoutlmv3"
+   },
+   {
+    "field": "currency",
+    "predicted": "INR",
+    "confidence": null,
+    "source": "baseline"
+   }
+  ]
+ },
+ {
+  "kind": "unseen user Indian bill (no GT)",
+  "document_id": "parshoram_jpg.rf.v4djWRwN3kbqaAqyD55W.jpg",
+  "country": "IN",
+  "category": "water",
+  "file": "indian/water/parshoram_jpg.rf.v4djWRwN3kbqaAqyD55W.jpg",
+  "rows": [
+   {
+    "field": "merchant_name",
+    "predicted": "DelhiJalBard()",
+    "confidence": 0.5,
+    "source": "layoutlmv3"
+   },
+   {
+    "field": "invoice_number",
+    "predicted": "791910528771",
+    "confidence": 0.25,
+    "source": "layoutlmv3"
+   },
+   {
+    "field": "invoice_date",
+    "predicted": "2024-02-15",
+    "confidence": 0.67,
+    "source": "layoutlmv3"
+   },
+   {
+    "field": "total_amount",
+    "predicted": 0.0,
+    "confidence": 0.76,
+    "source": "layoutlmv3"
+   },
+   {
+    "field": "currency",
+    "predicted": "INR",
+    "confidence": null,
+    "source": "baseline"
+   }
+  ]
+ },
+ {
+  "kind": "unseen user Indian bill (no GT)",
+  "document_id": "Screenshot 2026-09-20 at 4.26.58 PM.png",
+  "country": "IN",
+  "category": "gas",
+  "file": "indian/gas/Screenshot 2026-09-20 at 4.26.58 PM.png",
+  "rows": [
+   {
+    "field": "merchant_name",
+    "predicted": "IndianOil",
+    "confidence": 0.43,
+    "source": "layoutlmv3"
+   },
+   {
+    "field": "invoice_number",
+    "predicted": "5100872771536",
+    "confidence": 0.66,
+    "source": "layoutlmv3"
+   },
+   {
+    "field": "invoice_date",
+    "predicted": "2023-10-23",
+    "confidence": 0.67,
+    "source": "layoutlmv3"
+   },
+   {
+    "field": "tax_total",
+    "predicted": 14.14,
+    "confidence": 0.86,
+    "source": "ranker"
+   },
+   {
+    "field": "total_amount",
+    "predicted": 905.5,
+    "confidence": 0.76,
+    "source": "layoutlmv3"
+   },
+   {
+    "field": "gstin",
+    "predicted": "07AAEFB5546L1Z9",
+    "confidence": 0.99,
+    "source": "layoutlmv3"
+   },
+   {
+    "field": "cgst",
+    "predicted": 14.14,
+    "confidence": 0.99,
+    "source": "layoutlmv3"
+   },
+   {
+    "field": "sgst",
+    "predicted": 14.14,
+    "confidence": 0.99,
+    "source": "layoutlmv3"
+   }
+  ]
+ }
+]

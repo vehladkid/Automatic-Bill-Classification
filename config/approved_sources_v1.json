@@ -1,0 +1,17 @@
+{
+ "version": "approved-sources-v1",
+ "rule": "A source may enter an approved training/evaluation manifest only if its licence-register status is 'usable' (tier 1), or 'usable_with_restrictions' AND the restriction is documented and compatible with internal, non-commercial development (tier 2). Sources with status conflict / unverified / blocked / not_acquired are excluded until a human clears them and this file is revised.",
+ "tier1_usable": ["cord", "in_grocery_gst", "invoices_pt", "my_receipts", "synthetic_in", "agami_indian_bank_statements", "fatura", "synthgen_v1"],
+ "tier2_restricted_known_terms": {
+  "rvl_cdip": "research use only (IIT-CDIP derivative)",
+  "manual_in": "project-owner collected; redistribution rights unverified - internal development only",
+  "receiptbench": "MIT repo licence but consent for personal receipts undocumented - internal development only"
+ },
+ "excluded_until_cleared": {
+  "sroie": "licence conflict (HF card CC-BY-4.0 vs ICDAR RRC terms)",
+  "funsd": "licence not stated on card; project record says non-commercial research",
+  "in_financial": "provenance conflict: DbCL database over web-scraped images, academic use only",
+  "hf_medical": "no licence stated",
+  "user_real": "origin and rights unverified"
+ }
+}

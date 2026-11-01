@@ -1,0 +1,886 @@
+{
+ "counts": {
+  "GT not locatable in OCR text (OCR error, unusual format, or value not printed on the page)": 224,
+  "false positive (field not annotated / hallucinated)": 50,
+  "wrong value (incorrect candidate / context)": 41,
+  "missed (only a wrong value scored above the floor, and it was abstained)": 37,
+  "wrong bounding box (overlapping but different span)": 31,
+  "incorrect abstention: a correct value was produced but removed by the threshold/gating": 31,
+  "missed: no candidate / span produced": 30,
+  "partial / over-extended span": 28,
+  "false positive: value belongs to total_amount": 7,
+  "invoice_number vs other ID (phone / GSTIN / date)": 6,
+  "wrong currency code (CAD read as USD; '$' is ambiguous)": 4,
+  "false positive: value belongs to travel_date": 4,
+  "false positive: value belongs to check_out": 3,
+  "wrong date (another date on the document)": 3,
+  "wrong field: origin <- value of destination": 3,
+  "wrong field: subtotal <- value of total_amount": 2,
+  "wrong currency code (AUD read as USD; '$' is ambiguous)": 2,
+  "wrong currency code (NZD read as USD; '$' is ambiguous)": 1,
+  "invoice_date: day/month order swapped": 1,
+  "wrong currency code (SGD read as USD; '$' is ambiguous)": 1,
+  "wrong field: invoice_date <- value of travel_date": 1,
+  "wrong field: travel_date <- value of invoice_date": 1,
+  "wrong currency code (BRL read as USD; '$' is ambiguous)": 1
+ },
+ "per_field": {
+  "merchant_name": {
+   "wrong bounding box (overlapping but different span)": 4,
+   "wrong value (incorrect candidate / context)": 16,
+   "partial / over-extended span": 23,
+   "GT not locatable in OCR text (OCR error, unusual format, or value not printed on the page)": 25,
+   "false positive (field not annotated / hallucinated)": 10,
+   "missed (only a wrong value scored above the floor, and it was abstained)": 7,
+   "missed: no candidate / span produced": 2,
+   "incorrect abstention: a correct value was produced but removed by the threshold/gating": 2
+  },
+  "merchant_address": {
+   "wrong bounding box (overlapping but different span)": 4,
+   "partial / over-extended span": 5,
+   "missed (only a wrong value scored above the floor, and it was abstained)": 4,
+   "GT not locatable in OCR text (OCR error, unusual format, or value not printed on the page)": 1
+  },
+  "total_amount": {
+   "wrong value (incorrect candidate / context)": 16,
+   "GT not locatable in OCR text (OCR error, unusual format, or value not printed on the page)": 14,
+   "wrong bounding box (overlapping but different span)": 19,
+   "false positive (field not annotated / hallucinated)": 2,
+   "missed: no candidate / span produced": 2
+  },
+  "invoice_date": {
+   "GT not locatable in OCR text (OCR error, unusual format, or value not printed on the page)": 39,
+   "missed: no candidate / span produced": 6,
+   "false positive: value belongs to check_out": 3,
+   "false positive (field not annotated / hallucinated)": 8,
+   "invoice_date: day/month order swapped": 1,
+   "wrong date (another date on the document)": 2,
+   "false positive: value belongs to travel_date": 4,
+   "wrong field: invoice_date <- value of travel_date": 1
+  },
+  "subtotal": {
+   "GT not locatable in OCR text (OCR error, unusual format, or value not printed on the page)": 4,
+   "wrong value (incorrect candidate / context)": 1,
+   "wrong bounding box (overlapping but different span)": 1,
+   "missed (only a wrong value scored above the floor, and it was abstained)": 8,
+   "false positive: value belongs to total_amount": 7,
+   "false positive (field not annotated / hallucinated)": 3,
+   "wrong field: subtotal <- value of total_amount": 2,
+   "incorrect abstention: a correct value was produced but removed by the threshold/gating": 1
+  },
+  "tax_total": {
+   "missed (only a wrong value scored above the floor, and it was abstained)": 6,
+   "incorrect abstention: a correct value was produced but removed by the threshold/gating": 4,
+   "false positive (field not annotated / hallucinated)": 1,
+   "GT not locatable in OCR text (OCR error, unusual format, or value not printed on the page)": 3,
+   "wrong value (incorrect candidate / context)": 1
+  },
+  "currency": {
+   "GT not locatable in OCR text (OCR error, unusual format, or value not printed on the page)": 53,
+   "wrong currency code (CAD read as USD; '$' is ambiguous)": 4,
+   "wrong currency code (NZD read as USD; '$' is ambiguous)": 1,
+   "wrong currency code (AUD read as USD; '$' is ambiguous)": 2,
+   "wrong currency code (SGD read as USD; '$' is ambiguous)": 1,
+   "false positive (field not annotated / hallucinated)": 5,
+   "missed: no candidate / span produced": 2,
+   "wrong currency code (BRL read as USD; '$' is ambiguous)": 1
+  },
+  "origin": {
+   "missed (only a wrong value scored above the floor, and it was abstained)": 5,
+   "GT not locatable in OCR text (OCR error, unusual format, or value not printed on the page)": 10,
+   "missed: no candidate / span produced": 4,
+   "incorrect abstention: a correct value was produced but removed by the threshold/gating": 6,
+   "wrong field: origin <- value of destination": 3,
+   "false positive (field not annotated / hallucinated)": 1
+  },
+  "destination": {
+   "missed: no candidate / span produced": 3,
+   "GT not locatable in OCR text (OCR error, unusual format, or value not printed on the page)": 7,
+   "missed (only a wrong value scored above the floor, and it was abstained)": 5,
+   "incorrect abstention: a correct value was produced but removed by the threshold/gating": 5,
+   "wrong value (incorrect candidate / context)": 1
+  },
+  "travel_date": {
+   "GT not locatable in OCR text (OCR error, unusual format, or value not printed on the page)": 19,
+   "incorrect abstention: a correct value was produced but removed by the threshold/gating": 4,
+   "missed: no candidate / span produced": 1,
+   "missed (only a wrong value scored above the floor, and it was abstained)": 1,
+   "wrong date (another date on the document)": 1,
+   "wrong field: travel_date <- value of invoice_date": 1
+  },
+  "invoice_number": {
+   "false positive (field not annotated / hallucinated)": 14,
+   "wrong value (incorrect candidate / context)": 6,
+   "GT not locatable in OCR text (OCR error, unusual format, or value not printed on the page)": 34,
+   "invoice_number vs other ID (phone / GSTIN / date)": 6,
+   "wrong bounding box (overlapping but different span)": 3,
+   "missed: no candidate / span produced": 2
+  },
+  "gstin": {
+   "GT not locatable in OCR text (OCR error, unusual format, or value not printed on the page)": 7,
+   "incorrect abstention: a correct value was produced but removed by the threshold/gating": 1
+  },
+  "check_out": {
+   "incorrect abstention: a correct value was produced but removed by the threshold/gating": 4,
+   "GT not locatable in OCR text (OCR error, unusual format, or value not printed on the page)": 5,
+   "missed: no candidate / span produced": 4
+  },
+  "check_in": {
+   "GT not locatable in OCR text (OCR error, unusual format, or value not printed on the page)": 3,
+   "missed (only a wrong value scored above the floor, and it was abstained)": 1,
+   "missed: no candidate / span produced": 4,
+   "incorrect abstention: a correct value was produced but removed by the threshold/gating": 3
+  },
+  "cgst": {
+   "false positive (field not annotated / hallucinated)": 3
+  },
+  "sgst": {
+   "false positive (field not annotated / hallucinated)": 3,
+   "incorrect abstention: a correct value was produced but removed by the threshold/gating": 1
+  }
+ },
+ "examples": {
+  "wrong bounding box (overlapping but different span)": [
+   {
+    "doc": "sroie__X00016469620",
+    "field": "merchant_name",
+    "gt": "mrdiyjohorsdnbhd",
+    "pred": "mrdtyjohorsdnbhd",
+    "country": "MY",
+    "category": "unlabeled"
+   },
+   {
+    "doc": "sroie__X51005441398",
+    "field": "merchant_name",
+    "gt": "ownerbycastlebluesb",
+    "pred": "dwnerbycastlebluesb",
+    "country": "MY",
+    "category": "unlabeled"
+   },
+   {
+    "doc": "sroie__X51005441398",
+    "field": "merchant_address",
+    "gt": "avtivoplazalotbf11blockbno1jalanpju91dsa",
+    "pred": "avtivoplazalotbf11blockbno1jalanpju91dsa",
+    "country": "MY",
+    "category": "unlabeled"
+   },
+   {
+    "doc": "sroie__X51005712021",
+    "field": "merchant_name",
+    "gt": "happysnacksenterprise",
+    "pred": "happysnacksentyerprise",
+    "country": "MY",
+    "category": "unlabeled"
+   },
+   {
+    "doc": "sroie__X51008123450",
+    "field": "merchant_address",
+    "gt": "carparkofficebasement1labuhrayasprintpju",
+    "pred": "carparkofficebasemant1labuhrayasprintpju",
+    "country": "MY",
+    "category": "unlabeled"
+   },
+   {
+    "doc": "sroie__X51005746206",
+    "field": "merchant_address",
+    "gt": "no10ggroundfloorjalandinardu3dtamansuban",
+    "pred": "no10ggroundfloorjalandinardu3dtamansuban",
+    "country": "MY",
+    "category": "unlabeled"
+   }
+  ],
+  "wrong value (incorrect candidate / context)": [
+   {
+    "doc": "sroie__X51005441401",
+    "field": "merchant_name",
+    "gt": "threestooges",
+    "pred": "bistrocafe",
+    "country": "MY",
+    "category": "unlabeled"
+   },
+   {
+    "doc": "sroie__X51005441402",
+    "field": "merchant_name",
+    "gt": "threestooges",
+    "pred": "bistrocafe",
+    "country": "MY",
+    "category": "unlabeled"
+   },
+   {
+    "doc": "sroie__X51005712021",
+    "field": "total_amount",
+    "gt": "26.82",
+    "pred": "26.8",
+    "country": "MY",
+    "category": "unlabeled"
+   },
+   {
+    "doc": "sroie__X51005745249",
+    "field": "total_amount",
+    "gt": "22.65",
+    "pred": "24.0",
+    "country": "MY",
+    "category": "unlabeled"
+   },
+   {
+    "doc": "sroie__X51006466055",
+    "field": "total_amount",
+    "gt": "20.0",
+    "pred": "19.99",
+    "country": "MY",
+    "category": "unlabeled"
+   },
+   {
+    "doc": "sroie__X51005806695",
+    "field": "merchant_name",
+    "gt": "sayangyoustationsdnbhd",
+    "pred": "juwitaweddings",
+    "country": "MY",
+    "category": "unlabeled"
+   }
+  ],
+  "partial / over-extended span": [
+   {
+    "doc": "sroie__X51005442378",
+    "field": "merchant_name",
+    "gt": "pagohrestandservicearea",
+    "pred": "pagoh",
+    "country": "MY",
+    "category": "unlabeled"
+   },
+   {
+    "doc": "sroie__X51005719873",
+    "field": "merchant_name",
+    "gt": "ct281tealiveshellkepongottogoenterprise",
+    "pred": "shellkepong",
+    "country": "MY",
+    "category": "food"
+   },
+   {
+    "doc": "sroie__X51005719873",
+    "field": "merchant_address",
+    "gt": "shellstationpt15944mukimbatujlnbesarkepo",
+    "pred": "pt15944mukimbatujlnbesarkepong",
+    "country": "MY",
+    "category": "food"
+   },
+   {
+    "doc": "sroie__X51005757304",
+    "field": "merchant_name",
+    "gt": "baifumsdnbhd",
+    "pred": "000002baifumsdnbhd",
+    "country": "MY",
+    "category": "unlabeled"
+   },
+   {
+    "doc": "sroie__X51006466055",
+    "field": "merchant_name",
+    "gt": "checkershypermarketsdnbhdjalanklanglama",
+    "pred": "checkershypermarketsdnbhd",
+    "country": "MY",
+    "category": "unlabeled"
+   },
+   {
+    "doc": "sroie__X51006556730",
+    "field": "merchant_address",
+    "gt": "groundfloorno46jalanss154b47500subangjay",
+    "pred": "no46jalanss154b47500subangjayaselangor",
+    "country": "MY",
+    "category": "unlabeled"
+   }
+  ],
+  "GT not locatable in OCR text (OCR error, unusual format, or value not printed on the page)": [
+   {
+    "doc": "sroie__X51005742068",
+    "field": "total_amount",
+    "gt": "6.0",
+    "pred": "None",
+    "country": "MY",
+    "category": "fuel"
+   },
+   {
+    "doc": "sroie__X51006619545",
+    "field": "total_amount",
+    "gt": "111.9",
+    "pred": "10.55",
+    "country": "MY",
+    "category": "unlabeled"
+   },
+   {
+    "doc": "sroie__X51005442322",
+    "field": "invoice_date",
+    "gt": "2019-03-03",
+    "pred": "2018-03-03",
+    "country": "MY",
+    "category": "unlabeled"
+   },
+   {
+    "doc": "cord__test_0013",
+    "field": "subtotal",
+    "gt": "46636.47",
+    "pred": "None",
+    "country": "ID",
+    "category": "unlabeled"
+   },
+   {
+    "doc": "cord__train_0244",
+    "field": "subtotal",
+    "gt": "43636.0",
+    "pred": "None",
+    "country": "ID",
+    "category": "unlabeled"
+   },
+   {
+    "doc": "cord__train_0603",
+    "field": "subtotal",
+    "gt": "73638.81",
+    "pred": "73638.0",
+    "country": "ID",
+    "category": "unlabeled"
+   }
+  ],
+  "missed (only a wrong value scored above the floor, and it was abstained)": [
+   {
+    "doc": "sroie__X51007579725",
+    "field": "merchant_address",
+    "gt": "16gblockbzenithcorporateparkjalanss72647",
+    "pred": "None",
+    "country": "MY",
+    "category": "unlabeled"
+   },
+   {
+    "doc": "cord__test_0013",
+    "field": "tax_total",
+    "gt": "4664.0",
+    "pred": "None",
+    "country": "ID",
+    "category": "unlabeled"
+   },
+   {
+    "doc": "cord__test_0087",
+    "field": "subtotal",
+    "gt": "36500.0",
+    "pred": "None",
+    "country": "ID",
+    "category": "unlabeled"
+   },
+   {
+    "doc": "cord__train_0108",
+    "field": "tax_total",
+    "gt": "0.0",
+    "pred": "None",
+    "country": "ID",
+    "category": "unlabeled"
+   },
+   {
+    "doc": "cord__train_0254",
+    "field": "subtotal",
+    "gt": "224500.0",
+    "pred": "None",
+    "country": "ID",
+    "category": "unlabeled"
+   },
+   {
+    "doc": "cord__train_0254",
+    "field": "tax_total",
+    "gt": "23573.0",
+    "pred": "None",
+    "country": "ID",
+    "category": "unlabeled"
+   }
+  ],
+  "false positive: value belongs to total_amount": [
+   {
+    "doc": "cord__train_0152",
+    "field": "subtotal",
+    "gt": "None",
+    "pred": "975000.0",
+    "country": "ID",
+    "category": "unlabeled"
+   },
+   {
+    "doc": "cord__train_0240",
+    "field": "subtotal",
+    "gt": "None",
+    "pred": "9000.0",
+    "country": "ID",
+    "category": "unlabeled"
+   },
+   {
+    "doc": "cord__train_0541",
+    "field": "subtotal",
+    "gt": "None",
+    "pred": "30000.0",
+    "country": "ID",
+    "category": "unlabeled"
+   },
+   {
+    "doc": "cord__train_0583",
+    "field": "subtotal",
+    "gt": "None",
+    "pred": "72500.0",
+    "country": "ID",
+    "category": "unlabeled"
+   },
+   {
+    "doc": "cord__train_0693",
+    "field": "subtotal",
+    "gt": "None",
+    "pred": "215985.0",
+    "country": "ID",
+    "category": "unlabeled"
+   },
+   {
+    "doc": "cord__train_0749",
+    "field": "subtotal",
+    "gt": "None",
+    "pred": "100000.0",
+    "country": "ID",
+    "category": "unlabeled"
+   }
+  ],
+  "false positive (field not annotated / hallucinated)": [
+   {
+    "doc": "cord__train_0153",
+    "field": "subtotal",
+    "gt": "None",
+    "pred": "57000.0",
+    "country": "ID",
+    "category": "unlabeled"
+   },
+   {
+    "doc": "cord__train_0355",
+    "field": "subtotal",
+    "gt": "None",
+    "pred": "28000.0",
+    "country": "ID",
+    "category": "unlabeled"
+   },
+   {
+    "doc": "cord__train_0487",
+    "field": "tax_total",
+    "gt": "None",
+    "pred": "4500.0",
+    "country": "ID",
+    "category": "unlabeled"
+   },
+   {
+    "doc": "cord__train_0555",
+    "field": "total_amount",
+    "gt": "None",
+    "pred": "90.0",
+    "country": "ID",
+    "category": "unlabeled"
+   },
+   {
+    "doc": "cord__train_0660",
+    "field": "subtotal",
+    "gt": "None",
+    "pred": "70000.0",
+    "country": "ID",
+    "category": "unlabeled"
+   },
+   {
+    "doc": "cord__val_0049",
+    "field": "total_amount",
+    "gt": "None",
+    "pred": "81.4",
+    "country": "ID",
+    "category": "unlabeled"
+   }
+  ],
+  "incorrect abstention: a correct value was produced but removed by the threshold/gating": [
+   {
+    "doc": "cord__train_0244",
+    "field": "tax_total",
+    "gt": "4364.0",
+    "pred": "None",
+    "country": "ID",
+    "category": "unlabeled"
+   },
+   {
+    "doc": "cord__train_0253",
+    "field": "tax_total",
+    "gt": "6818.0",
+    "pred": "None",
+    "country": "ID",
+    "category": "unlabeled"
+   },
+   {
+    "doc": "cord__train_0388",
+    "field": "subtotal",
+    "gt": "481000.0",
+    "pred": "None",
+    "country": "ID",
+    "category": "unlabeled"
+   },
+   {
+    "doc": "cord__train_0640",
+    "field": "tax_total",
+    "gt": "4454.55",
+    "pred": "None",
+    "country": "ID",
+    "category": "unlabeled"
+   },
+   {
+    "doc": "cord__train_0651",
+    "field": "tax_total",
+    "gt": "909.0",
+    "pred": "None",
+    "country": "ID",
+    "category": "unlabeled"
+   },
+   {
+    "doc": "receiptbench__2_CarBusTicket_08",
+    "field": "travel_date",
+    "gt": "2015-05-25",
+    "pred": "None",
+    "country": null,
+    "category": "bus"
+   }
+  ],
+  "wrong field: subtotal <- value of total_amount": [
+   {
+    "doc": "cord__train_0324",
+    "field": "subtotal",
+    "gt": "35636.36",
+    "pred": "39200.0",
+    "country": "ID",
+    "category": "unlabeled"
+   },
+   {
+    "doc": "cord__train_0640",
+    "field": "subtotal",
+    "gt": "45545.45",
+    "pred": "49000.0",
+    "country": "ID",
+    "category": "unlabeled"
+   }
+  ],
+  "missed: no candidate / span produced": [
+   {
+    "doc": "cord__train_0693",
+    "field": "total_amount",
+    "gt": "215985.0",
+    "pred": "None",
+    "country": "ID",
+    "category": "unlabeled"
+   },
+   {
+    "doc": "receiptbench__1_AirTicket_25",
+    "field": "destination",
+    "gt": "guwahati",
+    "pred": "None",
+    "country": null,
+    "category": "flight"
+   },
+   {
+    "doc": "receiptbench__1_HotelBill_09",
+    "field": "invoice_date",
+    "gt": "2019-06-20",
+    "pred": "None",
+    "country": "AU",
+    "category": "hotel"
+   },
+   {
+    "doc": "receiptbench__2_CarBusTicket_88",
+    "field": "invoice_date",
+    "gt": "2023-09-26",
+    "pred": "None",
+    "country": null,
+    "category": "bus"
+   },
+   {
+    "doc": "receiptbench__2_FlightTicket_231",
+    "field": "origin",
+    "gt": "havana",
+    "pred": "None",
+    "country": null,
+    "category": "flight"
+   },
+   {
+    "doc": "receiptbench__2_FlightTicket_231",
+    "field": "destination",
+    "gt": "washington",
+    "pred": "None",
+    "country": null,
+    "category": "flight"
+   }
+  ],
+  "wrong currency code (CAD read as USD; '$' is ambiguous)": [
+   {
+    "doc": "receiptbench__2_CarBusTicket_37",
+    "field": "currency",
+    "gt": "CAD",
+    "pred": "USD",
+    "country": null,
+    "category": "bus"
+   },
+   {
+    "doc": "receiptbench__2_HotelBill_09",
+    "field": "currency",
+    "gt": "CAD",
+    "pred": "USD",
+    "country": "CA",
+    "category": "hotel"
+   },
+   {
+    "doc": "receiptbench__2_HotelBill_186",
+    "field": "currency",
+    "gt": "CAD",
+    "pred": "USD",
+    "country": "CA",
+    "category": "hotel"
+   },
+   {
+    "doc": "receiptbench__2_TrainTicket_26",
+    "field": "currency",
+    "gt": "CAD",
+    "pred": "USD",
+    "country": null,
+    "category": "train"
+   }
+  ],
+  "invoice_number vs other ID (phone / GSTIN / date)": [
+   {
+    "doc": "receiptbench__2_FlightTicket_465",
+    "field": "invoice_number",
+    "gt": "1681893998",
+    "pred": "2483506942",
+    "country": null,
+    "category": "train"
+   },
+   {
+    "doc": "receiptbench__2_TrainTicket_122",
+    "field": "invoice_number",
+    "gt": "100005742041748",
+    "pred": "0821111124",
+    "country": null,
+    "category": "train"
+   },
+   {
+    "doc": "receiptbench__2_TrainTicket_129",
+    "field": "invoice_number",
+    "gt": "7311766027729410200",
+    "pred": "1031210617",
+    "country": null,
+    "category": "train"
+   },
+   {
+    "doc": "receiptbench__3_TaxiTicket_22",
+    "field": "invoice_number",
+    "gt": "M40020782",
+    "pred": "9573443779",
+    "country": null,
+    "category": "transport"
+   },
+   {
+    "doc": "receiptbench__1_PurchaseTicket_1382",
+    "field": "invoice_number",
+    "gt": "0017503",
+    "pred": "07050452901",
+    "country": "IN",
+    "category": "food"
+   },
+   {
+    "doc": "receiptbench__2_PurchaseTicket_102",
+    "field": "invoice_number",
+    "gt": "15823",
+    "pred": "02816888666",
+    "country": "IN",
+    "category": "food"
+   }
+  ],
+  "wrong currency code (NZD read as USD; '$' is ambiguous)": [
+   {
+    "doc": "receiptbench__2_FuelFee_86",
+    "field": "currency",
+    "gt": "NZD",
+    "pred": "USD",
+    "country": "NZ",
+    "category": "fuel"
+   }
+  ],
+  "false positive: value belongs to check_out": [
+   {
+    "doc": "receiptbench__2_HotelBill_239",
+    "field": "invoice_date",
+    "gt": "None",
+    "pred": "2022-09-15",
+    "country": "AU",
+    "category": "hotel"
+   },
+   {
+    "doc": "receiptbench__2_HotelBill_384",
+    "field": "invoice_date",
+    "gt": "None",
+    "pred": "2023-06-15",
+    "country": null,
+    "category": "hotel"
+   },
+   {
+    "doc": "receiptbench__2_HotelBill_577",
+    "field": "invoice_date",
+    "gt": "None",
+    "pred": "2023-03-10",
+    "country": "AU",
+    "category": "hotel"
+   }
+  ],
+  "wrong currency code (AUD read as USD; '$' is ambiguous)": [
+   {
+    "doc": "receiptbench__2_HotelBill_239",
+    "field": "currency",
+    "gt": "AUD",
+    "pred": "USD",
+    "country": "AU",
+    "category": "hotel"
+   },
+   {
+    "doc": "receiptbench__2_ParkingFee_37",
+    "field": "currency",
+    "gt": "AUD",
+    "pred": "USD",
+    "country": "AU",
+    "category": "parking"
+   }
+  ],
+  "invoice_date: day/month order swapped": [
+   {
+    "doc": "receiptbench__2_InternetFee_18",
+    "field": "invoice_date",
+    "gt": "2019-06-04",
+    "pred": "2019-04-06",
+    "country": "US",
+    "category": "internet"
+   }
+  ],
+  "wrong date (another date on the document)": [
+   {
+    "doc": "receiptbench__2_ParkingFee_37",
+    "field": "invoice_date",
+    "gt": "2019-07-01",
+    "pred": "2019-07-22",
+    "country": "AU",
+    "category": "parking"
+   },
+   {
+    "doc": "receiptbench__3_FlightItinerary_864",
+    "field": "travel_date",
+    "gt": "2025-02-16",
+    "pred": "2024-12-11",
+    "country": null,
+    "category": "flight"
+   },
+   {
+    "doc": "receiptbench__4_MLBusTicket_06",
+    "field": "invoice_date",
+    "gt": "2025-06-20",
+    "pred": "2025-06-21",
+    "country": "BR",
+    "category": "bus"
+   }
+  ],
+  "wrong currency code (SGD read as USD; '$' is ambiguous)": [
+   {
+    "doc": "receiptbench__2_SubwayTicket_30",
+    "field": "currency",
+    "gt": "SGD",
+    "pred": "USD",
+    "country": null,
+    "category": "transport"
+   }
+  ],
+  "false positive: value belongs to travel_date": [
+   {
+    "doc": "receiptbench__2_TrainTicket_143",
+    "field": "invoice_date",
+    "gt": "None",
+    "pred": "2024-07-11",
+    "country": null,
+    "category": "train"
+   },
+   {
+    "doc": "receiptbench__3_BusTicket_89",
+    "field": "invoice_date",
+    "gt": "None",
+    "pred": "2023-01-08",
+    "country": "IN",
+    "category": "bus"
+   },
+   {
+    "doc": "receiptbench__3_FlightItinerary_648",
+    "field": "invoice_date",
+    "gt": "None",
+    "pred": "2022-04-02",
+    "country": null,
+    "category": "flight"
+   },
+   {
+    "doc": "receiptbench__3_TrainTicket_187",
+    "field": "invoice_date",
+    "gt": "None",
+    "pred": "2025-09-07",
+    "country": null,
+    "category": "train"
+   }
+  ],
+  "wrong field: origin <- value of destination": [
+   {
+    "doc": "receiptbench__3_FlightItinerary_648",
+    "field": "origin",
+    "gt": "losangeles",
+    "pred": "newark",
+    "country": null,
+    "category": "flight"
+   },
+   {
+    "doc": "receiptbench__3_FlightItinerary_864",
+    "field": "origin",
+    "gt": "mumbai",
+    "pred": "delhiter1d",
+    "country": null,
+    "category": "flight"
+   },
+   {
+    "doc": "receiptbench__3_FlightItinerary_1015",
+    "field": "origin",
+    "gt": "portblair",
+    "pred": "bengaluru",
+    "country": "IN",
+    "category": "flight"
+   }
+  ],
+  "wrong field: invoice_date <- value of travel_date": [
+   {
+    "doc": "receiptbench__3_TrainTicket_10",
+    "field": "invoice_date",
+    "gt": "2022-12-20",
+    "pred": "2023-04-14",
+    "country": null,
+    "category": "train"
+   }
+  ],
+  "wrong field: travel_date <- value of invoice_date": [
+   {
+    "doc": "receiptbench__3_TrainTicket_10",
+    "field": "travel_date",
+    "gt": "2023-04-14",
+    "pred": "2022-12-20",
+    "country": null,
+    "category": "train"
+   }
+  ],
+  "wrong currency code (BRL read as USD; '$' is ambiguous)": [
+   {
+    "doc": "receiptbench__4_MLBusTicket_06",
+    "field": "currency",
+    "gt": "BRL",
+    "pred": "USD",
+    "country": "BR",
+    "category": "bus"
+   }
+  ]
+ }
+}

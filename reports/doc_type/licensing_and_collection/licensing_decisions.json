@@ -1,0 +1,166 @@
+{
+ "decided": "2026-10-19",
+ "note": "record of what primary sources state; not legal advice",
+ "decisions": [
+  {
+   "source": "in_financial",
+   "primary_url": "https://www.kaggle.com/datasets/mehaksingal/personal-financial-dataset-for-india",
+   "exact_terms": "Kaggle licence field: 'Database: Open Database, Contents: Database Contents' (ODbL 1.0 for the database; DbCL 1.0 for the contents)",
+   "commercial_use": "not established: DbCL s.2.1 grants a copyright licence over the Contents but s.3.1 provides them 'as is' without any warranty ... of title; the uploader does not claim to own the images",
+   "training_and_evaluation": "academic research / ML training / evaluation: NOT established for the images (title unverified); only the uploader's database rights are licensed",
+   "redistribution": "ODbL share-alike and attribution would apply to a public derived database; redistribution of third-party images not established",
+   "decision": "BLOCKED (kept excluded)",
+   "exact_permission_needed": "A written statement from the uploader (Kaggle user 'Mia') that she owns or may license the images, or per-image licences / issuer permission; and confirmation that none shows a real person's data. Alternative: keep only verified blank specimens/templates and treat them as non-evaluation data.",
+   "evidence_level": "primary_verified",
+   "evidence": [
+    "Kaggle page 'Financial Document Image Dataset' (owner Mia, updated 3 years ago): description says it holds 'personal financial and identification documents for individuals in India'",
+    "Kaggle Provenance: 'These images were collected from Google Images ... keyword searches ... 'utility bill template', 'bank statement example'' - no ownership claim",
+    "opendatacommons.org DbCL 1.0 s.2.1 / s.2.3 / s.3.1 (as quoted)",
+    "visual check of 12 random Salary/Form 16/Bank images: web specimens and templates with third-party brand names, a US-style 'Finance Bank' statement, a company balance sheet filed as bank statement, a blank ITR-2 filed as Form 16 - label noise and doubtful 'real' status"
+   ]
+  },
+  {
+   "source": "sroie",
+   "primary_url": "https://rrc.cvc.uab.es/?ch=13&com=downloads",
+   "exact_terms": "RRC challenge pages: registration required to access the downloads; no data terms shown. HF mirror jsdnrs/ICDAR2019-SROIE: licence field 'cc-by-4.0' (the arXiv paper 2103.10213 is itself CC-BY)",
+   "commercial_use": "unknown",
+   "training_and_evaluation": "unknown until the RRC terms are seen",
+   "redistribution": "unknown",
+   "decision": "REQUIRES CLARIFICATION (kept excluded)",
+   "exact_permission_needed": "The RRC portal terms of use accepted at registration (or written confirmation from the organisers) stating training/evaluation use; a mirror's CC-BY marking is not the data owner's licence.",
+   "evidence_level": "primary_verified (absence of terms)",
+   "evidence": [
+    "rrc.cvc.uab.es downloads + introduction pages read",
+    "HF card licence field",
+    "github.com/zzzDavid/ICDAR-2019-SROIE: MIT covers the code only; no data licence"
+   ]
+  },
+  {
+   "source": "funsd",
+   "primary_url": "https://guillaumejaume.github.io/FUNSD/work/",
+   "exact_terms": "'Use of the FUNSD Dataset is solely for non-commercial, research and educational purposes.' Original images are part of RVL-CDIP; users must determine what further clearances are needed",
+   "commercial_use": "NOT permitted",
+   "training_and_evaluation": "permitted for non-commercial research and education (training, evaluation)",
+   "redistribution": "not granted",
+   "decision": "APPROVED - non-commercial research only (tier 2)",
+   "exact_permission_needed": "none for research use; commercial use or redistribution would need EPFL-LTS5 and the RVL-CDIP rights holders.",
+   "evidence_level": "primary_verified",
+   "evidence": [
+    "FUNSD licence page (EPFL-LTS5 terms) read",
+    "199 forms, no document-type labels: usable only as class 'other'"
+   ]
+  },
+  {
+   "source": "hf_medical",
+   "primary_url": "https://huggingface.co/datasets/destryet/medical_bills",
+   "exact_terms": "no licence, no dataset card, no provenance or redaction statement (destryet/medical_bills: 15 PDFs; mirror sansverse/medical-bill-samples: 17 PDFs, also none)",
+   "commercial_use": "unknown",
+   "training_and_evaluation": "unknown",
+   "redistribution": "unknown",
+   "decision": "BLOCKED (kept excluded)",
+   "exact_permission_needed": "Written permission from the uploader or the issuing hospital/pharmacy, and confirmation that the bills are anonymised.",
+   "evidence_level": "primary_verified (absence of terms)",
+   "evidence": [
+    "both HF pages read: no licence field, no card"
+   ]
+  },
+  {
+   "source": "user_real",
+   "primary_url": "(user-supplied; no URL)",
+   "exact_terms": "198 US restaurant receipts; origin and rights unverified",
+   "commercial_use": "unknown",
+   "training_and_evaluation": "unknown",
+   "redistribution": "unknown",
+   "decision": "REQUIRES CLARIFICATION (kept excluded)",
+   "exact_permission_needed": "Owner attestation that the receipts were collected by the owner and may be used for ML training/evaluation, and that no personal card data is visible.",
+   "evidence_level": "unverified",
+   "evidence": [
+    "project record only"
+   ]
+  },
+  {
+   "source": "receiptbench",
+   "primary_url": "https://huggingface.co/datasets/T0rl/ReceiptBench",
+   "exact_terms": "HF licence field 'mit'; README empty - no statement of image provenance, consent or personal data",
+   "commercial_use": "not established",
+   "training_and_evaluation": "not established beyond the repo licence label",
+   "redistribution": "not established",
+   "decision": "REQUIRES CLARIFICATION (approval withdrawn on new evidence)",
+   "exact_permission_needed": "Uploader statement of image provenance and consent, or per-image licences.",
+   "evidence_level": "primary_verified (absence of terms)",
+   "evidence": [
+    "HF page read 2026-10-19: licence 'mit', README empty; earlier approval in approved-sources-v1 was based on the repo label alone"
+   ]
+  },
+  {
+   "source": "manual_in",
+   "primary_url": "(project owner collection)",
+   "exact_terms": "owner-collected Indian bills; rights unverified for third-party content",
+   "commercial_use": "unknown",
+   "training_and_evaluation": "internal development only (owner's own collection)",
+   "redistribution": "none",
+   "decision": "APPROVED - internal development only (tier 2, unchanged)",
+   "exact_permission_needed": "Owner attestation recorded in the consent register that no third-party personal data is retained.",
+   "evidence_level": "project_record",
+   "evidence": [
+    "unchanged from approved-sources-v1; attestation still outstanding"
+   ]
+  },
+  {
+   "source": "rvl_cdip",
+   "primary_url": "https://huggingface.co/datasets/aharley/rvl_cdip",
+   "exact_terms": "HF licence field 'other' (IIT-CDIP derivative; research use)",
+   "commercial_use": "not permitted",
+   "training_and_evaluation": "research use",
+   "redistribution": "not granted",
+   "decision": "APPROVED - research only (tier 2, unchanged)",
+   "exact_permission_needed": "none for research use",
+   "evidence_level": "primary_verified",
+   "evidence": [
+    "HF card licence field (register entry, 2026-10-19)"
+   ]
+  },
+  {
+   "source": "docile",
+   "primary_url": "https://docile.rossum.ai/",
+   "exact_terms": "code MIT; data via access-request form, academic purposes",
+   "commercial_use": "restricted",
+   "training_and_evaluation": "academic purposes after approval of the request",
+   "redistribution": "no",
+   "decision": "BLOCKED (no access granted)",
+   "exact_permission_needed": "Approved access request (needs a human applicant and acceptance of the terms).",
+   "evidence_level": "primary_verified (earlier round)",
+   "evidence": [
+    "register evidence"
+   ]
+  },
+  {
+   "source": "nutrient_doc_cls",
+   "primary_url": "https://huggingface.co/datasets/nutrientdocs/document-classification-benchmark",
+   "exact_terms": "licence 'nutrient-eval-restricted'",
+   "commercial_use": "restricted",
+   "training_and_evaluation": "evaluation-restricted",
+   "redistribution": "no",
+   "decision": "BLOCKED",
+   "exact_permission_needed": "Written terms permitting our use.",
+   "evidence_level": "primary_verified (earlier round)",
+   "evidence": [
+    "register evidence"
+   ]
+  },
+  {
+   "source": "kaggle_roboflow_zindi",
+   "primary_url": "(account-gated platforms)",
+   "exact_terms": "per dataset; account and acceptance of terms required",
+   "commercial_use": "per dataset",
+   "training_and_evaluation": "per dataset",
+   "redistribution": "per dataset",
+   "decision": "BLOCKED (not accessed)",
+   "exact_permission_needed": "A human with an account must read each dataset's terms; none selected.",
+   "evidence_level": "unverified",
+   "evidence": [
+    "register evidence"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,207 @@
+{
+ "disk_roots": {
+  "public/sroie": {
+   "image_or_pdf_files": 973,
+   "in_manifest": 958,
+   "exact_duplicate_of_manifested_file": 15,
+   "examples_unmanifested": []
+  },
+  "public/receiptbench": {
+   "image_or_pdf_files": 873,
+   "in_manifest": 867,
+   "exact_duplicate_of_manifested_file": 6,
+   "examples_unmanifested": []
+  },
+  "interim/my_receipts/images": {
+   "image_or_pdf_files": 1252,
+   "in_manifest": 1162,
+   "exact_duplicate_of_manifested_file": 90,
+   "examples_unmanifested": []
+  },
+  "public/indian_grocery_gst": {
+   "image_or_pdf_files": 169,
+   "in_manifest": 169,
+   "examples_unmanifested": []
+  },
+  "public/funsd": {
+   "image_or_pdf_files": 199,
+   "in_manifest": 199,
+   "examples_unmanifested": []
+  },
+  "public/rvl_cdip_160": {
+   "image_or_pdf_files": 0,
+   "examples_unmanifested": []
+  },
+  "public/invoices_receipts_pt": {
+   "image_or_pdf_files": 109,
+   "in_manifest": 109,
+   "examples_unmanifested": []
+  },
+  "interim/hf_medical_bills/images": {
+   "image_or_pdf_files": 15,
+   "in_manifest": 15,
+   "examples_unmanifested": []
+  },
+  "public/in_financial_docs": {
+   "image_or_pdf_files": 426,
+   "in_manifest": 390,
+   "exact_duplicate_of_manifested_file": 34,
+   "undecodable": 2,
+   "examples_unmanifested": []
+  },
+  "public/cord": {
+   "image_or_pdf_files": 0,
+   "examples_unmanifested": []
+  },
+  "real": {
+   "image_or_pdf_files": 200,
+   "in_manifest": 198,
+   "exact_duplicate_of_manifested_file": 2,
+   "examples_unmanifested": []
+  },
+  "indian": {
+   "image_or_pdf_files": 369,
+   "in_manifest": 368,
+   "exact_duplicate_of_manifested_file": 1,
+   "examples_unmanifested": []
+  },
+  "indian_all/real": {
+   "image_or_pdf_files": 837,
+   "exact_duplicate_of_manifested_file": 837,
+   "examples_unmanifested": []
+  }
+ },
+ "real_by_source": {
+  "cord": {
+   "rows": 998,
+   "approved": 998,
+   "flagged_for_review": 0,
+   "needs_mapping_review": 998,
+   "no_ocr": 0
+  },
+  "funsd": {
+   "rows": 199,
+   "approved": 199,
+   "flagged_for_review": 0,
+   "needs_mapping_review": 199,
+   "no_ocr": 0
+  },
+  "hf_medical": {
+   "rows": 15,
+   "approved": 0,
+   "flagged_for_review": 0,
+   "needs_mapping_review": 15,
+   "no_ocr": 0
+  },
+  "in_financial": {
+   "rows": 390,
+   "approved": 0,
+   "flagged_for_review": 1,
+   "needs_mapping_review": 86,
+   "no_ocr": 7
+  },
+  "in_grocery_gst": {
+   "rows": 169,
+   "approved": 169,
+   "flagged_for_review": 0,
+   "needs_mapping_review": 169,
+   "no_ocr": 0
+  },
+  "invoices_pt": {
+   "rows": 109,
+   "approved": 109,
+   "flagged_for_review": 0,
+   "needs_mapping_review": 109,
+   "no_ocr": 0
+  },
+  "manual_in": {
+   "rows": 368,
+   "approved": 368,
+   "flagged_for_review": 16,
+   "needs_mapping_review": 352,
+   "no_ocr": 0
+  },
+  "my_receipts": {
+   "rows": 1162,
+   "approved": 1162,
+   "flagged_for_review": 18,
+   "needs_mapping_review": 1144,
+   "no_ocr": 0
+  },
+  "receiptbench": {
+   "rows": 867,
+   "approved": 0,
+   "flagged_for_review": 34,
+   "needs_mapping_review": 833,
+   "no_ocr": 0
+  },
+  "rvl_cdip": {
+   "rows": 320,
+   "approved": 320,
+   "flagged_for_review": 0,
+   "needs_mapping_review": 0,
+   "no_ocr": 0
+  },
+  "sroie": {
+   "rows": 958,
+   "approved": 0,
+   "flagged_for_review": 9,
+   "needs_mapping_review": 949,
+   "no_ocr": 0
+  },
+  "user_real": {
+   "rows": 198,
+   "approved": 0,
+   "flagged_for_review": 0,
+   "needs_mapping_review": 198,
+   "no_ocr": 0
+  }
+ },
+ "groups": [
+  {
+   "group": "real docs excluded only by licence/provenance",
+   "docs": {
+    "in_financial": 390,
+    "sroie": 958,
+    "hf_medical": 15,
+    "user_real": 198,
+    "receiptbench": 867
+   },
+   "action": "none possible locally; each needs the exact permission in licensing_decisions.md (draft requests in PERMISSION_REQUESTS.md). Do not use until approved.",
+   "recoverable_now": false
+  },
+  {
+   "group": "approved real docs whose label is only a collection-rule mapping",
+   "docs": 2971,
+   "action": "human review of mapping_review_queue_v2_1.jsonl (286 records: 78 cue conflicts + spot checks)",
+   "recoverable_now": false
+  },
+  {
+   "group": "real docs flagged for review (OCR cue conflicts)",
+   "docs": 78,
+   "action": "human decision per record; keep out of evaluation until resolved",
+   "recoverable_now": false
+  },
+  {
+   "group": "real docs without OCR text",
+   "docs": 7,
+   "action": "in_financial only (blocked source); no OCR spent on unapproved data",
+   "recoverable_now": false
+  }
+ ],
+ "unmanifested_unique_decodable_by_root": {},
+ "v2_pool_note": "datasets/interim/v2_pool belongs to the blocked Task B V2 annotation track: not inspected",
+ "raw_manifest_dedup": {
+  "near_duplicate_pairs": 15153,
+  "exact_duplicates_dropped": 150,
+  "corrupt_dropped": 2,
+  "multi_member_groups": 463,
+  "largest_group": 162,
+  "cross_source_overlap_groups": {
+   "in_financial+manual_in": 3,
+   "receiptbench+user_real": 5,
+   "my_receipts+receiptbench+sroie": 1,
+   "receiptbench+sroie": 2
+  }
+ }
+}

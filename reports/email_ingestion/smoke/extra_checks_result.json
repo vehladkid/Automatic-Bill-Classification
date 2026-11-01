@@ -1,0 +1,33 @@
+{
+ "webhook_accepts_signed_event": [
+  202,
+  "accepted"
+ ],
+ "webhook_fetch_job_with_ImapProvider_outcomes": [
+  "fetch_retry",
+  "fetch_retry",
+  "fetch_retry",
+  "dead",
+  null
+ ],
+ "fetch_job_final_state": [
+  {
+   "key": "fetch:webhook:<w1@x>",
+   "state": "dead",
+   "attempts": 3,
+   "last_error": "NotImplementedError"
+  }
+ ],
+ "emails_created_from_webhook_event": 0,
+ "forged_From_with_auth_pass_for_other_domain_accepted_as_employee": [
+  "E1",
+  "ok"
+ ],
+ "any_recipient_accepted_when_HRBC_INGEST_MAILBOX_unset": [
+  "E1",
+  "ok"
+ ],
+ "ingest_db_mode": "0o644",
+ "inbox_dir_mode": "0o775",
+ "worker_loop_error_handling": "run.py logs exception class name only and sleeps; no alert, no counter"
+}

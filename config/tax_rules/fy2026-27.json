@@ -1,0 +1,307 @@
+{
+ "financial_year": "2026-27",
+ "assessment_year": "2027-28",
+ "legal_basis": "Income-tax Act, 2025 and Income-tax Rules, 2026 (effective 1 Apr 2026)",
+ "verification": {
+  "status": "SECONDARY_SOURCES_ONLY",
+  "checked_on": "2026-10-19",
+  "note": "Values were cross-checked against published secondary summaries, NOT against the official CBDT/Gazette text. A payroll/tax professional must confirm every value before use. Edit this file to change any rule; nothing is hardcoded in code.",
+  "sources": [
+   {
+    "topic": "slabs, 87A rebate, standard deduction (FY 2026-27 unchanged from Budget 2025)",
+    "url": "https://bankbazaar.com/tax/income-tax-slabs.html"
+   },
+   {
+    "topic": "Income-tax Act 2025 (in force 1 Apr 2026): 80C->s.123, 80D->s.126, limits retained",
+    "url": "https://calcguru.in/section-80c-now-section-123-deductions-fy-2026-27/"
+   },
+   {
+    "topic": "Income-tax Rules 2026: meal Rs200/meal, HRA metros 4->8, CEA Rs3000/month",
+    "url": "https://www.bdo.in/en-gb/news/2026/hra-to-childrens-education-allowance-new-income-tax-rules-bring-relief-to-salaried-class"
+   }
+  ]
+ },
+ "cess_rate": 0.04,
+ "regimes": {
+  "new": {
+   "slabs": [
+    [
+     400000,
+     0.0
+    ],
+    [
+     800000,
+     0.05
+    ],
+    [
+     1200000,
+     0.1
+    ],
+    [
+     1600000,
+     0.15
+    ],
+    [
+     2000000,
+     0.2
+    ],
+    [
+     2400000,
+     0.25
+    ],
+    [
+     null,
+     0.3
+    ]
+   ],
+   "standard_deduction": 75000,
+   "rebate_87a": {
+    "income_limit": 1200000,
+    "max_rebate": 60000,
+    "marginal_relief": true
+   },
+   "surcharge": [
+    [
+     5000000,
+     0.0
+    ],
+    [
+     10000000,
+     0.1
+    ],
+    [
+     20000000,
+     0.15
+    ],
+    [
+     null,
+     0.25
+    ]
+   ],
+   "allowed_deductions": [
+    "standard_deduction",
+    "80CCD2",
+    "meal_vouchers"
+   ]
+  },
+  "old": {
+   "slabs": [
+    [
+     250000,
+     0.0
+    ],
+    [
+     500000,
+     0.05
+    ],
+    [
+     1000000,
+     0.2
+    ],
+    [
+     null,
+     0.3
+    ]
+   ],
+   "senior_slabs": {
+    "60": [
+     [
+      300000,
+      0.0
+     ],
+     [
+      500000,
+      0.05
+     ],
+     [
+      1000000,
+      0.2
+     ],
+     [
+      null,
+      0.3
+     ]
+    ],
+    "80": [
+     [
+      500000,
+      0.0
+     ],
+     [
+      1000000,
+      0.2
+     ],
+     [
+      null,
+      0.3
+     ]
+    ]
+   },
+   "standard_deduction": 50000,
+   "rebate_87a": {
+    "income_limit": 500000,
+    "max_rebate": 12500,
+    "marginal_relief": false
+   },
+   "surcharge": [
+    [
+     5000000,
+     0.0
+    ],
+    [
+     10000000,
+     0.1
+    ],
+    [
+     20000000,
+     0.15
+    ],
+    [
+     50000000,
+     0.25
+    ],
+    [
+     null,
+     0.37
+    ]
+   ],
+   "allowed_deductions": [
+    "standard_deduction",
+    "professional_tax",
+    "hra",
+    "meal_vouchers",
+    "80C",
+    "80CCD1B",
+    "80CCD2",
+    "80D",
+    "80E",
+    "80EEB",
+    "24b"
+   ]
+  }
+ },
+ "exemptions": {
+  "hra": {
+   "regimes": [
+    "old"
+   ],
+   "basic_pct_metro": 0.5,
+   "basic_pct_non_metro": 0.4,
+   "rent_minus_basic_pct": 0.1,
+   "metro_cities": [
+    "Mumbai",
+    "Delhi",
+    "Kolkata",
+    "Chennai",
+    "Hyderabad",
+    "Pune",
+    "Bengaluru",
+    "Ahmedabad"
+   ],
+   "landlord_pan_required_above_annual_rent": 100000
+  },
+  "meal_vouchers": {
+   "regimes": [
+    "old",
+    "new"
+   ],
+   "per_meal": 200,
+   "note": "Exempt only for meals provided by employer (canteen/voucher); the voucher must be usable only for food/non-alcoholic drinks."
+  },
+  "professional_tax": {
+   "regimes": [
+    "old"
+   ],
+   "max": 2500
+  }
+ },
+ "deductions": {
+  "80C": {
+   "regimes": [
+    "old"
+   ],
+   "cap": 150000,
+   "sections_in_cap": [
+    "80C",
+    "80CCC",
+    "80CCD1"
+   ],
+   "subtypes": [
+    "epf_employee",
+    "ppf",
+    "elss",
+    "life_insurance",
+    "nsc",
+    "tax_saver_fd",
+    "sukanya_samriddhi",
+    "tuition_fee",
+    "home_loan_principal",
+    "stamp_duty_registration"
+   ],
+   "tuition_fee": {
+    "max_children": 2,
+    "tuition_component_only": true,
+    "note": "Tuition fee only; development fee, donations, transport, hostel, books, uniform excluded. Full-time course at school/college/university in India."
+   }
+  },
+  "80CCD1B": {
+   "regimes": [
+    "old"
+   ],
+   "cap": 50000,
+   "note": "Own NPS contribution, over and above the 80C cap."
+  },
+  "80CCD2": {
+   "regimes": [
+    "old",
+    "new"
+   ],
+   "pct_of_basic_da_old": 0.1,
+   "pct_of_basic_da_new": 0.14,
+   "note": "Employer NPS contribution; salary-structure item, needs payroll data."
+  },
+  "80D": {
+   "regimes": [
+    "old"
+   ],
+   "self_family_cap": 25000,
+   "self_family_cap_senior": 50000,
+   "parents_cap": 25000,
+   "parents_cap_senior": 50000,
+   "preventive_checkup_cap": 5000,
+   "overall_cap": 100000,
+   "cash_not_allowed_except_preventive": true
+  },
+  "80E": {
+   "regimes": [
+    "old"
+   ],
+   "cap": null,
+   "max_years": 8,
+   "interest_only": true,
+   "note": "Interest on loan for higher education of self/spouse/children. Principal is NOT deductible."
+  },
+  "24b": {
+   "regimes": [
+    "old"
+   ],
+   "self_occupied_cap": 200000,
+   "note": "Self-occupied home-loan interest. Let-out property not modelled (manual HR review)."
+  },
+  "80EEB": {
+   "regimes": [
+    "old"
+   ],
+   "cap": 150000,
+   "loan_sanction_window": [
+    "2019-04-01",
+    "2023-03-31"
+   ],
+   "note": "EV loan interest; only loans sanctioned inside the window. New loans are not eligible."
+  }
+ },
+ "review_only": {
+  "ev_lease_or_reimbursement": "Employer-provided EV lease/reimbursement perquisite treatment is not computed here; it is flagged for payroll/tax-team determination.",
+  "other": "Any other exemption/deduction is held at 0 eligible until HR records a reason-coded override."
+ }
+}

@@ -1,0 +1,30 @@
+{
+ "val": {
+  "n": 243,
+  "le4": 227,
+  "le8": 243,
+  "identical": 80
+ },
+ "test": {
+  "n": 243,
+  "le4": 233,
+  "le8": 242,
+  "identical": 84
+ },
+ "ncc_and_text": {
+  "val": {
+   "n": 243,
+   "ncc_ge_0_90": 197,
+   "ncc_ge_0_95": 177,
+   "trigram_jaccard_ge_0_6_of_first_120": 21,
+   "median_jaccard": 0.48369372562920954
+  },
+  "test": {
+   "n": 243,
+   "ncc_ge_0_90": 207,
+   "ncc_ge_0_95": 182,
+   "trigram_jaccard_ge_0_6_of_first_120": 27,
+   "median_jaccard": 0.5079600351339482
+  }
+ }
+}

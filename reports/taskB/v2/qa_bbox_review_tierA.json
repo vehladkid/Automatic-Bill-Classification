@@ -1,0 +1,577 @@
+{
+ "p01": {
+  "merchant_name": {
+   "verdict": "correct",
+   "note": "'MALATI TRADING' in 'For:' signature block, tight"
+  },
+  "gstin": {
+   "verdict": "correct",
+   "note": "19KIIPS0609M1ZJ seller GSTIN, tight"
+  },
+  "invoice_number": {
+   "verdict": "correct",
+   "note": "EV/25-26/5315 after Bill No"
+  },
+  "invoice_date": {
+   "verdict": "correct",
+   "note": "10-09-2025"
+  },
+  "taxable_value": {
+   "verdict": "correct",
+   "note": "21249.73 under Taxable Amt in totals row"
+  },
+  "discount": {
+   "verdict": "correct",
+   "note": "2737.86 under 'Scheme Value' in totals row (Tr Dis Amt is 0.00); scheme value is the only discount-like total, plausible but label is not 'discount'"
+  },
+  "cgst": {
+   "verdict": "correct",
+   "note": "531.26 under CGST Amt"
+  },
+  "sgst": {
+   "verdict": "correct",
+   "note": "531.26 under SGST Amt; different printed number from cgst box"
+  },
+  "total_amount": {
+   "verdict": "correct",
+   "note": "22312.00 under Invoice Value (Net Amt printed 22312.25)"
+  },
+  "hsn_sac": [
+   {
+    "verdict": "correct",
+    "note": "0910 row 27"
+   },
+   {
+    "verdict": "correct",
+    "note": "0904 row 28"
+   },
+   {
+    "verdict": "correct",
+    "note": "0909 row 35"
+   }
+  ]
+ },
+ "p02": {
+  "merchant_name": {
+   "verdict": "correct",
+   "note": "DEVA LOGISTICS header"
+  },
+  "gstin": {
+   "verdict": "correct",
+   "note": "19AAKFD5162A1ZN seller GSTIN"
+  },
+  "invoice_number": {
+   "verdict": "correct",
+   "note": "27444"
+  },
+  "invoice_date": {
+   "verdict": "correct",
+   "note": "2025-11-08"
+  },
+  "taxable_value": {
+   "verdict": "correct",
+   "note": "4254.04 totals row"
+  },
+  "cgst": {
+   "verdict": "correct",
+   "note": "106.35 Central Tax amount total"
+  },
+  "sgst": {
+   "verdict": "correct",
+   "note": "106.35 State Tax amount total; different cell from cgst"
+  },
+  "total_amount": {
+   "verdict": "correct",
+   "note": "4466.74 Net Amount"
+  },
+  "hsn_sac": [
+   {
+    "verdict": "correct",
+    "note": "4012000 row 1 (no leading 0 printed)"
+   },
+   {
+    "verdict": "correct",
+    "note": "04022990 row 2"
+   }
+  ]
+ },
+ "p03": {
+  "merchant_name": {
+   "verdict": "correct",
+   "note": "Ekadant Agency"
+  },
+  "gstin": {
+   "verdict": "correct",
+   "note": "19AGSPG8435F1ZZ seller GSTIN"
+  },
+  "invoice_number": {
+   "verdict": "correct",
+   "note": "INVK/25-26/20545"
+  },
+  "invoice_date": {
+   "verdict": "correct",
+   "note": "26/09/2025"
+  },
+  "tax_total": {
+   "verdict": "correct",
+   "note": "78.62 under Total Tax"
+  },
+  "taxable_value": {
+   "verdict": "correct",
+   "note": "1572.43 TotTaxable"
+  },
+  "discount": {
+   "verdict": "correct",
+   "note": "104.14 under Total Disc"
+  },
+  "cgst": {
+   "verdict": "correct",
+   "note": "39.31 after Tot CGST"
+  },
+  "sgst": {
+   "verdict": "correct",
+   "note": "39.31 after Tot SGST; different cell from cgst"
+  },
+  "total_amount": {
+   "verdict": "correct",
+   "note": "1,651.00 under Total Amt"
+  },
+  "hsn_sac": [
+   {
+    "verdict": "correct",
+    "note": "19041090 row 1"
+   },
+   {
+    "verdict": "correct",
+    "note": "19041010 row 3"
+   },
+   {
+    "verdict": "correct",
+    "note": "19019090 row 5"
+   }
+  ]
+ },
+ "p04": {
+  "merchant_name": {
+   "verdict": "loose",
+   "note": "covers 'SHIV SHANKAR EDIBLE PVT.' but cuts off the final word 'LTD.'"
+  },
+  "gstin": {
+   "verdict": "correct",
+   "note": ": 19AAPCS8731C1Z0 seller GSTIN (leading colon included)"
+  },
+  "invoice_number": {
+   "verdict": "correct",
+   "note": "SSEPL-40655"
+  },
+  "invoice_date": {
+   "verdict": "wrong",
+   "note": "small box sits on the 'Printed on 1.Aug.25..' line above, not on '12-Aug-25' next to DATE"
+  },
+  "taxable_value": {
+   "verdict": "correct",
+   "note": "48402.20 AMOUNT BEFORE TAX"
+  },
+  "tax_total": {
+   "verdict": "correct",
+   "note": "1,536.94 in totals row Total Tax Amount"
+  },
+  "cgst": {
+   "verdict": "correct",
+   "note": "768.47 under CGST Amount in Total row. cgst and sgst boxes are drawn on the SAME number (the left 768.47)"
+  },
+  "sgst": {
+   "verdict": "wrong",
+   "note": "same box as cgst, on the CGST-column 768.47; the SGST-column 768.47 to its right is unboxed"
+  },
+  "round_off": {
+   "verdict": "correct",
+   "note": "(-)0.14 ROUND OFF"
+  },
+  "total_amount": {
+   "verdict": "correct",
+   "note": "'TOTAL BILL AMOUNT : Rs 49939.00' - box includes label text plus value, acceptable"
+  },
+  "hsn_sac": [
+   {
+    "verdict": "correct",
+    "note": "07134000 row 1"
+   },
+   {
+    "verdict": "correct",
+    "note": "box sits on an HSN cell of row; digits partly hidden by overlapping label text, position plausible"
+   },
+   {
+    "verdict": "correct",
+    "note": "box sits on an HSN cell of row; digits partly hidden by overlapping label text, position plausible"
+   },
+   {
+    "verdict": "correct",
+    "note": "box sits on an HSN cell of row; digits partly hidden by overlapping label text, position plausible"
+   },
+   {
+    "verdict": "correct",
+    "note": "box sits on an HSN cell of row; digits partly hidden by overlapping label text, position plausible"
+   },
+   {
+    "verdict": "correct",
+    "note": "box sits on an HSN cell of row; digits partly hidden by overlapping label text, position plausible"
+   },
+   {
+    "verdict": "correct",
+    "note": "box sits on an HSN cell of row; digits partly hidden by overlapping label text, position plausible"
+   },
+   {
+    "verdict": "correct",
+    "note": "box sits on an HSN cell of row; digits partly hidden by overlapping label text, position plausible"
+   },
+   {
+    "verdict": "correct",
+    "note": "box sits on an HSN cell of row; digits partly hidden by overlapping label text, position plausible"
+   },
+   {
+    "verdict": "correct",
+    "note": "box sits on an HSN cell of row; digits partly hidden by overlapping label text, position plausible"
+   },
+   {
+    "verdict": "correct",
+    "note": "box sits on an HSN cell of row; digits partly hidden by overlapping label text, position plausible"
+   },
+   {
+    "verdict": "correct",
+    "note": "box sits on an HSN cell of row; digits partly hidden by overlapping label text, position plausible"
+   },
+   {
+    "verdict": "correct",
+    "note": "box sits on an HSN cell of row; digits partly hidden by overlapping label text, position plausible"
+   },
+   {
+    "verdict": "correct",
+    "note": "box sits on an HSN cell of row; digits partly hidden by overlapping label text, position plausible"
+   },
+   {
+    "verdict": "correct",
+    "note": "box sits on an HSN cell of row; digits partly hidden by overlapping label text, position plausible"
+   },
+   {
+    "verdict": "correct",
+    "note": "box sits on an HSN cell of row; digits partly hidden by overlapping label text, position plausible"
+   },
+   {
+    "verdict": "correct",
+    "note": "box sits on an HSN cell of row; digits partly hidden by overlapping label text, position plausible"
+   },
+   {
+    "verdict": "correct",
+    "note": "box sits on an HSN cell of row; digits partly hidden by overlapping label text, position plausible"
+   },
+   {
+    "verdict": "correct",
+    "note": "box sits on an HSN cell of row; digits partly hidden by overlapping label text, position plausible"
+   },
+   {
+    "verdict": "correct",
+    "note": "box sits on an HSN cell of row; digits partly hidden by overlapping label text, position plausible"
+   },
+   {
+    "verdict": "correct",
+    "note": "box sits on an HSN cell of row; digits partly hidden by overlapping label text, position plausible"
+   },
+   {
+    "verdict": "correct",
+    "note": "box sits on an HSN cell of row; digits partly hidden by overlapping label text, position plausible"
+   },
+   {
+    "verdict": "correct",
+    "note": "box sits on an HSN cell of row; digits partly hidden by overlapping label text, position plausible"
+   }
+  ]
+ },
+ "p05": {
+  "merchant_name": {
+   "verdict": "correct",
+   "note": "BINOY TRADING COMPANY"
+  },
+  "gstin": {
+   "verdict": "correct",
+   "note": "19AHXPG3761A1Z7 seller GSTIN"
+  },
+  "taxable_value": {
+   "verdict": "correct",
+   "note": "2,928.41 Total row"
+  },
+  "discount": {
+   "verdict": "correct",
+   "note": "167.63 Total row Disc"
+  },
+  "cgst": {
+   "verdict": "correct",
+   "note": "73.21 Central Tax total"
+  },
+  "sgst": {
+   "verdict": "correct",
+   "note": "73.21 State/UT Tax total; different cell from cgst"
+  },
+  "total_amount": {
+   "verdict": "correct",
+   "note": "3,075.00 Invoice Value"
+  },
+  "hsn_sac": [
+   {
+    "verdict": "correct",
+    "note": "210690 row 1"
+   }
+  ],
+  "round_off_unboxed": "printed value (0.17)-like is visible beside Round Off but partly overlapped by the total_amount label"
+ },
+ "p06": {
+  "merchant_name": {
+   "verdict": "loose",
+   "note": "box spans 'SCOOTSY LOGISTICS PRIVATE LIMITED' but also the top of the next address line ('J.L No 8, L.R Dag No 318, Mouza Bhagawanpur') and starts left of the text"
+  },
+  "gstin": {
+   "verdict": "correct",
+   "note": "19AAVCS1691R1Z2 seller GSTIN"
+  },
+  "invoice_number": {
+   "verdict": "correct",
+   "note": "G2521421... after Bill No; box slightly shifted up but contains the number (partly obscured by labels)"
+  },
+  "invoice_date": {
+   "verdict": "loose",
+   "note": "box is shifted down/left; covers '9/08/2025' but clips the leading '1' of 19/08/2025 and extends onto the Salesman line"
+  },
+  "taxable_value": {
+   "verdict": "correct",
+   "note": "5,729.03 Taxable Amt (partly hidden by label)"
+  },
+  "discount": {
+   "verdict": "correct",
+   "note": "Total Disc value (~185.85) (digits hidden by label but row correct)"
+  },
+  "tax_total": {
+   "verdict": "correct",
+   "note": "1,031.23 Total Tax"
+  },
+  "cgst": {
+   "verdict": "correct",
+   "note": "515.61 CGST Amount"
+  },
+  "sgst": {
+   "verdict": "correct",
+   "note": "515.61 SGST Amount; different cell from cgst"
+  },
+  "total_amount": {
+   "verdict": "correct",
+   "note": "6,760.00 Grand Total"
+  },
+  "hsn_sac": [
+   {
+    "verdict": "loose",
+    "note": "box covers '38089199' AND the adjacent MRP '99.00' cell"
+   }
+  ]
+ },
+ "p07": {
+  "merchant_name": {
+   "verdict": "loose",
+   "note": "box covers only 'ENTERPRISE'; the preceding word 'DURGA' is cut off/occluded by torn paper edge so full name not enclosed"
+  },
+  "gstin": {
+   "verdict": "correct",
+   "note": "19ACZPA2498R1ZE seller GSTIN"
+  },
+  "invoice_number": {
+   "verdict": "correct",
+   "note": "X252601262"
+  },
+  "invoice_date": {
+   "verdict": "correct",
+   "note": "25.Sep2025"
+  },
+  "taxable_value": {
+   "verdict": "correct",
+   "note": "2851.72 in Total row"
+  },
+  "discount": {
+   "verdict": "correct",
+   "note": "128.00 Disc. Amt"
+  },
+  "tax_total": {
+   "verdict": "correct",
+   "note": "'Net GST 142.58' - label plus value, acceptable"
+  },
+  "cgst": {
+   "verdict": "correct",
+   "note": "71.29 CGST AMT total"
+  },
+  "sgst": {
+   "verdict": "correct",
+   "note": "71.29 SGST AMT total; different cell from cgst"
+  },
+  "total_amount": {
+   "verdict": "correct",
+   "note": "2994.00 Roundoff To / final"
+  },
+  "hsn_sac": [
+   {
+    "verdict": "correct",
+    "note": "09042211 row 2"
+   },
+   {
+    "verdict": "correct",
+    "note": "09109100 row 3"
+   },
+   {
+    "verdict": "correct",
+    "note": "'0909' row 4 (value appears truncated in print)"
+   },
+   {
+    "verdict": "correct",
+    "note": "90902200 row 7"
+   },
+   {
+    "verdict": "correct",
+    "note": "09103030 row 9"
+   }
+  ],
+  "round_off_unboxed": "not visible as a separate printed value (only 'Roundoff To' label and 2994.30 -> 2994.00)"
+ },
+ "p08": {
+  "merchant_name": {
+   "verdict": "correct",
+   "note": "SHAW TRADERS in 'for M/S SHAW TRADERS' signature block"
+  },
+  "gstin": {
+   "verdict": "correct",
+   "note": "19FTMPS2304R1ZS seller GSTIN"
+  },
+  "invoice_number": {
+   "verdict": "correct",
+   "note": "ST/25-26/5673"
+  },
+  "invoice_date": {
+   "verdict": "correct",
+   "note": "7-Nov-25"
+  },
+  "taxable_value": {
+   "verdict": "correct",
+   "note": "1,664.88 subtotal under amount column"
+  },
+  "tax_total": {
+   "verdict": "correct",
+   "note": "83.24 in tax summary table"
+  },
+  "cgst": {
+   "verdict": "correct",
+   "note": "41.62 CGST line in amount column"
+  },
+  "sgst": {
+   "verdict": "correct",
+   "note": "41.62 SGST line in amount column; different line from cgst (partly overlapped by labels)"
+  },
+  "round_off": {
+   "verdict": "correct",
+   "note": "(-)0.12 tight"
+  },
+  "total_amount": {
+   "verdict": "correct",
+   "note": "Rs 1,748.00 Total row"
+  },
+  "hsn_sac": [
+   {
+    "verdict": "correct",
+    "note": "19041090 row 1"
+   },
+   {
+    "verdict": "correct",
+    "note": "20081100 row 2"
+   }
+  ]
+ },
+ "p09": {
+  "merchant_name": {
+   "verdict": "correct",
+   "note": "B R Enterprise under Seller Name"
+  },
+  "gstin": {
+   "verdict": "correct",
+   "note": ": 19ADIPR2799G1ZV seller GSTIN"
+  },
+  "invoice_number": {
+   "verdict": "correct",
+   "note": "E...5501-like invoice no after Invoice No, partly covered by labels, box encloses it"
+  },
+  "invoice_date": {
+   "verdict": "correct",
+   "note": "09.10.2025, box slightly below baseline but encloses it"
+  },
+  "hsn_sac": [
+   {
+    "verdict": "correct",
+    "note": "'0 HSN: 3306.10.20' header line incl. serial 0 and HSN label; value enclosed"
+   },
+   {
+    "verdict": "correct",
+    "note": "'0 HSN: 9603.21.00' same"
+   }
+  ]
+ },
+ "p10": {
+  "merchant_name": {
+   "verdict": "correct",
+   "note": "S.S. Agencies, slight bleed onto top of next line"
+  },
+  "invoice_number": {
+   "verdict": "correct",
+   "note": "GST/4851/25-26"
+  },
+  "invoice_date": {
+   "verdict": "correct",
+   "note": "28-Oct-25"
+  },
+  "taxable_value": {
+   "verdict": "correct",
+   "note": "8,513.71"
+  },
+  "tax_total": {
+   "verdict": "correct",
+   "note": "425.70 Total tax amount"
+  },
+  "cgst": {
+   "verdict": "correct",
+   "note": "212.85 CGST line (partly hidden by label)"
+  },
+  "sgst": {
+   "verdict": "correct",
+   "note": "212.85 SGST line; different printed line from cgst"
+  },
+  "discount": {
+   "verdict": "wrong",
+   "note": "tiny square on the serial-number column left of 'Sree Ghee 100ml'; the discount value (-)6.00 sits at far right and is not boxed (the (-)6.00 is covered only by the round_off label)"
+  },
+  "round_off": {
+   "verdict": "correct",
+   "note": "(-)0.41 Rounded Off"
+  },
+  "total_amount": {
+   "verdict": "correct",
+   "note": "Rs 8,933.00"
+  },
+  "hsn_sac": [
+   {
+    "verdict": "correct",
+    "note": "15162091 summary table"
+   },
+   {
+    "verdict": "correct",
+    "note": "04059020 item row 4"
+   },
+   {
+    "verdict": "correct",
+    "note": "15149120 summary table"
+   }
+  ],
+  "gstin_unboxed": "seller GSTIN 19BDEPS3594P1ZJ is visible in header"
+ }
+}

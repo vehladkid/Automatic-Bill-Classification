@@ -1,0 +1,20 @@
+{
+ "version": "approved-sources-v2",
+ "supersedes": "approved-sources-v1 (kept unchanged for reproducibility of reports/doc_type/experiments_v3 baseline)",
+ "decided": "2026-10-19",
+ "evidence": "reports/doc_type/licensing_and_collection/licensing_decisions.json",
+ "rule": "Approved only when a PRIMARY source states terms that cover the intended use (internal, non-commercial ML research: training, evaluation, benchmarking) or the project owner holds the rights. Sources whose title/chain of rights, provenance or terms cannot be verified stay excluded until the exact permission listed under excluded_until_cleared is obtained. 'Academic use' is never read as commercial permission. No tier permits redistribution of the raw data or of derived datasets.",
+ "tier1_usable": ["cord", "in_grocery_gst", "invoices_pt", "my_receipts", "synthetic_in", "agami_indian_bank_statements", "fatura", "synthgen_v1"],
+ "tier2_restricted_known_terms": {
+  "rvl_cdip": "research use only (IIT-CDIP derivative); no commercial use, no redistribution",
+  "manual_in": "project-owner collected; owner must attest rights and that no third-party personal data is retained - internal development only",
+  "funsd": "primary terms (EPFL-LTS5 licence page): 'solely for non-commercial, research and educational purposes'; images originate from RVL-CDIP; no redistribution; 199 forms with no document-type labels (class 'other' only)"
+ },
+ "excluded_until_cleared": {
+  "in_financial": "NOT APPROVED. Kaggle mehaksingal/personal-financial-dataset-for-india: images scraped from Google Images; DbCL 1.0 disclaims title (s.3.1), uploader does not claim ownership. Needed: written statement of rights from the uploader or per-image licences (or restrict to verified specimen/template images), plus confirmation that no personal data is present.",
+  "sroie": "REQUIRES CLARIFICATION. HF mirror card says CC-BY-4.0 but the ICDAR RRC portal (data owner) shows no terms on the challenge pages and requires registration; the CC-BY marking matches the arXiv paper licence, not the data. Needed: RRC terms of use accepted at registration, or written confirmation from the organisers.",
+  "hf_medical": "BLOCKED. No licence, no dataset card, no provenance on destryet/medical_bills (15 PDFs) or sansverse/medical-bill-samples (17 PDFs); redaction claim unverified. Needed: written permission from the uploader or the bills' issuer.",
+  "user_real": "REQUIRES CLARIFICATION. 198 US restaurant receipts with unverified origin; owner must attest they collected them and that they hold the right to use them.",
+  "receiptbench": "REQUIRES CLARIFICATION (tightened from approved-sources-v1 on new evidence). HF repo licence 'mit' but the README is empty: no provenance, consent or personal-data statement for real personal receipts. Needed: uploader statement on image provenance and consent, or per-image licences."
+ }
+}

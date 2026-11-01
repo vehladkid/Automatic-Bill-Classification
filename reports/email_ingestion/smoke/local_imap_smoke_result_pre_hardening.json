@@ -1,0 +1,197 @@
+{
+ "tls_self_signed_cert_accepted_without_verification": true,
+ "models_loaded": {
+  "ocr": true,
+  "task_a": true,
+  "task_b": true,
+  "errors": {}
+ },
+ "poll1_messages_ingested": 7,
+ "server_seen_after_poll1": [
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7
+ ],
+ "emails_after_poll1": [
+  [
+   1,
+   "QUEUED",
+   null,
+   2
+  ],
+  [
+   2,
+   "REJECTED",
+   "sender_not_authorised",
+   0
+  ],
+  [
+   3,
+   "COMPLETED",
+   null,
+   1
+  ],
+  [
+   4,
+   "FAILED",
+   null,
+   1
+  ],
+  [
+   5,
+   "COMPLETED",
+   null,
+   0
+  ],
+  [
+   6,
+   "COMPLETED",
+   null,
+   1
+  ]
+ ],
+ "attachments_after_ingest": [
+  [
+   1,
+   0,
+   "bill.pdf",
+   "QUEUED",
+   null
+  ],
+  [
+   1,
+   1,
+   "slip.jpg",
+   "QUEUED",
+   null
+  ],
+  [
+   3,
+   0,
+   "inner.pdf",
+   "DUPLICATE",
+   "duplicate_content"
+  ],
+  [
+   4,
+   0,
+   "a.zip",
+   "FAILED",
+   "unsupported_type"
+  ],
+  [
+   6,
+   0,
+   "bill2.pdf",
+   "DUPLICATE",
+   "duplicate_content"
+  ]
+ ],
+ "jobs_processed": 2,
+ "attachments_after_worker": [
+  [
+   1,
+   "bill.pdf",
+   "COMPLETED",
+   null
+  ],
+  [
+   1,
+   "slip.jpg",
+   "REVIEW_REQUIRED",
+   "invoice_date not found"
+  ],
+  [
+   3,
+   "inner.pdf",
+   "DUPLICATE",
+   "Same file already submitted (attachment 1); not processed again."
+  ],
+  [
+   4,
+   "a.zip",
+   "FAILED",
+   "zip/office archive files are not accepted. Send the bill as PDF, JPG or PNG."
+  ],
+  [
+   6,
+   "bill2.pdf",
+   "DUPLICATE",
+   "Same file already submitted (attachment 1); not processed again."
+  ]
+ ],
+ "emails_after_worker": [
+  [
+   1,
+   "REVIEW_REQUIRED"
+  ],
+  [
+   2,
+   "REJECTED"
+  ],
+  [
+   3,
+   "COMPLETED"
+  ],
+  [
+   4,
+   "FAILED"
+  ],
+  [
+   5,
+   "COMPLETED"
+  ],
+  [
+   6,
+   "COMPLETED"
+  ]
+ ],
+ "poll2_messages_ingested(should be 0)": 0,
+ "rejected_message_marked_seen_on_server": true,
+ "employee_E1_documents": [
+  {
+   "status": "COMPLETED",
+   "category": "food",
+   "document_type": "expense_bill",
+   "channel": "email",
+   "has_email": true
+  },
+  {
+   "status": "REVIEW_REQUIRED",
+   "category": "non_expense",
+   "document_type": "non_expense_document",
+   "channel": "email",
+   "has_email": true
+  }
+ ],
+ "employee_E2_documents": 0,
+ "sample_document_fields_present": [
+  "invoice_date",
+  "merchant_name",
+  "total_amount"
+ ],
+ "sample_task_a": {
+  "category": null,
+  "route": "auto"
+ },
+ "sample_ocr_source": "pdf_text_layer",
+ "notifications_E1": 2,
+ "raw_inbox_files_left": 0,
+ "imap_commands_seen": [
+  "CAPABILITY",
+  "LOGIN",
+  "LOGOUT",
+  "SELECT",
+  "UID FETCH",
+  "UID SEARCH",
+  "UID STORE"
+ ],
+ "bad_credentials": "error (raised to caller; run.py loop logs the class name only and sleeps)",
+ "poison_message_blocks_later_mail": "poll_once raised FileNotFoundError: later messages in the same poll were not ingested; message stays UNSEEN and fails identically every cycle",
+ "emails_total_after_poison": 0,
+ "elapsed_s": 18.5
+}

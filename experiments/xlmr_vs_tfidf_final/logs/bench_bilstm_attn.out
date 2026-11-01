@@ -1,0 +1,2 @@
+bilstm_attn cpu model-only 4.09 ms | end-to-end 4.25 ms | docs/s bs1/8/32: {1: 192.2, 8: 508.4, 32: 687.0}
+bilstm_attn cuda model-only 1.65 ms | end-to-end 1.82 ms | docs/s bs1/8/32: {1: 480.3, 8: 1676.9, 32: 3375.1}

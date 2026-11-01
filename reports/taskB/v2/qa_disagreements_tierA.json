@@ -1,0 +1,1276 @@
+{
+ "disagreements": [
+  {
+   "page": "p02",
+   "document_id": "in_grocery_gst__20251117_234610",
+   "family": "web",
+   "field": "discount",
+   "claude": null,
+   "reviewer": "0.00",
+   "reviewer_note": "Discount row prints 0.00",
+   "claude_note": "no discount printed"
+  }
+ ],
+ "rows": [
+  {
+   "page": "p01",
+   "family": "Marg(edge:page2of2)",
+   "field": "merchant_name",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": false,
+   "rev_null": false
+  },
+  {
+   "page": "p01",
+   "family": "Marg(edge:page2of2)",
+   "field": "gstin",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": false,
+   "rev_null": false
+  },
+  {
+   "page": "p01",
+   "family": "Marg(edge:page2of2)",
+   "field": "invoice_number",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": false,
+   "rev_null": false
+  },
+  {
+   "page": "p01",
+   "family": "Marg(edge:page2of2)",
+   "field": "invoice_date",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": false,
+   "rev_null": false
+  },
+  {
+   "page": "p01",
+   "family": "Marg(edge:page2of2)",
+   "field": "subtotal",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": true,
+   "rev_null": true
+  },
+  {
+   "page": "p01",
+   "family": "Marg(edge:page2of2)",
+   "field": "taxable_value",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": false,
+   "rev_null": false
+  },
+  {
+   "page": "p01",
+   "family": "Marg(edge:page2of2)",
+   "field": "discount",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": false,
+   "rev_null": false
+  },
+  {
+   "page": "p01",
+   "family": "Marg(edge:page2of2)",
+   "field": "round_off",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": true,
+   "rev_null": true
+  },
+  {
+   "page": "p01",
+   "family": "Marg(edge:page2of2)",
+   "field": "tax_total",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": true,
+   "rev_null": true
+  },
+  {
+   "page": "p01",
+   "family": "Marg(edge:page2of2)",
+   "field": "cgst",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": false,
+   "rev_null": false
+  },
+  {
+   "page": "p01",
+   "family": "Marg(edge:page2of2)",
+   "field": "sgst",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": false,
+   "rev_null": false
+  },
+  {
+   "page": "p01",
+   "family": "Marg(edge:page2of2)",
+   "field": "igst",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": true,
+   "rev_null": true
+  },
+  {
+   "page": "p01",
+   "family": "Marg(edge:page2of2)",
+   "field": "hsn_sac",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": false,
+   "rev_null": false
+  },
+  {
+   "page": "p01",
+   "family": "Marg(edge:page2of2)",
+   "field": "total_amount",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": false,
+   "rev_null": false
+  },
+  {
+   "page": "p02",
+   "family": "web",
+   "field": "merchant_name",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": false,
+   "rev_null": false
+  },
+  {
+   "page": "p02",
+   "family": "web",
+   "field": "gstin",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": false,
+   "rev_null": false
+  },
+  {
+   "page": "p02",
+   "family": "web",
+   "field": "invoice_number",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": false,
+   "rev_null": false
+  },
+  {
+   "page": "p02",
+   "family": "web",
+   "field": "invoice_date",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": false,
+   "rev_null": false
+  },
+  {
+   "page": "p02",
+   "family": "web",
+   "field": "subtotal",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": true,
+   "rev_null": true
+  },
+  {
+   "page": "p02",
+   "family": "web",
+   "field": "taxable_value",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": false,
+   "rev_null": false
+  },
+  {
+   "page": "p02",
+   "family": "web",
+   "field": "discount",
+   "agree": false,
+   "null_agree": true,
+   "mine_null": true,
+   "rev_null": true
+  },
+  {
+   "page": "p02",
+   "family": "web",
+   "field": "round_off",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": true,
+   "rev_null": true
+  },
+  {
+   "page": "p02",
+   "family": "web",
+   "field": "tax_total",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": true,
+   "rev_null": true
+  },
+  {
+   "page": "p02",
+   "family": "web",
+   "field": "cgst",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": false,
+   "rev_null": false
+  },
+  {
+   "page": "p02",
+   "family": "web",
+   "field": "sgst",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": false,
+   "rev_null": false
+  },
+  {
+   "page": "p02",
+   "family": "web",
+   "field": "igst",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": true,
+   "rev_null": true
+  },
+  {
+   "page": "p02",
+   "family": "web",
+   "field": "hsn_sac",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": false,
+   "rev_null": false
+  },
+  {
+   "page": "p02",
+   "family": "web",
+   "field": "total_amount",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": false,
+   "rev_null": false
+  },
+  {
+   "page": "p03",
+   "family": "ERP",
+   "field": "merchant_name",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": false,
+   "rev_null": false
+  },
+  {
+   "page": "p03",
+   "family": "ERP",
+   "field": "gstin",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": false,
+   "rev_null": false
+  },
+  {
+   "page": "p03",
+   "family": "ERP",
+   "field": "invoice_number",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": false,
+   "rev_null": false
+  },
+  {
+   "page": "p03",
+   "family": "ERP",
+   "field": "invoice_date",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": false,
+   "rev_null": false
+  },
+  {
+   "page": "p03",
+   "family": "ERP",
+   "field": "subtotal",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": true,
+   "rev_null": true
+  },
+  {
+   "page": "p03",
+   "family": "ERP",
+   "field": "taxable_value",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": false,
+   "rev_null": false
+  },
+  {
+   "page": "p03",
+   "family": "ERP",
+   "field": "discount",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": false,
+   "rev_null": false
+  },
+  {
+   "page": "p03",
+   "family": "ERP",
+   "field": "round_off",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": true,
+   "rev_null": true
+  },
+  {
+   "page": "p03",
+   "family": "ERP",
+   "field": "tax_total",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": false,
+   "rev_null": false
+  },
+  {
+   "page": "p03",
+   "family": "ERP",
+   "field": "cgst",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": false,
+   "rev_null": false
+  },
+  {
+   "page": "p03",
+   "family": "ERP",
+   "field": "sgst",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": false,
+   "rev_null": false
+  },
+  {
+   "page": "p03",
+   "family": "ERP",
+   "field": "igst",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": true,
+   "rev_null": true
+  },
+  {
+   "page": "p03",
+   "family": "ERP",
+   "field": "hsn_sac",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": false,
+   "rev_null": false
+  },
+  {
+   "page": "p03",
+   "family": "ERP",
+   "field": "total_amount",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": false,
+   "rev_null": false
+  },
+  {
+   "page": "p04",
+   "family": "Marg",
+   "field": "merchant_name",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": false,
+   "rev_null": false
+  },
+  {
+   "page": "p04",
+   "family": "Marg",
+   "field": "gstin",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": false,
+   "rev_null": false
+  },
+  {
+   "page": "p04",
+   "family": "Marg",
+   "field": "invoice_number",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": false,
+   "rev_null": false
+  },
+  {
+   "page": "p04",
+   "family": "Marg",
+   "field": "invoice_date",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": false,
+   "rev_null": false
+  },
+  {
+   "page": "p04",
+   "family": "Marg",
+   "field": "subtotal",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": true,
+   "rev_null": true
+  },
+  {
+   "page": "p04",
+   "family": "Marg",
+   "field": "taxable_value",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": false,
+   "rev_null": false
+  },
+  {
+   "page": "p04",
+   "family": "Marg",
+   "field": "discount",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": true,
+   "rev_null": true
+  },
+  {
+   "page": "p04",
+   "family": "Marg",
+   "field": "round_off",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": false,
+   "rev_null": false
+  },
+  {
+   "page": "p04",
+   "family": "Marg",
+   "field": "tax_total",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": false,
+   "rev_null": false
+  },
+  {
+   "page": "p04",
+   "family": "Marg",
+   "field": "cgst",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": false,
+   "rev_null": false
+  },
+  {
+   "page": "p04",
+   "family": "Marg",
+   "field": "sgst",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": false,
+   "rev_null": false
+  },
+  {
+   "page": "p04",
+   "family": "Marg",
+   "field": "igst",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": true,
+   "rev_null": true
+  },
+  {
+   "page": "p04",
+   "family": "Marg",
+   "field": "hsn_sac",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": false,
+   "rev_null": false
+  },
+  {
+   "page": "p04",
+   "family": "Marg",
+   "field": "total_amount",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": false,
+   "rev_null": false
+  },
+  {
+   "page": "p05",
+   "family": "ERP(edge:torn)",
+   "field": "merchant_name",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": false,
+   "rev_null": false
+  },
+  {
+   "page": "p05",
+   "family": "ERP(edge:torn)",
+   "field": "gstin",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": false,
+   "rev_null": false
+  },
+  {
+   "page": "p05",
+   "family": "ERP(edge:torn)",
+   "field": "invoice_number",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": true,
+   "rev_null": true
+  },
+  {
+   "page": "p05",
+   "family": "ERP(edge:torn)",
+   "field": "invoice_date",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": true,
+   "rev_null": true
+  },
+  {
+   "page": "p05",
+   "family": "ERP(edge:torn)",
+   "field": "subtotal",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": true,
+   "rev_null": true
+  },
+  {
+   "page": "p05",
+   "family": "ERP(edge:torn)",
+   "field": "taxable_value",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": false,
+   "rev_null": false
+  },
+  {
+   "page": "p05",
+   "family": "ERP(edge:torn)",
+   "field": "discount",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": false,
+   "rev_null": false
+  },
+  {
+   "page": "p05",
+   "family": "ERP(edge:torn)",
+   "field": "round_off",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": false,
+   "rev_null": false
+  },
+  {
+   "page": "p05",
+   "family": "ERP(edge:torn)",
+   "field": "tax_total",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": true,
+   "rev_null": true
+  },
+  {
+   "page": "p05",
+   "family": "ERP(edge:torn)",
+   "field": "cgst",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": false,
+   "rev_null": false
+  },
+  {
+   "page": "p05",
+   "family": "ERP(edge:torn)",
+   "field": "sgst",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": false,
+   "rev_null": false
+  },
+  {
+   "page": "p05",
+   "family": "ERP(edge:torn)",
+   "field": "igst",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": true,
+   "rev_null": true
+  },
+  {
+   "page": "p05",
+   "family": "ERP(edge:torn)",
+   "field": "hsn_sac",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": false,
+   "rev_null": false
+  },
+  {
+   "page": "p05",
+   "family": "ERP(edge:torn)",
+   "field": "total_amount",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": false,
+   "rev_null": false
+  },
+  {
+   "page": "p06",
+   "family": "web",
+   "field": "merchant_name",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": false,
+   "rev_null": false
+  },
+  {
+   "page": "p06",
+   "family": "web",
+   "field": "gstin",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": false,
+   "rev_null": false
+  },
+  {
+   "page": "p06",
+   "family": "web",
+   "field": "invoice_number",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": false,
+   "rev_null": false
+  },
+  {
+   "page": "p06",
+   "family": "web",
+   "field": "invoice_date",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": false,
+   "rev_null": false
+  },
+  {
+   "page": "p06",
+   "family": "web",
+   "field": "subtotal",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": true,
+   "rev_null": true
+  },
+  {
+   "page": "p06",
+   "family": "web",
+   "field": "taxable_value",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": false,
+   "rev_null": false
+  },
+  {
+   "page": "p06",
+   "family": "web",
+   "field": "discount",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": false,
+   "rev_null": false
+  },
+  {
+   "page": "p06",
+   "family": "web",
+   "field": "round_off",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": true,
+   "rev_null": true
+  },
+  {
+   "page": "p06",
+   "family": "web",
+   "field": "tax_total",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": false,
+   "rev_null": false
+  },
+  {
+   "page": "p06",
+   "family": "web",
+   "field": "cgst",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": false,
+   "rev_null": false
+  },
+  {
+   "page": "p06",
+   "family": "web",
+   "field": "sgst",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": false,
+   "rev_null": false
+  },
+  {
+   "page": "p06",
+   "family": "web",
+   "field": "igst",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": true,
+   "rev_null": true
+  },
+  {
+   "page": "p06",
+   "family": "web",
+   "field": "hsn_sac",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": false,
+   "rev_null": false
+  },
+  {
+   "page": "p06",
+   "family": "web",
+   "field": "total_amount",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": false,
+   "rev_null": false
+  },
+  {
+   "page": "p07",
+   "family": "ERP(torn corner)",
+   "field": "merchant_name",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": false,
+   "rev_null": false
+  },
+  {
+   "page": "p07",
+   "family": "ERP(torn corner)",
+   "field": "gstin",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": false,
+   "rev_null": false
+  },
+  {
+   "page": "p07",
+   "family": "ERP(torn corner)",
+   "field": "invoice_number",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": false,
+   "rev_null": false
+  },
+  {
+   "page": "p07",
+   "family": "ERP(torn corner)",
+   "field": "invoice_date",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": false,
+   "rev_null": false
+  },
+  {
+   "page": "p07",
+   "family": "ERP(torn corner)",
+   "field": "subtotal",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": true,
+   "rev_null": true
+  },
+  {
+   "page": "p07",
+   "family": "ERP(torn corner)",
+   "field": "taxable_value",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": false,
+   "rev_null": false
+  },
+  {
+   "page": "p07",
+   "family": "ERP(torn corner)",
+   "field": "discount",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": false,
+   "rev_null": false
+  },
+  {
+   "page": "p07",
+   "family": "ERP(torn corner)",
+   "field": "round_off",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": true,
+   "rev_null": true
+  },
+  {
+   "page": "p07",
+   "family": "ERP(torn corner)",
+   "field": "tax_total",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": false,
+   "rev_null": false
+  },
+  {
+   "page": "p07",
+   "family": "ERP(torn corner)",
+   "field": "cgst",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": false,
+   "rev_null": false
+  },
+  {
+   "page": "p07",
+   "family": "ERP(torn corner)",
+   "field": "sgst",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": false,
+   "rev_null": false
+  },
+  {
+   "page": "p07",
+   "family": "ERP(torn corner)",
+   "field": "igst",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": true,
+   "rev_null": true
+  },
+  {
+   "page": "p07",
+   "family": "ERP(torn corner)",
+   "field": "hsn_sac",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": false,
+   "rev_null": false
+  },
+  {
+   "page": "p07",
+   "family": "ERP(torn corner)",
+   "field": "total_amount",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": false,
+   "rev_null": false
+  },
+  {
+   "page": "p08",
+   "family": "Tally",
+   "field": "merchant_name",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": false,
+   "rev_null": false
+  },
+  {
+   "page": "p08",
+   "family": "Tally",
+   "field": "gstin",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": false,
+   "rev_null": false
+  },
+  {
+   "page": "p08",
+   "family": "Tally",
+   "field": "invoice_number",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": false,
+   "rev_null": false
+  },
+  {
+   "page": "p08",
+   "family": "Tally",
+   "field": "invoice_date",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": false,
+   "rev_null": false
+  },
+  {
+   "page": "p08",
+   "family": "Tally",
+   "field": "subtotal",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": true,
+   "rev_null": true
+  },
+  {
+   "page": "p08",
+   "family": "Tally",
+   "field": "taxable_value",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": false,
+   "rev_null": false
+  },
+  {
+   "page": "p08",
+   "family": "Tally",
+   "field": "discount",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": true,
+   "rev_null": true
+  },
+  {
+   "page": "p08",
+   "family": "Tally",
+   "field": "round_off",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": false,
+   "rev_null": false
+  },
+  {
+   "page": "p08",
+   "family": "Tally",
+   "field": "tax_total",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": false,
+   "rev_null": false
+  },
+  {
+   "page": "p08",
+   "family": "Tally",
+   "field": "cgst",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": false,
+   "rev_null": false
+  },
+  {
+   "page": "p08",
+   "family": "Tally",
+   "field": "sgst",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": false,
+   "rev_null": false
+  },
+  {
+   "page": "p08",
+   "family": "Tally",
+   "field": "igst",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": true,
+   "rev_null": true
+  },
+  {
+   "page": "p08",
+   "family": "Tally",
+   "field": "hsn_sac",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": false,
+   "rev_null": false
+  },
+  {
+   "page": "p08",
+   "family": "Tally",
+   "field": "total_amount",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": false,
+   "rev_null": false
+  },
+  {
+   "page": "p09",
+   "family": "ERP(edge:page1of3)",
+   "field": "merchant_name",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": false,
+   "rev_null": false
+  },
+  {
+   "page": "p09",
+   "family": "ERP(edge:page1of3)",
+   "field": "gstin",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": false,
+   "rev_null": false
+  },
+  {
+   "page": "p09",
+   "family": "ERP(edge:page1of3)",
+   "field": "invoice_number",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": false,
+   "rev_null": false
+  },
+  {
+   "page": "p09",
+   "family": "ERP(edge:page1of3)",
+   "field": "invoice_date",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": false,
+   "rev_null": false
+  },
+  {
+   "page": "p09",
+   "family": "ERP(edge:page1of3)",
+   "field": "subtotal",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": true,
+   "rev_null": true
+  },
+  {
+   "page": "p09",
+   "family": "ERP(edge:page1of3)",
+   "field": "taxable_value",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": true,
+   "rev_null": true
+  },
+  {
+   "page": "p09",
+   "family": "ERP(edge:page1of3)",
+   "field": "discount",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": true,
+   "rev_null": true
+  },
+  {
+   "page": "p09",
+   "family": "ERP(edge:page1of3)",
+   "field": "round_off",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": true,
+   "rev_null": true
+  },
+  {
+   "page": "p09",
+   "family": "ERP(edge:page1of3)",
+   "field": "tax_total",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": true,
+   "rev_null": true
+  },
+  {
+   "page": "p09",
+   "family": "ERP(edge:page1of3)",
+   "field": "cgst",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": true,
+   "rev_null": true
+  },
+  {
+   "page": "p09",
+   "family": "ERP(edge:page1of3)",
+   "field": "sgst",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": true,
+   "rev_null": true
+  },
+  {
+   "page": "p09",
+   "family": "ERP(edge:page1of3)",
+   "field": "igst",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": true,
+   "rev_null": true
+  },
+  {
+   "page": "p09",
+   "family": "ERP(edge:page1of3)",
+   "field": "hsn_sac",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": false,
+   "rev_null": false
+  },
+  {
+   "page": "p09",
+   "family": "ERP(edge:page1of3)",
+   "field": "total_amount",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": true,
+   "rev_null": true
+  },
+  {
+   "page": "p10",
+   "family": "Tally",
+   "field": "merchant_name",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": false,
+   "rev_null": false
+  },
+  {
+   "page": "p10",
+   "family": "Tally",
+   "field": "gstin",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": false,
+   "rev_null": false
+  },
+  {
+   "page": "p10",
+   "family": "Tally",
+   "field": "invoice_number",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": false,
+   "rev_null": false
+  },
+  {
+   "page": "p10",
+   "family": "Tally",
+   "field": "invoice_date",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": false,
+   "rev_null": false
+  },
+  {
+   "page": "p10",
+   "family": "Tally",
+   "field": "subtotal",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": true,
+   "rev_null": true
+  },
+  {
+   "page": "p10",
+   "family": "Tally",
+   "field": "taxable_value",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": false,
+   "rev_null": false
+  },
+  {
+   "page": "p10",
+   "family": "Tally",
+   "field": "discount",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": false,
+   "rev_null": false
+  },
+  {
+   "page": "p10",
+   "family": "Tally",
+   "field": "round_off",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": false,
+   "rev_null": false
+  },
+  {
+   "page": "p10",
+   "family": "Tally",
+   "field": "tax_total",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": false,
+   "rev_null": false
+  },
+  {
+   "page": "p10",
+   "family": "Tally",
+   "field": "cgst",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": false,
+   "rev_null": false
+  },
+  {
+   "page": "p10",
+   "family": "Tally",
+   "field": "sgst",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": false,
+   "rev_null": false
+  },
+  {
+   "page": "p10",
+   "family": "Tally",
+   "field": "igst",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": true,
+   "rev_null": true
+  },
+  {
+   "page": "p10",
+   "family": "Tally",
+   "field": "hsn_sac",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": false,
+   "rev_null": false
+  },
+  {
+   "page": "p10",
+   "family": "Tally",
+   "field": "total_amount",
+   "agree": true,
+   "null_agree": true,
+   "mine_null": false,
+   "rev_null": false
+  }
+ ]
+}

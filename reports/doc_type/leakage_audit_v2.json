@@ -1,0 +1,79 @@
+{
+ "n_docs": 9833,
+ "n_real": 5753,
+ "n_synthetic": 4080,
+ "identical_bytes": {
+  "duplicate_groups": 0,
+  "docs_in_groups": 0,
+  "spanning_splits": 0,
+  "spanning_real_and_synthetic": 0,
+  "examples": []
+ },
+ "group_id_spanning_splits": {
+  "groups": 7676,
+  "spanning": 0
+ },
+ "undecodable_first_pages_skipped": 0,
+ "a_real_val_test_vs_real_train": {
+  "val": {
+   "n": 578,
+   "le4": 0,
+   "le8": 29,
+   "identical": 0
+  },
+  "test": {
+   "n": 571,
+   "le4": 0,
+   "le8": 37,
+   "identical": 0
+  }
+ },
+ "b_generated_val_test_vs_generated_train": {
+  "val|seen_layout_ABC": {
+   "n": 155,
+   "le4": 114,
+   "le8": 146
+  },
+  "test|seen_layout_ABC": {
+   "n": 161,
+   "le4": 116,
+   "le8": 151
+  },
+  "test|unseen_layout_D": {
+   "n": 174,
+   "le4": 3,
+   "le8": 73
+  }
+ },
+ "c_synthetic_vs_real_val_test": {
+  "synthgen_v1": {
+   "n": 1210,
+   "min_distance_to_any_real_val_test": 8,
+   "n_le4": 0,
+   "n_le8": 1
+  },
+  "agami": {
+   "n": 240,
+   "min_distance_to_any_real_val_test": 12,
+   "n_le4": 0,
+   "n_le8": 0
+  },
+  "fatura": {
+   "n": 200,
+   "min_distance_to_any_real_val_test": 6,
+   "n_le4": 0,
+   "n_le8": 10
+  },
+  "older_synthetic_in": {
+   "n": 2430,
+   "min_distance_to_any_real_val_test": 10,
+   "n_le4": 0,
+   "n_le8": 0
+  }
+ },
+ "d_generated_issuer_name_in_multiple_splits": {
+  "distinct_issuers": 1183,
+  "spanning": 11,
+  "note": "same fictional name drawn for different documents; affects names only, not layout/content"
+ }
+}

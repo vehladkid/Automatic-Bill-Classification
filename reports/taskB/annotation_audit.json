@@ -1,0 +1,640 @@
+{
+ "summary": {
+  "total_docs": 6442,
+  "real": 2932,
+  "synthetic": 3510,
+  "indian_real": 285,
+  "by_source": {
+   "sroie": 958,
+   "cord": 998,
+   "receiptbench": 867,
+   "invoices_pt": 109,
+   "synthetic_in": 2430,
+   "synthetic_b": 1080
+  },
+  "by_split": {
+   "train": 5160,
+   "validation": 646,
+   "test": 636
+  },
+  "dropped_unrendered": {
+   "tax_total": 2785,
+   "payment_method": 173,
+   "gstin": 150
+  }
+ },
+ "fields": {
+  "merchant_name": {
+   "total": 5343,
+   "real": 1833,
+   "synthetic": 3510,
+   "indian_real": 272,
+   "aligned": 5149,
+   "sources": {
+    "sroie": 958,
+    "receiptbench": 766,
+    "invoices_pt": 109,
+    "synthetic_in": 2430,
+    "synthetic_b": 1080
+   },
+   "eval_docs_real": 1934,
+   "eval_docs_synth": 3510
+  },
+  "merchant_address": {
+   "total": 4573,
+   "real": 1063,
+   "synthetic": 3510,
+   "indian_real": 0,
+   "aligned": 4544,
+   "sources": {
+    "sroie": 957,
+    "invoices_pt": 106,
+    "synthetic_in": 2430,
+    "synthetic_b": 1080
+   },
+   "eval_docs_real": 1067,
+   "eval_docs_synth": 3510
+  },
+  "invoice_number": {
+   "total": 4218,
+   "real": 708,
+   "synthetic": 3510,
+   "indian_real": 202,
+   "aligned": 3968,
+   "sources": {
+    "receiptbench": 599,
+    "invoices_pt": 109,
+    "synthetic_in": 2430,
+    "synthetic_b": 1080
+   },
+   "eval_docs_real": 976,
+   "eval_docs_synth": 3510
+  },
+  "invoice_date": {
+   "total": 5204,
+   "real": 1694,
+   "synthetic": 3510,
+   "indian_real": 180,
+   "aligned": 4907,
+   "sources": {
+    "sroie": 955,
+    "receiptbench": 633,
+    "invoices_pt": 106,
+    "synthetic_in": 2430,
+    "synthetic_b": 1080
+   },
+   "eval_docs_real": 1934,
+   "eval_docs_synth": 3510
+  },
+  "subtotal": {
+   "total": 4171,
+   "real": 661,
+   "synthetic": 3510,
+   "indian_real": 0,
+   "aligned": 4100,
+   "sources": {
+    "cord": 661,
+    "synthetic_in": 2430,
+    "synthetic_b": 1080
+   },
+   "eval_docs_real": 998,
+   "eval_docs_synth": 3510
+  },
+  "tax_total": {
+   "total": 1251,
+   "real": 526,
+   "synthetic": 725,
+   "indian_real": 0,
+   "aligned": 1236,
+   "sources": {
+    "cord": 436,
+    "invoices_pt": 90,
+    "synthetic_in": 438,
+    "synthetic_b": 287
+   },
+   "eval_docs_real": 1107,
+   "eval_docs_synth": 3510
+  },
+  "total_amount": {
+   "total": 6319,
+   "real": 2809,
+   "synthetic": 3510,
+   "indian_real": 267,
+   "aligned": 6142,
+   "sources": {
+    "sroie": 957,
+    "cord": 970,
+    "receiptbench": 773,
+    "invoices_pt": 109,
+    "synthetic_in": 2430,
+    "synthetic_b": 1080
+   },
+   "eval_docs_real": 2838,
+   "eval_docs_synth": 3510
+  },
+  "currency": {
+   "total": 4274,
+   "real": 764,
+   "synthetic": 3510,
+   "indian_real": 283,
+   "aligned": 3859,
+   "sources": {
+    "receiptbench": 764,
+    "synthetic_in": 2430,
+    "synthetic_b": 1080
+   },
+   "eval_docs_real": 867,
+   "eval_docs_synth": 3510
+  },
+  "payment_method": {
+   "total": 3337,
+   "real": 0,
+   "synthetic": 3337,
+   "indian_real": 0,
+   "aligned": 3337,
+   "sources": {
+    "synthetic_in": 2257,
+    "synthetic_b": 1080
+   },
+   "eval_docs_real": 0,
+   "eval_docs_synth": 3510
+  },
+  "gstin": {
+   "total": 3403,
+   "real": 103,
+   "synthetic": 3300,
+   "indian_real": 93,
+   "aligned": 3374,
+   "sources": {
+    "receiptbench": 103,
+    "synthetic_in": 2280,
+    "synthetic_b": 1020
+   },
+   "eval_docs_real": 867,
+   "eval_docs_synth": 3510
+  },
+  "cgst": {
+   "total": 2095,
+   "real": 56,
+   "synthetic": 2039,
+   "indian_real": 56,
+   "aligned": 2091,
+   "sources": {
+    "receiptbench": 56,
+    "synthetic_in": 1305,
+    "synthetic_b": 734
+   },
+   "eval_docs_real": 285,
+   "eval_docs_synth": 3510
+  },
+  "sgst": {
+   "total": 2096,
+   "real": 57,
+   "synthetic": 2039,
+   "indian_real": 57,
+   "aligned": 2093,
+   "sources": {
+    "receiptbench": 57,
+    "synthetic_in": 1305,
+    "synthetic_b": 734
+   },
+   "eval_docs_real": 285,
+   "eval_docs_synth": 3510
+  },
+  "igst": {
+   "total": 722,
+   "real": 1,
+   "synthetic": 721,
+   "indian_real": 1,
+   "aligned": 722,
+   "sources": {
+    "receiptbench": 1,
+    "synthetic_in": 435,
+    "synthetic_b": 286
+   },
+   "eval_docs_real": 285,
+   "eval_docs_synth": 3510
+  },
+  "hsn_sac": {
+   "total": 815,
+   "real": 0,
+   "synthetic": 815,
+   "indian_real": 0,
+   "aligned": 815,
+   "sources": {
+    "synthetic_b": 815
+   },
+   "eval_docs_real": 0,
+   "eval_docs_synth": 1080
+  },
+  "employee_name": {
+   "total": 370,
+   "real": 0,
+   "synthetic": 370,
+   "indian_real": 0,
+   "aligned": 370,
+   "sources": {
+    "synthetic_b": 370
+   },
+   "eval_docs_real": 0,
+   "eval_docs_synth": 1080
+  },
+  "employee_id": {
+   "total": 275,
+   "real": 0,
+   "synthetic": 275,
+   "indian_real": 0,
+   "aligned": 275,
+   "sources": {
+    "synthetic_b": 275
+   },
+   "eval_docs_real": 0,
+   "eval_docs_synth": 1080
+  },
+  "origin": {
+   "total": 886,
+   "real": 246,
+   "synthetic": 640,
+   "indian_real": 102,
+   "aligned": 835,
+   "sources": {
+    "receiptbench": 246,
+    "synthetic_in": 450,
+    "synthetic_b": 190
+   },
+   "eval_docs_real": 311,
+   "eval_docs_synth": 3510
+  },
+  "destination": {
+   "total": 885,
+   "real": 245,
+   "synthetic": 640,
+   "indian_real": 102,
+   "aligned": 830,
+   "sources": {
+    "receiptbench": 245,
+    "synthetic_in": 450,
+    "synthetic_b": 190
+   },
+   "eval_docs_real": 311,
+   "eval_docs_synth": 3510
+  },
+  "travel_date": {
+   "total": 462,
+   "real": 272,
+   "synthetic": 190,
+   "indian_real": 105,
+   "aligned": 342,
+   "sources": {
+    "receiptbench": 272,
+    "synthetic_b": 190
+   },
+   "eval_docs_real": 311,
+   "eval_docs_synth": 1080
+  },
+  "pnr": {
+   "total": 640,
+   "real": 0,
+   "synthetic": 640,
+   "indian_real": 0,
+   "aligned": 640,
+   "sources": {
+    "synthetic_in": 450,
+    "synthetic_b": 190
+   },
+   "eval_docs_real": 0,
+   "eval_docs_synth": 3510
+  },
+  "ticket_number": {
+   "total": 190,
+   "real": 0,
+   "synthetic": 190,
+   "indian_real": 0,
+   "aligned": 190,
+   "sources": {
+    "synthetic_b": 190
+   },
+   "eval_docs_real": 0,
+   "eval_docs_synth": 1080
+  },
+  "passenger_name": {
+   "total": 190,
+   "real": 0,
+   "synthetic": 190,
+   "indian_real": 0,
+   "aligned": 190,
+   "sources": {
+    "synthetic_b": 190
+   },
+   "eval_docs_real": 0,
+   "eval_docs_synth": 1080
+  },
+  "flight_number": {
+   "total": 210,
+   "real": 0,
+   "synthetic": 210,
+   "indian_real": 0,
+   "aligned": 210,
+   "sources": {
+    "synthetic_in": 150,
+    "synthetic_b": 60
+   },
+   "eval_docs_real": 0,
+   "eval_docs_synth": 3510
+  },
+  "train_number": {
+   "total": 210,
+   "real": 0,
+   "synthetic": 210,
+   "indian_real": 0,
+   "aligned": 210,
+   "sources": {
+    "synthetic_in": 150,
+    "synthetic_b": 60
+   },
+   "eval_docs_real": 0,
+   "eval_docs_synth": 3510
+  },
+  "bus_number": {
+   "total": 70,
+   "real": 0,
+   "synthetic": 70,
+   "indian_real": 0,
+   "aligned": 70,
+   "sources": {
+    "synthetic_b": 70
+   },
+   "eval_docs_real": 0,
+   "eval_docs_synth": 1080
+  },
+  "vehicle_number": {
+   "total": 300,
+   "real": 0,
+   "synthetic": 300,
+   "indian_real": 0,
+   "aligned": 300,
+   "sources": {
+    "synthetic_in": 300
+   },
+   "eval_docs_real": 0,
+   "eval_docs_synth": 3510
+  },
+  "check_in": {
+   "total": 353,
+   "real": 133,
+   "synthetic": 220,
+   "indian_real": 60,
+   "aligned": 325,
+   "sources": {
+    "receiptbench": 133,
+    "synthetic_b": 220
+   },
+   "eval_docs_real": 141,
+   "eval_docs_synth": 1080
+  },
+  "check_out": {
+   "total": 340,
+   "real": 120,
+   "synthetic": 220,
+   "indian_real": 57,
+   "aligned": 310,
+   "sources": {
+    "receiptbench": 120,
+    "synthetic_b": 220
+   },
+   "eval_docs_real": 141,
+   "eval_docs_synth": 1080
+  },
+  "room_number": {
+   "total": 220,
+   "real": 0,
+   "synthetic": 220,
+   "indian_real": 0,
+   "aligned": 220,
+   "sources": {
+    "synthetic_b": 220
+   },
+   "eval_docs_real": 0,
+   "eval_docs_synth": 1080
+  },
+  "number_of_nights": {
+   "total": 220,
+   "real": 0,
+   "synthetic": 220,
+   "indian_real": 0,
+   "aligned": 220,
+   "sources": {
+    "synthetic_b": 220
+   },
+   "eval_docs_real": 0,
+   "eval_docs_synth": 1080
+  },
+  "patient_name": {
+   "total": 220,
+   "real": 0,
+   "synthetic": 220,
+   "indian_real": 0,
+   "aligned": 220,
+   "sources": {
+    "synthetic_b": 220
+   },
+   "eval_docs_real": 0,
+   "eval_docs_synth": 1080
+  },
+  "prescription_number": {
+   "total": 220,
+   "real": 0,
+   "synthetic": 220,
+   "indian_real": 0,
+   "aligned": 220,
+   "sources": {
+    "synthetic_b": 220
+   },
+   "eval_docs_real": 0,
+   "eval_docs_synth": 1080
+  },
+  "pharmacy_name": {
+   "total": 134,
+   "real": 0,
+   "synthetic": 134,
+   "indian_real": 0,
+   "aligned": 134,
+   "sources": {
+    "synthetic_b": 134
+   },
+   "eval_docs_real": 0,
+   "eval_docs_synth": 1080
+  },
+  "doctor_name": {
+   "total": 220,
+   "real": 0,
+   "synthetic": 220,
+   "indian_real": 0,
+   "aligned": 220,
+   "sources": {
+    "synthetic_b": 220
+   },
+   "eval_docs_real": 0,
+   "eval_docs_synth": 1080
+  }
+ },
+ "mapping": {
+  "sroie": {
+   "merchant_name": "company",
+   "merchant_address": "address",
+   "invoice_date": "date",
+   "total_amount": "total"
+  },
+  "cord": {
+   "total_amount": "total_amount",
+   "subtotal": "subtotal",
+   "tax_total": "tax_amount"
+  },
+  "receiptbench": {
+   "merchant_name": "seller_name",
+   "invoice_number": "invoice_number",
+   "invoice_date": "std_invoice_time",
+   "total_amount": "std_total, or orig_total when std_total is the placeholder '0.00' (182 docs); neither usable -> total not scored",
+   "currency": "std_curr",
+   "gstin": "tax_number (only if GSTIN-format)",
+   "cgst/sgst/igst": "detail[] lines whose content contains CGST/SGST(UTGST)/IGST (India only)",
+   "origin/destination": "departure/arrival (flight/train/bus types; city part)",
+   "travel_date": "std_start_time (flight/train/bus)",
+   "check_in/check_out": "std_start_time/std_end_time (hotel)"
+  },
+  "invoices_pt": {
+   "merchant_name": "company",
+   "merchant_address": "address",
+   "invoice_date": "date",
+   "total_amount": "total",
+   "invoice_number": "invoice_number",
+   "tax_total": "iva_amount"
+  },
+  "synthetic_in": {
+   "merchant_name": "merchant",
+   "merchant_address": "address",
+   "invoice_number": "invoice_number",
+   "invoice_date": "date",
+   "subtotal": "subtotal",
+   "tax_total": "tax_amount",
+   "total_amount": "total_amount",
+   "currency": "currency",
+   "payment_method": "payment_method",
+   "gstin": "GSTIN",
+   "cgst/sgst/igst": "tax_split",
+   "origin/destination/pnr/train_number/flight_number/vehicle_number": "origin/destination/pnr/train_no/flight_no/vehicle_no"
+  },
+  "synthetic_b": {
+   "*": "all canonical fields incl. hsn_sac, hotel stay, medical, employee, passenger/ticket/bus (generated with the rendered text)"
+  }
+ },
+ "unsupported": {
+  "sroie": [
+   "(none: only 4 fields annotated)"
+  ],
+  "cord": [
+   "menu items (line items, not a Task B field)",
+   "payment_cash (cash tendered, not payment method)"
+  ],
+  "receiptbench": [
+   "seller_address (city-level 'IN-Bengaluru', not a street address)",
+   "tax_number when not GSTIN-format (foreign tax ids)",
+   "std_end_time for non-hotel types",
+   "detail line items",
+   "tax_total/subtotal (not separable from detail)"
+  ],
+  "invoices_pt": [
+   "nif_buyer / nif_seller (tax ids; no canonical field)"
+  ],
+  "synthetic_in": [
+   "customer_name (role depends on category)",
+   "phone",
+   "round_off",
+   "consumer_no/account_no/landlord(_pan)/units/upi_ref (no canonical field)"
+  ],
+  "funsd": [
+   "form entities (non-expense forms; not a receipt schema)"
+  ],
+  "all real sources": [
+   "hsn_sac, employee_*, pnr, ticket_number, passenger_name, flight/train/bus/vehicle number, room_number, number_of_nights, patient/doctor/prescription/pharmacy: NO real annotation exists"
+  ]
+ },
+ "support_sets": {
+  "sroie": [
+   "merchant_name",
+   "merchant_address",
+   "invoice_date",
+   "total_amount"
+  ],
+  "cord": [
+   "total_amount",
+   "subtotal",
+   "tax_total"
+  ],
+  "invoices_pt": [
+   "merchant_name",
+   "merchant_address",
+   "invoice_date",
+   "total_amount",
+   "invoice_number",
+   "tax_total"
+  ],
+  "synthetic_in": [
+   "merchant_name",
+   "merchant_address",
+   "invoice_number",
+   "invoice_date",
+   "subtotal",
+   "tax_total",
+   "total_amount",
+   "currency",
+   "payment_method",
+   "gstin",
+   "cgst",
+   "sgst",
+   "igst",
+   "origin",
+   "destination",
+   "pnr",
+   "train_number",
+   "flight_number",
+   "vehicle_number"
+  ],
+  "synthetic_b": [
+   "merchant_name",
+   "merchant_address",
+   "invoice_number",
+   "invoice_date",
+   "subtotal",
+   "tax_total",
+   "total_amount",
+   "currency",
+   "payment_method",
+   "gstin",
+   "cgst",
+   "sgst",
+   "igst",
+   "hsn_sac",
+   "employee_name",
+   "employee_id",
+   "origin",
+   "destination",
+   "travel_date",
+   "pnr",
+   "ticket_number",
+   "passenger_name",
+   "flight_number",
+   "train_number",
+   "bus_number",
+   "vehicle_number",
+   "check_in",
+   "check_out",
+   "room_number",
+   "number_of_nights",
+   "patient_name",
+   "prescription_number",
+   "pharmacy_name",
+   "doctor_name"
+  ]
+ }
+}

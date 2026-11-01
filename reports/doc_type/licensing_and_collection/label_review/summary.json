@@ -1,0 +1,64 @@
+{
+ "queue_records": 286,
+ "unique_doc_ids": 286,
+ "by_status": {
+  "blocked_provenance": 132,
+  "ambiguous": 70,
+  "supported": 78,
+  "likely_incorrect": 6
+ },
+ "by_evidence_verdict_all": {
+  "ambiguous": 124,
+  "supported": 152,
+  "likely_incorrect": 10
+ },
+ "approved_sources_only": {
+  "ambiguous": 70,
+  "supported": 78,
+  "likely_incorrect": 6
+ },
+ "blocked_by_source": {
+  "in_financial": 9,
+  "receiptbench": 82,
+  "sroie": 25,
+  "hf_medical": 8,
+  "user_real": 8
+ },
+ "blocked_evidence_verdict": {
+  "ambiguous": 54,
+  "supported": 74,
+  "likely_incorrect": 4
+ },
+ "proposed_changes": 19,
+ "by_confidence": {
+  "low": 9,
+  "medium": 9,
+  "high": 1
+ },
+ "applied_to_overlay": 1,
+ "human_queue": 75,
+ "human_queue_by_source": {
+  "my_receipts": 43,
+  "manual_in": 15,
+  "cord": 1,
+  "invoices_pt": 16
+ },
+ "by_source_status": {
+  "cord|ambiguous": 1,
+  "cord|supported": 7,
+  "funsd|supported": 8,
+  "hf_medical|blocked_provenance": 8,
+  "in_financial|blocked_provenance": 9,
+  "in_grocery_gst|supported": 8,
+  "invoices_pt|ambiguous": 16,
+  "manual_in|ambiguous": 15,
+  "manual_in|supported": 33,
+  "my_receipts|ambiguous": 38,
+  "my_receipts|likely_incorrect": 6,
+  "my_receipts|supported": 22,
+  "receiptbench|blocked_provenance": 82,
+  "sroie|blocked_provenance": 25,
+  "user_real|blocked_provenance": 8
+ },
+ "expense_flags": 2
+}

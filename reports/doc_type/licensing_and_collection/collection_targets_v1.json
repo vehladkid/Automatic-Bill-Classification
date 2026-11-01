@@ -1,0 +1,20 @@
+{
+ "version": "collection-targets-v1",
+ "basis": "Counts needed to report a per-class metric with a usable interval (>=30 real val and >=30 real test documents per class, issuer-grouped) plus ~100 real training documents; 20% of val/test double-annotated. Approved REAL documents today: 0 for every class below (reports/doc_type/DOC_TYPE_V2_1_AUDIT_AND_BASELINE.md).",
+ "per_class_minimum": {"train": 100, "val": 30, "test": 30, "min_distinct_issuers_per_split": {"train": 15, "val": 6, "test": 6}, "min_indian_share": 0.9},
+ "priority_order": [
+  {"rank": 1, "doc_type": "rent_receipt", "tax_evidence": ["hra_evidence"], "real_world_source": "tenants / HR proof folders (HRA claims)", "note": "single- and multi-month; handwritten and printed; with and without revenue stamp"},
+  {"rank": 2, "doc_type": "insurance_premium_receipt", "tax_evidence": ["section_80c_evidence", "section_80d_evidence"], "real_world_source": "employee tax-proof submissions (life vs health)", "note": "collect life and health separately; 80C vs 80D follows subtype"},
+  {"rank": 3, "doc_type": "school_fee_receipt", "tax_evidence": ["section_80c_evidence"], "real_world_source": "employee tax-proof submissions", "note": "tuition-only vs bundled fees"},
+  {"rank": 4, "doc_type": "loan_interest_certificate", "tax_evidence": ["loan_interest_evidence"], "real_world_source": "bank/NBFC annual certificates", "note": "home vs education vs EV loans"},
+  {"rank": 5, "doc_type": "salary_slip", "tax_evidence": ["income_evidence"], "real_world_source": "employer-supplied (employer permission required)", "note": "many employers, many templates; issuer grouping is essential"},
+  {"rank": 6, "doc_type": "form_16", "tax_evidence": ["income_evidence"], "real_world_source": "employer-supplied (employer permission required)", "note": "Part A and Part B; scarce - start early"},
+  {"rank": 7, "doc_type": "investment_certificate", "tax_evidence": ["section_80c_evidence"], "real_world_source": "PPF/ELSS/NSC/SSY statements", "note": "split by product type"},
+  {"rank": 8, "doc_type": "meal_voucher_statement", "tax_evidence": ["meal_benefit_evidence"], "real_world_source": "meal-card providers' statements and invoices", "note": "issuers are few; seek several providers"},
+  {"rank": 9, "doc_type": "loan_statement", "tax_evidence": ["loan_interest_evidence"], "real_world_source": "lender statements", "note": "loan purpose often unknown: flag tax_mapping_ambiguous"},
+  {"rank": 10, "doc_type": "rental_agreement", "tax_evidence": ["hra_evidence"], "real_world_source": "tenants", "note": "multi-page; supports but does not prove rent paid"},
+  {"rank": 11, "doc_type": "ev_document", "tax_evidence": ["ev_benefit_evidence"], "real_world_source": "EV charging receipts, lease letters, purchase invoices", "note": "three subtypes; very few real examples exist - collect from organisations with EV schemes"},
+  {"rank": 12, "doc_type": "bank_statement", "tax_evidence": [], "real_world_source": "owner's own statements or consented individuals", "note": "highest sensitivity; transaction rows are mostly personal - redact aggressively or keep only header/layout page"},
+  {"rank": 13, "doc_type": "cheque", "tax_evidence": [], "real_world_source": "cancelled cheques of consenting individuals", "note": "redact payee, amount, account number, signature, MICR line"}
+ ]
+}

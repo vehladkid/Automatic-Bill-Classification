@@ -1,0 +1,44 @@
+{
+ "_note": "Fixed income-tax quota for EVERY bill label (16 expense categories + 12 document types). 'cap_path' points into config/tax_rules/fy<YYYY-YY>.json so the quota always matches the configured rules. quota=0 / claim_type=null means the label gives the employee no income-tax deduction. ESTIMATE ONLY: rules status is SECONDARY_SOURCES_ONLY; HR/payroll decides. Edit freely.",
+ "demo_rebate": {
+  "_note": "TEMPORARY DEMO SWITCH (requested 'for the time being'): when enabled, labels that have NO statutory deduction (food, travel, utilities, fuel, hotel, medical, ...) are given a notional fixed yearly allowance so every bill shows a rebate. This is NOT an income-tax rule. The saving is computed with the real slabs as if the allowance reduced taxable income. Set enabled=false to restore the statutory-only behaviour.",
+  "enabled": true,
+  "default_quota": 10000,
+  "quota_by_label": {}
+ },
+ "labels": {
+  "rent":                      {"claim_type": "hra_rent", "section": "HRA", "regime": "old", "cap_path": null, "quota_text": "No fixed rupee cap: exempt HRA = least of (HRA received, rent paid - 10% of basic, 50% / 40% of basic for metro / non-metro). Needs an HRA component in salary."},
+  "rent_receipt":              {"claim_type": "hra_rent", "section": "HRA", "regime": "old", "cap_path": null, "quota_text": "No fixed rupee cap: exempt HRA = least of (HRA received, rent paid - 10% of basic, 50% / 40% of basic for metro / non-metro). One claim per month; landlord PAN needed above Rs 1,00,000 annual rent."},
+  "rental_agreement":          {"claim_type": null, "section": null, "regime": null, "cap_path": null, "quota_text": "Supporting document for HRA only - no amount of its own, so no separate rebate."},
+  "school_fee_receipt":        {"claim_type": "school_fee", "section": "80C (tuition fee)", "regime": "old", "cap_path": "deductions.80C.cap", "quota_text": "Shared Rs 1,50,000 annual 80C limit; tuition part only, max 2 children."},
+  "investment_certificate":    {"claim_type": "invest_80c", "section": "80C", "regime": "old", "cap_path": "deductions.80C.cap", "quota_text": "Shared Rs 1,50,000 annual 80C limit (PPF, ELSS, NSC, tax-saver FD, life insurance ...)."},
+  "insurance_premium_receipt": {"claim_type": "health_insurance", "section": "80D", "regime": "old", "cap_path": "deductions.80D.self_family_cap", "quota_text": "Rs 25,000/yr for self and family (Rs 50,000 if senior citizen) plus Rs 25,000 for parents; non-cash premium only. A life-insurance premium counts under 80C instead."},
+  "loan_interest_certificate": {"claim_type": "home_loan_interest", "section": "24(b)", "regime": "old", "cap_path": "deductions.24b.self_occupied_cap", "quota_text": "Rs 2,00,000/yr for a self-occupied home; education-loan interest (80E) has no cap; EV-loan interest (80EEB) Rs 1,50,000 for loans sanctioned 1-Apr-2019 to 31-Mar-2023."},
+  "loan_statement":            {"claim_type": null, "section": null, "regime": null, "cap_path": null, "quota_text": "Supporting evidence only; the lender's interest certificate is the claim document."},
+  "meal_voucher_statement":    {"claim_type": "meal_voucher", "section": "Meal vouchers (perquisite exemption)", "regime": "both", "cap_path": "exemptions.meal_vouchers.per_meal", "cap_unit": "per meal", "quota_text": "Rs 200 per meal, employer-provided vouchers only; state the number of meals."},
+  "ev_document":               {"claim_type": "ev_loan_interest", "section": "80EEB", "regime": "old", "cap_path": "deductions.80EEB.cap", "quota_text": "Rs 1,50,000/yr on EV-loan interest, only for loans sanctioned 1-Apr-2019 to 31-Mar-2023; employer EV lease/reimbursement is decided by payroll."},
+  "form_16":                   {"claim_type": null, "section": null, "regime": null, "cap_path": null, "quota_text": "Income / TDS evidence - not a deduction."},
+  "salary_slip":               {"claim_type": null, "section": null, "regime": null, "cap_path": null, "quota_text": "Income evidence - not a deduction."},
+  "bank_statement":            {"claim_type": null, "section": null, "regime": null, "cap_path": null, "quota_text": "Supporting evidence - not a deduction."},
+  "food":          {"claim_type": null, "quota_text": "Restaurant / food bill: no income-tax deduction (meal exemption applies only to employer meal vouchers - upload the voucher statement)."},
+  "fuel":          {"claim_type": null, "quota_text": "Fuel bill: no income-tax deduction for the employee."},
+  "hotel":         {"claim_type": null, "quota_text": "Hotel bill: no income-tax deduction (reimbursement is employer policy)."},
+  "flight":        {"claim_type": null, "quota_text": "Travel ticket: no income-tax deduction (reimbursement is employer policy)."},
+  "train":         {"claim_type": null, "quota_text": "Travel ticket: no income-tax deduction (reimbursement is employer policy)."},
+  "bus":           {"claim_type": null, "quota_text": "Travel ticket: no income-tax deduction (reimbursement is employer policy)."},
+  "transport":     {"claim_type": null, "quota_text": "Local transport: no income-tax deduction (reimbursement is employer policy)."},
+  "parking":       {"claim_type": null, "quota_text": "Parking: no income-tax deduction."},
+  "electricity":   {"claim_type": null, "quota_text": "Utility bill: no income-tax deduction for salaried employees."},
+  "gas":           {"claim_type": null, "quota_text": "Utility bill: no income-tax deduction for salaried employees."},
+  "water":         {"claim_type": null, "quota_text": "Utility bill: no income-tax deduction for salaried employees."},
+  "internet":      {"claim_type": null, "quota_text": "Internet / telecom bill: no income-tax deduction for salaried employees."},
+  "medical":       {"claim_type": null, "quota_text": "Hospital / pharmacy bill: not an 80D premium. Only health-insurance premiums and the Rs 5,000 preventive check-up count under 80D."},
+  "miscellaneous": {"claim_type": null, "quota_text": "No income-tax deduction unless it is one of the tax documents above."},
+  "non_expense":   {"claim_type": null, "quota_text": "Not an expense bill and no tax-document type was recognised: no rebate."}
+ },
+ "default_profiles": {
+  "_note": "Two saved employee profiles, seeded once into <HRBC_OUT>/hr/hr.db (INSERT only if missing, never overwrites edits) so they survive restarts. SYNTHETIC demo data.",
+  "E1": {"name": "Aarav Sharma (demo)", "profile": {"ctc": 1500000, "city": "Bengaluru", "basic": 600000, "da": 0, "hra_received": 240000, "special_allowance": 456000, "bonus": 150000, "meal_voucher_annual": 24000, "employee_pf": 72000, "employer_nps": 30000, "professional_tax": 2400, "other_income": 0, "age": 32, "tds_deducted_to_date": 0, "chosen_regime": "old"}},
+  "E2": {"name": "Meera Nair (demo)", "profile": {"ctc": 2000000, "city": "Jaipur", "basic": 800000, "da": 0, "hra_received": 320000, "special_allowance": 620000, "bonus": 200000, "meal_voucher_annual": 0, "employee_pf": 96000, "employer_nps": 40000, "professional_tax": 2400, "other_income": 0, "age": 41, "tds_deducted_to_date": 0, "chosen_regime": "old"}}
+ }
+}

@@ -1,0 +1,175 @@
+{
+ "sample_size": 110,
+ "overall": {
+  "n": 110,
+  "key_phrase_readable": 1.0,
+  "title_readable": 1.0,
+  "main_amount_recovered": 0.955
+ },
+ "by_type": {
+  "ev_document": {
+   "n": 10,
+   "key_phrase_readable": 1.0,
+   "title_readable": 1.0,
+   "main_amount_recovered": 0.9
+  },
+  "form_16": {
+   "n": 10,
+   "key_phrase_readable": 1.0,
+   "title_readable": 1.0,
+   "main_amount_recovered": 1.0
+  },
+  "insurance_premium_receipt": {
+   "n": 10,
+   "key_phrase_readable": 1.0,
+   "title_readable": 1.0,
+   "main_amount_recovered": 1.0
+  },
+  "investment_certificate": {
+   "n": 10,
+   "key_phrase_readable": 1.0,
+   "title_readable": 1.0,
+   "main_amount_recovered": 1.0
+  },
+  "loan_interest_certificate": {
+   "n": 10,
+   "key_phrase_readable": 1.0,
+   "title_readable": 1.0,
+   "main_amount_recovered": 1.0
+  },
+  "loan_statement": {
+   "n": 10,
+   "key_phrase_readable": 1.0,
+   "title_readable": 1.0,
+   "main_amount_recovered": 1.0
+  },
+  "meal_voucher_statement": {
+   "n": 10,
+   "key_phrase_readable": 1.0,
+   "title_readable": 1.0,
+   "main_amount_recovered": 1.0
+  },
+  "rent_receipt": {
+   "n": 10,
+   "key_phrase_readable": 1.0,
+   "title_readable": 1.0,
+   "main_amount_recovered": 1.0
+  },
+  "rental_agreement": {
+   "n": 10,
+   "key_phrase_readable": 1.0,
+   "title_readable": 1.0,
+   "main_amount_recovered": 0.7
+  },
+  "salary_slip": {
+   "n": 10,
+   "key_phrase_readable": 1.0,
+   "title_readable": 1.0,
+   "main_amount_recovered": 0.9
+  },
+  "school_fee_receipt": {
+   "n": 10,
+   "key_phrase_readable": 1.0,
+   "title_readable": 1.0,
+   "main_amount_recovered": 1.0
+  }
+ },
+ "by_degradation": {
+  "clean": {
+   "n": 44,
+   "key_phrase_readable": 1.0,
+   "title_readable": 1.0,
+   "main_amount_recovered": 0.909
+  },
+  "scan": {
+   "n": 33,
+   "key_phrase_readable": 1.0,
+   "title_readable": 1.0,
+   "main_amount_recovered": 0.97
+  },
+  "photo": {
+   "n": 33,
+   "key_phrase_readable": 1.0,
+   "title_readable": 1.0,
+   "main_amount_recovered": 1.0
+  }
+ },
+ "by_layout": {
+  "A": {
+   "n": 35,
+   "key_phrase_readable": 1.0,
+   "title_readable": 1.0,
+   "main_amount_recovered": 0.971
+  },
+  "B": {
+   "n": 23,
+   "key_phrase_readable": 1.0,
+   "title_readable": 1.0,
+   "main_amount_recovered": 1.0
+  },
+  "C": {
+   "n": 35,
+   "key_phrase_readable": 1.0,
+   "title_readable": 1.0,
+   "main_amount_recovered": 0.886
+  },
+  "D": {
+   "n": 17,
+   "key_phrase_readable": 1.0,
+   "title_readable": 1.0,
+   "main_amount_recovered": 1.0
+  }
+ },
+ "failures": [
+  {
+   "doc_id": "synth_ev_document_0075",
+   "doc_type": "ev_document",
+   "mode": "scan",
+   "layout": "C",
+   "phrase": true,
+   "title": true,
+   "amount": false,
+   "ocr_chars": 676
+  },
+  {
+   "doc_id": "synth_rental_agreement_0083",
+   "doc_type": "rental_agreement",
+   "mode": "clean",
+   "layout": "C",
+   "phrase": true,
+   "title": true,
+   "amount": false,
+   "ocr_chars": 1905
+  },
+  {
+   "doc_id": "synth_rental_agreement_0090",
+   "doc_type": "rental_agreement",
+   "mode": "clean",
+   "layout": "C",
+   "phrase": true,
+   "title": true,
+   "amount": false,
+   "ocr_chars": 1959
+  },
+  {
+   "doc_id": "synth_rental_agreement_0051",
+   "doc_type": "rental_agreement",
+   "mode": "clean",
+   "layout": "A",
+   "phrase": true,
+   "title": true,
+   "amount": false,
+   "ocr_chars": 1688
+  },
+  {
+   "doc_id": "synth_salary_slip_0047",
+   "doc_type": "salary_slip",
+   "mode": "clean",
+   "layout": "C",
+   "phrase": true,
+   "title": true,
+   "amount": false,
+   "ocr_chars": 795
+  }
+ ]
+}

@@ -1,0 +1,83 @@
+[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (516 > 512). Running this sequence through the model will result in indexing errors
+256 {'real_accuracy': 0.8730569948186528, 'real_macro_f1': 0.8139729435923275, 'real_weighted_f1': 0.8666778825076046, 'fit_seconds': 33.38689266499932}
+512 {'real_accuracy': 0.883419689119171, 'real_macro_f1': 0.8336713455590836, 'real_weighted_f1': 0.8797069094849456, 'fit_seconds': 40.79425028100013}
+{
+ "tokenizer": {
+  "first_id_is_bos": true,
+  "last_id_is_eos": true,
+  "special_tokens_per_sequence": 2,
+  "content_tokens_available_at_256": 254,
+  "content_tokens_available_at_512": 510,
+  "truncation_side": "right",
+  "example_doc_total_tokens": 358,
+  "example_tokens_kept": 256
+ },
+ "share_truncated": {
+  "train": {
+   "over_256": {
+    "all_pct": 34.385313531353134,
+    "real_pct": 57.40358126721763
+   },
+   "over_512": {
+    "all_pct": 15.140264026402638,
+    "real_pct": 25.27548209366391
+   }
+  },
+  "val": {
+   "over_256": {
+    "all_pct": 29.02208201892745,
+    "real_pct": 47.05882352941176
+   },
+   "over_512": {
+    "all_pct": 14.66876971608833,
+    "real_pct": 23.785166240409207
+   }
+  },
+  "test": {
+   "over_256": {
+    "all_pct": 29.093799682034977,
+    "real_pct": 47.40932642487047
+   },
+   "over_512": {
+    "all_pct": 13.831478537360889,
+    "real_pct": 22.53886010362694
+   }
+  }
+ },
+ "discarded_test_real_256": {
+  "n_docs": 183,
+  "mean_frac_tokens_lost": 0.44294897737125705,
+  "median_frac_tokens_lost": 0.4838709677419355,
+  "tail_mentions_total_tax_words_pct": 54.644808743169406,
+  "head_mentions_total_tax_words_pct": 66.12021857923497,
+  "example_tails": [
+   {
+    "label": "electricity",
+    "tail": "IFF 1193.40 BILL AMOUNT 1566.75 LOSS/GAIN 0.25 NET AMOUNT 1567.00 ARREARS- RSON31-03-19: 0.00 AFTER01-04-19: 0.00 TOTAL AMOUNT 1567.00 A.C.DDUE 0.00 TOTAL DUE 1"
+   },
+   {
+    "label": "electricity",
+    "tail": " prerious balance is payuble immediatety Round sumgayebe after de te 01-Juf-2024:Amt9460.00 DPC 117.13 Scancpyu iay) Nerest Cotection Cenre(Ch/Cheque) UPI 5288 "
+   },
+   {
+    "label": "electricity",
+    "tail": "Others 21/06/2023 ASD to be paid:Rs.3790\uff08ignoreif paid)"
+   },
+   {
+    "label": "electricity",
+    "tail": " -2020 123 FTFf-2020 128 \u53ef www.mahadiscom.in>ConsumerPortal hgal-2020 125 https://consumerinfo.mahadiscom.in/gogreen.php(GGNa >CGRF\u9986 115 fq-2019 156 \u6536-2019 91 \u53ef"
+   },
+   {
+    "label": "electricity",
+    "tail": "): 1,000.00 Code withBHIM Sanct Load: 2KW Supply Date: 16-Jun-18 App forUPI Current ReadingDate: 25-JUN-19 Previous Reading Date: 25-MAY-19 Payment Reading Curr"
+   }
+  ]
+ },
+ "tail_information_production_tfidf": {
+  "n_docs": 183,
+  "accuracy_full_text": 0.8961748633879781,
+  "accuracy_head_only_256": 0.8961748633879781,
+  "accuracy_tail_only": 0.7103825136612022,
+  "note": "production TF-IDF (trained on full text, not re-fitted) on the REAL test documents longer than 256 tokens; chance level = majority class share"
+ }
+}

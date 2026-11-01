@@ -1,0 +1,1 @@
+[{"name": "len512", "status": "completed", "val": 0.8891602149558454, "epoch": 6, "train_s": 746.479769222}, {"name": "chunk256", "status": "completed", "val": 0.8643149172423331, "epoch": 4, "train_s": 534.990035932}, {"name": "ep10", "status": "completed", "val": 0.9139442837655498, "epoch": 7, "train_s": 602.2074537509998}] -> ep10

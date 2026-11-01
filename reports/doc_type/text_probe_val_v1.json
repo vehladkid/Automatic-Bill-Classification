@@ -1,0 +1,307 @@
+{
+ "split": "val (TEST NOT USED)",
+ "n_train": 4599,
+ "n_val": 576,
+ "classes": [
+  "bank_statement",
+  "cheque",
+  "form_16",
+  "fuel_receipt",
+  "hotel_bill",
+  "invoice",
+  "medical_bill",
+  "other",
+  "receipt",
+  "salary_slip",
+  "travel_document",
+  "utility_bill"
+ ],
+ "per_class": {
+  "bank_statement": {
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0,
+   "val_support": 5,
+   "reliable": false
+  },
+  "cheque": {
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0,
+   "val_support": 10,
+   "reliable": false
+  },
+  "form_16": {
+   "precision": 1.0,
+   "recall": 0.875,
+   "f1": 0.933,
+   "val_support": 8,
+   "reliable": false
+  },
+  "fuel_receipt": {
+   "precision": 0.733,
+   "recall": 0.846,
+   "f1": 0.786,
+   "val_support": 13,
+   "reliable": false
+  },
+  "hotel_bill": {
+   "precision": 0.913,
+   "recall": 0.955,
+   "f1": 0.933,
+   "val_support": 22,
+   "reliable": false
+  },
+  "invoice": {
+   "precision": 0.929,
+   "recall": 0.867,
+   "f1": 0.897,
+   "val_support": 45,
+   "reliable": true
+  },
+  "medical_bill": {
+   "precision": 1.0,
+   "recall": 0.75,
+   "f1": 0.857,
+   "val_support": 4,
+   "reliable": false
+  },
+  "other": {
+   "precision": 0.957,
+   "recall": 0.957,
+   "f1": 0.957,
+   "val_support": 47,
+   "reliable": true
+  },
+  "receipt": {
+   "precision": 0.922,
+   "recall": 0.972,
+   "f1": 0.946,
+   "val_support": 317,
+   "reliable": true
+  },
+  "salary_slip": {
+   "precision": 1.0,
+   "recall": 0.889,
+   "f1": 0.941,
+   "val_support": 9,
+   "reliable": false
+  },
+  "travel_document": {
+   "precision": 1.0,
+   "recall": 0.823,
+   "f1": 0.903,
+   "val_support": 62,
+   "reliable": true
+  },
+  "utility_bill": {
+   "precision": 0.968,
+   "recall": 0.882,
+   "f1": 0.923,
+   "val_support": 34,
+   "reliable": true
+  }
+ },
+ "macro_f1_all_classes": 0.923,
+ "macro_f1_classes_with_val_support_ge30": 0.925,
+ "accuracy": 0.934,
+ "confusion_matrix": {
+  "labels": [
+   "bank_statement",
+   "cheque",
+   "form_16",
+   "fuel_receipt",
+   "hotel_bill",
+   "invoice",
+   "medical_bill",
+   "other",
+   "receipt",
+   "salary_slip",
+   "travel_document",
+   "utility_bill"
+  ],
+  "rows_true_cols_pred": [
+   [
+    5,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    0,
+    10,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    0,
+    0,
+    7,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    11,
+    0,
+    0,
+    0,
+    0,
+    2,
+    0,
+    0,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    21,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    0,
+    39,
+    0,
+    2,
+    4,
+    0,
+    0,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    3,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    45,
+    2,
+    0,
+    0,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    4,
+    2,
+    2,
+    0,
+    0,
+    308,
+    0,
+    0,
+    1
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    8,
+    0,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    11,
+    0,
+    51,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    4,
+    0,
+    0,
+    30
+   ]
+  ]
+ },
+ "indian_val": {
+  "n": 102,
+  "accuracy": 0.941,
+  "classes_present": {
+   "medical_bill": 3,
+   "invoice": 31,
+   "utility_bill": 15,
+   "receipt": 23,
+   "travel_document": 20,
+   "hotel_bill": 10
+  }
+ },
+ "manual_review_rate_at_conf_lt_0.5": 0.078
+}

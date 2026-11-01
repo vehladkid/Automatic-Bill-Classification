@@ -1,0 +1,21 @@
+Loading weights:   0%|          | 0/197 [00:00<?, ?it/s]Loading weights: 100%|██████████| 197/197 [00:00<00:00, 14340.87it/s]
+[transformers] [1mXLMRobertaForSequenceClassification LOAD REPORT[0m from: /home/tejvir-singh/Desktop/ML-project/experiments/text_vs_neural/pretrained/xlm-roberta-base
+Key                         | Status     | 
+----------------------------+------------+-
+lm_head.layer_norm.weight   | UNEXPECTED | 
+lm_head.bias                | UNEXPECTED | 
+lm_head.dense.bias          | UNEXPECTED | 
+roberta.pooler.dense.weight | UNEXPECTED | 
+lm_head.dense.weight        | UNEXPECTED | 
+lm_head.layer_norm.bias     | UNEXPECTED | 
+roberta.pooler.dense.bias   | UNEXPECTED | 
+classifier.dense.bias       | MISSING    | 
+classifier.dense.weight     | MISSING    | 
+classifier.out_proj.weight  | MISSING    | 
+classifier.out_proj.bias    | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+xlmr cpu model-only 74.77 ms | end-to-end 70.56 ms | docs/s bs1/8/32: {1: 11.7, 8: 9.4, 32: 7.7}
+xlmr cuda model-only 5.85 ms | end-to-end 5.72 ms | docs/s bs1/8/32: {1: 179.3, 8: 317.3, 32: 297.8}

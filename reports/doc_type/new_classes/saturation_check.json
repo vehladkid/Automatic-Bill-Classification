@@ -1,0 +1,23 @@
+{
+ "n_test": 274,
+ "per_class_count": {
+  "bank_statement": 100,
+  "ev_document": 17,
+  "form_16": 18,
+  "insurance_premium_receipt": 17,
+  "investment_certificate": 21,
+  "loan_interest_certificate": 11,
+  "loan_statement": 12,
+  "meal_voucher_statement": 16,
+  "rent_receipt": 20,
+  "rental_agreement": 17,
+  "salary_slip": 11,
+  "school_fee_receipt": 14
+ },
+ "accuracy_as_evaluated": 1.0,
+ "accuracy_keywords_removed": 1.0,
+ "accuracy_first_ten_words_removed": 1.0,
+ "accuracy_half_words_dropped": 1.0,
+ "accuracy_keywords_removed_and_half_words_dropped": 1.0,
+ "note": "all stay at 1.000: the documents of each type share generator-specific wording (field labels, number formats) far beyond title words; the score measures template-generator separability, not real-world accuracy"
+}

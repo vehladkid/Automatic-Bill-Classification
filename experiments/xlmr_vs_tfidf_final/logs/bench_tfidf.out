@@ -1,0 +1,1 @@
+tfidf cpu model-only 0.09 ms | end-to-end 1.55 ms | docs/s bs1/8/32: {1: 517.3, 8: 939.8, 32: 1012.5}

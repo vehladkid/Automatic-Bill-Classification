@@ -1,0 +1,87 @@
+{
+ "kaggle_listed_files": 426,
+ "files_on_disk": {
+  "Bank Statement": 91,
+  "Check": 100,
+  "ITR_Form 16": 40,
+  "Salary Slip": 96,
+  "Utility": 99
+ },
+ "files_on_disk_total": 426,
+ "undecodable": {
+  "Utility": 2
+ },
+ "manifest_rows": 390,
+ "after_dedup_by_class": {
+  "Bank Statement": {
+   "train": 70,
+   "test": 10,
+   "val": 5,
+   "total": 85
+  },
+  "Check": {
+   "train": 76,
+   "test": 6,
+   "val": 10,
+   "total": 92
+  },
+  "ITR_Form 16": {
+   "train": 27,
+   "val": 8,
+   "test": 2,
+   "total": 37
+  },
+  "Salary Slip": {
+   "train": 67,
+   "test": 12,
+   "val": 10,
+   "total": 89
+  },
+  "Utility": {
+   "test": 9,
+   "train": 65,
+   "val": 13,
+   "total": 87
+  }
+ },
+ "approved_for_training": 0,
+ "claimed_in_previous_audit": {
+  "salary_slip": 89,
+  "form_16": 37,
+  "bank_statement": 85,
+  "cheque": 92
+ },
+ "counts_confirmed": true,
+ "usable_even_if_cleared": {
+  "note": "val/test supports would still be below 30 per class, so no per-class real metric could be reported from this source alone",
+  "val_test_support": {
+   "Bank Statement": {
+    "val": 5,
+    "test": 10
+   },
+   "Check": {
+    "val": 10,
+    "test": 6
+   },
+   "ITR_Form 16": {
+    "val": 8,
+    "test": 2
+   },
+   "Salary Slip": {
+    "val": 10,
+    "test": 12
+   },
+   "Utility": {
+    "val": 13,
+    "test": 9
+   }
+  }
+ },
+ "quality_findings": [
+  "web specimens/templates (Google Images keyword search), not verified real filled documents",
+  "third-party brand names visible",
+  "country of origin mixed/unverified (bank statements include US-style templates)",
+  "label noise seen in a 12-image visual check (balance sheet as bank statement, blank ITR-2 as Form 16)"
+ ],
+ "decision": "blocked: not approved"
+}

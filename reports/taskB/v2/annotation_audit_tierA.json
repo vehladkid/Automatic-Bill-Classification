@@ -1,0 +1,278 @@
+{
+ "n_docs": 54,
+ "status": {
+  "verified": 54
+ },
+ "fields": {
+  "merchant_name": {
+   "filled": 54,
+   "null": 0,
+   "unsupported_multi_value": 0,
+   "had_suggestion": 30,
+   "no_suggestion_but_human_value": 24,
+   "suggestion_agreed": 0,
+   "suggestion_corrected": 30,
+   "suggestion_wrong_but_field_null": 0,
+   "bbox_corrected": 1,
+   "bbox_source": {
+    "manual": 1,
+    "ocr_substring_estimate": 51,
+    "not_found": 2
+   },
+   "no_bbox": 2
+  },
+  "gstin": {
+   "filled": 54,
+   "null": 0,
+   "unsupported_multi_value": 0,
+   "had_suggestion": 53,
+   "no_suggestion_but_human_value": 1,
+   "suggestion_agreed": 43,
+   "suggestion_corrected": 10,
+   "suggestion_wrong_but_field_null": 0,
+   "bbox_corrected": 0,
+   "bbox_source": {
+    "ocr_exact": 5,
+    "ocr_substring_estimate": 44,
+    "not_found": 4,
+    "ocr_partial_match": 1
+   },
+   "no_bbox": 4
+  },
+  "invoice_number": {
+   "filled": 52,
+   "null": 2,
+   "unsupported_multi_value": 0,
+   "had_suggestion": 48,
+   "no_suggestion_but_human_value": 5,
+   "suggestion_agreed": 36,
+   "suggestion_corrected": 11,
+   "suggestion_wrong_but_field_null": 1,
+   "bbox_corrected": 3,
+   "bbox_source": {
+    "ocr_fuzzy": 5,
+    "ocr_exact": 2,
+    "ocr_substring_estimate": 45
+   },
+   "no_bbox": 0
+  },
+  "invoice_date": {
+   "filled": 53,
+   "null": 1,
+   "unsupported_multi_value": 0,
+   "had_suggestion": 41,
+   "no_suggestion_but_human_value": 12,
+   "suggestion_agreed": 39,
+   "suggestion_corrected": 2,
+   "suggestion_wrong_but_field_null": 0,
+   "bbox_corrected": 8,
+   "bbox_source": {
+    "ocr_exact": 2,
+    "suggestion_bbox": 3,
+    "ocr_substring_estimate": 48
+   },
+   "no_bbox": 0
+  },
+  "subtotal": {
+   "filled": 16,
+   "null": 38,
+   "unsupported_multi_value": 0,
+   "had_suggestion": 12,
+   "no_suggestion_but_human_value": 9,
+   "suggestion_agreed": 5,
+   "suggestion_corrected": 2,
+   "suggestion_wrong_but_field_null": 5,
+   "bbox_corrected": 1,
+   "bbox_source": {
+    "ocr_exact": 16
+   },
+   "no_bbox": 0
+  },
+  "tax_total": {
+   "filled": 32,
+   "null": 22,
+   "unsupported_multi_value": 0,
+   "had_suggestion": 0,
+   "no_suggestion_but_human_value": 32,
+   "suggestion_agreed": 0,
+   "suggestion_corrected": 0,
+   "suggestion_wrong_but_field_null": 0,
+   "bbox_corrected": 0,
+   "bbox_source": {
+    "ocr_exact": 24,
+    "ocr_substring_estimate": 8
+   },
+   "no_bbox": 0
+  },
+  "cgst": {
+   "filled": 49,
+   "null": 5,
+   "unsupported_multi_value": 0,
+   "had_suggestion": 7,
+   "no_suggestion_but_human_value": 42,
+   "suggestion_agreed": 4,
+   "suggestion_corrected": 3,
+   "suggestion_wrong_but_field_null": 0,
+   "bbox_corrected": 1,
+   "bbox_source": {
+    "ocr_exact": 46,
+    "ocr_exact+shared_box_ambiguous": 3
+   },
+   "no_bbox": 0
+  },
+  "sgst": {
+   "filled": 49,
+   "null": 5,
+   "unsupported_multi_value": 0,
+   "had_suggestion": 6,
+   "no_suggestion_but_human_value": 43,
+   "suggestion_agreed": 3,
+   "suggestion_corrected": 3,
+   "suggestion_wrong_but_field_null": 0,
+   "bbox_corrected": 0,
+   "bbox_source": {
+    "ocr_exact": 46,
+    "ocr_exact+shared_box_ambiguous": 3
+   },
+   "no_bbox": 0
+  },
+  "igst": {
+   "filled": 0,
+   "null": 54,
+   "unsupported_multi_value": 0,
+   "had_suggestion": 0,
+   "no_suggestion_but_human_value": 0,
+   "suggestion_agreed": 0,
+   "suggestion_corrected": 0,
+   "suggestion_wrong_but_field_null": 0,
+   "bbox_corrected": 0,
+   "bbox_source": {},
+   "no_bbox": 0
+  },
+  "hsn_sac": {
+   "filled": 10,
+   "null": 44,
+   "unsupported_multi_value": 43,
+   "had_suggestion": 46,
+   "no_suggestion_but_human_value": 2,
+   "suggestion_agreed": 7,
+   "suggestion_corrected": 1,
+   "suggestion_wrong_but_field_null": 38,
+   "bbox_corrected": 0,
+   "bbox_source": {
+    "ocr_exact": 10
+   },
+   "no_bbox": 0
+  },
+  "total_amount": {
+   "filled": 53,
+   "null": 1,
+   "unsupported_multi_value": 0,
+   "had_suggestion": 48,
+   "no_suggestion_but_human_value": 5,
+   "suggestion_agreed": 14,
+   "suggestion_corrected": 34,
+   "suggestion_wrong_but_field_null": 0,
+   "bbox_corrected": 5,
+   "bbox_source": {
+    "ocr_exact": 52,
+    "not_found": 1
+   },
+   "no_bbox": 1
+  }
+ },
+ "consistency": {
+  "cgst==sgst": 49,
+  "cgst_sgst_pairs": 49,
+  "tax_total==cgst+sgst": 28,
+  "tax_pairs": 28,
+  "gstin_checksum_ok": 54,
+  "gstin_n": 54,
+  "subtotal+cgst+sgst~total(|d|<=1)": 15,
+  "sub_cgst_sgst_total": 16,
+  "subtotal+tax~total(|d|<=1)": 9,
+  "sub_tax_total_triples": 10
+ },
+ "consistency_flags": [
+  [
+   "in_grocery_gst__20251118_000429",
+   "subtotal+tax-total=-6.41"
+  ],
+  [
+   "in_grocery_gst__20251118_000429",
+   "subtotal+cgst+sgst-total=-6.41"
+  ]
+ ],
+ "supplier_distribution": {
+  "B G DISTRIBUTORS": 4,
+  "B R ENTERPRISE": 4,
+  "DURGA ENTERPRISE": 4,
+  "EKADANT AGENCY": 4,
+  "KIRTIRAAJ TRADERS": 4,
+  "MALATI TRADING": 4,
+  "SCOOTSY LOGISTICS": 4,
+  "SHIV SHANKAR EDIBLE": 4,
+  "K D ENTERPRISE": 3,
+  "LOKENATH ENTERPRISE": 3,
+  "S S AGENCIES": 3,
+  "SUCHITRA ENTERPRISE": 3,
+  "BINOY TRADING": 2,
+  "PAN:AAKFD5162A": 2,
+  "GANAPATI FOOD SUPPLIER": 1,
+  "ARYAN TRADERS": 1,
+  "MANSHI ENTERPRISES": 1,
+  "SHAW TRADERS": 1,
+  "SHANKAR ENTERPRISES": 1,
+  "SK MARKETING": 1
+ },
+ "n_suppliers": 20,
+ "top_supplier_share": 0.074,
+ "multi_rate_docs": 20,
+ "rates_seen": [
+  0,
+  2.5,
+  5,
+  6,
+  9,
+  12,
+  18
+ ],
+ "zero_rate_lines_docs": 4,
+ "partial_documents": [
+  "in_grocery_gst__20251118_000940",
+  "in_grocery_gst__20251118_000959",
+  "in_grocery_gst__20251118_001009",
+  "in_grocery_gst__20251118_001018",
+  "in_grocery_gst__20251117_234231",
+  "in_grocery_gst__20251118_000838",
+  "in_grocery_gst__20251117_234710",
+  "in_grocery_gst__20251117_234816",
+  "in_grocery_gst__20251117_234831"
+ ],
+ "same_invoice_two_photos": [
+  "in_grocery_gst__20251117_235614",
+  "in_grocery_gst__20251117_235738",
+  "in_grocery_gst__20251118_000815",
+  "in_grocery_gst__20251118_000838"
+ ],
+ "hsn_unique_counts": {
+  "6": 9,
+  "1": 13,
+  "3": 11,
+  "2": 12,
+  "0": 1,
+  "4": 6,
+  "5": 2
+ },
+ "hsn_scalar_supported_docs": 10,
+ "hsn_list_docs": 53,
+ "interstate_docs": 0,
+ "tax_notes": {
+  "igst_nonnull": 0
+ },
+ "docs_with_subtotal_null_because_of_discount_or_ambiguity": 37,
+ "unreconciled_total_choice": {
+  "printed_net_payable_after_round_off_used": true
+ },
+ "orientation_confident_all": true
+}

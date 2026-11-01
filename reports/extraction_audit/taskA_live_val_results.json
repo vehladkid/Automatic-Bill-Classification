@@ -1,0 +1,1002 @@
+{
+ "stored": {
+  "n": 391,
+  "accuracy": 0.9054,
+  "macro_f1": 0.8701,
+  "per_class": {
+   "bus": {
+    "n": 14,
+    "precision": 0.647,
+    "recall": 0.786,
+    "f1": 0.71
+   },
+   "electricity": {
+    "n": 12,
+    "precision": 0.923,
+    "recall": 1.0,
+    "f1": 0.96
+   },
+   "flight": {
+    "n": 14,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+   },
+   "food": {
+    "n": 110,
+    "precision": 0.898,
+    "recall": 0.964,
+    "f1": 0.93
+   },
+   "fuel": {
+    "n": 13,
+    "precision": 0.923,
+    "recall": 0.923,
+    "f1": 0.923
+   },
+   "gas": {
+    "n": 4,
+    "precision": 1.0,
+    "recall": 0.75,
+    "f1": 0.857
+   },
+   "hotel": {
+    "n": 23,
+    "precision": 0.875,
+    "recall": 0.913,
+    "f1": 0.894
+   },
+   "internet": {
+    "n": 6,
+    "precision": 1.0,
+    "recall": 0.5,
+    "f1": 0.667
+   },
+   "medical": {
+    "n": 6,
+    "precision": 1.0,
+    "recall": 0.667,
+    "f1": 0.8
+   },
+   "miscellaneous": {
+    "n": 50,
+    "precision": 0.956,
+    "recall": 0.86,
+    "f1": 0.905
+   },
+   "non_expense": {
+    "n": 80,
+    "precision": 0.93,
+    "recall": 1.0,
+    "f1": 0.964
+   },
+   "parking": {
+    "n": 9,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+   },
+   "train": {
+    "n": 29,
+    "precision": 0.905,
+    "recall": 0.655,
+    "f1": 0.76
+   },
+   "transport": {
+    "n": 14,
+    "precision": 0.733,
+    "recall": 0.786,
+    "f1": 0.759
+   },
+   "water": {
+    "n": 7,
+    "precision": 1.0,
+    "recall": 0.857,
+    "f1": 0.923
+   }
+  },
+  "top_confusions": [
+   [
+    "miscellaneous",
+    "food",
+    7
+   ],
+   [
+    "train",
+    "bus",
+    6
+   ],
+   [
+    "train",
+    "transport",
+    2
+   ],
+   [
+    "transport",
+    "hotel",
+    2
+   ],
+   [
+    "food",
+    "non_expense",
+    1
+   ],
+   [
+    "food",
+    "train",
+    1
+   ],
+   [
+    "train",
+    "non_expense",
+    1
+   ],
+   [
+    "water",
+    "non_expense",
+    1
+   ],
+   [
+    "gas",
+    "electricity",
+    1
+   ],
+   [
+    "food",
+    "miscellaneous",
+    1
+   ]
+  ],
+  "routing": {
+   "tau": 0.61,
+   "auto_coverage": 0.913,
+   "auto_precision": 0.9524
+  },
+  "by_source": {
+   "funsd": {
+    "n": 13,
+    "acc": 1.0
+   },
+   "hf_medical": {
+    "n": 2,
+    "acc": 0.5
+   },
+   "in_financial": {
+    "n": 40,
+    "acc": 0.975
+   },
+   "in_grocery_gst": {
+    "n": 31,
+    "acc": 1.0
+   },
+   "invoices_pt": {
+    "n": 6,
+    "acc": 1.0
+   },
+   "manual_in": {
+    "n": 43,
+    "acc": 0.8837
+   },
+   "my_receipts": {
+    "n": 46,
+    "acc": 0.7826
+   },
+   "receiptbench": {
+    "n": 121,
+    "acc": 0.8347
+   },
+   "rvl_cdip": {
+    "n": 34,
+    "acc": 1.0
+   },
+   "sroie": {
+    "n": 12,
+    "acc": 1.0
+   },
+   "user_real": {
+    "n": 43,
+    "acc": 1.0
+   }
+  }
+ },
+ "live1600": {
+  "n": 391,
+  "accuracy": 0.9054,
+  "macro_f1": 0.8703,
+  "per_class": {
+   "bus": {
+    "n": 14,
+    "precision": 0.647,
+    "recall": 0.786,
+    "f1": 0.71
+   },
+   "electricity": {
+    "n": 12,
+    "precision": 0.923,
+    "recall": 1.0,
+    "f1": 0.96
+   },
+   "flight": {
+    "n": 14,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+   },
+   "food": {
+    "n": 110,
+    "precision": 0.906,
+    "recall": 0.964,
+    "f1": 0.934
+   },
+   "fuel": {
+    "n": 13,
+    "precision": 0.923,
+    "recall": 0.923,
+    "f1": 0.923
+   },
+   "gas": {
+    "n": 4,
+    "precision": 1.0,
+    "recall": 0.75,
+    "f1": 0.857
+   },
+   "hotel": {
+    "n": 23,
+    "precision": 0.84,
+    "recall": 0.913,
+    "f1": 0.875
+   },
+   "internet": {
+    "n": 6,
+    "precision": 1.0,
+    "recall": 0.5,
+    "f1": 0.667
+   },
+   "medical": {
+    "n": 6,
+    "precision": 1.0,
+    "recall": 0.667,
+    "f1": 0.8
+   },
+   "miscellaneous": {
+    "n": 50,
+    "precision": 0.956,
+    "recall": 0.86,
+    "f1": 0.905
+   },
+   "non_expense": {
+    "n": 80,
+    "precision": 0.929,
+    "recall": 0.988,
+    "f1": 0.958
+   },
+   "parking": {
+    "n": 9,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+   },
+   "train": {
+    "n": 29,
+    "precision": 0.909,
+    "recall": 0.69,
+    "f1": 0.784
+   },
+   "transport": {
+    "n": 14,
+    "precision": 0.733,
+    "recall": 0.786,
+    "f1": 0.759
+   },
+   "water": {
+    "n": 7,
+    "precision": 1.0,
+    "recall": 0.857,
+    "f1": 0.923
+   }
+  },
+  "top_confusions": [
+   [
+    "miscellaneous",
+    "food",
+    7
+   ],
+   [
+    "train",
+    "bus",
+    6
+   ],
+   [
+    "train",
+    "transport",
+    2
+   ],
+   [
+    "transport",
+    "hotel",
+    2
+   ],
+   [
+    "food",
+    "non_expense",
+    1
+   ],
+   [
+    "food",
+    "train",
+    1
+   ],
+   [
+    "water",
+    "non_expense",
+    1
+   ],
+   [
+    "non_expense",
+    "hotel",
+    1
+   ],
+   [
+    "gas",
+    "electricity",
+    1
+   ],
+   [
+    "food",
+    "miscellaneous",
+    1
+   ]
+  ],
+  "routing": {
+   "tau": 0.61,
+   "auto_coverage": 0.9105,
+   "auto_precision": 0.9579
+  },
+  "by_source": {
+   "funsd": {
+    "n": 13,
+    "acc": 1.0
+   },
+   "hf_medical": {
+    "n": 2,
+    "acc": 0.5
+   },
+   "in_financial": {
+    "n": 40,
+    "acc": 0.95
+   },
+   "in_grocery_gst": {
+    "n": 31,
+    "acc": 0.9677
+   },
+   "invoices_pt": {
+    "n": 6,
+    "acc": 1.0
+   },
+   "manual_in": {
+    "n": 43,
+    "acc": 0.907
+   },
+   "my_receipts": {
+    "n": 46,
+    "acc": 0.8043
+   },
+   "receiptbench": {
+    "n": 121,
+    "acc": 0.8347
+   },
+   "rvl_cdip": {
+    "n": 34,
+    "acc": 1.0
+   },
+   "sroie": {
+    "n": 12,
+    "acc": 1.0
+   },
+   "user_real": {
+    "n": 43,
+    "acc": 1.0
+   }
+  }
+ },
+ "live2400": {
+  "n": 391,
+  "accuracy": 0.9079,
+  "macro_f1": 0.8796,
+  "per_class": {
+   "bus": {
+    "n": 14,
+    "precision": 0.647,
+    "recall": 0.786,
+    "f1": 0.71
+   },
+   "electricity": {
+    "n": 12,
+    "precision": 0.923,
+    "recall": 1.0,
+    "f1": 0.96
+   },
+   "flight": {
+    "n": 14,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+   },
+   "food": {
+    "n": 110,
+    "precision": 0.906,
+    "recall": 0.964,
+    "f1": 0.934
+   },
+   "fuel": {
+    "n": 13,
+    "precision": 0.923,
+    "recall": 0.923,
+    "f1": 0.923
+   },
+   "gas": {
+    "n": 4,
+    "precision": 1.0,
+    "recall": 0.75,
+    "f1": 0.857
+   },
+   "hotel": {
+    "n": 23,
+    "precision": 0.84,
+    "recall": 0.913,
+    "f1": 0.875
+   },
+   "internet": {
+    "n": 6,
+    "precision": 1.0,
+    "recall": 0.667,
+    "f1": 0.8
+   },
+   "medical": {
+    "n": 6,
+    "precision": 1.0,
+    "recall": 0.667,
+    "f1": 0.8
+   },
+   "miscellaneous": {
+    "n": 50,
+    "precision": 0.956,
+    "recall": 0.86,
+    "f1": 0.905
+   },
+   "non_expense": {
+    "n": 80,
+    "precision": 0.94,
+    "recall": 0.988,
+    "f1": 0.963
+   },
+   "parking": {
+    "n": 9,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+   },
+   "train": {
+    "n": 29,
+    "precision": 0.909,
+    "recall": 0.69,
+    "f1": 0.784
+   },
+   "transport": {
+    "n": 14,
+    "precision": 0.733,
+    "recall": 0.786,
+    "f1": 0.759
+   },
+   "water": {
+    "n": 7,
+    "precision": 1.0,
+    "recall": 0.857,
+    "f1": 0.923
+   }
+  },
+  "top_confusions": [
+   [
+    "miscellaneous",
+    "food",
+    7
+   ],
+   [
+    "train",
+    "bus",
+    6
+   ],
+   [
+    "train",
+    "transport",
+    2
+   ],
+   [
+    "transport",
+    "hotel",
+    2
+   ],
+   [
+    "food",
+    "non_expense",
+    1
+   ],
+   [
+    "food",
+    "train",
+    1
+   ],
+   [
+    "water",
+    "non_expense",
+    1
+   ],
+   [
+    "non_expense",
+    "hotel",
+    1
+   ],
+   [
+    "gas",
+    "electricity",
+    1
+   ],
+   [
+    "food",
+    "miscellaneous",
+    1
+   ]
+  ],
+  "routing": {
+   "tau": 0.61,
+   "auto_coverage": 0.9105,
+   "auto_precision": 0.9579
+  },
+  "by_source": {
+   "funsd": {
+    "n": 13,
+    "acc": 1.0
+   },
+   "hf_medical": {
+    "n": 2,
+    "acc": 0.5
+   },
+   "in_financial": {
+    "n": 40,
+    "acc": 0.95
+   },
+   "in_grocery_gst": {
+    "n": 31,
+    "acc": 0.9677
+   },
+   "invoices_pt": {
+    "n": 6,
+    "acc": 1.0
+   },
+   "manual_in": {
+    "n": 43,
+    "acc": 0.907
+   },
+   "my_receipts": {
+    "n": 46,
+    "acc": 0.8043
+   },
+   "receiptbench": {
+    "n": 121,
+    "acc": 0.843
+   },
+   "rvl_cdip": {
+    "n": 34,
+    "acc": 1.0
+   },
+   "sroie": {
+    "n": 12,
+    "acc": 1.0
+   },
+   "user_real": {
+    "n": 43,
+    "acc": 1.0
+   }
+  }
+ },
+ "live2400r": {
+  "n": 391,
+  "accuracy": 0.9079,
+  "macro_f1": 0.8796,
+  "per_class": {
+   "bus": {
+    "n": 14,
+    "precision": 0.647,
+    "recall": 0.786,
+    "f1": 0.71
+   },
+   "electricity": {
+    "n": 12,
+    "precision": 0.923,
+    "recall": 1.0,
+    "f1": 0.96
+   },
+   "flight": {
+    "n": 14,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+   },
+   "food": {
+    "n": 110,
+    "precision": 0.906,
+    "recall": 0.964,
+    "f1": 0.934
+   },
+   "fuel": {
+    "n": 13,
+    "precision": 0.923,
+    "recall": 0.923,
+    "f1": 0.923
+   },
+   "gas": {
+    "n": 4,
+    "precision": 1.0,
+    "recall": 0.75,
+    "f1": 0.857
+   },
+   "hotel": {
+    "n": 23,
+    "precision": 0.84,
+    "recall": 0.913,
+    "f1": 0.875
+   },
+   "internet": {
+    "n": 6,
+    "precision": 1.0,
+    "recall": 0.667,
+    "f1": 0.8
+   },
+   "medical": {
+    "n": 6,
+    "precision": 1.0,
+    "recall": 0.667,
+    "f1": 0.8
+   },
+   "miscellaneous": {
+    "n": 50,
+    "precision": 0.956,
+    "recall": 0.86,
+    "f1": 0.905
+   },
+   "non_expense": {
+    "n": 80,
+    "precision": 0.94,
+    "recall": 0.988,
+    "f1": 0.963
+   },
+   "parking": {
+    "n": 9,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+   },
+   "train": {
+    "n": 29,
+    "precision": 0.909,
+    "recall": 0.69,
+    "f1": 0.784
+   },
+   "transport": {
+    "n": 14,
+    "precision": 0.733,
+    "recall": 0.786,
+    "f1": 0.759
+   },
+   "water": {
+    "n": 7,
+    "precision": 1.0,
+    "recall": 0.857,
+    "f1": 0.923
+   }
+  },
+  "top_confusions": [
+   [
+    "miscellaneous",
+    "food",
+    7
+   ],
+   [
+    "train",
+    "bus",
+    6
+   ],
+   [
+    "train",
+    "transport",
+    2
+   ],
+   [
+    "transport",
+    "hotel",
+    2
+   ],
+   [
+    "food",
+    "non_expense",
+    1
+   ],
+   [
+    "food",
+    "train",
+    1
+   ],
+   [
+    "water",
+    "non_expense",
+    1
+   ],
+   [
+    "non_expense",
+    "hotel",
+    1
+   ],
+   [
+    "gas",
+    "electricity",
+    1
+   ],
+   [
+    "food",
+    "miscellaneous",
+    1
+   ]
+  ],
+  "routing": {
+   "tau": 0.61,
+   "auto_coverage": 0.9105,
+   "auto_precision": 0.9579
+  },
+  "by_source": {
+   "funsd": {
+    "n": 13,
+    "acc": 1.0
+   },
+   "hf_medical": {
+    "n": 2,
+    "acc": 0.5
+   },
+   "in_financial": {
+    "n": 40,
+    "acc": 0.95
+   },
+   "in_grocery_gst": {
+    "n": 31,
+    "acc": 0.9677
+   },
+   "invoices_pt": {
+    "n": 6,
+    "acc": 1.0
+   },
+   "manual_in": {
+    "n": 43,
+    "acc": 0.907
+   },
+   "my_receipts": {
+    "n": 46,
+    "acc": 0.8043
+   },
+   "receiptbench": {
+    "n": 121,
+    "acc": 0.843
+   },
+   "rvl_cdip": {
+    "n": 34,
+    "acc": 1.0
+   },
+   "sroie": {
+    "n": 12,
+    "acc": 1.0
+   },
+   "user_real": {
+    "n": 43,
+    "acc": 1.0
+   }
+  }
+ },
+ "live1600r": {
+  "n": 391,
+  "accuracy": 0.9054,
+  "macro_f1": 0.8703,
+  "per_class": {
+   "bus": {
+    "n": 14,
+    "precision": 0.647,
+    "recall": 0.786,
+    "f1": 0.71
+   },
+   "electricity": {
+    "n": 12,
+    "precision": 0.923,
+    "recall": 1.0,
+    "f1": 0.96
+   },
+   "flight": {
+    "n": 14,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+   },
+   "food": {
+    "n": 110,
+    "precision": 0.906,
+    "recall": 0.964,
+    "f1": 0.934
+   },
+   "fuel": {
+    "n": 13,
+    "precision": 0.923,
+    "recall": 0.923,
+    "f1": 0.923
+   },
+   "gas": {
+    "n": 4,
+    "precision": 1.0,
+    "recall": 0.75,
+    "f1": 0.857
+   },
+   "hotel": {
+    "n": 23,
+    "precision": 0.84,
+    "recall": 0.913,
+    "f1": 0.875
+   },
+   "internet": {
+    "n": 6,
+    "precision": 1.0,
+    "recall": 0.5,
+    "f1": 0.667
+   },
+   "medical": {
+    "n": 6,
+    "precision": 1.0,
+    "recall": 0.667,
+    "f1": 0.8
+   },
+   "miscellaneous": {
+    "n": 50,
+    "precision": 0.956,
+    "recall": 0.86,
+    "f1": 0.905
+   },
+   "non_expense": {
+    "n": 80,
+    "precision": 0.929,
+    "recall": 0.988,
+    "f1": 0.958
+   },
+   "parking": {
+    "n": 9,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+   },
+   "train": {
+    "n": 29,
+    "precision": 0.909,
+    "recall": 0.69,
+    "f1": 0.784
+   },
+   "transport": {
+    "n": 14,
+    "precision": 0.733,
+    "recall": 0.786,
+    "f1": 0.759
+   },
+   "water": {
+    "n": 7,
+    "precision": 1.0,
+    "recall": 0.857,
+    "f1": 0.923
+   }
+  },
+  "top_confusions": [
+   [
+    "miscellaneous",
+    "food",
+    7
+   ],
+   [
+    "train",
+    "bus",
+    6
+   ],
+   [
+    "train",
+    "transport",
+    2
+   ],
+   [
+    "transport",
+    "hotel",
+    2
+   ],
+   [
+    "food",
+    "non_expense",
+    1
+   ],
+   [
+    "food",
+    "train",
+    1
+   ],
+   [
+    "water",
+    "non_expense",
+    1
+   ],
+   [
+    "non_expense",
+    "hotel",
+    1
+   ],
+   [
+    "gas",
+    "electricity",
+    1
+   ],
+   [
+    "food",
+    "miscellaneous",
+    1
+   ]
+  ],
+  "routing": {
+   "tau": 0.61,
+   "auto_coverage": 0.9105,
+   "auto_precision": 0.9579
+  },
+  "by_source": {
+   "funsd": {
+    "n": 13,
+    "acc": 1.0
+   },
+   "hf_medical": {
+    "n": 2,
+    "acc": 0.5
+   },
+   "in_financial": {
+    "n": 40,
+    "acc": 0.95
+   },
+   "in_grocery_gst": {
+    "n": 31,
+    "acc": 0.9677
+   },
+   "invoices_pt": {
+    "n": 6,
+    "acc": 1.0
+   },
+   "manual_in": {
+    "n": 43,
+    "acc": 0.907
+   },
+   "my_receipts": {
+    "n": 46,
+    "acc": 0.8043
+   },
+   "receiptbench": {
+    "n": 121,
+    "acc": 0.8347
+   },
+   "rvl_cdip": {
+    "n": 34,
+    "acc": 1.0
+   },
+   "sroie": {
+    "n": 12,
+    "acc": 1.0
+   },
+   "user_real": {
+    "n": 43,
+    "acc": 1.0
+   }
+  }
+ }
+}

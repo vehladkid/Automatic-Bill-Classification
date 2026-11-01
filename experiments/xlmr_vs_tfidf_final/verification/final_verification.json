@@ -1,0 +1,880 @@
+{
+ "checks": [
+  {
+   "name": "split sizes 4848/634/629 and 386 real test",
+   "ok": true,
+   "detail": "(4848, 634, 629, 386)"
+  },
+  {
+   "name": "no document-id or group overlap between splits",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "TF-IDF re-fit macro-F1 equals the production model's stored macro-F1",
+   "ok": true,
+   "detail": "(np.float64(0.8314223755442093), 0.8314223755442093)"
+  },
+  {
+   "name": "chunk256 s0: selected epoch = validation-best epoch",
+   "ok": true,
+   "detail": "(4, 4)"
+  },
+  {
+   "name": "chunk256 s0: logits shape val/test",
+   "ok": true,
+   "detail": "((634, 16), (629, 16))"
+  },
+  {
+   "name": "chunk256 s0: accuracy recomputed",
+   "ok": true,
+   "detail": "(0.8756476683937824, 0.8756476683937824)"
+  },
+  {
+   "name": "chunk256 s0: macro_precision recomputed",
+   "ok": true,
+   "detail": "(0.8798431670382135, np.float64(0.8798431670382135))"
+  },
+  {
+   "name": "chunk256 s0: macro_recall recomputed",
+   "ok": true,
+   "detail": "(0.8335542330071648, np.float64(0.8335542330071648))"
+  },
+  {
+   "name": "chunk256 s0: macro_f1 recomputed",
+   "ok": true,
+   "detail": "(0.8351590987341007, np.float64(0.8351590987341007))"
+  },
+  {
+   "name": "chunk256 s0: weighted_f1 recomputed",
+   "ok": true,
+   "detail": "(0.8772571961600689, np.float64(0.8772571961600689))"
+  },
+  {
+   "name": "chunk256 s0: ece recomputed",
+   "ok": true,
+   "detail": "(0.04776919965567261, np.float64(0.04776919965567224))"
+  },
+  {
+   "name": "chunk256 s0: nll recomputed",
+   "ok": true,
+   "detail": "(0.47570036571358887, np.float64(0.4757003657135885))"
+  },
+  {
+   "name": "chunk256 s0: brier recomputed",
+   "ok": true,
+   "detail": "(0.198445717824283, np.float64(0.19844571782428294))"
+  },
+  {
+   "name": "chunk256 s0: trainable params = 86,054,416 of 278,055,952",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "chunk256 s0: checkpoint holds exactly the trainable tensors (86,054,416 elements, fp16)",
+   "ok": true,
+   "detail": "(86054416, {'torch.float16'}, 200)"
+  },
+  {
+   "name": "chunk256 s0: checkpoint path recorded in config",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "chunk256: point-estimate delta recomputed",
+   "ok": true,
+   "detail": "(np.float64(0.0037367231898913777), 0.0037367231898913777)"
+  },
+  {
+   "name": "chunk256: hierarchical CI endpoints within 0.01 of an independent 20,000-replicate bootstrap",
+   "ok": true,
+   "detail": "([np.float64(-0.07146792546518276), np.float64(0.08880773530898102)], [-0.0701876671204979, 0.08951753652550062])"
+  },
+  {
+   "name": "chunk256: decision category identical",
+   "ok": true,
+   "detail": "([np.float64(-0.07146792546518276), np.float64(0.08880773530898102)], [-0.0701876671204979, 0.08951753652550062])"
+  },
+  {
+   "name": "ep10 s0: selected epoch = validation-best epoch",
+   "ok": true,
+   "detail": "(7, 7)"
+  },
+  {
+   "name": "ep10 s0: logits shape val/test",
+   "ok": true,
+   "detail": "((634, 16), (629, 16))"
+  },
+  {
+   "name": "ep10 s0: accuracy recomputed",
+   "ok": true,
+   "detail": "(0.8989637305699482, 0.8989637305699482)"
+  },
+  {
+   "name": "ep10 s0: macro_precision recomputed",
+   "ok": true,
+   "detail": "(0.9108974183341272, np.float64(0.9108974183341272))"
+  },
+  {
+   "name": "ep10 s0: macro_recall recomputed",
+   "ok": true,
+   "detail": "(0.8728933691402779, np.float64(0.8728933691402779))"
+  },
+  {
+   "name": "ep10 s0: macro_f1 recomputed",
+   "ok": true,
+   "detail": "(0.8856609725568947, np.float64(0.8856609725568948))"
+  },
+  {
+   "name": "ep10 s0: weighted_f1 recomputed",
+   "ok": true,
+   "detail": "(0.9011049368090451, np.float64(0.901104936809045))"
+  },
+  {
+   "name": "ep10 s0: ece recomputed",
+   "ok": true,
+   "detail": "(0.05404137015159771, np.float64(0.05404137015153247))"
+  },
+  {
+   "name": "ep10 s0: nll recomputed",
+   "ok": true,
+   "detail": "(0.4661768468996209, np.float64(0.466176846899559))"
+  },
+  {
+   "name": "ep10 s0: brier recomputed",
+   "ok": true,
+   "detail": "(0.17390803730459112, np.float64(0.17390803730457796))"
+  },
+  {
+   "name": "ep10 s0: trainable params = 86,054,416 of 278,055,952",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "ep10 s0: checkpoint holds exactly the trainable tensors (86,054,416 elements, fp16)",
+   "ok": true,
+   "detail": "(86054416, {'torch.float16'}, 200)"
+  },
+  {
+   "name": "ep10 s0: checkpoint path recorded in config",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "ep10 s1: selected epoch = validation-best epoch",
+   "ok": true,
+   "detail": "(5, 5)"
+  },
+  {
+   "name": "ep10 s1: logits shape val/test",
+   "ok": true,
+   "detail": "((634, 16), (629, 16))"
+  },
+  {
+   "name": "ep10 s1: accuracy recomputed",
+   "ok": true,
+   "detail": "(0.8860103626943006, 0.8860103626943006)"
+  },
+  {
+   "name": "ep10 s1: macro_precision recomputed",
+   "ok": true,
+   "detail": "(0.8872187622448452, np.float64(0.8872187622448452))"
+  },
+  {
+   "name": "ep10 s1: macro_recall recomputed",
+   "ok": true,
+   "detail": "(0.8678697666071021, np.float64(0.8678697666071021))"
+  },
+  {
+   "name": "ep10 s1: macro_f1 recomputed",
+   "ok": true,
+   "detail": "(0.869374176580086, np.float64(0.869374176580086))"
+  },
+  {
+   "name": "ep10 s1: weighted_f1 recomputed",
+   "ok": true,
+   "detail": "(0.8879255810304589, np.float64(0.8879255810304589))"
+  },
+  {
+   "name": "ep10 s1: ece recomputed",
+   "ok": true,
+   "detail": "(0.05398280615752267, np.float64(0.05398280615751768))"
+  },
+  {
+   "name": "ep10 s1: nll recomputed",
+   "ok": true,
+   "detail": "(0.47328830252443194, np.float64(0.4732883025244279))"
+  },
+  {
+   "name": "ep10 s1: brier recomputed",
+   "ok": true,
+   "detail": "(0.17890510265077164, np.float64(0.1789051026507706))"
+  },
+  {
+   "name": "ep10 s1: trainable params = 86,054,416 of 278,055,952",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "ep10 s1: checkpoint holds exactly the trainable tensors (86,054,416 elements, fp16)",
+   "ok": true,
+   "detail": "(86054416, {'torch.float16'}, 200)"
+  },
+  {
+   "name": "ep10 s1: checkpoint path recorded in config",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "ep10 s2: selected epoch = validation-best epoch",
+   "ok": true,
+   "detail": "(6, 6)"
+  },
+  {
+   "name": "ep10 s2: logits shape val/test",
+   "ok": true,
+   "detail": "((634, 16), (629, 16))"
+  },
+  {
+   "name": "ep10 s2: accuracy recomputed",
+   "ok": true,
+   "detail": "(0.8989637305699482, 0.8989637305699482)"
+  },
+  {
+   "name": "ep10 s2: macro_precision recomputed",
+   "ok": true,
+   "detail": "(0.884404075863823, np.float64(0.884404075863823))"
+  },
+  {
+   "name": "ep10 s2: macro_recall recomputed",
+   "ok": true,
+   "detail": "(0.8745912775120992, np.float64(0.8745912775120992))"
+  },
+  {
+   "name": "ep10 s2: macro_f1 recomputed",
+   "ok": true,
+   "detail": "(0.8693103818358939, np.float64(0.8693103818358942))"
+  },
+  {
+   "name": "ep10 s2: weighted_f1 recomputed",
+   "ok": true,
+   "detail": "(0.8988511303917678, np.float64(0.8988511303917678))"
+  },
+  {
+   "name": "ep10 s2: ece recomputed",
+   "ok": true,
+   "detail": "(0.04289684727867869, np.float64(0.04289684727867146))"
+  },
+  {
+   "name": "ep10 s2: nll recomputed",
+   "ok": true,
+   "detail": "(0.41507580307883524, np.float64(0.4150758030788306))"
+  },
+  {
+   "name": "ep10 s2: brier recomputed",
+   "ok": true,
+   "detail": "(0.16104773024555316, np.float64(0.16104773024555177))"
+  },
+  {
+   "name": "ep10 s2: trainable params = 86,054,416 of 278,055,952",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "ep10 s2: checkpoint holds exactly the trainable tensors (86,054,416 elements, fp16)",
+   "ok": true,
+   "detail": "(86054416, {'torch.float16'}, 200)"
+  },
+  {
+   "name": "ep10 s2: checkpoint path recorded in config",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "ep10 s3: selected epoch = validation-best epoch",
+   "ok": true,
+   "detail": "(10, 10)"
+  },
+  {
+   "name": "ep10 s3: logits shape val/test",
+   "ok": true,
+   "detail": "((634, 16), (629, 16))"
+  },
+  {
+   "name": "ep10 s3: accuracy recomputed",
+   "ok": true,
+   "detail": "(0.8886010362694301, 0.8886010362694301)"
+  },
+  {
+   "name": "ep10 s3: macro_precision recomputed",
+   "ok": true,
+   "detail": "(0.8953903252606923, np.float64(0.8953903252606923))"
+  },
+  {
+   "name": "ep10 s3: macro_recall recomputed",
+   "ok": true,
+   "detail": "(0.8644332533131894, np.float64(0.8644332533131894))"
+  },
+  {
+   "name": "ep10 s3: macro_f1 recomputed",
+   "ok": true,
+   "detail": "(0.8709338925922386, np.float64(0.8709338925922386))"
+  },
+  {
+   "name": "ep10 s3: weighted_f1 recomputed",
+   "ok": true,
+   "detail": "(0.890189182899689, np.float64(0.890189182899689))"
+  },
+  {
+   "name": "ep10 s3: ece recomputed",
+   "ok": true,
+   "detail": "(0.06159622621289786, np.float64(0.06159622621289786))"
+  },
+  {
+   "name": "ep10 s3: nll recomputed",
+   "ok": true,
+   "detail": "(0.5021164375389622, np.float64(0.5021164375389622))"
+  },
+  {
+   "name": "ep10 s3: brier recomputed",
+   "ok": true,
+   "detail": "(0.18509568959093467, np.float64(0.18509568959093467))"
+  },
+  {
+   "name": "ep10 s3: trainable params = 86,054,416 of 278,055,952",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "ep10 s3: checkpoint holds exactly the trainable tensors (86,054,416 elements, fp16)",
+   "ok": true,
+   "detail": "(86054416, {'torch.float16'}, 200)"
+  },
+  {
+   "name": "ep10 s3: checkpoint path recorded in config",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "ep10 s4: selected epoch = validation-best epoch",
+   "ok": true,
+   "detail": "(2, 2)"
+  },
+  {
+   "name": "ep10 s4: logits shape val/test",
+   "ok": true,
+   "detail": "((634, 16), (629, 16))"
+  },
+  {
+   "name": "ep10 s4: accuracy recomputed",
+   "ok": true,
+   "detail": "(0.8316062176165803, 0.8316062176165803)"
+  },
+  {
+   "name": "ep10 s4: macro_precision recomputed",
+   "ok": true,
+   "detail": "(0.8211966905537978, np.float64(0.8211966905537978))"
+  },
+  {
+   "name": "ep10 s4: macro_recall recomputed",
+   "ok": true,
+   "detail": "(0.8171239413646674, np.float64(0.8171239413646674))"
+  },
+  {
+   "name": "ep10 s4: macro_f1 recomputed",
+   "ok": true,
+   "detail": "(0.7939890170435902, np.float64(0.7939890170435902))"
+  },
+  {
+   "name": "ep10 s4: weighted_f1 recomputed",
+   "ok": true,
+   "detail": "(0.8337258522209011, np.float64(0.8337258522209011))"
+  },
+  {
+   "name": "ep10 s4: ece recomputed",
+   "ok": true,
+   "detail": "(0.05586925845559257, np.float64(0.0558692584555908))"
+  },
+  {
+   "name": "ep10 s4: nll recomputed",
+   "ok": true,
+   "detail": "(0.5841460681070193, np.float64(0.5841460681070181))"
+  },
+  {
+   "name": "ep10 s4: brier recomputed",
+   "ok": true,
+   "detail": "(0.24104559870033002, np.float64(0.2410455987003296))"
+  },
+  {
+   "name": "ep10 s4: trainable params = 86,054,416 of 278,055,952",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "ep10 s4: checkpoint holds exactly the trainable tensors (86,054,416 elements, fp16)",
+   "ok": true,
+   "detail": "(86054416, {'torch.float16'}, 200)"
+  },
+  {
+   "name": "ep10 s4: checkpoint path recorded in config",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "ep10: point-estimate delta recomputed",
+   "ok": true,
+   "detail": "(np.float64(0.026431312577531507), 0.026431312577531396)"
+  },
+  {
+   "name": "ep10: hierarchical CI endpoints within 0.01 of an independent 20,000-replicate bootstrap",
+   "ok": true,
+   "detail": "([np.float64(-0.03708109363639444), np.float64(0.10229784301887372)], [-0.037513524997084206, 0.10252963875480228])"
+  },
+  {
+   "name": "ep10: decision category identical",
+   "ok": true,
+   "detail": "([np.float64(-0.03708109363639444), np.float64(0.10229784301887372)], [-0.037513524997084206, 0.10252963875480228])"
+  },
+  {
+   "name": "len512 s0: selected epoch = validation-best epoch",
+   "ok": true,
+   "detail": "(6, 6)"
+  },
+  {
+   "name": "len512 s0: logits shape val/test",
+   "ok": true,
+   "detail": "((634, 16), (629, 16))"
+  },
+  {
+   "name": "len512 s0: accuracy recomputed",
+   "ok": true,
+   "detail": "(0.9015544041450777, 0.9015544041450777)"
+  },
+  {
+   "name": "len512 s0: macro_precision recomputed",
+   "ok": true,
+   "detail": "(0.8891239954544049, np.float64(0.8891239954544049))"
+  },
+  {
+   "name": "len512 s0: macro_recall recomputed",
+   "ok": true,
+   "detail": "(0.8895662416296641, np.float64(0.8895662416296641))"
+  },
+  {
+   "name": "len512 s0: macro_f1 recomputed",
+   "ok": true,
+   "detail": "(0.8849372899740032, np.float64(0.8849372899740031))"
+  },
+  {
+   "name": "len512 s0: weighted_f1 recomputed",
+   "ok": true,
+   "detail": "(0.9033792527126688, np.float64(0.9033792527126688))"
+  },
+  {
+   "name": "len512 s0: ece recomputed",
+   "ok": true,
+   "detail": "(0.04386631609839913, np.float64(0.04386631609839913))"
+  },
+  {
+   "name": "len512 s0: nll recomputed",
+   "ok": true,
+   "detail": "(0.4053989115268898, np.float64(0.4053989115268898))"
+  },
+  {
+   "name": "len512 s0: brier recomputed",
+   "ok": true,
+   "detail": "(0.15660850324527467, np.float64(0.15660850324527467))"
+  },
+  {
+   "name": "len512 s0: trainable params = 86,054,416 of 278,055,952",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "len512 s0: checkpoint holds exactly the trainable tensors (86,054,416 elements, fp16)",
+   "ok": true,
+   "detail": "(86054416, {'torch.float16'}, 200)"
+  },
+  {
+   "name": "len512 s0: checkpoint path recorded in config",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "len512: point-estimate delta recomputed",
+   "ok": true,
+   "detail": "(np.float64(0.053514914429793836), 0.05351491442979395)"
+  },
+  {
+   "name": "len512: hierarchical CI endpoints within 0.01 of an independent 20,000-replicate bootstrap",
+   "ok": true,
+   "detail": "([np.float64(0.000458512402036132), np.float64(0.12712662914544534)], [-0.00121843510697426, 0.12801208642835385])"
+  },
+  {
+   "name": "len512: decision category identical",
+   "ok": false,
+   "detail": "([np.float64(0.000458512402036132), np.float64(0.12712662914544534)], [-0.00121843510697426, 0.12801208642835385])"
+  },
+  {
+   "name": "primary256 s0: selected epoch = validation-best epoch",
+   "ok": true,
+   "detail": "(5, 5)"
+  },
+  {
+   "name": "primary256 s0: logits shape val/test",
+   "ok": true,
+   "detail": "((634, 16), (629, 16))"
+  },
+  {
+   "name": "primary256 s0: accuracy recomputed",
+   "ok": true,
+   "detail": "(0.917098445595855, 0.917098445595855)"
+  },
+  {
+   "name": "primary256 s0: macro_precision recomputed",
+   "ok": true,
+   "detail": "(0.9286403431231604, np.float64(0.9286403431231604))"
+  },
+  {
+   "name": "primary256 s0: macro_recall recomputed",
+   "ok": true,
+   "detail": "(0.8936091839065514, np.float64(0.8936091839065514))"
+  },
+  {
+   "name": "primary256 s0: macro_f1 recomputed",
+   "ok": true,
+   "detail": "(0.9063271909332823, np.float64(0.9063271909332823))"
+  },
+  {
+   "name": "primary256 s0: weighted_f1 recomputed",
+   "ok": true,
+   "detail": "(0.9168987008186432, np.float64(0.9168987008186432))"
+  },
+  {
+   "name": "primary256 s0: ece recomputed",
+   "ok": true,
+   "detail": "(0.03349232175548863, np.float64(0.03349232175547557))"
+  },
+  {
+   "name": "primary256 s0: nll recomputed",
+   "ok": true,
+   "detail": "(0.35182746766620776, np.float64(0.35182746766620276))"
+  },
+  {
+   "name": "primary256 s0: brier recomputed",
+   "ok": true,
+   "detail": "(0.13832119676686183, np.float64(0.13832119676685967))"
+  },
+  {
+   "name": "primary256 s0: trainable params = 86,054,416 of 278,055,952",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "primary256 s0: checkpoint holds exactly the trainable tensors (86,054,416 elements, fp16)",
+   "ok": true,
+   "detail": "(86054416, {'torch.float16'}, 200)"
+  },
+  {
+   "name": "primary256 s0: checkpoint path recorded in config",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "primary256 s1: selected epoch = validation-best epoch",
+   "ok": true,
+   "detail": "(5, 5)"
+  },
+  {
+   "name": "primary256 s1: logits shape val/test",
+   "ok": true,
+   "detail": "((634, 16), (629, 16))"
+  },
+  {
+   "name": "primary256 s1: accuracy recomputed",
+   "ok": true,
+   "detail": "(0.8911917098445595, 0.8911917098445595)"
+  },
+  {
+   "name": "primary256 s1: macro_precision recomputed",
+   "ok": true,
+   "detail": "(0.8695503532611966, np.float64(0.8695503532611966))"
+  },
+  {
+   "name": "primary256 s1: macro_recall recomputed",
+   "ok": true,
+   "detail": "(0.858206863760713, np.float64(0.858206863760713))"
+  },
+  {
+   "name": "primary256 s1: macro_f1 recomputed",
+   "ok": true,
+   "detail": "(0.8547209647471984, np.float64(0.8547209647471984))"
+  },
+  {
+   "name": "primary256 s1: weighted_f1 recomputed",
+   "ok": true,
+   "detail": "(0.8944190692846513, np.float64(0.8944190692846514))"
+  },
+  {
+   "name": "primary256 s1: ece recomputed",
+   "ok": true,
+   "detail": "(0.055999600452007636, np.float64(0.055999600452004396))"
+  },
+  {
+   "name": "primary256 s1: nll recomputed",
+   "ok": true,
+   "detail": "(0.45904983717252346, np.float64(0.4590498371725203))"
+  },
+  {
+   "name": "primary256 s1: brier recomputed",
+   "ok": true,
+   "detail": "(0.1799956217682439, np.float64(0.17999562176824302))"
+  },
+  {
+   "name": "primary256 s1: trainable params = 86,054,416 of 278,055,952",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "primary256 s1: checkpoint holds exactly the trainable tensors (86,054,416 elements, fp16)",
+   "ok": true,
+   "detail": "(86054416, {'torch.float16'}, 200)"
+  },
+  {
+   "name": "primary256 s1: checkpoint path recorded in config",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "primary256 s2: selected epoch = validation-best epoch",
+   "ok": true,
+   "detail": "(6, 6)"
+  },
+  {
+   "name": "primary256 s2: logits shape val/test",
+   "ok": true,
+   "detail": "((634, 16), (629, 16))"
+  },
+  {
+   "name": "primary256 s2: accuracy recomputed",
+   "ok": true,
+   "detail": "(0.9093264248704663, 0.9093264248704663)"
+  },
+  {
+   "name": "primary256 s2: macro_precision recomputed",
+   "ok": true,
+   "detail": "(0.9161865736232824, np.float64(0.9161865736232824))"
+  },
+  {
+   "name": "primary256 s2: macro_recall recomputed",
+   "ok": true,
+   "detail": "(0.8844352920491733, np.float64(0.8844352920491733))"
+  },
+  {
+   "name": "primary256 s2: macro_f1 recomputed",
+   "ok": true,
+   "detail": "(0.8913855965381807, np.float64(0.8913855965381807))"
+  },
+  {
+   "name": "primary256 s2: weighted_f1 recomputed",
+   "ok": true,
+   "detail": "(0.9101422821572596, np.float64(0.9101422821572592))"
+  },
+  {
+   "name": "primary256 s2: ece recomputed",
+   "ok": true,
+   "detail": "(0.03773249423363991, np.float64(0.03773249423363991))"
+  },
+  {
+   "name": "primary256 s2: nll recomputed",
+   "ok": true,
+   "detail": "(0.395629463026502, np.float64(0.395629463026502))"
+  },
+  {
+   "name": "primary256 s2: brier recomputed",
+   "ok": true,
+   "detail": "(0.15316100339971228, np.float64(0.15316100339971228))"
+  },
+  {
+   "name": "primary256 s2: trainable params = 86,054,416 of 278,055,952",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "primary256 s2: checkpoint holds exactly the trainable tensors (86,054,416 elements, fp16)",
+   "ok": true,
+   "detail": "(86054416, {'torch.float16'}, 200)"
+  },
+  {
+   "name": "primary256 s2: checkpoint path recorded in config",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "primary256 s3: selected epoch = validation-best epoch",
+   "ok": true,
+   "detail": "(5, 5)"
+  },
+  {
+   "name": "primary256 s3: logits shape val/test",
+   "ok": true,
+   "detail": "((634, 16), (629, 16))"
+  },
+  {
+   "name": "primary256 s3: accuracy recomputed",
+   "ok": true,
+   "detail": "(0.9067357512953368, 0.9067357512953368)"
+  },
+  {
+   "name": "primary256 s3: macro_precision recomputed",
+   "ok": true,
+   "detail": "(0.9038807727169622, np.float64(0.9038807727169622))"
+  },
+  {
+   "name": "primary256 s3: macro_recall recomputed",
+   "ok": true,
+   "detail": "(0.8841038856768814, np.float64(0.8841038856768814))"
+  },
+  {
+   "name": "primary256 s3: macro_f1 recomputed",
+   "ok": true,
+   "detail": "(0.8887247088324791, np.float64(0.8887247088324792))"
+  },
+  {
+   "name": "primary256 s3: weighted_f1 recomputed",
+   "ok": true,
+   "detail": "(0.9077015414188416, np.float64(0.9077015414188416))"
+  },
+  {
+   "name": "primary256 s3: ece recomputed",
+   "ok": true,
+   "detail": "(0.03499885392914024, np.float64(0.03499885392914025))"
+  },
+  {
+   "name": "primary256 s3: nll recomputed",
+   "ok": true,
+   "detail": "(0.41848621184276297, np.float64(0.41848621184276297))"
+  },
+  {
+   "name": "primary256 s3: brier recomputed",
+   "ok": true,
+   "detail": "(0.15417355858800774, np.float64(0.15417355858800774))"
+  },
+  {
+   "name": "primary256 s3: trainable params = 86,054,416 of 278,055,952",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "primary256 s3: checkpoint holds exactly the trainable tensors (86,054,416 elements, fp16)",
+   "ok": true,
+   "detail": "(86054416, {'torch.float16'}, 200)"
+  },
+  {
+   "name": "primary256 s3: checkpoint path recorded in config",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "primary256 s4: selected epoch = validation-best epoch",
+   "ok": true,
+   "detail": "(6, 6)"
+  },
+  {
+   "name": "primary256 s4: logits shape val/test",
+   "ok": true,
+   "detail": "((634, 16), (629, 16))"
+  },
+  {
+   "name": "primary256 s4: accuracy recomputed",
+   "ok": true,
+   "detail": "(0.8963730569948186, 0.8963730569948186)"
+  },
+  {
+   "name": "primary256 s4: macro_precision recomputed",
+   "ok": true,
+   "detail": "(0.8907772383380806, np.float64(0.8907772383380806))"
+  },
+  {
+   "name": "primary256 s4: macro_recall recomputed",
+   "ok": true,
+   "detail": "(0.8739401811679435, np.float64(0.8739401811679435))"
+  },
+  {
+   "name": "primary256 s4: macro_f1 recomputed",
+   "ok": true,
+   "detail": "(0.8750214033841192, np.float64(0.875021403384119))"
+  },
+  {
+   "name": "primary256 s4: weighted_f1 recomputed",
+   "ok": true,
+   "detail": "(0.8992305271202157, np.float64(0.8992305271202157))"
+  },
+  {
+   "name": "primary256 s4: ece recomputed",
+   "ok": true,
+   "detail": "(0.04554663079009057, np.float64(0.04554663079009057))"
+  },
+  {
+   "name": "primary256 s4: nll recomputed",
+   "ok": true,
+   "detail": "(0.4155292403041668, np.float64(0.4155292403041668))"
+  },
+  {
+   "name": "primary256 s4: brier recomputed",
+   "ok": true,
+   "detail": "(0.17248585588451432, np.float64(0.17248585588451432))"
+  },
+  {
+   "name": "primary256 s4: trainable params = 86,054,416 of 278,055,952",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "primary256 s4: checkpoint holds exactly the trainable tensors (86,054,416 elements, fp16)",
+   "ok": true,
+   "detail": "(86054416, {'torch.float16'}, 200)"
+  },
+  {
+   "name": "primary256 s4: checkpoint path recorded in config",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "primary256: point-estimate delta recomputed",
+   "ok": true,
+   "detail": "(np.float64(0.05181359734284274), 0.05181359734284265)"
+  },
+  {
+   "name": "primary256: hierarchical CI endpoints within 0.01 of an independent 20,000-replicate bootstrap",
+   "ok": true,
+   "detail": "([np.float64(-0.005746541423584694), np.float64(0.12564062835934336)], [-0.005493539128090891, 0.12677920288256825])"
+  },
+  {
+   "name": "primary256: decision category identical",
+   "ok": true,
+   "detail": "([np.float64(-0.005746541423584694), np.float64(0.12564062835934336)], [-0.005493539128090891, 0.12677920288256825])"
+  }
+ ],
+ "failures": [
+  "len512: decision category identical :: ([np.float64(0.000458512402036132), np.float64(0.12712662914544534)], [-0.00121843510697426, 0.12801208642835385])"
+ ],
+ "independent_ci": {
+  "chunk256": [
+   -0.07146792546518276,
+   0.08880773530898102
+  ],
+  "ep10": [
+   -0.03708109363639444,
+   0.10229784301887372
+  ],
+  "len512": [
+   0.000458512402036132,
+   0.12712662914544534
+  ],
+  "primary256": [
+   -0.005746541423584694,
+   0.12564062835934336
+  ]
+ }
+}

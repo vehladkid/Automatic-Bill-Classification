@@ -1,0 +1,655 @@
+{
+ "n_docs": 295,
+ "ocr_secs_mean": 0.36,
+ "ocr_text_vs_ground_truth": {
+  "sroie": {
+   "cer": 0.0885,
+   "wer": 0.4845,
+   "tok_recall": 0.5519,
+   "tok_precision": 0.7223,
+   "n_docs": 68,
+   "cer_median": 0.0603,
+   "cer_p90": 0.1903
+  },
+  "cord": {
+   "cer": 0.1865,
+   "wer": 0.3811,
+   "tok_recall": 0.7161,
+   "tok_precision": 0.8082,
+   "n_docs": 100,
+   "cer_median": 0.1702,
+   "cer_p90": 0.4064
+  }
+ },
+ "field_recoverability": {
+  "gt_ocr_source|invoice_date": {
+   "n": 68,
+   "in_dataset_words": 67,
+   "in_live_ocr": 48
+  },
+  "gt_ocr_source|merchant_name": {
+   "n": 68,
+   "in_dataset_words": 19,
+   "in_live_ocr": 64
+  },
+  "gt_ocr_source|subtotal": {
+   "n": 74,
+   "in_dataset_words": 58,
+   "in_live_ocr": 53
+  },
+  "gt_ocr_source|tax_total": {
+   "n": 48,
+   "in_dataset_words": 42,
+   "in_live_ocr": 36
+  },
+  "gt_ocr_source|total_amount": {
+   "n": 166,
+   "in_dataset_words": 142,
+   "in_live_ocr": 134
+  },
+  "rapidocr_source|cgst": {
+   "n": 8,
+   "in_dataset_words": 8,
+   "in_live_ocr": 8
+  },
+  "rapidocr_source|gstin": {
+   "n": 11,
+   "in_dataset_words": 8,
+   "in_live_ocr": 8
+  },
+  "rapidocr_source|invoice_date": {
+   "n": 103,
+   "in_dataset_words": 51,
+   "in_live_ocr": 56
+  },
+  "rapidocr_source|invoice_number": {
+   "n": 88,
+   "in_dataset_words": 76,
+   "in_live_ocr": 77
+  },
+  "rapidocr_source|merchant_name": {
+   "n": 109,
+   "in_dataset_words": 73,
+   "in_live_ocr": 86
+  },
+  "rapidocr_source|sgst": {
+   "n": 8,
+   "in_dataset_words": 8,
+   "in_live_ocr": 8
+  },
+  "rapidocr_source|tax_total": {
+   "n": 6,
+   "in_dataset_words": 6,
+   "in_live_ocr": 6
+  },
+  "rapidocr_source|total_amount": {
+   "n": 116,
+   "in_dataset_words": 110,
+   "in_live_ocr": 110
+  }
+ },
+ "field_recoverability_total": {
+  "gt_ocr_source": {
+   "n": 424,
+   "in_dataset_words": 328,
+   "in_live_ocr": 335
+  },
+  "rapidocr_source": {
+   "n": 449,
+   "in_dataset_words": 340,
+   "in_live_ocr": 359
+  }
+ },
+ "v1_end_to_end": {
+  "all": {
+   "v1_dataset_words_rerun": {
+    "micro": {
+     "precision": 0.7568,
+     "recall": 0.6577,
+     "f1": 0.7038,
+     "tp": 638,
+     "fp": 205,
+     "fn": 332
+    },
+    "per_field": {
+     "merchant_name": {
+      "f1": 0.5532,
+      "tp": 91,
+      "fp": 61,
+      "fn": 86,
+      "n_gt": 177
+     },
+     "invoice_number": {
+      "f1": 0.5027,
+      "tp": 47,
+      "fp": 52,
+      "fn": 41,
+      "n_gt": 88
+     },
+     "invoice_date": {
+      "f1": 0.7279,
+      "tp": 111,
+      "fp": 23,
+      "fn": 60,
+      "n_gt": 171
+     },
+     "total_amount": {
+      "f1": 0.8415,
+      "tp": 231,
+      "fp": 36,
+      "fn": 51,
+      "n_gt": 282
+     },
+     "subtotal": {
+      "f1": 0.7914,
+      "tp": 55,
+      "fp": 10,
+      "fn": 19,
+      "n_gt": 74
+     },
+     "tax_total": {
+      "f1": 0.8687,
+      "tp": 43,
+      "fp": 2,
+      "fn": 11,
+      "n_gt": 54
+     },
+     "cgst": {
+      "f1": 0.8571,
+      "tp": 6,
+      "fp": 0,
+      "fn": 2,
+      "n_gt": 8
+     },
+     "sgst": {
+      "f1": 0.5455,
+      "tp": 3,
+      "fp": 0,
+      "fn": 5,
+      "n_gt": 8
+     },
+     "gstin": {
+      "f1": 0.8,
+      "tp": 8,
+      "fp": 1,
+      "fn": 3,
+      "n_gt": 11
+     },
+     "currency": {
+      "f1": 0.5375,
+      "tp": 43,
+      "fp": 20,
+      "fn": 54,
+      "n_gt": 97
+     }
+    }
+   },
+   "v1_live_rapidocr": {
+    "micro": {
+     "precision": 0.6951,
+     "recall": 0.5711,
+     "f1": 0.6271,
+     "tp": 554,
+     "fp": 243,
+     "fn": 416
+    },
+    "per_field": {
+     "merchant_name": {
+      "f1": 0.4805,
+      "tp": 80,
+      "fp": 76,
+      "fn": 97,
+      "n_gt": 177
+     },
+     "invoice_number": {
+      "f1": 0.5161,
+      "tp": 48,
+      "fp": 50,
+      "fn": 40,
+      "n_gt": 88
+     },
+     "invoice_date": {
+      "f1": 0.5259,
+      "tp": 71,
+      "fp": 28,
+      "fn": 100,
+      "n_gt": 171
+     },
+     "total_amount": {
+      "f1": 0.7949,
+      "tp": 219,
+      "fp": 50,
+      "fn": 63,
+      "n_gt": 282
+     },
+     "subtotal": {
+      "f1": 0.6977,
+      "tp": 45,
+      "fp": 10,
+      "fn": 29,
+      "n_gt": 74
+     },
+     "tax_total": {
+      "f1": 0.7391,
+      "tp": 34,
+      "fp": 4,
+      "fn": 20,
+      "n_gt": 54
+     },
+     "cgst": {
+      "f1": 0.6154,
+      "tp": 4,
+      "fp": 1,
+      "fn": 4,
+      "n_gt": 8
+     },
+     "sgst": {
+      "f1": 0.3333,
+      "tp": 2,
+      "fp": 2,
+      "fn": 6,
+      "n_gt": 8
+     },
+     "gstin": {
+      "f1": 0.8,
+      "tp": 8,
+      "fp": 1,
+      "fn": 3,
+      "n_gt": 11
+     },
+     "currency": {
+      "f1": 0.5342,
+      "tp": 43,
+      "fp": 21,
+      "fn": 54,
+      "n_gt": 97
+     }
+    }
+   }
+  },
+  "gt_ocr_source(sroie+cord)": {
+   "v1_dataset_words_rerun": {
+    "micro": {
+     "precision": 0.8883,
+     "recall": 0.8443,
+     "f1": 0.8658,
+     "tp": 358,
+     "fp": 45,
+     "fn": 66
+    },
+    "per_field": {
+     "merchant_name": {
+      "f1": 0.8209,
+      "tp": 55,
+      "fp": 11,
+      "fn": 13,
+      "n_gt": 68
+     },
+     "invoice_date": {
+      "f1": 1.0,
+      "tp": 68,
+      "fp": 0,
+      "fn": 0,
+      "n_gt": 68
+     },
+     "total_amount": {
+      "f1": 0.8545,
+      "tp": 141,
+      "fp": 23,
+      "fn": 25,
+      "n_gt": 166
+     },
+     "subtotal": {
+      "f1": 0.7914,
+      "tp": 55,
+      "fp": 10,
+      "fn": 19,
+      "n_gt": 74
+     },
+     "tax_total": {
+      "f1": 0.8864,
+      "tp": 39,
+      "fp": 1,
+      "fn": 9,
+      "n_gt": 48
+     }
+    }
+   },
+   "v1_live_rapidocr": {
+    "micro": {
+     "precision": 0.7932,
+     "recall": 0.6604,
+     "f1": 0.7207,
+     "tp": 280,
+     "fp": 73,
+     "fn": 144
+    },
+    "per_field": {
+     "merchant_name": {
+      "f1": 0.6567,
+      "tp": 44,
+      "fp": 22,
+      "fn": 24,
+      "n_gt": 68
+     },
+     "invoice_date": {
+      "f1": 0.5941,
+      "tp": 30,
+      "fp": 3,
+      "fn": 38,
+      "n_gt": 68
+     },
+     "total_amount": {
+      "f1": 0.7855,
+      "tp": 130,
+      "fp": 35,
+      "fn": 36,
+      "n_gt": 166
+     },
+     "subtotal": {
+      "f1": 0.6977,
+      "tp": 45,
+      "fp": 10,
+      "fn": 29,
+      "n_gt": 74
+     },
+     "tax_total": {
+      "f1": 0.7561,
+      "tp": 31,
+      "fp": 3,
+      "fn": 17,
+      "n_gt": 48
+     }
+    }
+   }
+  },
+  "rapidocr_source(receiptbench+invoices_pt)": {
+   "v1_dataset_words_rerun": {
+    "micro": {
+     "precision": 0.6364,
+     "recall": 0.5128,
+     "f1": 0.568,
+     "tp": 280,
+     "fp": 160,
+     "fn": 266
+    },
+    "per_field": {
+     "merchant_name": {
+      "f1": 0.3692,
+      "tp": 36,
+      "fp": 50,
+      "fn": 73,
+      "n_gt": 109
+     },
+     "invoice_number": {
+      "f1": 0.5027,
+      "tp": 47,
+      "fp": 52,
+      "fn": 41,
+      "n_gt": 88
+     },
+     "invoice_date": {
+      "f1": 0.5089,
+      "tp": 43,
+      "fp": 23,
+      "fn": 60,
+      "n_gt": 103
+     },
+     "total_amount": {
+      "f1": 0.8219,
+      "tp": 90,
+      "fp": 13,
+      "fn": 26,
+      "n_gt": 116
+     },
+     "tax_total": {
+      "f1": 0.7273,
+      "tp": 4,
+      "fp": 1,
+      "fn": 2,
+      "n_gt": 6
+     },
+     "cgst": {
+      "f1": 0.8571,
+      "tp": 6,
+      "fp": 0,
+      "fn": 2,
+      "n_gt": 8
+     },
+     "sgst": {
+      "f1": 0.5455,
+      "tp": 3,
+      "fp": 0,
+      "fn": 5,
+      "n_gt": 8
+     },
+     "gstin": {
+      "f1": 0.8,
+      "tp": 8,
+      "fp": 1,
+      "fn": 3,
+      "n_gt": 11
+     },
+     "currency": {
+      "f1": 0.5375,
+      "tp": 43,
+      "fp": 20,
+      "fn": 54,
+      "n_gt": 97
+     }
+    }
+   },
+   "v1_live_rapidocr": {
+    "micro": {
+     "precision": 0.6171,
+     "recall": 0.5018,
+     "f1": 0.5535,
+     "tp": 274,
+     "fp": 170,
+     "fn": 272
+    },
+    "per_field": {
+     "merchant_name": {
+      "f1": 0.3618,
+      "tp": 36,
+      "fp": 54,
+      "fn": 73,
+      "n_gt": 109
+     },
+     "invoice_number": {
+      "f1": 0.5161,
+      "tp": 48,
+      "fp": 50,
+      "fn": 40,
+      "n_gt": 88
+     },
+     "invoice_date": {
+      "f1": 0.4852,
+      "tp": 41,
+      "fp": 25,
+      "fn": 62,
+      "n_gt": 103
+     },
+     "total_amount": {
+      "f1": 0.8091,
+      "tp": 89,
+      "fp": 15,
+      "fn": 27,
+      "n_gt": 116
+     },
+     "tax_total": {
+      "f1": 0.6,
+      "tp": 3,
+      "fp": 1,
+      "fn": 3,
+      "n_gt": 6
+     },
+     "cgst": {
+      "f1": 0.6154,
+      "tp": 4,
+      "fp": 1,
+      "fn": 4,
+      "n_gt": 8
+     },
+     "sgst": {
+      "f1": 0.3333,
+      "tp": 2,
+      "fp": 2,
+      "fn": 6,
+      "n_gt": 8
+     },
+     "gstin": {
+      "f1": 0.8,
+      "tp": 8,
+      "fp": 1,
+      "fn": 3,
+      "n_gt": 11
+     },
+     "currency": {
+      "f1": 0.5342,
+      "tp": 43,
+      "fp": 21,
+      "fn": 54,
+      "n_gt": 97
+     }
+    }
+   }
+  },
+  "sroie": {
+   "v1_dataset_words_rerun": {
+    "micro": {
+     "precision": 0.945,
+     "recall": 0.9265,
+     "f1": 0.9356,
+     "tp": 189,
+     "fp": 11,
+     "fn": 15
+    },
+    "per_field": {
+     "merchant_name": {
+      "f1": 0.8209,
+      "tp": 55,
+      "fp": 11,
+      "fn": 13,
+      "n_gt": 68
+     },
+     "invoice_date": {
+      "f1": 1.0,
+      "tp": 68,
+      "fp": 0,
+      "fn": 0,
+      "n_gt": 68
+     },
+     "total_amount": {
+      "f1": 0.9851,
+      "tp": 66,
+      "fp": 0,
+      "fn": 2,
+      "n_gt": 68
+     }
+    }
+   },
+   "v1_live_rapidocr": {
+    "micro": {
+     "precision": 0.8383,
+     "recall": 0.6863,
+     "f1": 0.7547,
+     "tp": 140,
+     "fp": 27,
+     "fn": 64
+    },
+    "per_field": {
+     "merchant_name": {
+      "f1": 0.6567,
+      "tp": 44,
+      "fp": 22,
+      "fn": 24,
+      "n_gt": 68
+     },
+     "invoice_date": {
+      "f1": 0.5941,
+      "tp": 30,
+      "fp": 3,
+      "fn": 38,
+      "n_gt": 68
+     },
+     "total_amount": {
+      "f1": 0.9706,
+      "tp": 66,
+      "fp": 2,
+      "fn": 2,
+      "n_gt": 68
+     }
+    }
+   }
+  },
+  "cord": {
+   "v1_dataset_words_rerun": {
+    "micro": {
+     "precision": 0.8325,
+     "recall": 0.7682,
+     "f1": 0.7991,
+     "tp": 169,
+     "fp": 34,
+     "fn": 51
+    },
+    "per_field": {
+     "total_amount": {
+      "f1": 0.7653,
+      "tp": 75,
+      "fp": 23,
+      "fn": 23,
+      "n_gt": 98
+     },
+     "subtotal": {
+      "f1": 0.7914,
+      "tp": 55,
+      "fp": 10,
+      "fn": 19,
+      "n_gt": 74
+     },
+     "tax_total": {
+      "f1": 0.8864,
+      "tp": 39,
+      "fp": 1,
+      "fn": 9,
+      "n_gt": 48
+     }
+    }
+   },
+   "v1_live_rapidocr": {
+    "micro": {
+     "precision": 0.7527,
+     "recall": 0.6364,
+     "f1": 0.6897,
+     "tp": 140,
+     "fp": 46,
+     "fn": 80
+    },
+    "per_field": {
+     "total_amount": {
+      "f1": 0.6564,
+      "tp": 64,
+      "fp": 33,
+      "fn": 34,
+      "n_gt": 98
+     },
+     "subtotal": {
+      "f1": 0.6977,
+      "tp": 45,
+      "fp": 10,
+      "fn": 29,
+      "n_gt": 74
+     },
+     "tax_total": {
+      "f1": 0.7561,
+      "tp": 31,
+      "fp": 3,
+      "fn": 17,
+      "n_gt": 48
+     }
+    }
+   }
+  }
+ }
+}

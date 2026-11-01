@@ -1,0 +1,7880 @@
+{
+ "checks": [
+  {
+   "name": "n_val",
+   "stored": 634,
+   "recomputed": 634,
+   "ok": true
+  },
+  {
+   "name": "n_test",
+   "stored": 629,
+   "recomputed": 629,
+   "ok": true
+  },
+  {
+   "name": "n_real_test",
+   "stored": 386,
+   "recomputed": 386,
+   "ok": true
+  },
+  {
+   "name": "tfidf: val logits rows",
+   "stored": 634,
+   "recomputed": 634,
+   "ok": true
+  },
+  {
+   "name": "tfidf: test logits rows",
+   "stored": 629,
+   "recomputed": 629,
+   "ok": true
+  },
+  {
+   "name": "tfidf: logits width",
+   "stored": 16,
+   "recomputed": 16,
+   "ok": true
+  },
+  {
+   "name": "tfidf: temperature (refit on validation)",
+   "stored": 0.6026942007863407,
+   "recomputed": 0.6026942007861407,
+   "ok": true
+  },
+  {
+   "name": "tfidf: raw/real/accuracy",
+   "stored": 0.883419689119171,
+   "recomputed": 0.883419689119171,
+   "ok": true
+  },
+  {
+   "name": "tfidf: raw/real/macro_precision",
+   "stored": 0.9100839948804691,
+   "recomputed": 0.9100839948804691,
+   "ok": true
+  },
+  {
+   "name": "tfidf: raw/real/macro_recall",
+   "stored": 0.7956664806186146,
+   "recomputed": 0.7956664806186146,
+   "ok": true
+  },
+  {
+   "name": "tfidf: raw/real/macro_f1",
+   "stored": 0.8314223755442093,
+   "recomputed": 0.8314223755442093,
+   "ok": true
+  },
+  {
+   "name": "tfidf: raw/real/weighted_f1",
+   "stored": 0.8799243082752329,
+   "recomputed": 0.8799243082752329,
+   "ok": true
+  },
+  {
+   "name": "tfidf: raw/real/ece",
+   "stored": 0.1238749182016828,
+   "recomputed": 0.1238749182016828,
+   "ok": true
+  },
+  {
+   "name": "tfidf: raw/real/nll",
+   "stored": 0.4711798343748411,
+   "recomputed": 0.4711798343748411,
+   "ok": true
+  },
+  {
+   "name": "tfidf: raw/real/brier",
+   "stored": 0.18663315841121794,
+   "recomputed": 0.18663315841121794,
+   "ok": true
+  },
+  {
+   "name": "tfidf: raw/real/per-class F1 bus",
+   "stored": 0.7499999999999999,
+   "recomputed": 0.75,
+   "ok": true
+  },
+  {
+   "name": "tfidf: raw/real/support bus",
+   "stored": 13,
+   "recomputed": 13.0,
+   "ok": true
+  },
+  {
+   "name": "tfidf: raw/real/per-class F1 electricity",
+   "stored": 0.9166666666666666,
+   "recomputed": 0.9166666666666666,
+   "ok": true
+  },
+  {
+   "name": "tfidf: raw/real/support electricity",
+   "stored": 12,
+   "recomputed": 12.0,
+   "ok": true
+  },
+  {
+   "name": "tfidf: raw/real/per-class F1 flight",
+   "stored": 0.9600000000000001,
+   "recomputed": 0.96,
+   "ok": true
+  },
+  {
+   "name": "tfidf: raw/real/support flight",
+   "stored": 13,
+   "recomputed": 13.0,
+   "ok": true
+  },
+  {
+   "name": "tfidf: raw/real/per-class F1 food",
+   "stored": 0.9244444444444444,
+   "recomputed": 0.9244444444444444,
+   "ok": true
+  },
+  {
+   "name": "tfidf: raw/real/support food",
+   "stored": 109,
+   "recomputed": 109.0,
+   "ok": true
+  },
+  {
+   "name": "tfidf: raw/real/per-class F1 fuel",
+   "stored": 0.8799999999999999,
+   "recomputed": 0.88,
+   "ok": true
+  },
+  {
+   "name": "tfidf: raw/real/support fuel",
+   "stored": 13,
+   "recomputed": 13.0,
+   "ok": true
+  },
+  {
+   "name": "tfidf: raw/real/per-class F1 gas",
+   "stored": 0.8571428571428571,
+   "recomputed": 0.8571428571428571,
+   "ok": true
+  },
+  {
+   "name": "tfidf: raw/real/support gas",
+   "stored": 4,
+   "recomputed": 4.0,
+   "ok": true
+  },
+  {
+   "name": "tfidf: raw/real/per-class F1 hotel",
+   "stored": 0.8181818181818182,
+   "recomputed": 0.8181818181818182,
+   "ok": true
+  },
+  {
+   "name": "tfidf: raw/real/support hotel",
+   "stored": 23,
+   "recomputed": 23.0,
+   "ok": true
+  },
+  {
+   "name": "tfidf: raw/real/per-class F1 internet",
+   "stored": 0.8,
+   "recomputed": 0.8,
+   "ok": true
+  },
+  {
+   "name": "tfidf: raw/real/support internet",
+   "stored": 6,
+   "recomputed": 6.0,
+   "ok": true
+  },
+  {
+   "name": "tfidf: raw/real/per-class F1 medical",
+   "stored": 0.5,
+   "recomputed": 0.5,
+   "ok": true
+  },
+  {
+   "name": "tfidf: raw/real/support medical",
+   "stored": 6,
+   "recomputed": 6.0,
+   "ok": true
+  },
+  {
+   "name": "tfidf: raw/real/per-class F1 miscellaneous",
+   "stored": 0.9090909090909091,
+   "recomputed": 0.9090909090909091,
+   "ok": true
+  },
+  {
+   "name": "tfidf: raw/real/support miscellaneous",
+   "stored": 50,
+   "recomputed": 50.0,
+   "ok": true
+  },
+  {
+   "name": "tfidf: raw/real/per-class F1 non_expense",
+   "stored": 0.9122807017543859,
+   "recomputed": 0.9122807017543859,
+   "ok": true
+  },
+  {
+   "name": "tfidf: raw/real/support non_expense",
+   "stored": 80,
+   "recomputed": 80.0,
+   "ok": true
+  },
+  {
+   "name": "tfidf: raw/real/per-class F1 parking",
+   "stored": 0.7999999999999999,
+   "recomputed": 0.8,
+   "ok": true
+  },
+  {
+   "name": "tfidf: raw/real/support parking",
+   "stored": 8,
+   "recomputed": 8.0,
+   "ok": true
+  },
+  {
+   "name": "tfidf: raw/real/per-class F1 train",
+   "stored": 0.782608695652174,
+   "recomputed": 0.782608695652174,
+   "ok": true
+  },
+  {
+   "name": "tfidf: raw/real/support train",
+   "stored": 28,
+   "recomputed": 28.0,
+   "ok": true
+  },
+  {
+   "name": "tfidf: raw/real/per-class F1 transport",
+   "stored": 0.8275862068965518,
+   "recomputed": 0.8275862068965517,
+   "ok": true
+  },
+  {
+   "name": "tfidf: raw/real/support transport",
+   "stored": 14,
+   "recomputed": 14.0,
+   "ok": true
+  },
+  {
+   "name": "tfidf: raw/real/per-class F1 water",
+   "stored": 0.8333333333333333,
+   "recomputed": 0.8333333333333334,
+   "ok": true
+  },
+  {
+   "name": "tfidf: raw/real/support water",
+   "stored": 7,
+   "recomputed": 7.0,
+   "ok": true
+  },
+  {
+   "name": "tfidf: raw/all/accuracy",
+   "stored": 0.9284578696343402,
+   "recomputed": 0.9284578696343402,
+   "ok": true
+  },
+  {
+   "name": "tfidf: raw/all/macro_precision",
+   "stored": 0.9511179116072428,
+   "recomputed": 0.9511179116072428,
+   "ok": true
+  },
+  {
+   "name": "tfidf: raw/all/macro_recall",
+   "stored": 0.9208211198636073,
+   "recomputed": 0.9208211198636073,
+   "ok": true
+  },
+  {
+   "name": "tfidf: raw/all/macro_f1",
+   "stored": 0.9332060523832643,
+   "recomputed": 0.9332060523832643,
+   "ok": true
+  },
+  {
+   "name": "tfidf: raw/all/weighted_f1",
+   "stored": 0.9282497794928792,
+   "recomputed": 0.9282497794928793,
+   "ok": true
+  },
+  {
+   "name": "tfidf: raw/all/ece",
+   "stored": 0.08698879671382126,
+   "recomputed": 0.08698879671382126,
+   "ok": true
+  },
+  {
+   "name": "tfidf: raw/all/nll",
+   "stored": 0.3007464154892105,
+   "recomputed": 0.3007464154892105,
+   "ok": true
+  },
+  {
+   "name": "tfidf: raw/all/brier",
+   "stored": 0.1160040464133062,
+   "recomputed": 0.1160040464133062,
+   "ok": true
+  },
+  {
+   "name": "tfidf: raw/all/per-class F1 bus",
+   "stored": 0.8709677419354839,
+   "recomputed": 0.8709677419354839,
+   "ok": true
+  },
+  {
+   "name": "tfidf: raw/all/support bus",
+   "stored": 28,
+   "recomputed": 28.0,
+   "ok": true
+  },
+  {
+   "name": "tfidf: raw/all/per-class F1 electricity",
+   "stored": 0.9629629629629629,
+   "recomputed": 0.9629629629629629,
+   "ok": true
+  },
+  {
+   "name": "tfidf: raw/all/support electricity",
+   "stored": 27,
+   "recomputed": 27.0,
+   "ok": true
+  },
+  {
+   "name": "tfidf: raw/all/per-class F1 flight",
+   "stored": 0.9818181818181818,
+   "recomputed": 0.9818181818181818,
+   "ok": true
+  },
+  {
+   "name": "tfidf: raw/all/support flight",
+   "stored": 28,
+   "recomputed": 28.0,
+   "ok": true
+  },
+  {
+   "name": "tfidf: raw/all/per-class F1 food",
+   "stored": 0.9333333333333332,
+   "recomputed": 0.9333333333333333,
+   "ok": true
+  },
+  {
+   "name": "tfidf: raw/all/support food",
+   "stored": 124,
+   "recomputed": 124.0,
+   "ok": true
+  },
+  {
+   "name": "tfidf: raw/all/per-class F1 fuel",
+   "stored": 0.9454545454545454,
+   "recomputed": 0.9454545454545454,
+   "ok": true
+  },
+  {
+   "name": "tfidf: raw/all/support fuel",
+   "stored": 28,
+   "recomputed": 28.0,
+   "ok": true
+  },
+  {
+   "name": "tfidf: raw/all/per-class F1 gas",
+   "stored": 0.972972972972973,
+   "recomputed": 0.972972972972973,
+   "ok": true
+  },
+  {
+   "name": "tfidf: raw/all/support gas",
+   "stored": 19,
+   "recomputed": 19.0,
+   "ok": true
+  },
+  {
+   "name": "tfidf: raw/all/per-class F1 hotel",
+   "stored": 0.8918918918918918,
+   "recomputed": 0.8918918918918919,
+   "ok": true
+  },
+  {
+   "name": "tfidf: raw/all/support hotel",
+   "stored": 38,
+   "recomputed": 38.0,
+   "ok": true
+  },
+  {
+   "name": "tfidf: raw/all/per-class F1 internet",
+   "stored": 0.9500000000000001,
+   "recomputed": 0.95,
+   "ok": true
+  },
+  {
+   "name": "tfidf: raw/all/support internet",
+   "stored": 21,
+   "recomputed": 21.0,
+   "ok": true
+  },
+  {
+   "name": "tfidf: raw/all/per-class F1 medical",
+   "stored": 0.8947368421052632,
+   "recomputed": 0.8947368421052632,
+   "ok": true
+  },
+  {
+   "name": "tfidf: raw/all/support medical",
+   "stored": 21,
+   "recomputed": 21.0,
+   "ok": true
+  },
+  {
+   "name": "tfidf: raw/all/per-class F1 miscellaneous",
+   "stored": 0.9302325581395349,
+   "recomputed": 0.9302325581395349,
+   "ok": true
+  },
+  {
+   "name": "tfidf: raw/all/support miscellaneous",
+   "stored": 65,
+   "recomputed": 65.0,
+   "ok": true
+  },
+  {
+   "name": "tfidf: raw/all/per-class F1 non_expense",
+   "stored": 0.927536231884058,
+   "recomputed": 0.927536231884058,
+   "ok": true
+  },
+  {
+   "name": "tfidf: raw/all/support non_expense",
+   "stored": 98,
+   "recomputed": 98.0,
+   "ok": true
+  },
+  {
+   "name": "tfidf: raw/all/per-class F1 parking",
+   "stored": 0.9333333333333332,
+   "recomputed": 0.9333333333333333,
+   "ok": true
+  },
+  {
+   "name": "tfidf: raw/all/support parking",
+   "stored": 23,
+   "recomputed": 23.0,
+   "ok": true
+  },
+  {
+   "name": "tfidf: raw/all/per-class F1 rent",
+   "stored": 1.0,
+   "recomputed": 1.0,
+   "ok": true
+  },
+  {
+   "name": "tfidf: raw/all/support rent",
+   "stored": 15,
+   "recomputed": 15.0,
+   "ok": true
+  },
+  {
+   "name": "tfidf: raw/all/per-class F1 train",
+   "stored": 0.868421052631579,
+   "recomputed": 0.868421052631579,
+   "ok": true
+  },
+  {
+   "name": "tfidf: raw/all/support train",
+   "stored": 43,
+   "recomputed": 43.0,
+   "ok": true
+  },
+  {
+   "name": "tfidf: raw/all/per-class F1 transport",
+   "stored": 0.9152542372881356,
+   "recomputed": 0.9152542372881356,
+   "ok": true
+  },
+  {
+   "name": "tfidf: raw/all/support transport",
+   "stored": 29,
+   "recomputed": 29.0,
+   "ok": true
+  },
+  {
+   "name": "tfidf: raw/all/per-class F1 water",
+   "stored": 0.9523809523809523,
+   "recomputed": 0.9523809523809523,
+   "ok": true
+  },
+  {
+   "name": "tfidf: raw/all/support water",
+   "stored": 22,
+   "recomputed": 22.0,
+   "ok": true
+  },
+  {
+   "name": "tfidf: calibrated/real/accuracy",
+   "stored": 0.883419689119171,
+   "recomputed": 0.883419689119171,
+   "ok": true
+  },
+  {
+   "name": "tfidf: calibrated/real/macro_precision",
+   "stored": 0.9100839948804691,
+   "recomputed": 0.9100839948804691,
+   "ok": true
+  },
+  {
+   "name": "tfidf: calibrated/real/macro_recall",
+   "stored": 0.7956664806186146,
+   "recomputed": 0.7956664806186146,
+   "ok": true
+  },
+  {
+   "name": "tfidf: calibrated/real/macro_f1",
+   "stored": 0.8314223755442093,
+   "recomputed": 0.8314223755442093,
+   "ok": true
+  },
+  {
+   "name": "tfidf: calibrated/real/weighted_f1",
+   "stored": 0.8799243082752329,
+   "recomputed": 0.8799243082752329,
+   "ok": true
+  },
+  {
+   "name": "tfidf: calibrated/real/ece",
+   "stored": 0.025620484339450012,
+   "recomputed": 0.025620484339450012,
+   "ok": true
+  },
+  {
+   "name": "tfidf: calibrated/real/nll",
+   "stored": 0.3620419825754931,
+   "recomputed": 0.3620419825754931,
+   "ok": true
+  },
+  {
+   "name": "tfidf: calibrated/real/brier",
+   "stored": 0.15898896988208158,
+   "recomputed": 0.15898896988208158,
+   "ok": true
+  },
+  {
+   "name": "tfidf: calibrated/real/per-class F1 bus",
+   "stored": 0.7499999999999999,
+   "recomputed": 0.75,
+   "ok": true
+  },
+  {
+   "name": "tfidf: calibrated/real/support bus",
+   "stored": 13,
+   "recomputed": 13.0,
+   "ok": true
+  },
+  {
+   "name": "tfidf: calibrated/real/per-class F1 electricity",
+   "stored": 0.9166666666666666,
+   "recomputed": 0.9166666666666666,
+   "ok": true
+  },
+  {
+   "name": "tfidf: calibrated/real/support electricity",
+   "stored": 12,
+   "recomputed": 12.0,
+   "ok": true
+  },
+  {
+   "name": "tfidf: calibrated/real/per-class F1 flight",
+   "stored": 0.9600000000000001,
+   "recomputed": 0.96,
+   "ok": true
+  },
+  {
+   "name": "tfidf: calibrated/real/support flight",
+   "stored": 13,
+   "recomputed": 13.0,
+   "ok": true
+  },
+  {
+   "name": "tfidf: calibrated/real/per-class F1 food",
+   "stored": 0.9244444444444444,
+   "recomputed": 0.9244444444444444,
+   "ok": true
+  },
+  {
+   "name": "tfidf: calibrated/real/support food",
+   "stored": 109,
+   "recomputed": 109.0,
+   "ok": true
+  },
+  {
+   "name": "tfidf: calibrated/real/per-class F1 fuel",
+   "stored": 0.8799999999999999,
+   "recomputed": 0.88,
+   "ok": true
+  },
+  {
+   "name": "tfidf: calibrated/real/support fuel",
+   "stored": 13,
+   "recomputed": 13.0,
+   "ok": true
+  },
+  {
+   "name": "tfidf: calibrated/real/per-class F1 gas",
+   "stored": 0.8571428571428571,
+   "recomputed": 0.8571428571428571,
+   "ok": true
+  },
+  {
+   "name": "tfidf: calibrated/real/support gas",
+   "stored": 4,
+   "recomputed": 4.0,
+   "ok": true
+  },
+  {
+   "name": "tfidf: calibrated/real/per-class F1 hotel",
+   "stored": 0.8181818181818182,
+   "recomputed": 0.8181818181818182,
+   "ok": true
+  },
+  {
+   "name": "tfidf: calibrated/real/support hotel",
+   "stored": 23,
+   "recomputed": 23.0,
+   "ok": true
+  },
+  {
+   "name": "tfidf: calibrated/real/per-class F1 internet",
+   "stored": 0.8,
+   "recomputed": 0.8,
+   "ok": true
+  },
+  {
+   "name": "tfidf: calibrated/real/support internet",
+   "stored": 6,
+   "recomputed": 6.0,
+   "ok": true
+  },
+  {
+   "name": "tfidf: calibrated/real/per-class F1 medical",
+   "stored": 0.5,
+   "recomputed": 0.5,
+   "ok": true
+  },
+  {
+   "name": "tfidf: calibrated/real/support medical",
+   "stored": 6,
+   "recomputed": 6.0,
+   "ok": true
+  },
+  {
+   "name": "tfidf: calibrated/real/per-class F1 miscellaneous",
+   "stored": 0.9090909090909091,
+   "recomputed": 0.9090909090909091,
+   "ok": true
+  },
+  {
+   "name": "tfidf: calibrated/real/support miscellaneous",
+   "stored": 50,
+   "recomputed": 50.0,
+   "ok": true
+  },
+  {
+   "name": "tfidf: calibrated/real/per-class F1 non_expense",
+   "stored": 0.9122807017543859,
+   "recomputed": 0.9122807017543859,
+   "ok": true
+  },
+  {
+   "name": "tfidf: calibrated/real/support non_expense",
+   "stored": 80,
+   "recomputed": 80.0,
+   "ok": true
+  },
+  {
+   "name": "tfidf: calibrated/real/per-class F1 parking",
+   "stored": 0.7999999999999999,
+   "recomputed": 0.8,
+   "ok": true
+  },
+  {
+   "name": "tfidf: calibrated/real/support parking",
+   "stored": 8,
+   "recomputed": 8.0,
+   "ok": true
+  },
+  {
+   "name": "tfidf: calibrated/real/per-class F1 train",
+   "stored": 0.782608695652174,
+   "recomputed": 0.782608695652174,
+   "ok": true
+  },
+  {
+   "name": "tfidf: calibrated/real/support train",
+   "stored": 28,
+   "recomputed": 28.0,
+   "ok": true
+  },
+  {
+   "name": "tfidf: calibrated/real/per-class F1 transport",
+   "stored": 0.8275862068965518,
+   "recomputed": 0.8275862068965517,
+   "ok": true
+  },
+  {
+   "name": "tfidf: calibrated/real/support transport",
+   "stored": 14,
+   "recomputed": 14.0,
+   "ok": true
+  },
+  {
+   "name": "tfidf: calibrated/real/per-class F1 water",
+   "stored": 0.8333333333333333,
+   "recomputed": 0.8333333333333334,
+   "ok": true
+  },
+  {
+   "name": "tfidf: calibrated/real/support water",
+   "stored": 7,
+   "recomputed": 7.0,
+   "ok": true
+  },
+  {
+   "name": "tfidf: calibrated/all/accuracy",
+   "stored": 0.9284578696343402,
+   "recomputed": 0.9284578696343402,
+   "ok": true
+  },
+  {
+   "name": "tfidf: calibrated/all/macro_precision",
+   "stored": 0.9511179116072428,
+   "recomputed": 0.9511179116072428,
+   "ok": true
+  },
+  {
+   "name": "tfidf: calibrated/all/macro_recall",
+   "stored": 0.9208211198636073,
+   "recomputed": 0.9208211198636073,
+   "ok": true
+  },
+  {
+   "name": "tfidf: calibrated/all/macro_f1",
+   "stored": 0.9332060523832643,
+   "recomputed": 0.9332060523832643,
+   "ok": true
+  },
+  {
+   "name": "tfidf: calibrated/all/weighted_f1",
+   "stored": 0.9282497794928792,
+   "recomputed": 0.9282497794928793,
+   "ok": true
+  },
+  {
+   "name": "tfidf: calibrated/all/ece",
+   "stored": 0.01448782173636093,
+   "recomputed": 0.01448782173636093,
+   "ok": true
+  },
+  {
+   "name": "tfidf: calibrated/all/nll",
+   "stored": 0.22363776307182634,
+   "recomputed": 0.22363776307182634,
+   "ok": true
+  },
+  {
+   "name": "tfidf: calibrated/all/brier",
+   "stored": 0.09819903833042692,
+   "recomputed": 0.09819903833042692,
+   "ok": true
+  },
+  {
+   "name": "tfidf: calibrated/all/per-class F1 bus",
+   "stored": 0.8709677419354839,
+   "recomputed": 0.8709677419354839,
+   "ok": true
+  },
+  {
+   "name": "tfidf: calibrated/all/support bus",
+   "stored": 28,
+   "recomputed": 28.0,
+   "ok": true
+  },
+  {
+   "name": "tfidf: calibrated/all/per-class F1 electricity",
+   "stored": 0.9629629629629629,
+   "recomputed": 0.9629629629629629,
+   "ok": true
+  },
+  {
+   "name": "tfidf: calibrated/all/support electricity",
+   "stored": 27,
+   "recomputed": 27.0,
+   "ok": true
+  },
+  {
+   "name": "tfidf: calibrated/all/per-class F1 flight",
+   "stored": 0.9818181818181818,
+   "recomputed": 0.9818181818181818,
+   "ok": true
+  },
+  {
+   "name": "tfidf: calibrated/all/support flight",
+   "stored": 28,
+   "recomputed": 28.0,
+   "ok": true
+  },
+  {
+   "name": "tfidf: calibrated/all/per-class F1 food",
+   "stored": 0.9333333333333332,
+   "recomputed": 0.9333333333333333,
+   "ok": true
+  },
+  {
+   "name": "tfidf: calibrated/all/support food",
+   "stored": 124,
+   "recomputed": 124.0,
+   "ok": true
+  },
+  {
+   "name": "tfidf: calibrated/all/per-class F1 fuel",
+   "stored": 0.9454545454545454,
+   "recomputed": 0.9454545454545454,
+   "ok": true
+  },
+  {
+   "name": "tfidf: calibrated/all/support fuel",
+   "stored": 28,
+   "recomputed": 28.0,
+   "ok": true
+  },
+  {
+   "name": "tfidf: calibrated/all/per-class F1 gas",
+   "stored": 0.972972972972973,
+   "recomputed": 0.972972972972973,
+   "ok": true
+  },
+  {
+   "name": "tfidf: calibrated/all/support gas",
+   "stored": 19,
+   "recomputed": 19.0,
+   "ok": true
+  },
+  {
+   "name": "tfidf: calibrated/all/per-class F1 hotel",
+   "stored": 0.8918918918918918,
+   "recomputed": 0.8918918918918919,
+   "ok": true
+  },
+  {
+   "name": "tfidf: calibrated/all/support hotel",
+   "stored": 38,
+   "recomputed": 38.0,
+   "ok": true
+  },
+  {
+   "name": "tfidf: calibrated/all/per-class F1 internet",
+   "stored": 0.9500000000000001,
+   "recomputed": 0.95,
+   "ok": true
+  },
+  {
+   "name": "tfidf: calibrated/all/support internet",
+   "stored": 21,
+   "recomputed": 21.0,
+   "ok": true
+  },
+  {
+   "name": "tfidf: calibrated/all/per-class F1 medical",
+   "stored": 0.8947368421052632,
+   "recomputed": 0.8947368421052632,
+   "ok": true
+  },
+  {
+   "name": "tfidf: calibrated/all/support medical",
+   "stored": 21,
+   "recomputed": 21.0,
+   "ok": true
+  },
+  {
+   "name": "tfidf: calibrated/all/per-class F1 miscellaneous",
+   "stored": 0.9302325581395349,
+   "recomputed": 0.9302325581395349,
+   "ok": true
+  },
+  {
+   "name": "tfidf: calibrated/all/support miscellaneous",
+   "stored": 65,
+   "recomputed": 65.0,
+   "ok": true
+  },
+  {
+   "name": "tfidf: calibrated/all/per-class F1 non_expense",
+   "stored": 0.927536231884058,
+   "recomputed": 0.927536231884058,
+   "ok": true
+  },
+  {
+   "name": "tfidf: calibrated/all/support non_expense",
+   "stored": 98,
+   "recomputed": 98.0,
+   "ok": true
+  },
+  {
+   "name": "tfidf: calibrated/all/per-class F1 parking",
+   "stored": 0.9333333333333332,
+   "recomputed": 0.9333333333333333,
+   "ok": true
+  },
+  {
+   "name": "tfidf: calibrated/all/support parking",
+   "stored": 23,
+   "recomputed": 23.0,
+   "ok": true
+  },
+  {
+   "name": "tfidf: calibrated/all/per-class F1 rent",
+   "stored": 1.0,
+   "recomputed": 1.0,
+   "ok": true
+  },
+  {
+   "name": "tfidf: calibrated/all/support rent",
+   "stored": 15,
+   "recomputed": 15.0,
+   "ok": true
+  },
+  {
+   "name": "tfidf: calibrated/all/per-class F1 train",
+   "stored": 0.868421052631579,
+   "recomputed": 0.868421052631579,
+   "ok": true
+  },
+  {
+   "name": "tfidf: calibrated/all/support train",
+   "stored": 43,
+   "recomputed": 43.0,
+   "ok": true
+  },
+  {
+   "name": "tfidf: calibrated/all/per-class F1 transport",
+   "stored": 0.9152542372881356,
+   "recomputed": 0.9152542372881356,
+   "ok": true
+  },
+  {
+   "name": "tfidf: calibrated/all/support transport",
+   "stored": 29,
+   "recomputed": 29.0,
+   "ok": true
+  },
+  {
+   "name": "tfidf: calibrated/all/per-class F1 water",
+   "stored": 0.9523809523809523,
+   "recomputed": 0.9523809523809523,
+   "ok": true
+  },
+  {
+   "name": "tfidf: calibrated/all/support water",
+   "stored": 22,
+   "recomputed": 22.0,
+   "ok": true
+  },
+  {
+   "name": "tfidf: confusion matrix (real test)",
+   "stored": 0,
+   "recomputed": 0,
+   "ok": true
+  },
+  {
+   "name": "tfidf: confusion matrix diagonal == accuracy*n",
+   "stored": 341,
+   "recomputed": 341,
+   "ok": true
+  },
+  {
+   "name": "bilstm: val logits rows",
+   "stored": 634,
+   "recomputed": 634,
+   "ok": true
+  },
+  {
+   "name": "bilstm: test logits rows",
+   "stored": 629,
+   "recomputed": 629,
+   "ok": true
+  },
+  {
+   "name": "bilstm: logits width",
+   "stored": 16,
+   "recomputed": 16,
+   "ok": true
+  },
+  {
+   "name": "bilstm: temperature (refit on validation)",
+   "stored": 1.9260782421184879,
+   "recomputed": 1.9260782421184879,
+   "ok": true
+  },
+  {
+   "name": "bilstm: raw/real/accuracy",
+   "stored": 0.7124352331606217,
+   "recomputed": 0.7124352331606217,
+   "ok": true
+  },
+  {
+   "name": "bilstm: raw/real/macro_precision",
+   "stored": 0.6556534161769874,
+   "recomputed": 0.6556534161769874,
+   "ok": true
+  },
+  {
+   "name": "bilstm: raw/real/macro_recall",
+   "stored": 0.5869633901753967,
+   "recomputed": 0.5869633901753967,
+   "ok": true
+  },
+  {
+   "name": "bilstm: raw/real/macro_f1",
+   "stored": 0.5983381211874793,
+   "recomputed": 0.5983381211874793,
+   "ok": true
+  },
+  {
+   "name": "bilstm: raw/real/weighted_f1",
+   "stored": 0.6961640874209428,
+   "recomputed": 0.6961640874209429,
+   "ok": true
+  },
+  {
+   "name": "bilstm: raw/real/ece",
+   "stored": 0.16819848467648957,
+   "recomputed": 0.16819846730286572,
+   "ok": true
+  },
+  {
+   "name": "bilstm: raw/real/nll",
+   "stored": 1.402235746383667,
+   "recomputed": 1.402235624343032,
+   "ok": true
+  },
+  {
+   "name": "bilstm: raw/real/brier",
+   "stored": 0.4455248826123544,
+   "recomputed": 0.4455248793823449,
+   "ok": true
+  },
+  {
+   "name": "bilstm: raw/real/per-class F1 bus",
+   "stored": 0.6428571428571429,
+   "recomputed": 0.6428571428571429,
+   "ok": true
+  },
+  {
+   "name": "bilstm: raw/real/support bus",
+   "stored": 13,
+   "recomputed": 13.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm: raw/real/per-class F1 electricity",
+   "stored": 0.6923076923076924,
+   "recomputed": 0.6923076923076923,
+   "ok": true
+  },
+  {
+   "name": "bilstm: raw/real/support electricity",
+   "stored": 12,
+   "recomputed": 12.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm: raw/real/per-class F1 flight",
+   "stored": 0.34782608695652173,
+   "recomputed": 0.34782608695652173,
+   "ok": true
+  },
+  {
+   "name": "bilstm: raw/real/support flight",
+   "stored": 13,
+   "recomputed": 13.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm: raw/real/per-class F1 food",
+   "stored": 0.8110599078341013,
+   "recomputed": 0.8110599078341014,
+   "ok": true
+  },
+  {
+   "name": "bilstm: raw/real/support food",
+   "stored": 109,
+   "recomputed": 109.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm: raw/real/per-class F1 fuel",
+   "stored": 0.7857142857142856,
+   "recomputed": 0.7857142857142857,
+   "ok": true
+  },
+  {
+   "name": "bilstm: raw/real/support fuel",
+   "stored": 13,
+   "recomputed": 13.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm: raw/real/per-class F1 gas",
+   "stored": 0.8571428571428571,
+   "recomputed": 0.8571428571428571,
+   "ok": true
+  },
+  {
+   "name": "bilstm: raw/real/support gas",
+   "stored": 4,
+   "recomputed": 4.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm: raw/real/per-class F1 hotel",
+   "stored": 0.6511627906976744,
+   "recomputed": 0.6511627906976745,
+   "ok": true
+  },
+  {
+   "name": "bilstm: raw/real/support hotel",
+   "stored": 23,
+   "recomputed": 23.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm: raw/real/per-class F1 internet",
+   "stored": 0.4615384615384615,
+   "recomputed": 0.46153846153846156,
+   "ok": true
+  },
+  {
+   "name": "bilstm: raw/real/support internet",
+   "stored": 6,
+   "recomputed": 6.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm: raw/real/per-class F1 medical",
+   "stored": 0.4444444444444444,
+   "recomputed": 0.4444444444444444,
+   "ok": true
+  },
+  {
+   "name": "bilstm: raw/real/support medical",
+   "stored": 6,
+   "recomputed": 6.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm: raw/real/per-class F1 miscellaneous",
+   "stored": 0.7216494845360825,
+   "recomputed": 0.7216494845360825,
+   "ok": true
+  },
+  {
+   "name": "bilstm: raw/real/support miscellaneous",
+   "stored": 50,
+   "recomputed": 50.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm: raw/real/per-class F1 non_expense",
+   "stored": 0.7894736842105263,
+   "recomputed": 0.7894736842105263,
+   "ok": true
+  },
+  {
+   "name": "bilstm: raw/real/support non_expense",
+   "stored": 80,
+   "recomputed": 80.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm: raw/real/per-class F1 parking",
+   "stored": 0.3076923076923077,
+   "recomputed": 0.3076923076923077,
+   "ok": true
+  },
+  {
+   "name": "bilstm: raw/real/support parking",
+   "stored": 8,
+   "recomputed": 8.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm: raw/real/per-class F1 train",
+   "stored": 0.3888888888888889,
+   "recomputed": 0.3888888888888889,
+   "ok": true
+  },
+  {
+   "name": "bilstm: raw/real/support train",
+   "stored": 28,
+   "recomputed": 28.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm: raw/real/per-class F1 transport",
+   "stored": 0.7096774193548386,
+   "recomputed": 0.7096774193548387,
+   "ok": true
+  },
+  {
+   "name": "bilstm: raw/real/support transport",
+   "stored": 14,
+   "recomputed": 14.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm: raw/real/per-class F1 water",
+   "stored": 0.36363636363636365,
+   "recomputed": 0.36363636363636365,
+   "ok": true
+  },
+  {
+   "name": "bilstm: raw/real/support water",
+   "stored": 7,
+   "recomputed": 7.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm: raw/all/accuracy",
+   "stored": 0.8235294117647058,
+   "recomputed": 0.8235294117647058,
+   "ok": true
+  },
+  {
+   "name": "bilstm: raw/all/macro_precision",
+   "stored": 0.8581013520552234,
+   "recomputed": 0.8581013520552234,
+   "ok": true
+  },
+  {
+   "name": "bilstm: raw/all/macro_recall",
+   "stored": 0.8249537779133204,
+   "recomputed": 0.8249537779133204,
+   "ok": true
+  },
+  {
+   "name": "bilstm: raw/all/macro_f1",
+   "stored": 0.8348918616862343,
+   "recomputed": 0.8348918616862343,
+   "ok": true
+  },
+  {
+   "name": "bilstm: raw/all/weighted_f1",
+   "stored": 0.8205603285135507,
+   "recomputed": 0.8205603285135507,
+   "ok": true
+  },
+  {
+   "name": "bilstm: raw/all/ece",
+   "stored": 0.10318266312533991,
+   "recomputed": 0.10318266494567929,
+   "ok": true
+  },
+  {
+   "name": "bilstm: raw/all/nll",
+   "stored": 0.8605495095252991,
+   "recomputed": 0.8605495611509237,
+   "ok": true
+  },
+  {
+   "name": "bilstm: raw/all/brier",
+   "stored": 0.27340641696381307,
+   "recomputed": 0.27340641498160007,
+   "ok": true
+  },
+  {
+   "name": "bilstm: raw/all/per-class F1 bus",
+   "stored": 0.8275862068965518,
+   "recomputed": 0.8275862068965517,
+   "ok": true
+  },
+  {
+   "name": "bilstm: raw/all/support bus",
+   "stored": 28,
+   "recomputed": 28.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm: raw/all/per-class F1 electricity",
+   "stored": 0.8571428571428572,
+   "recomputed": 0.8571428571428571,
+   "ok": true
+  },
+  {
+   "name": "bilstm: raw/all/support electricity",
+   "stored": 27,
+   "recomputed": 27.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm: raw/all/per-class F1 flight",
+   "stored": 0.7169811320754718,
+   "recomputed": 0.7169811320754716,
+   "ok": true
+  },
+  {
+   "name": "bilstm: raw/all/support flight",
+   "stored": 28,
+   "recomputed": 28.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm: raw/all/per-class F1 food",
+   "stored": 0.834008097165992,
+   "recomputed": 0.8340080971659919,
+   "ok": true
+  },
+  {
+   "name": "bilstm: raw/all/support food",
+   "stored": 124,
+   "recomputed": 124.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm: raw/all/per-class F1 fuel",
+   "stored": 0.896551724137931,
+   "recomputed": 0.896551724137931,
+   "ok": true
+  },
+  {
+   "name": "bilstm: raw/all/support fuel",
+   "stored": 28,
+   "recomputed": 28.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm: raw/all/per-class F1 gas",
+   "stored": 0.972972972972973,
+   "recomputed": 0.972972972972973,
+   "ok": true
+  },
+  {
+   "name": "bilstm: raw/all/support gas",
+   "stored": 19,
+   "recomputed": 19.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm: raw/all/per-class F1 hotel",
+   "stored": 0.7945205479452055,
+   "recomputed": 0.7945205479452054,
+   "ok": true
+  },
+  {
+   "name": "bilstm: raw/all/support hotel",
+   "stored": 38,
+   "recomputed": 38.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm: raw/all/per-class F1 internet",
+   "stored": 0.8372093023255814,
+   "recomputed": 0.8372093023255814,
+   "ok": true
+  },
+  {
+   "name": "bilstm: raw/all/support internet",
+   "stored": 21,
+   "recomputed": 21.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm: raw/all/per-class F1 medical",
+   "stored": 0.8717948717948718,
+   "recomputed": 0.8717948717948718,
+   "ok": true
+  },
+  {
+   "name": "bilstm: raw/all/support medical",
+   "stored": 21,
+   "recomputed": 21.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm: raw/all/per-class F1 miscellaneous",
+   "stored": 0.7874015748031495,
+   "recomputed": 0.7874015748031497,
+   "ok": true
+  },
+  {
+   "name": "bilstm: raw/all/support miscellaneous",
+   "stored": 65,
+   "recomputed": 65.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm: raw/all/per-class F1 non_expense",
+   "stored": 0.8230088495575221,
+   "recomputed": 0.8230088495575221,
+   "ok": true
+  },
+  {
+   "name": "bilstm: raw/all/support non_expense",
+   "stored": 98,
+   "recomputed": 98.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm: raw/all/per-class F1 parking",
+   "stored": 0.7906976744186046,
+   "recomputed": 0.7906976744186046,
+   "ok": true
+  },
+  {
+   "name": "bilstm: raw/all/support parking",
+   "stored": 23,
+   "recomputed": 23.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm: raw/all/per-class F1 rent",
+   "stored": 1.0,
+   "recomputed": 1.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm: raw/all/support rent",
+   "stored": 15,
+   "recomputed": 15.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm: raw/all/per-class F1 train",
+   "stored": 0.6666666666666667,
+   "recomputed": 0.6666666666666666,
+   "ok": true
+  },
+  {
+   "name": "bilstm: raw/all/support train",
+   "stored": 43,
+   "recomputed": 43.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm: raw/all/per-class F1 transport",
+   "stored": 0.8524590163934426,
+   "recomputed": 0.8524590163934426,
+   "ok": true
+  },
+  {
+   "name": "bilstm: raw/all/support transport",
+   "stored": 29,
+   "recomputed": 29.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm: raw/all/per-class F1 water",
+   "stored": 0.8292682926829269,
+   "recomputed": 0.8292682926829268,
+   "ok": true
+  },
+  {
+   "name": "bilstm: raw/all/support water",
+   "stored": 22,
+   "recomputed": 22.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm: calibrated/real/accuracy",
+   "stored": 0.7124352331606217,
+   "recomputed": 0.7124352331606217,
+   "ok": true
+  },
+  {
+   "name": "bilstm: calibrated/real/macro_precision",
+   "stored": 0.6556534161769874,
+   "recomputed": 0.6556534161769874,
+   "ok": true
+  },
+  {
+   "name": "bilstm: calibrated/real/macro_recall",
+   "stored": 0.5869633901753967,
+   "recomputed": 0.5869633901753967,
+   "ok": true
+  },
+  {
+   "name": "bilstm: calibrated/real/macro_f1",
+   "stored": 0.5983381211874793,
+   "recomputed": 0.5983381211874793,
+   "ok": true
+  },
+  {
+   "name": "bilstm: calibrated/real/weighted_f1",
+   "stored": 0.6961640874209428,
+   "recomputed": 0.6961640874209429,
+   "ok": true
+  },
+  {
+   "name": "bilstm: calibrated/real/ece",
+   "stored": 0.056505040338002355,
+   "recomputed": 0.05650497712039663,
+   "ok": true
+  },
+  {
+   "name": "bilstm: calibrated/real/nll",
+   "stored": 1.0196738243103027,
+   "recomputed": 1.0196738560615395,
+   "ok": true
+  },
+  {
+   "name": "bilstm: calibrated/real/brier",
+   "stored": 0.40102405495440446,
+   "recomputed": 0.40102405443701994,
+   "ok": true
+  },
+  {
+   "name": "bilstm: calibrated/real/per-class F1 bus",
+   "stored": 0.6428571428571429,
+   "recomputed": 0.6428571428571429,
+   "ok": true
+  },
+  {
+   "name": "bilstm: calibrated/real/support bus",
+   "stored": 13,
+   "recomputed": 13.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm: calibrated/real/per-class F1 electricity",
+   "stored": 0.6923076923076924,
+   "recomputed": 0.6923076923076923,
+   "ok": true
+  },
+  {
+   "name": "bilstm: calibrated/real/support electricity",
+   "stored": 12,
+   "recomputed": 12.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm: calibrated/real/per-class F1 flight",
+   "stored": 0.34782608695652173,
+   "recomputed": 0.34782608695652173,
+   "ok": true
+  },
+  {
+   "name": "bilstm: calibrated/real/support flight",
+   "stored": 13,
+   "recomputed": 13.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm: calibrated/real/per-class F1 food",
+   "stored": 0.8110599078341013,
+   "recomputed": 0.8110599078341014,
+   "ok": true
+  },
+  {
+   "name": "bilstm: calibrated/real/support food",
+   "stored": 109,
+   "recomputed": 109.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm: calibrated/real/per-class F1 fuel",
+   "stored": 0.7857142857142856,
+   "recomputed": 0.7857142857142857,
+   "ok": true
+  },
+  {
+   "name": "bilstm: calibrated/real/support fuel",
+   "stored": 13,
+   "recomputed": 13.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm: calibrated/real/per-class F1 gas",
+   "stored": 0.8571428571428571,
+   "recomputed": 0.8571428571428571,
+   "ok": true
+  },
+  {
+   "name": "bilstm: calibrated/real/support gas",
+   "stored": 4,
+   "recomputed": 4.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm: calibrated/real/per-class F1 hotel",
+   "stored": 0.6511627906976744,
+   "recomputed": 0.6511627906976745,
+   "ok": true
+  },
+  {
+   "name": "bilstm: calibrated/real/support hotel",
+   "stored": 23,
+   "recomputed": 23.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm: calibrated/real/per-class F1 internet",
+   "stored": 0.4615384615384615,
+   "recomputed": 0.46153846153846156,
+   "ok": true
+  },
+  {
+   "name": "bilstm: calibrated/real/support internet",
+   "stored": 6,
+   "recomputed": 6.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm: calibrated/real/per-class F1 medical",
+   "stored": 0.4444444444444444,
+   "recomputed": 0.4444444444444444,
+   "ok": true
+  },
+  {
+   "name": "bilstm: calibrated/real/support medical",
+   "stored": 6,
+   "recomputed": 6.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm: calibrated/real/per-class F1 miscellaneous",
+   "stored": 0.7216494845360825,
+   "recomputed": 0.7216494845360825,
+   "ok": true
+  },
+  {
+   "name": "bilstm: calibrated/real/support miscellaneous",
+   "stored": 50,
+   "recomputed": 50.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm: calibrated/real/per-class F1 non_expense",
+   "stored": 0.7894736842105263,
+   "recomputed": 0.7894736842105263,
+   "ok": true
+  },
+  {
+   "name": "bilstm: calibrated/real/support non_expense",
+   "stored": 80,
+   "recomputed": 80.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm: calibrated/real/per-class F1 parking",
+   "stored": 0.3076923076923077,
+   "recomputed": 0.3076923076923077,
+   "ok": true
+  },
+  {
+   "name": "bilstm: calibrated/real/support parking",
+   "stored": 8,
+   "recomputed": 8.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm: calibrated/real/per-class F1 train",
+   "stored": 0.3888888888888889,
+   "recomputed": 0.3888888888888889,
+   "ok": true
+  },
+  {
+   "name": "bilstm: calibrated/real/support train",
+   "stored": 28,
+   "recomputed": 28.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm: calibrated/real/per-class F1 transport",
+   "stored": 0.7096774193548386,
+   "recomputed": 0.7096774193548387,
+   "ok": true
+  },
+  {
+   "name": "bilstm: calibrated/real/support transport",
+   "stored": 14,
+   "recomputed": 14.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm: calibrated/real/per-class F1 water",
+   "stored": 0.36363636363636365,
+   "recomputed": 0.36363636363636365,
+   "ok": true
+  },
+  {
+   "name": "bilstm: calibrated/real/support water",
+   "stored": 7,
+   "recomputed": 7.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm: calibrated/all/accuracy",
+   "stored": 0.8235294117647058,
+   "recomputed": 0.8235294117647058,
+   "ok": true
+  },
+  {
+   "name": "bilstm: calibrated/all/macro_precision",
+   "stored": 0.8581013520552234,
+   "recomputed": 0.8581013520552234,
+   "ok": true
+  },
+  {
+   "name": "bilstm: calibrated/all/macro_recall",
+   "stored": 0.8249537779133204,
+   "recomputed": 0.8249537779133204,
+   "ok": true
+  },
+  {
+   "name": "bilstm: calibrated/all/macro_f1",
+   "stored": 0.8348918616862343,
+   "recomputed": 0.8348918616862343,
+   "ok": true
+  },
+  {
+   "name": "bilstm: calibrated/all/weighted_f1",
+   "stored": 0.8205603285135507,
+   "recomputed": 0.8205603285135507,
+   "ok": true
+  },
+  {
+   "name": "bilstm: calibrated/all/ece",
+   "stored": 0.03589152759133536,
+   "recomputed": 0.035891569200635985,
+   "ok": true
+  },
+  {
+   "name": "bilstm: calibrated/all/nll",
+   "stored": 0.6321496367454529,
+   "recomputed": 0.632149679806292,
+   "ok": true
+  },
+  {
+   "name": "bilstm: calibrated/all/brier",
+   "stored": 0.2462795669127442,
+   "recomputed": 0.24627956683030316,
+   "ok": true
+  },
+  {
+   "name": "bilstm: calibrated/all/per-class F1 bus",
+   "stored": 0.8275862068965518,
+   "recomputed": 0.8275862068965517,
+   "ok": true
+  },
+  {
+   "name": "bilstm: calibrated/all/support bus",
+   "stored": 28,
+   "recomputed": 28.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm: calibrated/all/per-class F1 electricity",
+   "stored": 0.8571428571428572,
+   "recomputed": 0.8571428571428571,
+   "ok": true
+  },
+  {
+   "name": "bilstm: calibrated/all/support electricity",
+   "stored": 27,
+   "recomputed": 27.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm: calibrated/all/per-class F1 flight",
+   "stored": 0.7169811320754718,
+   "recomputed": 0.7169811320754716,
+   "ok": true
+  },
+  {
+   "name": "bilstm: calibrated/all/support flight",
+   "stored": 28,
+   "recomputed": 28.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm: calibrated/all/per-class F1 food",
+   "stored": 0.834008097165992,
+   "recomputed": 0.8340080971659919,
+   "ok": true
+  },
+  {
+   "name": "bilstm: calibrated/all/support food",
+   "stored": 124,
+   "recomputed": 124.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm: calibrated/all/per-class F1 fuel",
+   "stored": 0.896551724137931,
+   "recomputed": 0.896551724137931,
+   "ok": true
+  },
+  {
+   "name": "bilstm: calibrated/all/support fuel",
+   "stored": 28,
+   "recomputed": 28.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm: calibrated/all/per-class F1 gas",
+   "stored": 0.972972972972973,
+   "recomputed": 0.972972972972973,
+   "ok": true
+  },
+  {
+   "name": "bilstm: calibrated/all/support gas",
+   "stored": 19,
+   "recomputed": 19.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm: calibrated/all/per-class F1 hotel",
+   "stored": 0.7945205479452055,
+   "recomputed": 0.7945205479452054,
+   "ok": true
+  },
+  {
+   "name": "bilstm: calibrated/all/support hotel",
+   "stored": 38,
+   "recomputed": 38.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm: calibrated/all/per-class F1 internet",
+   "stored": 0.8372093023255814,
+   "recomputed": 0.8372093023255814,
+   "ok": true
+  },
+  {
+   "name": "bilstm: calibrated/all/support internet",
+   "stored": 21,
+   "recomputed": 21.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm: calibrated/all/per-class F1 medical",
+   "stored": 0.8717948717948718,
+   "recomputed": 0.8717948717948718,
+   "ok": true
+  },
+  {
+   "name": "bilstm: calibrated/all/support medical",
+   "stored": 21,
+   "recomputed": 21.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm: calibrated/all/per-class F1 miscellaneous",
+   "stored": 0.7874015748031495,
+   "recomputed": 0.7874015748031497,
+   "ok": true
+  },
+  {
+   "name": "bilstm: calibrated/all/support miscellaneous",
+   "stored": 65,
+   "recomputed": 65.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm: calibrated/all/per-class F1 non_expense",
+   "stored": 0.8230088495575221,
+   "recomputed": 0.8230088495575221,
+   "ok": true
+  },
+  {
+   "name": "bilstm: calibrated/all/support non_expense",
+   "stored": 98,
+   "recomputed": 98.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm: calibrated/all/per-class F1 parking",
+   "stored": 0.7906976744186046,
+   "recomputed": 0.7906976744186046,
+   "ok": true
+  },
+  {
+   "name": "bilstm: calibrated/all/support parking",
+   "stored": 23,
+   "recomputed": 23.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm: calibrated/all/per-class F1 rent",
+   "stored": 1.0,
+   "recomputed": 1.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm: calibrated/all/support rent",
+   "stored": 15,
+   "recomputed": 15.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm: calibrated/all/per-class F1 train",
+   "stored": 0.6666666666666667,
+   "recomputed": 0.6666666666666666,
+   "ok": true
+  },
+  {
+   "name": "bilstm: calibrated/all/support train",
+   "stored": 43,
+   "recomputed": 43.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm: calibrated/all/per-class F1 transport",
+   "stored": 0.8524590163934426,
+   "recomputed": 0.8524590163934426,
+   "ok": true
+  },
+  {
+   "name": "bilstm: calibrated/all/support transport",
+   "stored": 29,
+   "recomputed": 29.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm: calibrated/all/per-class F1 water",
+   "stored": 0.8292682926829269,
+   "recomputed": 0.8292682926829268,
+   "ok": true
+  },
+  {
+   "name": "bilstm: calibrated/all/support water",
+   "stored": 22,
+   "recomputed": 22.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm: confusion matrix (real test)",
+   "stored": 0,
+   "recomputed": 0,
+   "ok": true
+  },
+  {
+   "name": "bilstm: confusion matrix diagonal == accuracy*n",
+   "stored": 275,
+   "recomputed": 275,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: val logits rows",
+   "stored": 634,
+   "recomputed": 634,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: test logits rows",
+   "stored": 629,
+   "recomputed": 629,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: logits width",
+   "stored": 16,
+   "recomputed": 16,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: temperature (refit on validation)",
+   "stored": 2.2694930190919176,
+   "recomputed": 2.2694930190919176,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: raw/real/accuracy",
+   "stored": 0.7772020725388601,
+   "recomputed": 0.7772020725388601,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: raw/real/macro_precision",
+   "stored": 0.7893100489299912,
+   "recomputed": 0.7893100489299912,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: raw/real/macro_recall",
+   "stored": 0.6586915157704948,
+   "recomputed": 0.6586915157704948,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: raw/real/macro_f1",
+   "stored": 0.6829101225113335,
+   "recomputed": 0.6829101225113335,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: raw/real/weighted_f1",
+   "stored": 0.772198093856961,
+   "recomputed": 0.772198093856961,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: raw/real/ece",
+   "stored": 0.15925416636034612,
+   "recomputed": 0.1592541084096238,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: raw/real/nll",
+   "stored": 1.384819746017456,
+   "recomputed": 1.3852153193943044,
+   "ok": false
+  },
+  {
+   "name": "bilstm_attn: raw/real/brier",
+   "stored": 0.38017300436737855,
+   "recomputed": 0.38017300341266574,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: raw/real/per-class F1 bus",
+   "stored": 0.5925925925925927,
+   "recomputed": 0.5925925925925926,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: raw/real/support bus",
+   "stored": 13,
+   "recomputed": 13.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: raw/real/per-class F1 electricity",
+   "stored": 0.8,
+   "recomputed": 0.8,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: raw/real/support electricity",
+   "stored": 12,
+   "recomputed": 12.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: raw/real/per-class F1 flight",
+   "stored": 0.7826086956521738,
+   "recomputed": 0.782608695652174,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: raw/real/support flight",
+   "stored": 13,
+   "recomputed": 13.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: raw/real/per-class F1 food",
+   "stored": 0.861244019138756,
+   "recomputed": 0.861244019138756,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: raw/real/support food",
+   "stored": 109,
+   "recomputed": 109.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: raw/real/per-class F1 fuel",
+   "stored": 0.8148148148148148,
+   "recomputed": 0.8148148148148148,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: raw/real/support fuel",
+   "stored": 13,
+   "recomputed": 13.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: raw/real/per-class F1 gas",
+   "stored": 0.8571428571428571,
+   "recomputed": 0.8571428571428571,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: raw/real/support gas",
+   "stored": 4,
+   "recomputed": 4.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: raw/real/per-class F1 hotel",
+   "stored": 0.717948717948718,
+   "recomputed": 0.717948717948718,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: raw/real/support hotel",
+   "stored": 23,
+   "recomputed": 23.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: raw/real/per-class F1 internet",
+   "stored": 0.6666666666666666,
+   "recomputed": 0.6666666666666666,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: raw/real/support internet",
+   "stored": 6,
+   "recomputed": 6.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: raw/real/per-class F1 medical",
+   "stored": 0.25,
+   "recomputed": 0.25,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: raw/real/support medical",
+   "stored": 6,
+   "recomputed": 6.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: raw/real/per-class F1 miscellaneous",
+   "stored": 0.8037383177570094,
+   "recomputed": 0.8037383177570093,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: raw/real/support miscellaneous",
+   "stored": 50,
+   "recomputed": 50.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: raw/real/per-class F1 non_expense",
+   "stored": 0.8351648351648352,
+   "recomputed": 0.8351648351648352,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: raw/real/support non_expense",
+   "stored": 80,
+   "recomputed": 80.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: raw/real/per-class F1 parking",
+   "stored": 0.625,
+   "recomputed": 0.625,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: raw/real/support parking",
+   "stored": 8,
+   "recomputed": 8.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: raw/real/per-class F1 train",
+   "stored": 0.6341463414634146,
+   "recomputed": 0.6341463414634146,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: raw/real/support train",
+   "stored": 28,
+   "recomputed": 28.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: raw/real/per-class F1 transport",
+   "stored": 0.5581395348837208,
+   "recomputed": 0.5581395348837209,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: raw/real/support transport",
+   "stored": 14,
+   "recomputed": 14.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: raw/real/per-class F1 water",
+   "stored": 0.4444444444444445,
+   "recomputed": 0.4444444444444444,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: raw/real/support water",
+   "stored": 7,
+   "recomputed": 7.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: raw/all/accuracy",
+   "stored": 0.863275039745628,
+   "recomputed": 0.863275039745628,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: raw/all/macro_precision",
+   "stored": 0.9002691628127713,
+   "recomputed": 0.9002691628127713,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: raw/all/macro_recall",
+   "stored": 0.8615873775503884,
+   "recomputed": 0.8615873775503884,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: raw/all/macro_f1",
+   "stored": 0.8731477906124979,
+   "recomputed": 0.8731477906124978,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: raw/all/weighted_f1",
+   "stored": 0.8642176550350028,
+   "recomputed": 0.8642176550350028,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: raw/all/ece",
+   "stored": 0.09770421520325635,
+   "recomputed": 0.09770429477736062,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: raw/all/nll",
+   "stored": 0.8498513698577881,
+   "recomputed": 0.8500941492321671,
+   "ok": false
+  },
+  {
+   "name": "bilstm_attn: raw/all/brier",
+   "stored": 0.23330182010857572,
+   "recomputed": 0.23330181952405477,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: raw/all/per-class F1 bus",
+   "stored": 0.8070175438596492,
+   "recomputed": 0.8070175438596491,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: raw/all/support bus",
+   "stored": 28,
+   "recomputed": 28.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: raw/all/per-class F1 electricity",
+   "stored": 0.9090909090909091,
+   "recomputed": 0.9090909090909091,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: raw/all/support electricity",
+   "stored": 27,
+   "recomputed": 27.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: raw/all/per-class F1 flight",
+   "stored": 0.9056603773584904,
+   "recomputed": 0.9056603773584906,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: raw/all/support flight",
+   "stored": 28,
+   "recomputed": 28.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: raw/all/per-class F1 food",
+   "stored": 0.8786610878661089,
+   "recomputed": 0.8786610878661087,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: raw/all/support food",
+   "stored": 124,
+   "recomputed": 124.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: raw/all/per-class F1 fuel",
+   "stored": 0.912280701754386,
+   "recomputed": 0.9122807017543859,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: raw/all/support fuel",
+   "stored": 28,
+   "recomputed": 28.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: raw/all/per-class F1 gas",
+   "stored": 0.972972972972973,
+   "recomputed": 0.972972972972973,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: raw/all/support gas",
+   "stored": 19,
+   "recomputed": 19.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: raw/all/per-class F1 hotel",
+   "stored": 0.8405797101449276,
+   "recomputed": 0.8405797101449275,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: raw/all/support hotel",
+   "stored": 38,
+   "recomputed": 38.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: raw/all/per-class F1 internet",
+   "stored": 0.923076923076923,
+   "recomputed": 0.9230769230769231,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: raw/all/support internet",
+   "stored": 21,
+   "recomputed": 21.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: raw/all/per-class F1 medical",
+   "stored": 0.8421052631578947,
+   "recomputed": 0.8421052631578947,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: raw/all/support medical",
+   "stored": 21,
+   "recomputed": 21.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: raw/all/per-class F1 miscellaneous",
+   "stored": 0.8467153284671534,
+   "recomputed": 0.8467153284671532,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: raw/all/support miscellaneous",
+   "stored": 65,
+   "recomputed": 65.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: raw/all/per-class F1 non_expense",
+   "stored": 0.8623853211009175,
+   "recomputed": 0.8623853211009175,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: raw/all/support non_expense",
+   "stored": 98,
+   "recomputed": 98.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: raw/all/per-class F1 parking",
+   "stored": 0.8695652173913043,
+   "recomputed": 0.8695652173913043,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: raw/all/support parking",
+   "stored": 23,
+   "recomputed": 23.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: raw/all/per-class F1 rent",
+   "stored": 1.0,
+   "recomputed": 1.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: raw/all/support rent",
+   "stored": 15,
+   "recomputed": 15.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: raw/all/per-class F1 train",
+   "stored": 0.7887323943661972,
+   "recomputed": 0.7887323943661971,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: raw/all/support train",
+   "stored": 43,
+   "recomputed": 43.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: raw/all/per-class F1 transport",
+   "stored": 0.7397260273972602,
+   "recomputed": 0.7397260273972602,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: raw/all/support transport",
+   "stored": 29,
+   "recomputed": 29.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: raw/all/per-class F1 water",
+   "stored": 0.8717948717948718,
+   "recomputed": 0.8717948717948718,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: raw/all/support water",
+   "stored": 22,
+   "recomputed": 22.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: calibrated/real/accuracy",
+   "stored": 0.7772020725388601,
+   "recomputed": 0.7772020725388601,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: calibrated/real/macro_precision",
+   "stored": 0.7893100489299912,
+   "recomputed": 0.7893100489299912,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: calibrated/real/macro_recall",
+   "stored": 0.6586915157704948,
+   "recomputed": 0.6586915157704948,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: calibrated/real/macro_f1",
+   "stored": 0.6829101225113335,
+   "recomputed": 0.6829101225113335,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: calibrated/real/weighted_f1",
+   "stored": 0.772198093856961,
+   "recomputed": 0.772198093856961,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: calibrated/real/ece",
+   "stored": 0.04622608415512223,
+   "recomputed": 0.046226090870567754,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: calibrated/real/nll",
+   "stored": 0.8834187388420105,
+   "recomputed": 0.8834188108871344,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: calibrated/real/brier",
+   "stored": 0.340964743002126,
+   "recomputed": 0.34096474419157946,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: calibrated/real/per-class F1 bus",
+   "stored": 0.5925925925925927,
+   "recomputed": 0.5925925925925926,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: calibrated/real/support bus",
+   "stored": 13,
+   "recomputed": 13.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: calibrated/real/per-class F1 electricity",
+   "stored": 0.8,
+   "recomputed": 0.8,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: calibrated/real/support electricity",
+   "stored": 12,
+   "recomputed": 12.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: calibrated/real/per-class F1 flight",
+   "stored": 0.7826086956521738,
+   "recomputed": 0.782608695652174,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: calibrated/real/support flight",
+   "stored": 13,
+   "recomputed": 13.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: calibrated/real/per-class F1 food",
+   "stored": 0.861244019138756,
+   "recomputed": 0.861244019138756,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: calibrated/real/support food",
+   "stored": 109,
+   "recomputed": 109.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: calibrated/real/per-class F1 fuel",
+   "stored": 0.8148148148148148,
+   "recomputed": 0.8148148148148148,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: calibrated/real/support fuel",
+   "stored": 13,
+   "recomputed": 13.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: calibrated/real/per-class F1 gas",
+   "stored": 0.8571428571428571,
+   "recomputed": 0.8571428571428571,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: calibrated/real/support gas",
+   "stored": 4,
+   "recomputed": 4.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: calibrated/real/per-class F1 hotel",
+   "stored": 0.717948717948718,
+   "recomputed": 0.717948717948718,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: calibrated/real/support hotel",
+   "stored": 23,
+   "recomputed": 23.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: calibrated/real/per-class F1 internet",
+   "stored": 0.6666666666666666,
+   "recomputed": 0.6666666666666666,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: calibrated/real/support internet",
+   "stored": 6,
+   "recomputed": 6.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: calibrated/real/per-class F1 medical",
+   "stored": 0.25,
+   "recomputed": 0.25,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: calibrated/real/support medical",
+   "stored": 6,
+   "recomputed": 6.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: calibrated/real/per-class F1 miscellaneous",
+   "stored": 0.8037383177570094,
+   "recomputed": 0.8037383177570093,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: calibrated/real/support miscellaneous",
+   "stored": 50,
+   "recomputed": 50.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: calibrated/real/per-class F1 non_expense",
+   "stored": 0.8351648351648352,
+   "recomputed": 0.8351648351648352,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: calibrated/real/support non_expense",
+   "stored": 80,
+   "recomputed": 80.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: calibrated/real/per-class F1 parking",
+   "stored": 0.625,
+   "recomputed": 0.625,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: calibrated/real/support parking",
+   "stored": 8,
+   "recomputed": 8.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: calibrated/real/per-class F1 train",
+   "stored": 0.6341463414634146,
+   "recomputed": 0.6341463414634146,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: calibrated/real/support train",
+   "stored": 28,
+   "recomputed": 28.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: calibrated/real/per-class F1 transport",
+   "stored": 0.5581395348837208,
+   "recomputed": 0.5581395348837209,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: calibrated/real/support transport",
+   "stored": 14,
+   "recomputed": 14.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: calibrated/real/per-class F1 water",
+   "stored": 0.4444444444444445,
+   "recomputed": 0.4444444444444444,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: calibrated/real/support water",
+   "stored": 7,
+   "recomputed": 7.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: calibrated/all/accuracy",
+   "stored": 0.863275039745628,
+   "recomputed": 0.863275039745628,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: calibrated/all/macro_precision",
+   "stored": 0.9002691628127713,
+   "recomputed": 0.9002691628127713,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: calibrated/all/macro_recall",
+   "stored": 0.8615873775503884,
+   "recomputed": 0.8615873775503884,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: calibrated/all/macro_f1",
+   "stored": 0.8731477906124979,
+   "recomputed": 0.8731477906124978,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: calibrated/all/weighted_f1",
+   "stored": 0.8642176550350028,
+   "recomputed": 0.8642176550350028,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: calibrated/all/ece",
+   "stored": 0.029706683418519567,
+   "recomputed": 0.029706685135675634,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: calibrated/all/nll",
+   "stored": 0.5506927371025085,
+   "recomputed": 0.5506927633657375,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: calibrated/all/brier",
+   "stored": 0.20965872811765315,
+   "recomputed": 0.20965872854849454,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: calibrated/all/per-class F1 bus",
+   "stored": 0.8070175438596492,
+   "recomputed": 0.8070175438596491,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: calibrated/all/support bus",
+   "stored": 28,
+   "recomputed": 28.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: calibrated/all/per-class F1 electricity",
+   "stored": 0.9090909090909091,
+   "recomputed": 0.9090909090909091,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: calibrated/all/support electricity",
+   "stored": 27,
+   "recomputed": 27.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: calibrated/all/per-class F1 flight",
+   "stored": 0.9056603773584904,
+   "recomputed": 0.9056603773584906,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: calibrated/all/support flight",
+   "stored": 28,
+   "recomputed": 28.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: calibrated/all/per-class F1 food",
+   "stored": 0.8786610878661089,
+   "recomputed": 0.8786610878661087,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: calibrated/all/support food",
+   "stored": 124,
+   "recomputed": 124.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: calibrated/all/per-class F1 fuel",
+   "stored": 0.912280701754386,
+   "recomputed": 0.9122807017543859,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: calibrated/all/support fuel",
+   "stored": 28,
+   "recomputed": 28.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: calibrated/all/per-class F1 gas",
+   "stored": 0.972972972972973,
+   "recomputed": 0.972972972972973,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: calibrated/all/support gas",
+   "stored": 19,
+   "recomputed": 19.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: calibrated/all/per-class F1 hotel",
+   "stored": 0.8405797101449276,
+   "recomputed": 0.8405797101449275,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: calibrated/all/support hotel",
+   "stored": 38,
+   "recomputed": 38.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: calibrated/all/per-class F1 internet",
+   "stored": 0.923076923076923,
+   "recomputed": 0.9230769230769231,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: calibrated/all/support internet",
+   "stored": 21,
+   "recomputed": 21.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: calibrated/all/per-class F1 medical",
+   "stored": 0.8421052631578947,
+   "recomputed": 0.8421052631578947,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: calibrated/all/support medical",
+   "stored": 21,
+   "recomputed": 21.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: calibrated/all/per-class F1 miscellaneous",
+   "stored": 0.8467153284671534,
+   "recomputed": 0.8467153284671532,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: calibrated/all/support miscellaneous",
+   "stored": 65,
+   "recomputed": 65.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: calibrated/all/per-class F1 non_expense",
+   "stored": 0.8623853211009175,
+   "recomputed": 0.8623853211009175,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: calibrated/all/support non_expense",
+   "stored": 98,
+   "recomputed": 98.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: calibrated/all/per-class F1 parking",
+   "stored": 0.8695652173913043,
+   "recomputed": 0.8695652173913043,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: calibrated/all/support parking",
+   "stored": 23,
+   "recomputed": 23.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: calibrated/all/per-class F1 rent",
+   "stored": 1.0,
+   "recomputed": 1.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: calibrated/all/support rent",
+   "stored": 15,
+   "recomputed": 15.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: calibrated/all/per-class F1 train",
+   "stored": 0.7887323943661972,
+   "recomputed": 0.7887323943661971,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: calibrated/all/support train",
+   "stored": 43,
+   "recomputed": 43.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: calibrated/all/per-class F1 transport",
+   "stored": 0.7397260273972602,
+   "recomputed": 0.7397260273972602,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: calibrated/all/support transport",
+   "stored": 29,
+   "recomputed": 29.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: calibrated/all/per-class F1 water",
+   "stored": 0.8717948717948718,
+   "recomputed": 0.8717948717948718,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: calibrated/all/support water",
+   "stored": 22,
+   "recomputed": 22.0,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: confusion matrix (real test)",
+   "stored": 0,
+   "recomputed": 0,
+   "ok": true
+  },
+  {
+   "name": "bilstm_attn: confusion matrix diagonal == accuracy*n",
+   "stored": 300,
+   "recomputed": 300,
+   "ok": true
+  },
+  {
+   "name": "xlmr: val logits rows",
+   "stored": 634,
+   "recomputed": 634,
+   "ok": true
+  },
+  {
+   "name": "xlmr: test logits rows",
+   "stored": 629,
+   "recomputed": 629,
+   "ok": true
+  },
+  {
+   "name": "xlmr: logits width",
+   "stored": 16,
+   "recomputed": 16,
+   "ok": true
+  },
+  {
+   "name": "xlmr: temperature (refit on validation)",
+   "stored": 1.4227180720001138,
+   "recomputed": 1.422718072000002,
+   "ok": true
+  },
+  {
+   "name": "xlmr: raw/real/accuracy",
+   "stored": 0.8989637305699482,
+   "recomputed": 0.8989637305699482,
+   "ok": true
+  },
+  {
+   "name": "xlmr: raw/real/macro_precision",
+   "stored": 0.9002846217110613,
+   "recomputed": 0.9002846217110613,
+   "ok": true
+  },
+  {
+   "name": "xlmr: raw/real/macro_recall",
+   "stored": 0.8812725908360133,
+   "recomputed": 0.8812725908360133,
+   "ok": true
+  },
+  {
+   "name": "xlmr: raw/real/macro_f1",
+   "stored": 0.8837708621521803,
+   "recomputed": 0.8837708621521803,
+   "ok": true
+  },
+  {
+   "name": "xlmr: raw/real/weighted_f1",
+   "stored": 0.8995002046773072,
+   "recomputed": 0.8995002046773072,
+   "ok": true
+  },
+  {
+   "name": "xlmr: raw/real/ece",
+   "stored": 0.07590942964961492,
+   "recomputed": 0.07590943462722591,
+   "ok": true
+  },
+  {
+   "name": "xlmr: raw/real/nll",
+   "stored": 0.4918341636657715,
+   "recomputed": 0.4918341777575382,
+   "ok": true
+  },
+  {
+   "name": "xlmr: raw/real/brier",
+   "stored": 0.16821757165356332,
+   "recomputed": 0.168217570056883,
+   "ok": true
+  },
+  {
+   "name": "xlmr: raw/real/per-class F1 bus",
+   "stored": 0.7272727272727274,
+   "recomputed": 0.7272727272727273,
+   "ok": true
+  },
+  {
+   "name": "xlmr: raw/real/support bus",
+   "stored": 13,
+   "recomputed": 13.0,
+   "ok": true
+  },
+  {
+   "name": "xlmr: raw/real/per-class F1 electricity",
+   "stored": 0.923076923076923,
+   "recomputed": 0.9230769230769231,
+   "ok": true
+  },
+  {
+   "name": "xlmr: raw/real/support electricity",
+   "stored": 12,
+   "recomputed": 12.0,
+   "ok": true
+  },
+  {
+   "name": "xlmr: raw/real/per-class F1 flight",
+   "stored": 0.8461538461538461,
+   "recomputed": 0.8461538461538461,
+   "ok": true
+  },
+  {
+   "name": "xlmr: raw/real/support flight",
+   "stored": 13,
+   "recomputed": 13.0,
+   "ok": true
+  },
+  {
+   "name": "xlmr: raw/real/per-class F1 food",
+   "stored": 0.9357798165137615,
+   "recomputed": 0.9357798165137615,
+   "ok": true
+  },
+  {
+   "name": "xlmr: raw/real/support food",
+   "stored": 109,
+   "recomputed": 109.0,
+   "ok": true
+  },
+  {
+   "name": "xlmr: raw/real/per-class F1 fuel",
+   "stored": 0.8799999999999999,
+   "recomputed": 0.88,
+   "ok": true
+  },
+  {
+   "name": "xlmr: raw/real/support fuel",
+   "stored": 13,
+   "recomputed": 13.0,
+   "ok": true
+  },
+  {
+   "name": "xlmr: raw/real/per-class F1 gas",
+   "stored": 1.0,
+   "recomputed": 1.0,
+   "ok": true
+  },
+  {
+   "name": "xlmr: raw/real/support gas",
+   "stored": 4,
+   "recomputed": 4.0,
+   "ok": true
+  },
+  {
+   "name": "xlmr: raw/real/per-class F1 hotel",
+   "stored": 0.9333333333333332,
+   "recomputed": 0.9333333333333333,
+   "ok": true
+  },
+  {
+   "name": "xlmr: raw/real/support hotel",
+   "stored": 23,
+   "recomputed": 23.0,
+   "ok": true
+  },
+  {
+   "name": "xlmr: raw/real/per-class F1 internet",
+   "stored": 0.9090909090909091,
+   "recomputed": 0.9090909090909091,
+   "ok": true
+  },
+  {
+   "name": "xlmr: raw/real/support internet",
+   "stored": 6,
+   "recomputed": 6.0,
+   "ok": true
+  },
+  {
+   "name": "xlmr: raw/real/per-class F1 medical",
+   "stored": 0.9090909090909091,
+   "recomputed": 0.9090909090909091,
+   "ok": true
+  },
+  {
+   "name": "xlmr: raw/real/support medical",
+   "stored": 6,
+   "recomputed": 6.0,
+   "ok": true
+  },
+  {
+   "name": "xlmr: raw/real/per-class F1 miscellaneous",
+   "stored": 0.8571428571428572,
+   "recomputed": 0.8571428571428571,
+   "ok": true
+  },
+  {
+   "name": "xlmr: raw/real/support miscellaneous",
+   "stored": 50,
+   "recomputed": 50.0,
+   "ok": true
+  },
+  {
+   "name": "xlmr: raw/real/per-class F1 non_expense",
+   "stored": 0.9447852760736196,
+   "recomputed": 0.9447852760736196,
+   "ok": true
+  },
+  {
+   "name": "xlmr: raw/real/support non_expense",
+   "stored": 80,
+   "recomputed": 80.0,
+   "ok": true
+  },
+  {
+   "name": "xlmr: raw/real/per-class F1 parking",
+   "stored": 0.9411764705882353,
+   "recomputed": 0.9411764705882353,
+   "ok": true
+  },
+  {
+   "name": "xlmr: raw/real/support parking",
+   "stored": 8,
+   "recomputed": 8.0,
+   "ok": true
+  },
+  {
+   "name": "xlmr: raw/real/per-class F1 train",
+   "stored": 0.8163265306122449,
+   "recomputed": 0.8163265306122449,
+   "ok": true
+  },
+  {
+   "name": "xlmr: raw/real/support train",
+   "stored": 28,
+   "recomputed": 28.0,
+   "ok": true
+  },
+  {
+   "name": "xlmr: raw/real/per-class F1 transport",
+   "stored": 0.7999999999999999,
+   "recomputed": 0.8,
+   "ok": true
+  },
+  {
+   "name": "xlmr: raw/real/support transport",
+   "stored": 14,
+   "recomputed": 14.0,
+   "ok": true
+  },
+  {
+   "name": "xlmr: raw/real/per-class F1 water",
+   "stored": 0.8333333333333333,
+   "recomputed": 0.8333333333333334,
+   "ok": true
+  },
+  {
+   "name": "xlmr: raw/real/support water",
+   "stored": 7,
+   "recomputed": 7.0,
+   "ok": true
+  },
+  {
+   "name": "xlmr: raw/all/accuracy",
+   "stored": 0.9379968203497615,
+   "recomputed": 0.9379968203497615,
+   "ok": true
+  },
+  {
+   "name": "xlmr: raw/all/macro_precision",
+   "stored": 0.9473373792156384,
+   "recomputed": 0.9473373792156384,
+   "ok": true
+  },
+  {
+   "name": "xlmr: raw/all/macro_recall",
+   "stored": 0.9448435622866639,
+   "recomputed": 0.9448435622866639,
+   "ok": true
+  },
+  {
+   "name": "xlmr: raw/all/macro_f1",
+   "stored": 0.9445501012560334,
+   "recomputed": 0.9445501012560334,
+   "ok": true
+  },
+  {
+   "name": "xlmr: raw/all/weighted_f1",
+   "stored": 0.938134818097865,
+   "recomputed": 0.938134818097865,
+   "ok": true
+  },
+  {
+   "name": "xlmr: raw/all/ece",
+   "stored": 0.046001833032917286,
+   "recomputed": 0.04600192364527969,
+   "ok": true
+  },
+  {
+   "name": "xlmr: raw/all/nll",
+   "stored": 0.3024071753025055,
+   "recomputed": 0.3024071687892662,
+   "ok": true
+  },
+  {
+   "name": "xlmr: raw/all/brier",
+   "stored": 0.10323147896441066,
+   "recomputed": 0.10323147798768346,
+   "ok": true
+  },
+  {
+   "name": "xlmr: raw/all/per-class F1 bus",
+   "stored": 0.8571428571428572,
+   "recomputed": 0.8571428571428571,
+   "ok": true
+  },
+  {
+   "name": "xlmr: raw/all/support bus",
+   "stored": 28,
+   "recomputed": 28.0,
+   "ok": true
+  },
+  {
+   "name": "xlmr: raw/all/per-class F1 electricity",
+   "stored": 0.9642857142857143,
+   "recomputed": 0.9642857142857143,
+   "ok": true
+  },
+  {
+   "name": "xlmr: raw/all/support electricity",
+   "stored": 27,
+   "recomputed": 27.0,
+   "ok": true
+  },
+  {
+   "name": "xlmr: raw/all/per-class F1 flight",
+   "stored": 0.9285714285714286,
+   "recomputed": 0.9285714285714286,
+   "ok": true
+  },
+  {
+   "name": "xlmr: raw/all/support flight",
+   "stored": 28,
+   "recomputed": 28.0,
+   "ok": true
+  },
+  {
+   "name": "xlmr: raw/all/per-class F1 food",
+   "stored": 0.9435483870967742,
+   "recomputed": 0.9435483870967742,
+   "ok": true
+  },
+  {
+   "name": "xlmr: raw/all/support food",
+   "stored": 124,
+   "recomputed": 124.0,
+   "ok": true
+  },
+  {
+   "name": "xlmr: raw/all/per-class F1 fuel",
+   "stored": 0.9454545454545454,
+   "recomputed": 0.9454545454545454,
+   "ok": true
+  },
+  {
+   "name": "xlmr: raw/all/support fuel",
+   "stored": 28,
+   "recomputed": 28.0,
+   "ok": true
+  },
+  {
+   "name": "xlmr: raw/all/per-class F1 gas",
+   "stored": 1.0,
+   "recomputed": 1.0,
+   "ok": true
+  },
+  {
+   "name": "xlmr: raw/all/support gas",
+   "stored": 19,
+   "recomputed": 19.0,
+   "ok": true
+  },
+  {
+   "name": "xlmr: raw/all/per-class F1 hotel",
+   "stored": 0.9599999999999999,
+   "recomputed": 0.96,
+   "ok": true
+  },
+  {
+   "name": "xlmr: raw/all/support hotel",
+   "stored": 38,
+   "recomputed": 38.0,
+   "ok": true
+  },
+  {
+   "name": "xlmr: raw/all/per-class F1 internet",
+   "stored": 0.975609756097561,
+   "recomputed": 0.975609756097561,
+   "ok": true
+  },
+  {
+   "name": "xlmr: raw/all/support internet",
+   "stored": 21,
+   "recomputed": 21.0,
+   "ok": true
+  },
+  {
+   "name": "xlmr: raw/all/per-class F1 medical",
+   "stored": 0.975609756097561,
+   "recomputed": 0.975609756097561,
+   "ok": true
+  },
+  {
+   "name": "xlmr: raw/all/support medical",
+   "stored": 21,
+   "recomputed": 21.0,
+   "ok": true
+  },
+  {
+   "name": "xlmr: raw/all/per-class F1 miscellaneous",
+   "stored": 0.890625,
+   "recomputed": 0.890625,
+   "ok": true
+  },
+  {
+   "name": "xlmr: raw/all/support miscellaneous",
+   "stored": 65,
+   "recomputed": 65.0,
+   "ok": true
+  },
+  {
+   "name": "xlmr: raw/all/per-class F1 non_expense",
+   "stored": 0.9547738693467337,
+   "recomputed": 0.9547738693467337,
+   "ok": true
+  },
+  {
+   "name": "xlmr: raw/all/support non_expense",
+   "stored": 98,
+   "recomputed": 98.0,
+   "ok": true
+  },
+  {
+   "name": "xlmr: raw/all/per-class F1 parking",
+   "stored": 0.9787234042553191,
+   "recomputed": 0.9787234042553191,
+   "ok": true
+  },
+  {
+   "name": "xlmr: raw/all/support parking",
+   "stored": 23,
+   "recomputed": 23.0,
+   "ok": true
+  },
+  {
+   "name": "xlmr: raw/all/per-class F1 rent",
+   "stored": 1.0,
+   "recomputed": 1.0,
+   "ok": true
+  },
+  {
+   "name": "xlmr: raw/all/support rent",
+   "stored": 15,
+   "recomputed": 15.0,
+   "ok": true
+  },
+  {
+   "name": "xlmr: raw/all/per-class F1 train",
+   "stored": 0.8860759493670887,
+   "recomputed": 0.8860759493670886,
+   "ok": true
+  },
+  {
+   "name": "xlmr: raw/all/support train",
+   "stored": 43,
+   "recomputed": 43.0,
+   "ok": true
+  },
+  {
+   "name": "xlmr: raw/all/per-class F1 transport",
+   "stored": 0.9,
+   "recomputed": 0.9,
+   "ok": true
+  },
+  {
+   "name": "xlmr: raw/all/support transport",
+   "stored": 29,
+   "recomputed": 29.0,
+   "ok": true
+  },
+  {
+   "name": "xlmr: raw/all/per-class F1 water",
+   "stored": 0.9523809523809523,
+   "recomputed": 0.9523809523809523,
+   "ok": true
+  },
+  {
+   "name": "xlmr: raw/all/support water",
+   "stored": 22,
+   "recomputed": 22.0,
+   "ok": true
+  },
+  {
+   "name": "xlmr: calibrated/real/accuracy",
+   "stored": 0.8989637305699482,
+   "recomputed": 0.8989637305699482,
+   "ok": true
+  },
+  {
+   "name": "xlmr: calibrated/real/macro_precision",
+   "stored": 0.9002846217110613,
+   "recomputed": 0.9002846217110613,
+   "ok": true
+  },
+  {
+   "name": "xlmr: calibrated/real/macro_recall",
+   "stored": 0.8812725908360133,
+   "recomputed": 0.8812725908360133,
+   "ok": true
+  },
+  {
+   "name": "xlmr: calibrated/real/macro_f1",
+   "stored": 0.8837708621521803,
+   "recomputed": 0.8837708621521803,
+   "ok": true
+  },
+  {
+   "name": "xlmr: calibrated/real/weighted_f1",
+   "stored": 0.8995002046773072,
+   "recomputed": 0.8995002046773072,
+   "ok": true
+  },
+  {
+   "name": "xlmr: calibrated/real/ece",
+   "stored": 0.0410806349058843,
+   "recomputed": 0.04108061214980624,
+   "ok": true
+  },
+  {
+   "name": "xlmr: calibrated/real/nll",
+   "stored": 0.3952662944793701,
+   "recomputed": 0.3952662635163348,
+   "ok": true
+  },
+  {
+   "name": "xlmr: calibrated/real/brier",
+   "stored": 0.1550742345629264,
+   "recomputed": 0.15507423226105993,
+   "ok": true
+  },
+  {
+   "name": "xlmr: calibrated/real/per-class F1 bus",
+   "stored": 0.7272727272727274,
+   "recomputed": 0.7272727272727273,
+   "ok": true
+  },
+  {
+   "name": "xlmr: calibrated/real/support bus",
+   "stored": 13,
+   "recomputed": 13.0,
+   "ok": true
+  },
+  {
+   "name": "xlmr: calibrated/real/per-class F1 electricity",
+   "stored": 0.923076923076923,
+   "recomputed": 0.9230769230769231,
+   "ok": true
+  },
+  {
+   "name": "xlmr: calibrated/real/support electricity",
+   "stored": 12,
+   "recomputed": 12.0,
+   "ok": true
+  },
+  {
+   "name": "xlmr: calibrated/real/per-class F1 flight",
+   "stored": 0.8461538461538461,
+   "recomputed": 0.8461538461538461,
+   "ok": true
+  },
+  {
+   "name": "xlmr: calibrated/real/support flight",
+   "stored": 13,
+   "recomputed": 13.0,
+   "ok": true
+  },
+  {
+   "name": "xlmr: calibrated/real/per-class F1 food",
+   "stored": 0.9357798165137615,
+   "recomputed": 0.9357798165137615,
+   "ok": true
+  },
+  {
+   "name": "xlmr: calibrated/real/support food",
+   "stored": 109,
+   "recomputed": 109.0,
+   "ok": true
+  },
+  {
+   "name": "xlmr: calibrated/real/per-class F1 fuel",
+   "stored": 0.8799999999999999,
+   "recomputed": 0.88,
+   "ok": true
+  },
+  {
+   "name": "xlmr: calibrated/real/support fuel",
+   "stored": 13,
+   "recomputed": 13.0,
+   "ok": true
+  },
+  {
+   "name": "xlmr: calibrated/real/per-class F1 gas",
+   "stored": 1.0,
+   "recomputed": 1.0,
+   "ok": true
+  },
+  {
+   "name": "xlmr: calibrated/real/support gas",
+   "stored": 4,
+   "recomputed": 4.0,
+   "ok": true
+  },
+  {
+   "name": "xlmr: calibrated/real/per-class F1 hotel",
+   "stored": 0.9333333333333332,
+   "recomputed": 0.9333333333333333,
+   "ok": true
+  },
+  {
+   "name": "xlmr: calibrated/real/support hotel",
+   "stored": 23,
+   "recomputed": 23.0,
+   "ok": true
+  },
+  {
+   "name": "xlmr: calibrated/real/per-class F1 internet",
+   "stored": 0.9090909090909091,
+   "recomputed": 0.9090909090909091,
+   "ok": true
+  },
+  {
+   "name": "xlmr: calibrated/real/support internet",
+   "stored": 6,
+   "recomputed": 6.0,
+   "ok": true
+  },
+  {
+   "name": "xlmr: calibrated/real/per-class F1 medical",
+   "stored": 0.9090909090909091,
+   "recomputed": 0.9090909090909091,
+   "ok": true
+  },
+  {
+   "name": "xlmr: calibrated/real/support medical",
+   "stored": 6,
+   "recomputed": 6.0,
+   "ok": true
+  },
+  {
+   "name": "xlmr: calibrated/real/per-class F1 miscellaneous",
+   "stored": 0.8571428571428572,
+   "recomputed": 0.8571428571428571,
+   "ok": true
+  },
+  {
+   "name": "xlmr: calibrated/real/support miscellaneous",
+   "stored": 50,
+   "recomputed": 50.0,
+   "ok": true
+  },
+  {
+   "name": "xlmr: calibrated/real/per-class F1 non_expense",
+   "stored": 0.9447852760736196,
+   "recomputed": 0.9447852760736196,
+   "ok": true
+  },
+  {
+   "name": "xlmr: calibrated/real/support non_expense",
+   "stored": 80,
+   "recomputed": 80.0,
+   "ok": true
+  },
+  {
+   "name": "xlmr: calibrated/real/per-class F1 parking",
+   "stored": 0.9411764705882353,
+   "recomputed": 0.9411764705882353,
+   "ok": true
+  },
+  {
+   "name": "xlmr: calibrated/real/support parking",
+   "stored": 8,
+   "recomputed": 8.0,
+   "ok": true
+  },
+  {
+   "name": "xlmr: calibrated/real/per-class F1 train",
+   "stored": 0.8163265306122449,
+   "recomputed": 0.8163265306122449,
+   "ok": true
+  },
+  {
+   "name": "xlmr: calibrated/real/support train",
+   "stored": 28,
+   "recomputed": 28.0,
+   "ok": true
+  },
+  {
+   "name": "xlmr: calibrated/real/per-class F1 transport",
+   "stored": 0.7999999999999999,
+   "recomputed": 0.8,
+   "ok": true
+  },
+  {
+   "name": "xlmr: calibrated/real/support transport",
+   "stored": 14,
+   "recomputed": 14.0,
+   "ok": true
+  },
+  {
+   "name": "xlmr: calibrated/real/per-class F1 water",
+   "stored": 0.8333333333333333,
+   "recomputed": 0.8333333333333334,
+   "ok": true
+  },
+  {
+   "name": "xlmr: calibrated/real/support water",
+   "stored": 7,
+   "recomputed": 7.0,
+   "ok": true
+  },
+  {
+   "name": "xlmr: calibrated/all/accuracy",
+   "stored": 0.9379968203497615,
+   "recomputed": 0.9379968203497615,
+   "ok": true
+  },
+  {
+   "name": "xlmr: calibrated/all/macro_precision",
+   "stored": 0.9473373792156384,
+   "recomputed": 0.9473373792156384,
+   "ok": true
+  },
+  {
+   "name": "xlmr: calibrated/all/macro_recall",
+   "stored": 0.9448435622866639,
+   "recomputed": 0.9448435622866639,
+   "ok": true
+  },
+  {
+   "name": "xlmr: calibrated/all/macro_f1",
+   "stored": 0.9445501012560334,
+   "recomputed": 0.9445501012560334,
+   "ok": true
+  },
+  {
+   "name": "xlmr: calibrated/all/weighted_f1",
+   "stored": 0.938134818097865,
+   "recomputed": 0.938134818097865,
+   "ok": true
+  },
+  {
+   "name": "xlmr: calibrated/all/ece",
+   "stored": 0.01670002979959332,
+   "recomputed": 0.016700053014628555,
+   "ok": true
+  },
+  {
+   "name": "xlmr: calibrated/all/nll",
+   "stored": 0.2511705160140991,
+   "recomputed": 0.25117049448549206,
+   "ok": true
+  },
+  {
+   "name": "xlmr: calibrated/all/brier",
+   "stored": 0.09536921685903163,
+   "recomputed": 0.09536921538894165,
+   "ok": true
+  },
+  {
+   "name": "xlmr: calibrated/all/per-class F1 bus",
+   "stored": 0.8571428571428572,
+   "recomputed": 0.8571428571428571,
+   "ok": true
+  },
+  {
+   "name": "xlmr: calibrated/all/support bus",
+   "stored": 28,
+   "recomputed": 28.0,
+   "ok": true
+  },
+  {
+   "name": "xlmr: calibrated/all/per-class F1 electricity",
+   "stored": 0.9642857142857143,
+   "recomputed": 0.9642857142857143,
+   "ok": true
+  },
+  {
+   "name": "xlmr: calibrated/all/support electricity",
+   "stored": 27,
+   "recomputed": 27.0,
+   "ok": true
+  },
+  {
+   "name": "xlmr: calibrated/all/per-class F1 flight",
+   "stored": 0.9285714285714286,
+   "recomputed": 0.9285714285714286,
+   "ok": true
+  },
+  {
+   "name": "xlmr: calibrated/all/support flight",
+   "stored": 28,
+   "recomputed": 28.0,
+   "ok": true
+  },
+  {
+   "name": "xlmr: calibrated/all/per-class F1 food",
+   "stored": 0.9435483870967742,
+   "recomputed": 0.9435483870967742,
+   "ok": true
+  },
+  {
+   "name": "xlmr: calibrated/all/support food",
+   "stored": 124,
+   "recomputed": 124.0,
+   "ok": true
+  },
+  {
+   "name": "xlmr: calibrated/all/per-class F1 fuel",
+   "stored": 0.9454545454545454,
+   "recomputed": 0.9454545454545454,
+   "ok": true
+  },
+  {
+   "name": "xlmr: calibrated/all/support fuel",
+   "stored": 28,
+   "recomputed": 28.0,
+   "ok": true
+  },
+  {
+   "name": "xlmr: calibrated/all/per-class F1 gas",
+   "stored": 1.0,
+   "recomputed": 1.0,
+   "ok": true
+  },
+  {
+   "name": "xlmr: calibrated/all/support gas",
+   "stored": 19,
+   "recomputed": 19.0,
+   "ok": true
+  },
+  {
+   "name": "xlmr: calibrated/all/per-class F1 hotel",
+   "stored": 0.9599999999999999,
+   "recomputed": 0.96,
+   "ok": true
+  },
+  {
+   "name": "xlmr: calibrated/all/support hotel",
+   "stored": 38,
+   "recomputed": 38.0,
+   "ok": true
+  },
+  {
+   "name": "xlmr: calibrated/all/per-class F1 internet",
+   "stored": 0.975609756097561,
+   "recomputed": 0.975609756097561,
+   "ok": true
+  },
+  {
+   "name": "xlmr: calibrated/all/support internet",
+   "stored": 21,
+   "recomputed": 21.0,
+   "ok": true
+  },
+  {
+   "name": "xlmr: calibrated/all/per-class F1 medical",
+   "stored": 0.975609756097561,
+   "recomputed": 0.975609756097561,
+   "ok": true
+  },
+  {
+   "name": "xlmr: calibrated/all/support medical",
+   "stored": 21,
+   "recomputed": 21.0,
+   "ok": true
+  },
+  {
+   "name": "xlmr: calibrated/all/per-class F1 miscellaneous",
+   "stored": 0.890625,
+   "recomputed": 0.890625,
+   "ok": true
+  },
+  {
+   "name": "xlmr: calibrated/all/support miscellaneous",
+   "stored": 65,
+   "recomputed": 65.0,
+   "ok": true
+  },
+  {
+   "name": "xlmr: calibrated/all/per-class F1 non_expense",
+   "stored": 0.9547738693467337,
+   "recomputed": 0.9547738693467337,
+   "ok": true
+  },
+  {
+   "name": "xlmr: calibrated/all/support non_expense",
+   "stored": 98,
+   "recomputed": 98.0,
+   "ok": true
+  },
+  {
+   "name": "xlmr: calibrated/all/per-class F1 parking",
+   "stored": 0.9787234042553191,
+   "recomputed": 0.9787234042553191,
+   "ok": true
+  },
+  {
+   "name": "xlmr: calibrated/all/support parking",
+   "stored": 23,
+   "recomputed": 23.0,
+   "ok": true
+  },
+  {
+   "name": "xlmr: calibrated/all/per-class F1 rent",
+   "stored": 1.0,
+   "recomputed": 1.0,
+   "ok": true
+  },
+  {
+   "name": "xlmr: calibrated/all/support rent",
+   "stored": 15,
+   "recomputed": 15.0,
+   "ok": true
+  },
+  {
+   "name": "xlmr: calibrated/all/per-class F1 train",
+   "stored": 0.8860759493670887,
+   "recomputed": 0.8860759493670886,
+   "ok": true
+  },
+  {
+   "name": "xlmr: calibrated/all/support train",
+   "stored": 43,
+   "recomputed": 43.0,
+   "ok": true
+  },
+  {
+   "name": "xlmr: calibrated/all/per-class F1 transport",
+   "stored": 0.9,
+   "recomputed": 0.9,
+   "ok": true
+  },
+  {
+   "name": "xlmr: calibrated/all/support transport",
+   "stored": 29,
+   "recomputed": 29.0,
+   "ok": true
+  },
+  {
+   "name": "xlmr: calibrated/all/per-class F1 water",
+   "stored": 0.9523809523809523,
+   "recomputed": 0.9523809523809523,
+   "ok": true
+  },
+  {
+   "name": "xlmr: calibrated/all/support water",
+   "stored": 22,
+   "recomputed": 22.0,
+   "ok": true
+  },
+  {
+   "name": "xlmr: confusion matrix (real test)",
+   "stored": 0,
+   "recomputed": 0,
+   "ok": true
+  },
+  {
+   "name": "xlmr: confusion matrix diagonal == accuracy*n",
+   "stored": 347,
+   "recomputed": 347,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: val logits rows",
+   "stored": 634,
+   "recomputed": 634,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: test logits rows",
+   "stored": 629,
+   "recomputed": 629,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: logits width",
+   "stored": 16,
+   "recomputed": 16,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: temperature (refit on validation)",
+   "stored": 0.9324555494960584,
+   "recomputed": 0.9324555494963651,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: raw/real/accuracy",
+   "stored": 0.8626943005181347,
+   "recomputed": 0.8626943005181347,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: raw/real/macro_precision",
+   "stored": 0.7722983554535047,
+   "recomputed": 0.7722983554535047,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: raw/real/macro_recall",
+   "stored": 0.7122448105012924,
+   "recomputed": 0.7122448105012924,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: raw/real/macro_f1",
+   "stored": 0.7038129821737612,
+   "recomputed": 0.703812982173761,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: raw/real/weighted_f1",
+   "stored": 0.8565882999585903,
+   "recomputed": 0.8565882999585903,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: raw/real/ece",
+   "stored": 0.04986316467505046,
+   "recomputed": 0.049863136540738914,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: raw/real/nll",
+   "stored": 0.5570852756500244,
+   "recomputed": 0.5570852366132133,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: raw/real/brier",
+   "stored": 0.19891291177910622,
+   "recomputed": 0.1989129123870229,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: raw/real/per-class F1 bus",
+   "stored": 0.5945945945945945,
+   "recomputed": 0.5945945945945946,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: raw/real/support bus",
+   "stored": 13,
+   "recomputed": 13.0,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: raw/real/per-class F1 electricity",
+   "stored": 0.8799999999999999,
+   "recomputed": 0.88,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: raw/real/support electricity",
+   "stored": 12,
+   "recomputed": 12.0,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: raw/real/per-class F1 flight",
+   "stored": 0.8125000000000001,
+   "recomputed": 0.8125,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: raw/real/support flight",
+   "stored": 13,
+   "recomputed": 13.0,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: raw/real/per-class F1 food",
+   "stored": 0.9674418604651164,
+   "recomputed": 0.9674418604651163,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: raw/real/support food",
+   "stored": 109,
+   "recomputed": 109.0,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: raw/real/per-class F1 fuel",
+   "stored": 0.7333333333333334,
+   "recomputed": 0.7333333333333333,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: raw/real/support fuel",
+   "stored": 13,
+   "recomputed": 13.0,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: raw/real/per-class F1 gas",
+   "stored": 0.5714285714285715,
+   "recomputed": 0.5714285714285714,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: raw/real/support gas",
+   "stored": 4,
+   "recomputed": 4.0,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: raw/real/per-class F1 hotel",
+   "stored": 0.9361702127659574,
+   "recomputed": 0.9361702127659575,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: raw/real/support hotel",
+   "stored": 23,
+   "recomputed": 23.0,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: raw/real/per-class F1 internet",
+   "stored": 0.5454545454545454,
+   "recomputed": 0.5454545454545454,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: raw/real/support internet",
+   "stored": 6,
+   "recomputed": 6.0,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: raw/real/per-class F1 medical",
+   "stored": 0.30769230769230765,
+   "recomputed": 0.3076923076923077,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: raw/real/support medical",
+   "stored": 6,
+   "recomputed": 6.0,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: raw/real/per-class F1 miscellaneous",
+   "stored": 0.92,
+   "recomputed": 0.92,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: raw/real/support miscellaneous",
+   "stored": 50,
+   "recomputed": 50.0,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: raw/real/per-class F1 non_expense",
+   "stored": 0.9696969696969697,
+   "recomputed": 0.9696969696969697,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: raw/real/support non_expense",
+   "stored": 80,
+   "recomputed": 80.0,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: raw/real/per-class F1 parking",
+   "stored": 0.7692307692307693,
+   "recomputed": 0.7692307692307693,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: raw/real/support parking",
+   "stored": 8,
+   "recomputed": 8.0,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: raw/real/per-class F1 train",
+   "stored": 0.5853658536585366,
+   "recomputed": 0.5853658536585366,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: raw/real/support train",
+   "stored": 28,
+   "recomputed": 28.0,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: raw/real/per-class F1 transport",
+   "stored": 0.7142857142857143,
+   "recomputed": 0.7142857142857143,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: raw/real/support transport",
+   "stored": 14,
+   "recomputed": 14.0,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: raw/real/per-class F1 water",
+   "stored": 0.25,
+   "recomputed": 0.25,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: raw/real/support water",
+   "stored": 7,
+   "recomputed": 7.0,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: raw/all/accuracy",
+   "stored": 0.9157392686804452,
+   "recomputed": 0.9157392686804452,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: raw/all/macro_precision",
+   "stored": 0.9060562985135461,
+   "recomputed": 0.9060562985135461,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: raw/all/macro_recall",
+   "stored": 0.8962591490091188,
+   "recomputed": 0.8962591490091188,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: raw/all/macro_f1",
+   "stored": 0.895009713219882,
+   "recomputed": 0.895009713219882,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: raw/all/weighted_f1",
+   "stored": 0.914918032878865,
+   "recomputed": 0.914918032878865,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: raw/all/ece",
+   "stored": 0.04374780293867968,
+   "recomputed": 0.043747819439507125,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: raw/all/nll",
+   "stored": 0.35530683398246765,
+   "recomputed": 0.3553068217566523,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: raw/all/brier",
+   "stored": 0.12266981782676394,
+   "recomputed": 0.12266981821502272,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: raw/all/per-class F1 bus",
+   "stored": 0.7761194029850746,
+   "recomputed": 0.7761194029850746,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: raw/all/support bus",
+   "stored": 28,
+   "recomputed": 28.0,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: raw/all/per-class F1 electricity",
+   "stored": 0.9454545454545454,
+   "recomputed": 0.9454545454545454,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: raw/all/support electricity",
+   "stored": 27,
+   "recomputed": 27.0,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: raw/all/per-class F1 flight",
+   "stored": 0.9032258064516129,
+   "recomputed": 0.9032258064516129,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: raw/all/support flight",
+   "stored": 28,
+   "recomputed": 28.0,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: raw/all/per-class F1 food",
+   "stored": 0.9714285714285714,
+   "recomputed": 0.9714285714285714,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: raw/all/support food",
+   "stored": 124,
+   "recomputed": 124.0,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: raw/all/per-class F1 fuel",
+   "stored": 0.8666666666666666,
+   "recomputed": 0.8666666666666667,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: raw/all/support fuel",
+   "stored": 28,
+   "recomputed": 28.0,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: raw/all/per-class F1 gas",
+   "stored": 0.918918918918919,
+   "recomputed": 0.918918918918919,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: raw/all/support gas",
+   "stored": 19,
+   "recomputed": 19.0,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: raw/all/per-class F1 hotel",
+   "stored": 0.9610389610389611,
+   "recomputed": 0.961038961038961,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: raw/all/support hotel",
+   "stored": 38,
+   "recomputed": 38.0,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: raw/all/per-class F1 internet",
+   "stored": 0.8780487804878048,
+   "recomputed": 0.8780487804878049,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: raw/all/support internet",
+   "stored": 21,
+   "recomputed": 21.0,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: raw/all/per-class F1 medical",
+   "stored": 0.7906976744186046,
+   "recomputed": 0.7906976744186046,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: raw/all/support medical",
+   "stored": 21,
+   "recomputed": 21.0,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: raw/all/per-class F1 miscellaneous",
+   "stored": 0.9384615384615385,
+   "recomputed": 0.9384615384615385,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: raw/all/support miscellaneous",
+   "stored": 65,
+   "recomputed": 65.0,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: raw/all/per-class F1 non_expense",
+   "stored": 0.9751243781094527,
+   "recomputed": 0.9751243781094527,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: raw/all/support non_expense",
+   "stored": 98,
+   "recomputed": 98.0,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: raw/all/per-class F1 parking",
+   "stored": 0.9302325581395349,
+   "recomputed": 0.9302325581395349,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: raw/all/support parking",
+   "stored": 23,
+   "recomputed": 23.0,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: raw/all/per-class F1 rent",
+   "stored": 1.0,
+   "recomputed": 1.0,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: raw/all/support rent",
+   "stored": 15,
+   "recomputed": 15.0,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: raw/all/per-class F1 train",
+   "stored": 0.7605633802816901,
+   "recomputed": 0.7605633802816901,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: raw/all/support train",
+   "stored": 43,
+   "recomputed": 43.0,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: raw/all/per-class F1 transport",
+   "stored": 0.8620689655172413,
+   "recomputed": 0.8620689655172413,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: raw/all/support transport",
+   "stored": 29,
+   "recomputed": 29.0,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: raw/all/per-class F1 water",
+   "stored": 0.8421052631578948,
+   "recomputed": 0.8421052631578947,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: raw/all/support water",
+   "stored": 22,
+   "recomputed": 22.0,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: calibrated/real/accuracy",
+   "stored": 0.8626943005181347,
+   "recomputed": 0.8626943005181347,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: calibrated/real/macro_precision",
+   "stored": 0.7722983554535047,
+   "recomputed": 0.7722983554535047,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: calibrated/real/macro_recall",
+   "stored": 0.7122448105012924,
+   "recomputed": 0.7122448105012924,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: calibrated/real/macro_f1",
+   "stored": 0.7038129821737612,
+   "recomputed": 0.703812982173761,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: calibrated/real/weighted_f1",
+   "stored": 0.8565882999585903,
+   "recomputed": 0.8565882999585903,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: calibrated/real/ece",
+   "stored": 0.04468613314813904,
+   "recomputed": 0.04468607501708108,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: calibrated/real/nll",
+   "stored": 0.5610279440879822,
+   "recomputed": 0.5610279682527147,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: calibrated/real/brier",
+   "stored": 0.20094511486403097,
+   "recomputed": 0.20094511183361619,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: calibrated/real/per-class F1 bus",
+   "stored": 0.5945945945945945,
+   "recomputed": 0.5945945945945946,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: calibrated/real/support bus",
+   "stored": 13,
+   "recomputed": 13.0,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: calibrated/real/per-class F1 electricity",
+   "stored": 0.8799999999999999,
+   "recomputed": 0.88,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: calibrated/real/support electricity",
+   "stored": 12,
+   "recomputed": 12.0,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: calibrated/real/per-class F1 flight",
+   "stored": 0.8125000000000001,
+   "recomputed": 0.8125,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: calibrated/real/support flight",
+   "stored": 13,
+   "recomputed": 13.0,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: calibrated/real/per-class F1 food",
+   "stored": 0.9674418604651164,
+   "recomputed": 0.9674418604651163,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: calibrated/real/support food",
+   "stored": 109,
+   "recomputed": 109.0,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: calibrated/real/per-class F1 fuel",
+   "stored": 0.7333333333333334,
+   "recomputed": 0.7333333333333333,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: calibrated/real/support fuel",
+   "stored": 13,
+   "recomputed": 13.0,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: calibrated/real/per-class F1 gas",
+   "stored": 0.5714285714285715,
+   "recomputed": 0.5714285714285714,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: calibrated/real/support gas",
+   "stored": 4,
+   "recomputed": 4.0,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: calibrated/real/per-class F1 hotel",
+   "stored": 0.9361702127659574,
+   "recomputed": 0.9361702127659575,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: calibrated/real/support hotel",
+   "stored": 23,
+   "recomputed": 23.0,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: calibrated/real/per-class F1 internet",
+   "stored": 0.5454545454545454,
+   "recomputed": 0.5454545454545454,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: calibrated/real/support internet",
+   "stored": 6,
+   "recomputed": 6.0,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: calibrated/real/per-class F1 medical",
+   "stored": 0.30769230769230765,
+   "recomputed": 0.3076923076923077,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: calibrated/real/support medical",
+   "stored": 6,
+   "recomputed": 6.0,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: calibrated/real/per-class F1 miscellaneous",
+   "stored": 0.92,
+   "recomputed": 0.92,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: calibrated/real/support miscellaneous",
+   "stored": 50,
+   "recomputed": 50.0,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: calibrated/real/per-class F1 non_expense",
+   "stored": 0.9696969696969697,
+   "recomputed": 0.9696969696969697,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: calibrated/real/support non_expense",
+   "stored": 80,
+   "recomputed": 80.0,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: calibrated/real/per-class F1 parking",
+   "stored": 0.7692307692307693,
+   "recomputed": 0.7692307692307693,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: calibrated/real/support parking",
+   "stored": 8,
+   "recomputed": 8.0,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: calibrated/real/per-class F1 train",
+   "stored": 0.5853658536585366,
+   "recomputed": 0.5853658536585366,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: calibrated/real/support train",
+   "stored": 28,
+   "recomputed": 28.0,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: calibrated/real/per-class F1 transport",
+   "stored": 0.7142857142857143,
+   "recomputed": 0.7142857142857143,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: calibrated/real/support transport",
+   "stored": 14,
+   "recomputed": 14.0,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: calibrated/real/per-class F1 water",
+   "stored": 0.25,
+   "recomputed": 0.25,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: calibrated/real/support water",
+   "stored": 7,
+   "recomputed": 7.0,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: calibrated/all/accuracy",
+   "stored": 0.9157392686804452,
+   "recomputed": 0.9157392686804452,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: calibrated/all/macro_precision",
+   "stored": 0.9060562985135461,
+   "recomputed": 0.9060562985135461,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: calibrated/all/macro_recall",
+   "stored": 0.8962591490091188,
+   "recomputed": 0.8962591490091188,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: calibrated/all/macro_f1",
+   "stored": 0.895009713219882,
+   "recomputed": 0.895009713219882,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: calibrated/all/weighted_f1",
+   "stored": 0.914918032878865,
+   "recomputed": 0.914918032878865,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: calibrated/all/ece",
+   "stored": 0.0361545526071649,
+   "recomputed": 0.03615463796223122,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: calibrated/all/nll",
+   "stored": 0.353151798248291,
+   "recomputed": 0.3531517805063418,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: calibrated/all/brier",
+   "stored": 0.12359182451675625,
+   "recomputed": 0.12359182272939104,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: calibrated/all/per-class F1 bus",
+   "stored": 0.7761194029850746,
+   "recomputed": 0.7761194029850746,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: calibrated/all/support bus",
+   "stored": 28,
+   "recomputed": 28.0,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: calibrated/all/per-class F1 electricity",
+   "stored": 0.9454545454545454,
+   "recomputed": 0.9454545454545454,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: calibrated/all/support electricity",
+   "stored": 27,
+   "recomputed": 27.0,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: calibrated/all/per-class F1 flight",
+   "stored": 0.9032258064516129,
+   "recomputed": 0.9032258064516129,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: calibrated/all/support flight",
+   "stored": 28,
+   "recomputed": 28.0,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: calibrated/all/per-class F1 food",
+   "stored": 0.9714285714285714,
+   "recomputed": 0.9714285714285714,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: calibrated/all/support food",
+   "stored": 124,
+   "recomputed": 124.0,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: calibrated/all/per-class F1 fuel",
+   "stored": 0.8666666666666666,
+   "recomputed": 0.8666666666666667,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: calibrated/all/support fuel",
+   "stored": 28,
+   "recomputed": 28.0,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: calibrated/all/per-class F1 gas",
+   "stored": 0.918918918918919,
+   "recomputed": 0.918918918918919,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: calibrated/all/support gas",
+   "stored": 19,
+   "recomputed": 19.0,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: calibrated/all/per-class F1 hotel",
+   "stored": 0.9610389610389611,
+   "recomputed": 0.961038961038961,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: calibrated/all/support hotel",
+   "stored": 38,
+   "recomputed": 38.0,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: calibrated/all/per-class F1 internet",
+   "stored": 0.8780487804878048,
+   "recomputed": 0.8780487804878049,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: calibrated/all/support internet",
+   "stored": 21,
+   "recomputed": 21.0,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: calibrated/all/per-class F1 medical",
+   "stored": 0.7906976744186046,
+   "recomputed": 0.7906976744186046,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: calibrated/all/support medical",
+   "stored": 21,
+   "recomputed": 21.0,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: calibrated/all/per-class F1 miscellaneous",
+   "stored": 0.9384615384615385,
+   "recomputed": 0.9384615384615385,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: calibrated/all/support miscellaneous",
+   "stored": 65,
+   "recomputed": 65.0,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: calibrated/all/per-class F1 non_expense",
+   "stored": 0.9751243781094527,
+   "recomputed": 0.9751243781094527,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: calibrated/all/support non_expense",
+   "stored": 98,
+   "recomputed": 98.0,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: calibrated/all/per-class F1 parking",
+   "stored": 0.9302325581395349,
+   "recomputed": 0.9302325581395349,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: calibrated/all/support parking",
+   "stored": 23,
+   "recomputed": 23.0,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: calibrated/all/per-class F1 rent",
+   "stored": 1.0,
+   "recomputed": 1.0,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: calibrated/all/support rent",
+   "stored": 15,
+   "recomputed": 15.0,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: calibrated/all/per-class F1 train",
+   "stored": 0.7605633802816901,
+   "recomputed": 0.7605633802816901,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: calibrated/all/support train",
+   "stored": 43,
+   "recomputed": 43.0,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: calibrated/all/per-class F1 transport",
+   "stored": 0.8620689655172413,
+   "recomputed": 0.8620689655172413,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: calibrated/all/support transport",
+   "stored": 29,
+   "recomputed": 29.0,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: calibrated/all/per-class F1 water",
+   "stored": 0.8421052631578948,
+   "recomputed": 0.8421052631578947,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: calibrated/all/support water",
+   "stored": 22,
+   "recomputed": 22.0,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: confusion matrix (real test)",
+   "stored": 0,
+   "recomputed": 0,
+   "ok": true
+  },
+  {
+   "name": "layoutlmv3: confusion matrix diagonal == accuracy*n",
+   "stored": 333,
+   "recomputed": 333,
+   "ok": true
+  },
+  {
+   "name": "fusion: val logits rows",
+   "stored": 634,
+   "recomputed": 634,
+   "ok": true
+  },
+  {
+   "name": "fusion: test logits rows",
+   "stored": 629,
+   "recomputed": 629,
+   "ok": true
+  },
+  {
+   "name": "fusion: logits width",
+   "stored": 16,
+   "recomputed": 16,
+   "ok": true
+  },
+  {
+   "name": "fusion: temperature (refit on validation)",
+   "stored": 0.8332852601655873,
+   "recomputed": 0.8332852601655942,
+   "ok": true
+  },
+  {
+   "name": "fusion: raw/real/accuracy",
+   "stored": 0.9067357512953368,
+   "recomputed": 0.9067357512953368,
+   "ok": true
+  },
+  {
+   "name": "fusion: raw/real/macro_precision",
+   "stored": 0.9146712732987243,
+   "recomputed": 0.9146712732987243,
+   "ok": true
+  },
+  {
+   "name": "fusion: raw/real/macro_recall",
+   "stored": 0.8141897646297328,
+   "recomputed": 0.8141897646297328,
+   "ok": true
+  },
+  {
+   "name": "fusion: raw/real/macro_f1",
+   "stored": 0.8388404625199756,
+   "recomputed": 0.8388404625199757,
+   "ok": true
+  },
+  {
+   "name": "fusion: raw/real/weighted_f1",
+   "stored": 0.9027752432272185,
+   "recomputed": 0.9027752432272185,
+   "ok": true
+  },
+  {
+   "name": "fusion: raw/real/ece",
+   "stored": 0.025350648773724907,
+   "recomputed": 0.025350648773724907,
+   "ok": true
+  },
+  {
+   "name": "fusion: raw/real/nll",
+   "stored": 0.3060458980103517,
+   "recomputed": 0.3060458980103517,
+   "ok": true
+  },
+  {
+   "name": "fusion: raw/real/brier",
+   "stored": 0.13217799681474737,
+   "recomputed": 0.13217799681474737,
+   "ok": true
+  },
+  {
+   "name": "fusion: raw/real/per-class F1 bus",
+   "stored": 0.7272727272727274,
+   "recomputed": 0.7272727272727273,
+   "ok": true
+  },
+  {
+   "name": "fusion: raw/real/support bus",
+   "stored": 13,
+   "recomputed": 13.0,
+   "ok": true
+  },
+  {
+   "name": "fusion: raw/real/per-class F1 electricity",
+   "stored": 0.923076923076923,
+   "recomputed": 0.9230769230769231,
+   "ok": true
+  },
+  {
+   "name": "fusion: raw/real/support electricity",
+   "stored": 12,
+   "recomputed": 12.0,
+   "ok": true
+  },
+  {
+   "name": "fusion: raw/real/per-class F1 flight",
+   "stored": 0.888888888888889,
+   "recomputed": 0.8888888888888888,
+   "ok": true
+  },
+  {
+   "name": "fusion: raw/real/support flight",
+   "stored": 13,
+   "recomputed": 13.0,
+   "ok": true
+  },
+  {
+   "name": "fusion: raw/real/per-class F1 food",
+   "stored": 0.9545454545454546,
+   "recomputed": 0.9545454545454546,
+   "ok": true
+  },
+  {
+   "name": "fusion: raw/real/support food",
+   "stored": 109,
+   "recomputed": 109.0,
+   "ok": true
+  },
+  {
+   "name": "fusion: raw/real/per-class F1 fuel",
+   "stored": 0.9166666666666666,
+   "recomputed": 0.9166666666666666,
+   "ok": true
+  },
+  {
+   "name": "fusion: raw/real/support fuel",
+   "stored": 13,
+   "recomputed": 13.0,
+   "ok": true
+  },
+  {
+   "name": "fusion: raw/real/per-class F1 gas",
+   "stored": 0.8571428571428571,
+   "recomputed": 0.8571428571428571,
+   "ok": true
+  },
+  {
+   "name": "fusion: raw/real/support gas",
+   "stored": 4,
+   "recomputed": 4.0,
+   "ok": true
+  },
+  {
+   "name": "fusion: raw/real/per-class F1 hotel",
+   "stored": 0.8800000000000001,
+   "recomputed": 0.88,
+   "ok": true
+  },
+  {
+   "name": "fusion: raw/real/support hotel",
+   "stored": 23,
+   "recomputed": 23.0,
+   "ok": true
+  },
+  {
+   "name": "fusion: raw/real/per-class F1 internet",
+   "stored": 0.8,
+   "recomputed": 0.8,
+   "ok": true
+  },
+  {
+   "name": "fusion: raw/real/support internet",
+   "stored": 6,
+   "recomputed": 6.0,
+   "ok": true
+  },
+  {
+   "name": "fusion: raw/real/per-class F1 medical",
+   "stored": 0.5,
+   "recomputed": 0.5,
+   "ok": true
+  },
+  {
+   "name": "fusion: raw/real/support medical",
+   "stored": 6,
+   "recomputed": 6.0,
+   "ok": true
+  },
+  {
+   "name": "fusion: raw/real/per-class F1 miscellaneous",
+   "stored": 0.9215686274509804,
+   "recomputed": 0.9215686274509803,
+   "ok": true
+  },
+  {
+   "name": "fusion: raw/real/support miscellaneous",
+   "stored": 50,
+   "recomputed": 50.0,
+   "ok": true
+  },
+  {
+   "name": "fusion: raw/real/per-class F1 non_expense",
+   "stored": 0.9696969696969697,
+   "recomputed": 0.9696969696969697,
+   "ok": true
+  },
+  {
+   "name": "fusion: raw/real/support non_expense",
+   "stored": 80,
+   "recomputed": 80.0,
+   "ok": true
+  },
+  {
+   "name": "fusion: raw/real/per-class F1 parking",
+   "stored": 0.9333333333333333,
+   "recomputed": 0.9333333333333333,
+   "ok": true
+  },
+  {
+   "name": "fusion: raw/real/support parking",
+   "stored": 8,
+   "recomputed": 8.0,
+   "ok": true
+  },
+  {
+   "name": "fusion: raw/real/per-class F1 train",
+   "stored": 0.7555555555555554,
+   "recomputed": 0.7555555555555555,
+   "ok": true
+  },
+  {
+   "name": "fusion: raw/real/support train",
+   "stored": 28,
+   "recomputed": 28.0,
+   "ok": true
+  },
+  {
+   "name": "fusion: raw/real/per-class F1 transport",
+   "stored": 0.8275862068965518,
+   "recomputed": 0.8275862068965517,
+   "ok": true
+  },
+  {
+   "name": "fusion: raw/real/support transport",
+   "stored": 14,
+   "recomputed": 14.0,
+   "ok": true
+  },
+  {
+   "name": "fusion: raw/real/per-class F1 water",
+   "stored": 0.7272727272727273,
+   "recomputed": 0.7272727272727273,
+   "ok": true
+  },
+  {
+   "name": "fusion: raw/real/support water",
+   "stored": 7,
+   "recomputed": 7.0,
+   "ok": true
+  },
+  {
+   "name": "fusion: raw/all/accuracy",
+   "stored": 0.9427662957074722,
+   "recomputed": 0.9427662957074722,
+   "ok": true
+  },
+  {
+   "name": "fusion: raw/all/macro_precision",
+   "stored": 0.9527287697054447,
+   "recomputed": 0.9527287697054447,
+   "ok": true
+  },
+  {
+   "name": "fusion: raw/all/macro_recall",
+   "stored": 0.9318404952734118,
+   "recomputed": 0.9318404952734118,
+   "ok": true
+  },
+  {
+   "name": "fusion: raw/all/macro_f1",
+   "stored": 0.9388864190448578,
+   "recomputed": 0.9388864190448578,
+   "ok": true
+  },
+  {
+   "name": "fusion: raw/all/weighted_f1",
+   "stored": 0.9422553057713792,
+   "recomputed": 0.9422553057713794,
+   "ok": true
+  },
+  {
+   "name": "fusion: raw/all/ece",
+   "stored": 0.0166586815991789,
+   "recomputed": 0.0166586815991789,
+   "ok": true
+  },
+  {
+   "name": "fusion: raw/all/nll",
+   "stored": 0.1889187531056026,
+   "recomputed": 0.1889187531056026,
+   "ok": true
+  },
+  {
+   "name": "fusion: raw/all/brier",
+   "stored": 0.08112698223748117,
+   "recomputed": 0.08112698223748117,
+   "ok": true
+  },
+  {
+   "name": "fusion: raw/all/per-class F1 bus",
+   "stored": 0.8571428571428572,
+   "recomputed": 0.8571428571428571,
+   "ok": true
+  },
+  {
+   "name": "fusion: raw/all/support bus",
+   "stored": 28,
+   "recomputed": 28.0,
+   "ok": true
+  },
+  {
+   "name": "fusion: raw/all/per-class F1 electricity",
+   "stored": 0.9642857142857143,
+   "recomputed": 0.9642857142857143,
+   "ok": true
+  },
+  {
+   "name": "fusion: raw/all/support electricity",
+   "stored": 27,
+   "recomputed": 27.0,
+   "ok": true
+  },
+  {
+   "name": "fusion: raw/all/per-class F1 flight",
+   "stored": 0.9473684210526316,
+   "recomputed": 0.9473684210526315,
+   "ok": true
+  },
+  {
+   "name": "fusion: raw/all/support flight",
+   "stored": 28,
+   "recomputed": 28.0,
+   "ok": true
+  },
+  {
+   "name": "fusion: raw/all/per-class F1 food",
+   "stored": 0.96,
+   "recomputed": 0.96,
+   "ok": true
+  },
+  {
+   "name": "fusion: raw/all/support food",
+   "stored": 124,
+   "recomputed": 124.0,
+   "ok": true
+  },
+  {
+   "name": "fusion: raw/all/per-class F1 fuel",
+   "stored": 0.962962962962963,
+   "recomputed": 0.9629629629629629,
+   "ok": true
+  },
+  {
+   "name": "fusion: raw/all/support fuel",
+   "stored": 28,
+   "recomputed": 28.0,
+   "ok": true
+  },
+  {
+   "name": "fusion: raw/all/per-class F1 gas",
+   "stored": 0.972972972972973,
+   "recomputed": 0.972972972972973,
+   "ok": true
+  },
+  {
+   "name": "fusion: raw/all/support gas",
+   "stored": 19,
+   "recomputed": 19.0,
+   "ok": true
+  },
+  {
+   "name": "fusion: raw/all/per-class F1 hotel",
+   "stored": 0.925,
+   "recomputed": 0.925,
+   "ok": true
+  },
+  {
+   "name": "fusion: raw/all/support hotel",
+   "stored": 38,
+   "recomputed": 38.0,
+   "ok": true
+  },
+  {
+   "name": "fusion: raw/all/per-class F1 internet",
+   "stored": 0.9500000000000001,
+   "recomputed": 0.95,
+   "ok": true
+  },
+  {
+   "name": "fusion: raw/all/support internet",
+   "stored": 21,
+   "recomputed": 21.0,
+   "ok": true
+  },
+  {
+   "name": "fusion: raw/all/per-class F1 medical",
+   "stored": 0.8947368421052632,
+   "recomputed": 0.8947368421052632,
+   "ok": true
+  },
+  {
+   "name": "fusion: raw/all/support medical",
+   "stored": 21,
+   "recomputed": 21.0,
+   "ok": true
+  },
+  {
+   "name": "fusion: raw/all/per-class F1 miscellaneous",
+   "stored": 0.9393939393939394,
+   "recomputed": 0.9393939393939394,
+   "ok": true
+  },
+  {
+   "name": "fusion: raw/all/support miscellaneous",
+   "stored": 65,
+   "recomputed": 65.0,
+   "ok": true
+  },
+  {
+   "name": "fusion: raw/all/per-class F1 non_expense",
+   "stored": 0.9751243781094527,
+   "recomputed": 0.9751243781094527,
+   "ok": true
+  },
+  {
+   "name": "fusion: raw/all/support non_expense",
+   "stored": 98,
+   "recomputed": 98.0,
+   "ok": true
+  },
+  {
+   "name": "fusion: raw/all/per-class F1 parking",
+   "stored": 0.9777777777777777,
+   "recomputed": 0.9777777777777777,
+   "ok": true
+  },
+  {
+   "name": "fusion: raw/all/support parking",
+   "stored": 23,
+   "recomputed": 23.0,
+   "ok": true
+  },
+  {
+   "name": "fusion: raw/all/per-class F1 rent",
+   "stored": 1.0,
+   "recomputed": 1.0,
+   "ok": true
+  },
+  {
+   "name": "fusion: raw/all/support rent",
+   "stored": 15,
+   "recomputed": 15.0,
+   "ok": true
+  },
+  {
+   "name": "fusion: raw/all/per-class F1 train",
+   "stored": 0.8533333333333333,
+   "recomputed": 0.8533333333333334,
+   "ok": true
+  },
+  {
+   "name": "fusion: raw/all/support train",
+   "stored": 43,
+   "recomputed": 43.0,
+   "ok": true
+  },
+  {
+   "name": "fusion: raw/all/per-class F1 transport",
+   "stored": 0.9152542372881356,
+   "recomputed": 0.9152542372881356,
+   "ok": true
+  },
+  {
+   "name": "fusion: raw/all/support transport",
+   "stored": 29,
+   "recomputed": 29.0,
+   "ok": true
+  },
+  {
+   "name": "fusion: raw/all/per-class F1 water",
+   "stored": 0.9268292682926829,
+   "recomputed": 0.926829268292683,
+   "ok": true
+  },
+  {
+   "name": "fusion: raw/all/support water",
+   "stored": 22,
+   "recomputed": 22.0,
+   "ok": true
+  },
+  {
+   "name": "fusion: calibrated/real/accuracy",
+   "stored": 0.9067357512953368,
+   "recomputed": 0.9067357512953368,
+   "ok": true
+  },
+  {
+   "name": "fusion: calibrated/real/macro_precision",
+   "stored": 0.9146712732987243,
+   "recomputed": 0.9146712732987243,
+   "ok": true
+  },
+  {
+   "name": "fusion: calibrated/real/macro_recall",
+   "stored": 0.8141897646297328,
+   "recomputed": 0.8141897646297328,
+   "ok": true
+  },
+  {
+   "name": "fusion: calibrated/real/macro_f1",
+   "stored": 0.8388404625199756,
+   "recomputed": 0.8388404625199757,
+   "ok": true
+  },
+  {
+   "name": "fusion: calibrated/real/weighted_f1",
+   "stored": 0.9027752432272185,
+   "recomputed": 0.9027752432272185,
+   "ok": true
+  },
+  {
+   "name": "fusion: calibrated/real/ece",
+   "stored": 0.019660974823299503,
+   "recomputed": 0.019660974823299503,
+   "ok": true
+  },
+  {
+   "name": "fusion: calibrated/real/nll",
+   "stored": 0.299498576955019,
+   "recomputed": 0.299498576955019,
+   "ok": true
+  },
+  {
+   "name": "fusion: calibrated/real/brier",
+   "stored": 0.13327443452317236,
+   "recomputed": 0.13327443452317236,
+   "ok": true
+  },
+  {
+   "name": "fusion: calibrated/real/per-class F1 bus",
+   "stored": 0.7272727272727274,
+   "recomputed": 0.7272727272727273,
+   "ok": true
+  },
+  {
+   "name": "fusion: calibrated/real/support bus",
+   "stored": 13,
+   "recomputed": 13.0,
+   "ok": true
+  },
+  {
+   "name": "fusion: calibrated/real/per-class F1 electricity",
+   "stored": 0.923076923076923,
+   "recomputed": 0.9230769230769231,
+   "ok": true
+  },
+  {
+   "name": "fusion: calibrated/real/support electricity",
+   "stored": 12,
+   "recomputed": 12.0,
+   "ok": true
+  },
+  {
+   "name": "fusion: calibrated/real/per-class F1 flight",
+   "stored": 0.888888888888889,
+   "recomputed": 0.8888888888888888,
+   "ok": true
+  },
+  {
+   "name": "fusion: calibrated/real/support flight",
+   "stored": 13,
+   "recomputed": 13.0,
+   "ok": true
+  },
+  {
+   "name": "fusion: calibrated/real/per-class F1 food",
+   "stored": 0.9545454545454546,
+   "recomputed": 0.9545454545454546,
+   "ok": true
+  },
+  {
+   "name": "fusion: calibrated/real/support food",
+   "stored": 109,
+   "recomputed": 109.0,
+   "ok": true
+  },
+  {
+   "name": "fusion: calibrated/real/per-class F1 fuel",
+   "stored": 0.9166666666666666,
+   "recomputed": 0.9166666666666666,
+   "ok": true
+  },
+  {
+   "name": "fusion: calibrated/real/support fuel",
+   "stored": 13,
+   "recomputed": 13.0,
+   "ok": true
+  },
+  {
+   "name": "fusion: calibrated/real/per-class F1 gas",
+   "stored": 0.8571428571428571,
+   "recomputed": 0.8571428571428571,
+   "ok": true
+  },
+  {
+   "name": "fusion: calibrated/real/support gas",
+   "stored": 4,
+   "recomputed": 4.0,
+   "ok": true
+  },
+  {
+   "name": "fusion: calibrated/real/per-class F1 hotel",
+   "stored": 0.8800000000000001,
+   "recomputed": 0.88,
+   "ok": true
+  },
+  {
+   "name": "fusion: calibrated/real/support hotel",
+   "stored": 23,
+   "recomputed": 23.0,
+   "ok": true
+  },
+  {
+   "name": "fusion: calibrated/real/per-class F1 internet",
+   "stored": 0.8,
+   "recomputed": 0.8,
+   "ok": true
+  },
+  {
+   "name": "fusion: calibrated/real/support internet",
+   "stored": 6,
+   "recomputed": 6.0,
+   "ok": true
+  },
+  {
+   "name": "fusion: calibrated/real/per-class F1 medical",
+   "stored": 0.5,
+   "recomputed": 0.5,
+   "ok": true
+  },
+  {
+   "name": "fusion: calibrated/real/support medical",
+   "stored": 6,
+   "recomputed": 6.0,
+   "ok": true
+  },
+  {
+   "name": "fusion: calibrated/real/per-class F1 miscellaneous",
+   "stored": 0.9215686274509804,
+   "recomputed": 0.9215686274509803,
+   "ok": true
+  },
+  {
+   "name": "fusion: calibrated/real/support miscellaneous",
+   "stored": 50,
+   "recomputed": 50.0,
+   "ok": true
+  },
+  {
+   "name": "fusion: calibrated/real/per-class F1 non_expense",
+   "stored": 0.9696969696969697,
+   "recomputed": 0.9696969696969697,
+   "ok": true
+  },
+  {
+   "name": "fusion: calibrated/real/support non_expense",
+   "stored": 80,
+   "recomputed": 80.0,
+   "ok": true
+  },
+  {
+   "name": "fusion: calibrated/real/per-class F1 parking",
+   "stored": 0.9333333333333333,
+   "recomputed": 0.9333333333333333,
+   "ok": true
+  },
+  {
+   "name": "fusion: calibrated/real/support parking",
+   "stored": 8,
+   "recomputed": 8.0,
+   "ok": true
+  },
+  {
+   "name": "fusion: calibrated/real/per-class F1 train",
+   "stored": 0.7555555555555554,
+   "recomputed": 0.7555555555555555,
+   "ok": true
+  },
+  {
+   "name": "fusion: calibrated/real/support train",
+   "stored": 28,
+   "recomputed": 28.0,
+   "ok": true
+  },
+  {
+   "name": "fusion: calibrated/real/per-class F1 transport",
+   "stored": 0.8275862068965518,
+   "recomputed": 0.8275862068965517,
+   "ok": true
+  },
+  {
+   "name": "fusion: calibrated/real/support transport",
+   "stored": 14,
+   "recomputed": 14.0,
+   "ok": true
+  },
+  {
+   "name": "fusion: calibrated/real/per-class F1 water",
+   "stored": 0.7272727272727273,
+   "recomputed": 0.7272727272727273,
+   "ok": true
+  },
+  {
+   "name": "fusion: calibrated/real/support water",
+   "stored": 7,
+   "recomputed": 7.0,
+   "ok": true
+  },
+  {
+   "name": "fusion: calibrated/all/accuracy",
+   "stored": 0.9427662957074722,
+   "recomputed": 0.9427662957074722,
+   "ok": true
+  },
+  {
+   "name": "fusion: calibrated/all/macro_precision",
+   "stored": 0.9527287697054447,
+   "recomputed": 0.9527287697054447,
+   "ok": true
+  },
+  {
+   "name": "fusion: calibrated/all/macro_recall",
+   "stored": 0.9318404952734118,
+   "recomputed": 0.9318404952734118,
+   "ok": true
+  },
+  {
+   "name": "fusion: calibrated/all/macro_f1",
+   "stored": 0.9388864190448578,
+   "recomputed": 0.9388864190448578,
+   "ok": true
+  },
+  {
+   "name": "fusion: calibrated/all/weighted_f1",
+   "stored": 0.9422553057713792,
+   "recomputed": 0.9422553057713794,
+   "ok": true
+  },
+  {
+   "name": "fusion: calibrated/all/ece",
+   "stored": 0.011808665728424496,
+   "recomputed": 0.011808665728424496,
+   "ok": true
+  },
+  {
+   "name": "fusion: calibrated/all/nll",
+   "stored": 0.1840513319549113,
+   "recomputed": 0.1840513319549113,
+   "ok": true
+  },
+  {
+   "name": "fusion: calibrated/all/brier",
+   "stored": 0.08178859980983108,
+   "recomputed": 0.08178859980983108,
+   "ok": true
+  },
+  {
+   "name": "fusion: calibrated/all/per-class F1 bus",
+   "stored": 0.8571428571428572,
+   "recomputed": 0.8571428571428571,
+   "ok": true
+  },
+  {
+   "name": "fusion: calibrated/all/support bus",
+   "stored": 28,
+   "recomputed": 28.0,
+   "ok": true
+  },
+  {
+   "name": "fusion: calibrated/all/per-class F1 electricity",
+   "stored": 0.9642857142857143,
+   "recomputed": 0.9642857142857143,
+   "ok": true
+  },
+  {
+   "name": "fusion: calibrated/all/support electricity",
+   "stored": 27,
+   "recomputed": 27.0,
+   "ok": true
+  },
+  {
+   "name": "fusion: calibrated/all/per-class F1 flight",
+   "stored": 0.9473684210526316,
+   "recomputed": 0.9473684210526315,
+   "ok": true
+  },
+  {
+   "name": "fusion: calibrated/all/support flight",
+   "stored": 28,
+   "recomputed": 28.0,
+   "ok": true
+  },
+  {
+   "name": "fusion: calibrated/all/per-class F1 food",
+   "stored": 0.96,
+   "recomputed": 0.96,
+   "ok": true
+  },
+  {
+   "name": "fusion: calibrated/all/support food",
+   "stored": 124,
+   "recomputed": 124.0,
+   "ok": true
+  },
+  {
+   "name": "fusion: calibrated/all/per-class F1 fuel",
+   "stored": 0.962962962962963,
+   "recomputed": 0.9629629629629629,
+   "ok": true
+  },
+  {
+   "name": "fusion: calibrated/all/support fuel",
+   "stored": 28,
+   "recomputed": 28.0,
+   "ok": true
+  },
+  {
+   "name": "fusion: calibrated/all/per-class F1 gas",
+   "stored": 0.972972972972973,
+   "recomputed": 0.972972972972973,
+   "ok": true
+  },
+  {
+   "name": "fusion: calibrated/all/support gas",
+   "stored": 19,
+   "recomputed": 19.0,
+   "ok": true
+  },
+  {
+   "name": "fusion: calibrated/all/per-class F1 hotel",
+   "stored": 0.925,
+   "recomputed": 0.925,
+   "ok": true
+  },
+  {
+   "name": "fusion: calibrated/all/support hotel",
+   "stored": 38,
+   "recomputed": 38.0,
+   "ok": true
+  },
+  {
+   "name": "fusion: calibrated/all/per-class F1 internet",
+   "stored": 0.9500000000000001,
+   "recomputed": 0.95,
+   "ok": true
+  },
+  {
+   "name": "fusion: calibrated/all/support internet",
+   "stored": 21,
+   "recomputed": 21.0,
+   "ok": true
+  },
+  {
+   "name": "fusion: calibrated/all/per-class F1 medical",
+   "stored": 0.8947368421052632,
+   "recomputed": 0.8947368421052632,
+   "ok": true
+  },
+  {
+   "name": "fusion: calibrated/all/support medical",
+   "stored": 21,
+   "recomputed": 21.0,
+   "ok": true
+  },
+  {
+   "name": "fusion: calibrated/all/per-class F1 miscellaneous",
+   "stored": 0.9393939393939394,
+   "recomputed": 0.9393939393939394,
+   "ok": true
+  },
+  {
+   "name": "fusion: calibrated/all/support miscellaneous",
+   "stored": 65,
+   "recomputed": 65.0,
+   "ok": true
+  },
+  {
+   "name": "fusion: calibrated/all/per-class F1 non_expense",
+   "stored": 0.9751243781094527,
+   "recomputed": 0.9751243781094527,
+   "ok": true
+  },
+  {
+   "name": "fusion: calibrated/all/support non_expense",
+   "stored": 98,
+   "recomputed": 98.0,
+   "ok": true
+  },
+  {
+   "name": "fusion: calibrated/all/per-class F1 parking",
+   "stored": 0.9777777777777777,
+   "recomputed": 0.9777777777777777,
+   "ok": true
+  },
+  {
+   "name": "fusion: calibrated/all/support parking",
+   "stored": 23,
+   "recomputed": 23.0,
+   "ok": true
+  },
+  {
+   "name": "fusion: calibrated/all/per-class F1 rent",
+   "stored": 1.0,
+   "recomputed": 1.0,
+   "ok": true
+  },
+  {
+   "name": "fusion: calibrated/all/support rent",
+   "stored": 15,
+   "recomputed": 15.0,
+   "ok": true
+  },
+  {
+   "name": "fusion: calibrated/all/per-class F1 train",
+   "stored": 0.8533333333333333,
+   "recomputed": 0.8533333333333334,
+   "ok": true
+  },
+  {
+   "name": "fusion: calibrated/all/support train",
+   "stored": 43,
+   "recomputed": 43.0,
+   "ok": true
+  },
+  {
+   "name": "fusion: calibrated/all/per-class F1 transport",
+   "stored": 0.9152542372881356,
+   "recomputed": 0.9152542372881356,
+   "ok": true
+  },
+  {
+   "name": "fusion: calibrated/all/support transport",
+   "stored": 29,
+   "recomputed": 29.0,
+   "ok": true
+  },
+  {
+   "name": "fusion: calibrated/all/per-class F1 water",
+   "stored": 0.9268292682926829,
+   "recomputed": 0.926829268292683,
+   "ok": true
+  },
+  {
+   "name": "fusion: calibrated/all/support water",
+   "stored": 22,
+   "recomputed": 22.0,
+   "ok": true
+  },
+  {
+   "name": "fusion: confusion matrix (real test)",
+   "stored": 0,
+   "recomputed": 0,
+   "ok": true
+  },
+  {
+   "name": "fusion: confusion matrix diagonal == accuracy*n",
+   "stored": 350,
+   "recomputed": 350,
+   "ok": true
+  },
+  {
+   "name": "lexrank: val logits rows",
+   "stored": 634,
+   "recomputed": 634,
+   "ok": true
+  },
+  {
+   "name": "lexrank: test logits rows",
+   "stored": 629,
+   "recomputed": 629,
+   "ok": true
+  },
+  {
+   "name": "lexrank: logits width",
+   "stored": 16,
+   "recomputed": 16,
+   "ok": true
+  },
+  {
+   "name": "lexrank: temperature (refit on validation)",
+   "stored": 0.6397954738030703,
+   "recomputed": 0.6397954738030663,
+   "ok": true
+  },
+  {
+   "name": "lexrank: raw/real/accuracy",
+   "stored": 0.8523316062176166,
+   "recomputed": 0.8523316062176166,
+   "ok": true
+  },
+  {
+   "name": "lexrank: raw/real/macro_precision",
+   "stored": 0.9075446009224605,
+   "recomputed": 0.9075446009224605,
+   "ok": true
+  },
+  {
+   "name": "lexrank: raw/real/macro_recall",
+   "stored": 0.7654523911801534,
+   "recomputed": 0.7654523911801534,
+   "ok": true
+  },
+  {
+   "name": "lexrank: raw/real/macro_f1",
+   "stored": 0.8065918326782925,
+   "recomputed": 0.8065918326782925,
+   "ok": true
+  },
+  {
+   "name": "lexrank: raw/real/weighted_f1",
+   "stored": 0.8453979318711925,
+   "recomputed": 0.8453979318711925,
+   "ok": true
+  },
+  {
+   "name": "lexrank: raw/real/ece",
+   "stored": 0.12967704691066823,
+   "recomputed": 0.12967704691066823,
+   "ok": true
+  },
+  {
+   "name": "lexrank: raw/real/nll",
+   "stored": 0.5795821300177096,
+   "recomputed": 0.5795821300177096,
+   "ok": true
+  },
+  {
+   "name": "lexrank: raw/real/brier",
+   "stored": 0.2324637499667025,
+   "recomputed": 0.2324637499667025,
+   "ok": true
+  },
+  {
+   "name": "lexrank: raw/real/per-class F1 bus",
+   "stored": 0.7499999999999999,
+   "recomputed": 0.75,
+   "ok": true
+  },
+  {
+   "name": "lexrank: raw/real/support bus",
+   "stored": 13,
+   "recomputed": 13.0,
+   "ok": true
+  },
+  {
+   "name": "lexrank: raw/real/per-class F1 electricity",
+   "stored": 0.8799999999999999,
+   "recomputed": 0.88,
+   "ok": true
+  },
+  {
+   "name": "lexrank: raw/real/support electricity",
+   "stored": 12,
+   "recomputed": 12.0,
+   "ok": true
+  },
+  {
+   "name": "lexrank: raw/real/per-class F1 flight",
+   "stored": 0.9600000000000001,
+   "recomputed": 0.96,
+   "ok": true
+  },
+  {
+   "name": "lexrank: raw/real/support flight",
+   "stored": 13,
+   "recomputed": 13.0,
+   "ok": true
+  },
+  {
+   "name": "lexrank: raw/real/per-class F1 food",
+   "stored": 0.8820960698689956,
+   "recomputed": 0.8820960698689956,
+   "ok": true
+  },
+  {
+   "name": "lexrank: raw/real/support food",
+   "stored": 109,
+   "recomputed": 109.0,
+   "ok": true
+  },
+  {
+   "name": "lexrank: raw/real/per-class F1 fuel",
+   "stored": 0.8461538461538461,
+   "recomputed": 0.8461538461538461,
+   "ok": true
+  },
+  {
+   "name": "lexrank: raw/real/support fuel",
+   "stored": 13,
+   "recomputed": 13.0,
+   "ok": true
+  },
+  {
+   "name": "lexrank: raw/real/per-class F1 gas",
+   "stored": 0.8571428571428571,
+   "recomputed": 0.8571428571428571,
+   "ok": true
+  },
+  {
+   "name": "lexrank: raw/real/support gas",
+   "stored": 4,
+   "recomputed": 4.0,
+   "ok": true
+  },
+  {
+   "name": "lexrank: raw/real/per-class F1 hotel",
+   "stored": 0.8636363636363636,
+   "recomputed": 0.8636363636363636,
+   "ok": true
+  },
+  {
+   "name": "lexrank: raw/real/support hotel",
+   "stored": 23,
+   "recomputed": 23.0,
+   "ok": true
+  },
+  {
+   "name": "lexrank: raw/real/per-class F1 internet",
+   "stored": 0.6666666666666666,
+   "recomputed": 0.6666666666666666,
+   "ok": true
+  },
+  {
+   "name": "lexrank: raw/real/support internet",
+   "stored": 6,
+   "recomputed": 6.0,
+   "ok": true
+  },
+  {
+   "name": "lexrank: raw/real/per-class F1 medical",
+   "stored": 0.5,
+   "recomputed": 0.5,
+   "ok": true
+  },
+  {
+   "name": "lexrank: raw/real/support medical",
+   "stored": 6,
+   "recomputed": 6.0,
+   "ok": true
+  },
+  {
+   "name": "lexrank: raw/real/per-class F1 miscellaneous",
+   "stored": 0.8686868686868686,
+   "recomputed": 0.8686868686868687,
+   "ok": true
+  },
+  {
+   "name": "lexrank: raw/real/support miscellaneous",
+   "stored": 50,
+   "recomputed": 50.0,
+   "ok": true
+  },
+  {
+   "name": "lexrank: raw/real/per-class F1 non_expense",
+   "stored": 0.8850574712643678,
+   "recomputed": 0.8850574712643678,
+   "ok": true
+  },
+  {
+   "name": "lexrank: raw/real/support non_expense",
+   "stored": 80,
+   "recomputed": 80.0,
+   "ok": true
+  },
+  {
+   "name": "lexrank: raw/real/per-class F1 parking",
+   "stored": 0.8571428571428571,
+   "recomputed": 0.8571428571428571,
+   "ok": true
+  },
+  {
+   "name": "lexrank: raw/real/support parking",
+   "stored": 8,
+   "recomputed": 8.0,
+   "ok": true
+  },
+  {
+   "name": "lexrank: raw/real/per-class F1 train",
+   "stored": 0.6341463414634146,
+   "recomputed": 0.6341463414634146,
+   "ok": true
+  },
+  {
+   "name": "lexrank: raw/real/support train",
+   "stored": 28,
+   "recomputed": 28.0,
+   "ok": true
+  },
+  {
+   "name": "lexrank: raw/real/per-class F1 transport",
+   "stored": 0.8148148148148148,
+   "recomputed": 0.8148148148148148,
+   "ok": true
+  },
+  {
+   "name": "lexrank: raw/real/support transport",
+   "stored": 14,
+   "recomputed": 14.0,
+   "ok": true
+  },
+  {
+   "name": "lexrank: raw/real/per-class F1 water",
+   "stored": 0.8333333333333333,
+   "recomputed": 0.8333333333333334,
+   "ok": true
+  },
+  {
+   "name": "lexrank: raw/real/support water",
+   "stored": 7,
+   "recomputed": 7.0,
+   "ok": true
+  },
+  {
+   "name": "lexrank: raw/all/accuracy",
+   "stored": 0.8982511923688394,
+   "recomputed": 0.8982511923688394,
+   "ok": true
+  },
+  {
+   "name": "lexrank: raw/all/macro_precision",
+   "stored": 0.9367045759287138,
+   "recomputed": 0.9367045759287138,
+   "ok": true
+  },
+  {
+   "name": "lexrank: raw/all/macro_recall",
+   "stored": 0.8964441893513413,
+   "recomputed": 0.8964441893513413,
+   "ok": true
+  },
+  {
+   "name": "lexrank: raw/all/macro_f1",
+   "stored": 0.9090462862180777,
+   "recomputed": 0.9090462862180777,
+   "ok": true
+  },
+  {
+   "name": "lexrank: raw/all/weighted_f1",
+   "stored": 0.8961926525182665,
+   "recomputed": 0.8961926525182665,
+   "ok": true
+  },
+  {
+   "name": "lexrank: raw/all/ece",
+   "stored": 0.0994775134746718,
+   "recomputed": 0.0994775134746718,
+   "ok": true
+  },
+  {
+   "name": "lexrank: raw/all/nll",
+   "stored": 0.4064165557601774,
+   "recomputed": 0.4064165557601774,
+   "ok": true
+  },
+  {
+   "name": "lexrank: raw/all/brier",
+   "stored": 0.16474825628636214,
+   "recomputed": 0.16474825628636214,
+   "ok": true
+  },
+  {
+   "name": "lexrank: raw/all/per-class F1 bus",
+   "stored": 0.8059701492537313,
+   "recomputed": 0.8059701492537313,
+   "ok": true
+  },
+  {
+   "name": "lexrank: raw/all/support bus",
+   "stored": 28,
+   "recomputed": 28.0,
+   "ok": true
+  },
+  {
+   "name": "lexrank: raw/all/per-class F1 electricity",
+   "stored": 0.9454545454545454,
+   "recomputed": 0.9454545454545454,
+   "ok": true
+  },
+  {
+   "name": "lexrank: raw/all/support electricity",
+   "stored": 27,
+   "recomputed": 27.0,
+   "ok": true
+  },
+  {
+   "name": "lexrank: raw/all/per-class F1 flight",
+   "stored": 0.9818181818181818,
+   "recomputed": 0.9818181818181818,
+   "ok": true
+  },
+  {
+   "name": "lexrank: raw/all/support flight",
+   "stored": 28,
+   "recomputed": 28.0,
+   "ok": true
+  },
+  {
+   "name": "lexrank: raw/all/per-class F1 food",
+   "stored": 0.8957528957528957,
+   "recomputed": 0.8957528957528957,
+   "ok": true
+  },
+  {
+   "name": "lexrank: raw/all/support food",
+   "stored": 124,
+   "recomputed": 124.0,
+   "ok": true
+  },
+  {
+   "name": "lexrank: raw/all/per-class F1 fuel",
+   "stored": 0.9285714285714286,
+   "recomputed": 0.9285714285714286,
+   "ok": true
+  },
+  {
+   "name": "lexrank: raw/all/support fuel",
+   "stored": 28,
+   "recomputed": 28.0,
+   "ok": true
+  },
+  {
+   "name": "lexrank: raw/all/per-class F1 gas",
+   "stored": 0.972972972972973,
+   "recomputed": 0.972972972972973,
+   "ok": true
+  },
+  {
+   "name": "lexrank: raw/all/support gas",
+   "stored": 19,
+   "recomputed": 19.0,
+   "ok": true
+  },
+  {
+   "name": "lexrank: raw/all/per-class F1 hotel",
+   "stored": 0.904109589041096,
+   "recomputed": 0.9041095890410958,
+   "ok": true
+  },
+  {
+   "name": "lexrank: raw/all/support hotel",
+   "stored": 38,
+   "recomputed": 38.0,
+   "ok": true
+  },
+  {
+   "name": "lexrank: raw/all/per-class F1 internet",
+   "stored": 0.923076923076923,
+   "recomputed": 0.9230769230769231,
+   "ok": true
+  },
+  {
+   "name": "lexrank: raw/all/support internet",
+   "stored": 21,
+   "recomputed": 21.0,
+   "ok": true
+  },
+  {
+   "name": "lexrank: raw/all/per-class F1 medical",
+   "stored": 0.8947368421052632,
+   "recomputed": 0.8947368421052632,
+   "ok": true
+  },
+  {
+   "name": "lexrank: raw/all/support medical",
+   "stored": 21,
+   "recomputed": 21.0,
+   "ok": true
+  },
+  {
+   "name": "lexrank: raw/all/per-class F1 miscellaneous",
+   "stored": 0.8923076923076924,
+   "recomputed": 0.8923076923076924,
+   "ok": true
+  },
+  {
+   "name": "lexrank: raw/all/support miscellaneous",
+   "stored": 65,
+   "recomputed": 65.0,
+   "ok": true
+  },
+  {
+   "name": "lexrank: raw/all/per-class F1 non_expense",
+   "stored": 0.8995215311004784,
+   "recomputed": 0.8995215311004785,
+   "ok": true
+  },
+  {
+   "name": "lexrank: raw/all/support non_expense",
+   "stored": 98,
+   "recomputed": 98.0,
+   "ok": true
+  },
+  {
+   "name": "lexrank: raw/all/per-class F1 parking",
+   "stored": 0.9545454545454545,
+   "recomputed": 0.9545454545454546,
+   "ok": true
+  },
+  {
+   "name": "lexrank: raw/all/support parking",
+   "stored": 23,
+   "recomputed": 23.0,
+   "ok": true
+  },
+  {
+   "name": "lexrank: raw/all/per-class F1 rent",
+   "stored": 1.0,
+   "recomputed": 1.0,
+   "ok": true
+  },
+  {
+   "name": "lexrank: raw/all/support rent",
+   "stored": 15,
+   "recomputed": 15.0,
+   "ok": true
+  },
+  {
+   "name": "lexrank: raw/all/per-class F1 train",
+   "stored": 0.6969696969696969,
+   "recomputed": 0.696969696969697,
+   "ok": true
+  },
+  {
+   "name": "lexrank: raw/all/support train",
+   "stored": 43,
+   "recomputed": 43.0,
+   "ok": true
+  },
+  {
+   "name": "lexrank: raw/all/per-class F1 transport",
+   "stored": 0.896551724137931,
+   "recomputed": 0.896551724137931,
+   "ok": true
+  },
+  {
+   "name": "lexrank: raw/all/support transport",
+   "stored": 29,
+   "recomputed": 29.0,
+   "ok": true
+  },
+  {
+   "name": "lexrank: raw/all/per-class F1 water",
+   "stored": 0.9523809523809523,
+   "recomputed": 0.9523809523809523,
+   "ok": true
+  },
+  {
+   "name": "lexrank: raw/all/support water",
+   "stored": 22,
+   "recomputed": 22.0,
+   "ok": true
+  },
+  {
+   "name": "lexrank: calibrated/real/accuracy",
+   "stored": 0.8523316062176166,
+   "recomputed": 0.8523316062176166,
+   "ok": true
+  },
+  {
+   "name": "lexrank: calibrated/real/macro_precision",
+   "stored": 0.9075446009224605,
+   "recomputed": 0.9075446009224605,
+   "ok": true
+  },
+  {
+   "name": "lexrank: calibrated/real/macro_recall",
+   "stored": 0.7654523911801534,
+   "recomputed": 0.7654523911801534,
+   "ok": true
+  },
+  {
+   "name": "lexrank: calibrated/real/macro_f1",
+   "stored": 0.8065918326782925,
+   "recomputed": 0.8065918326782925,
+   "ok": true
+  },
+  {
+   "name": "lexrank: calibrated/real/weighted_f1",
+   "stored": 0.8453979318711925,
+   "recomputed": 0.8453979318711925,
+   "ok": true
+  },
+  {
+   "name": "lexrank: calibrated/real/ece",
+   "stored": 0.024275369946586647,
+   "recomputed": 0.024275369946586647,
+   "ok": true
+  },
+  {
+   "name": "lexrank: calibrated/real/nll",
+   "stored": 0.47438663204980563,
+   "recomputed": 0.47438663204980563,
+   "ok": true
+  },
+  {
+   "name": "lexrank: calibrated/real/brier",
+   "stored": 0.2049877127729246,
+   "recomputed": 0.2049877127729246,
+   "ok": true
+  },
+  {
+   "name": "lexrank: calibrated/real/per-class F1 bus",
+   "stored": 0.7499999999999999,
+   "recomputed": 0.75,
+   "ok": true
+  },
+  {
+   "name": "lexrank: calibrated/real/support bus",
+   "stored": 13,
+   "recomputed": 13.0,
+   "ok": true
+  },
+  {
+   "name": "lexrank: calibrated/real/per-class F1 electricity",
+   "stored": 0.8799999999999999,
+   "recomputed": 0.88,
+   "ok": true
+  },
+  {
+   "name": "lexrank: calibrated/real/support electricity",
+   "stored": 12,
+   "recomputed": 12.0,
+   "ok": true
+  },
+  {
+   "name": "lexrank: calibrated/real/per-class F1 flight",
+   "stored": 0.9600000000000001,
+   "recomputed": 0.96,
+   "ok": true
+  },
+  {
+   "name": "lexrank: calibrated/real/support flight",
+   "stored": 13,
+   "recomputed": 13.0,
+   "ok": true
+  },
+  {
+   "name": "lexrank: calibrated/real/per-class F1 food",
+   "stored": 0.8820960698689956,
+   "recomputed": 0.8820960698689956,
+   "ok": true
+  },
+  {
+   "name": "lexrank: calibrated/real/support food",
+   "stored": 109,
+   "recomputed": 109.0,
+   "ok": true
+  },
+  {
+   "name": "lexrank: calibrated/real/per-class F1 fuel",
+   "stored": 0.8461538461538461,
+   "recomputed": 0.8461538461538461,
+   "ok": true
+  },
+  {
+   "name": "lexrank: calibrated/real/support fuel",
+   "stored": 13,
+   "recomputed": 13.0,
+   "ok": true
+  },
+  {
+   "name": "lexrank: calibrated/real/per-class F1 gas",
+   "stored": 0.8571428571428571,
+   "recomputed": 0.8571428571428571,
+   "ok": true
+  },
+  {
+   "name": "lexrank: calibrated/real/support gas",
+   "stored": 4,
+   "recomputed": 4.0,
+   "ok": true
+  },
+  {
+   "name": "lexrank: calibrated/real/per-class F1 hotel",
+   "stored": 0.8636363636363636,
+   "recomputed": 0.8636363636363636,
+   "ok": true
+  },
+  {
+   "name": "lexrank: calibrated/real/support hotel",
+   "stored": 23,
+   "recomputed": 23.0,
+   "ok": true
+  },
+  {
+   "name": "lexrank: calibrated/real/per-class F1 internet",
+   "stored": 0.6666666666666666,
+   "recomputed": 0.6666666666666666,
+   "ok": true
+  },
+  {
+   "name": "lexrank: calibrated/real/support internet",
+   "stored": 6,
+   "recomputed": 6.0,
+   "ok": true
+  },
+  {
+   "name": "lexrank: calibrated/real/per-class F1 medical",
+   "stored": 0.5,
+   "recomputed": 0.5,
+   "ok": true
+  },
+  {
+   "name": "lexrank: calibrated/real/support medical",
+   "stored": 6,
+   "recomputed": 6.0,
+   "ok": true
+  },
+  {
+   "name": "lexrank: calibrated/real/per-class F1 miscellaneous",
+   "stored": 0.8686868686868686,
+   "recomputed": 0.8686868686868687,
+   "ok": true
+  },
+  {
+   "name": "lexrank: calibrated/real/support miscellaneous",
+   "stored": 50,
+   "recomputed": 50.0,
+   "ok": true
+  },
+  {
+   "name": "lexrank: calibrated/real/per-class F1 non_expense",
+   "stored": 0.8850574712643678,
+   "recomputed": 0.8850574712643678,
+   "ok": true
+  },
+  {
+   "name": "lexrank: calibrated/real/support non_expense",
+   "stored": 80,
+   "recomputed": 80.0,
+   "ok": true
+  },
+  {
+   "name": "lexrank: calibrated/real/per-class F1 parking",
+   "stored": 0.8571428571428571,
+   "recomputed": 0.8571428571428571,
+   "ok": true
+  },
+  {
+   "name": "lexrank: calibrated/real/support parking",
+   "stored": 8,
+   "recomputed": 8.0,
+   "ok": true
+  },
+  {
+   "name": "lexrank: calibrated/real/per-class F1 train",
+   "stored": 0.6341463414634146,
+   "recomputed": 0.6341463414634146,
+   "ok": true
+  },
+  {
+   "name": "lexrank: calibrated/real/support train",
+   "stored": 28,
+   "recomputed": 28.0,
+   "ok": true
+  },
+  {
+   "name": "lexrank: calibrated/real/per-class F1 transport",
+   "stored": 0.8148148148148148,
+   "recomputed": 0.8148148148148148,
+   "ok": true
+  },
+  {
+   "name": "lexrank: calibrated/real/support transport",
+   "stored": 14,
+   "recomputed": 14.0,
+   "ok": true
+  },
+  {
+   "name": "lexrank: calibrated/real/per-class F1 water",
+   "stored": 0.8333333333333333,
+   "recomputed": 0.8333333333333334,
+   "ok": true
+  },
+  {
+   "name": "lexrank: calibrated/real/support water",
+   "stored": 7,
+   "recomputed": 7.0,
+   "ok": true
+  },
+  {
+   "name": "lexrank: calibrated/all/accuracy",
+   "stored": 0.8982511923688394,
+   "recomputed": 0.8982511923688394,
+   "ok": true
+  },
+  {
+   "name": "lexrank: calibrated/all/macro_precision",
+   "stored": 0.9367045759287138,
+   "recomputed": 0.9367045759287138,
+   "ok": true
+  },
+  {
+   "name": "lexrank: calibrated/all/macro_recall",
+   "stored": 0.8964441893513413,
+   "recomputed": 0.8964441893513413,
+   "ok": true
+  },
+  {
+   "name": "lexrank: calibrated/all/macro_f1",
+   "stored": 0.9090462862180777,
+   "recomputed": 0.9090462862180777,
+   "ok": true
+  },
+  {
+   "name": "lexrank: calibrated/all/weighted_f1",
+   "stored": 0.8961926525182665,
+   "recomputed": 0.8961926525182665,
+   "ok": true
+  },
+  {
+   "name": "lexrank: calibrated/all/ece",
+   "stored": 0.014292110365947694,
+   "recomputed": 0.014292110365947694,
+   "ok": true
+  },
+  {
+   "name": "lexrank: calibrated/all/nll",
+   "stored": 0.3257339330705235,
+   "recomputed": 0.3257339330705235,
+   "ok": true
+  },
+  {
+   "name": "lexrank: calibrated/all/brier",
+   "stored": 0.14658498901759723,
+   "recomputed": 0.14658498901759723,
+   "ok": true
+  },
+  {
+   "name": "lexrank: calibrated/all/per-class F1 bus",
+   "stored": 0.8059701492537313,
+   "recomputed": 0.8059701492537313,
+   "ok": true
+  },
+  {
+   "name": "lexrank: calibrated/all/support bus",
+   "stored": 28,
+   "recomputed": 28.0,
+   "ok": true
+  },
+  {
+   "name": "lexrank: calibrated/all/per-class F1 electricity",
+   "stored": 0.9454545454545454,
+   "recomputed": 0.9454545454545454,
+   "ok": true
+  },
+  {
+   "name": "lexrank: calibrated/all/support electricity",
+   "stored": 27,
+   "recomputed": 27.0,
+   "ok": true
+  },
+  {
+   "name": "lexrank: calibrated/all/per-class F1 flight",
+   "stored": 0.9818181818181818,
+   "recomputed": 0.9818181818181818,
+   "ok": true
+  },
+  {
+   "name": "lexrank: calibrated/all/support flight",
+   "stored": 28,
+   "recomputed": 28.0,
+   "ok": true
+  },
+  {
+   "name": "lexrank: calibrated/all/per-class F1 food",
+   "stored": 0.8957528957528957,
+   "recomputed": 0.8957528957528957,
+   "ok": true
+  },
+  {
+   "name": "lexrank: calibrated/all/support food",
+   "stored": 124,
+   "recomputed": 124.0,
+   "ok": true
+  },
+  {
+   "name": "lexrank: calibrated/all/per-class F1 fuel",
+   "stored": 0.9285714285714286,
+   "recomputed": 0.9285714285714286,
+   "ok": true
+  },
+  {
+   "name": "lexrank: calibrated/all/support fuel",
+   "stored": 28,
+   "recomputed": 28.0,
+   "ok": true
+  },
+  {
+   "name": "lexrank: calibrated/all/per-class F1 gas",
+   "stored": 0.972972972972973,
+   "recomputed": 0.972972972972973,
+   "ok": true
+  },
+  {
+   "name": "lexrank: calibrated/all/support gas",
+   "stored": 19,
+   "recomputed": 19.0,
+   "ok": true
+  },
+  {
+   "name": "lexrank: calibrated/all/per-class F1 hotel",
+   "stored": 0.904109589041096,
+   "recomputed": 0.9041095890410958,
+   "ok": true
+  },
+  {
+   "name": "lexrank: calibrated/all/support hotel",
+   "stored": 38,
+   "recomputed": 38.0,
+   "ok": true
+  },
+  {
+   "name": "lexrank: calibrated/all/per-class F1 internet",
+   "stored": 0.923076923076923,
+   "recomputed": 0.9230769230769231,
+   "ok": true
+  },
+  {
+   "name": "lexrank: calibrated/all/support internet",
+   "stored": 21,
+   "recomputed": 21.0,
+   "ok": true
+  },
+  {
+   "name": "lexrank: calibrated/all/per-class F1 medical",
+   "stored": 0.8947368421052632,
+   "recomputed": 0.8947368421052632,
+   "ok": true
+  },
+  {
+   "name": "lexrank: calibrated/all/support medical",
+   "stored": 21,
+   "recomputed": 21.0,
+   "ok": true
+  },
+  {
+   "name": "lexrank: calibrated/all/per-class F1 miscellaneous",
+   "stored": 0.8923076923076924,
+   "recomputed": 0.8923076923076924,
+   "ok": true
+  },
+  {
+   "name": "lexrank: calibrated/all/support miscellaneous",
+   "stored": 65,
+   "recomputed": 65.0,
+   "ok": true
+  },
+  {
+   "name": "lexrank: calibrated/all/per-class F1 non_expense",
+   "stored": 0.8995215311004784,
+   "recomputed": 0.8995215311004785,
+   "ok": true
+  },
+  {
+   "name": "lexrank: calibrated/all/support non_expense",
+   "stored": 98,
+   "recomputed": 98.0,
+   "ok": true
+  },
+  {
+   "name": "lexrank: calibrated/all/per-class F1 parking",
+   "stored": 0.9545454545454545,
+   "recomputed": 0.9545454545454546,
+   "ok": true
+  },
+  {
+   "name": "lexrank: calibrated/all/support parking",
+   "stored": 23,
+   "recomputed": 23.0,
+   "ok": true
+  },
+  {
+   "name": "lexrank: calibrated/all/per-class F1 rent",
+   "stored": 1.0,
+   "recomputed": 1.0,
+   "ok": true
+  },
+  {
+   "name": "lexrank: calibrated/all/support rent",
+   "stored": 15,
+   "recomputed": 15.0,
+   "ok": true
+  },
+  {
+   "name": "lexrank: calibrated/all/per-class F1 train",
+   "stored": 0.6969696969696969,
+   "recomputed": 0.696969696969697,
+   "ok": true
+  },
+  {
+   "name": "lexrank: calibrated/all/support train",
+   "stored": 43,
+   "recomputed": 43.0,
+   "ok": true
+  },
+  {
+   "name": "lexrank: calibrated/all/per-class F1 transport",
+   "stored": 0.896551724137931,
+   "recomputed": 0.896551724137931,
+   "ok": true
+  },
+  {
+   "name": "lexrank: calibrated/all/support transport",
+   "stored": 29,
+   "recomputed": 29.0,
+   "ok": true
+  },
+  {
+   "name": "lexrank: calibrated/all/per-class F1 water",
+   "stored": 0.9523809523809523,
+   "recomputed": 0.9523809523809523,
+   "ok": true
+  },
+  {
+   "name": "lexrank: calibrated/all/support water",
+   "stored": 22,
+   "recomputed": 22.0,
+   "ok": true
+  },
+  {
+   "name": "lexrank: confusion matrix (real test)",
+   "stored": 0,
+   "recomputed": 0,
+   "ok": true
+  },
+  {
+   "name": "lexrank: confusion matrix diagonal == accuracy*n",
+   "stored": 329,
+   "recomputed": 329,
+   "ok": true
+  },
+  {
+   "name": "CSV table_B tfidf: accuracy",
+   "stored": 0.883419689119171,
+   "recomputed": 0.883419689119171,
+   "ok": true
+  },
+  {
+   "name": "CSV table_B tfidf: macro_f1",
+   "stored": 0.8314223755442093,
+   "recomputed": 0.8314223755442093,
+   "ok": true
+  },
+  {
+   "name": "CSV table_B tfidf: macro_precision",
+   "stored": 0.9100839948804691,
+   "recomputed": 0.9100839948804691,
+   "ok": true
+  },
+  {
+   "name": "CSV table_B tfidf: macro_recall",
+   "stored": 0.7956664806186146,
+   "recomputed": 0.7956664806186146,
+   "ok": true
+  },
+  {
+   "name": "CSV table_B tfidf: weighted_f1",
+   "stored": 0.8799243082752329,
+   "recomputed": 0.8799243082752329,
+   "ok": true
+  },
+  {
+   "name": "CSV table_B tfidf: ece_calibrated",
+   "stored": 0.025620484339450012,
+   "recomputed": 0.025620484339450012,
+   "ok": true
+  },
+  {
+   "name": "CSV table_B tfidf: nll_calibrated",
+   "stored": 0.3620419825754931,
+   "recomputed": 0.3620419825754931,
+   "ok": true
+  },
+  {
+   "name": "CSV table_B tfidf: brier_calibrated",
+   "stored": 0.15898896988208158,
+   "recomputed": 0.15898896988208158,
+   "ok": true
+  },
+  {
+   "name": "CSV table_B bilstm: accuracy",
+   "stored": 0.7124352331606217,
+   "recomputed": 0.7124352331606217,
+   "ok": true
+  },
+  {
+   "name": "CSV table_B bilstm: macro_f1",
+   "stored": 0.5983381211874793,
+   "recomputed": 0.5983381211874793,
+   "ok": true
+  },
+  {
+   "name": "CSV table_B bilstm: macro_precision",
+   "stored": 0.6556534161769874,
+   "recomputed": 0.6556534161769874,
+   "ok": true
+  },
+  {
+   "name": "CSV table_B bilstm: macro_recall",
+   "stored": 0.5869633901753967,
+   "recomputed": 0.5869633901753967,
+   "ok": true
+  },
+  {
+   "name": "CSV table_B bilstm: weighted_f1",
+   "stored": 0.6961640874209428,
+   "recomputed": 0.6961640874209429,
+   "ok": true
+  },
+  {
+   "name": "CSV table_B bilstm: ece_calibrated",
+   "stored": 0.056505040338002355,
+   "recomputed": 0.05650497712039663,
+   "ok": true
+  },
+  {
+   "name": "CSV table_B bilstm: nll_calibrated",
+   "stored": 1.0196738243103027,
+   "recomputed": 1.0196738560615395,
+   "ok": true
+  },
+  {
+   "name": "CSV table_B bilstm: brier_calibrated",
+   "stored": 0.40102405495440446,
+   "recomputed": 0.40102405443701994,
+   "ok": true
+  },
+  {
+   "name": "CSV table_B bilstm_attn: accuracy",
+   "stored": 0.7772020725388601,
+   "recomputed": 0.7772020725388601,
+   "ok": true
+  },
+  {
+   "name": "CSV table_B bilstm_attn: macro_f1",
+   "stored": 0.6829101225113335,
+   "recomputed": 0.6829101225113335,
+   "ok": true
+  },
+  {
+   "name": "CSV table_B bilstm_attn: macro_precision",
+   "stored": 0.7893100489299912,
+   "recomputed": 0.7893100489299912,
+   "ok": true
+  },
+  {
+   "name": "CSV table_B bilstm_attn: macro_recall",
+   "stored": 0.6586915157704948,
+   "recomputed": 0.6586915157704948,
+   "ok": true
+  },
+  {
+   "name": "CSV table_B bilstm_attn: weighted_f1",
+   "stored": 0.772198093856961,
+   "recomputed": 0.772198093856961,
+   "ok": true
+  },
+  {
+   "name": "CSV table_B bilstm_attn: ece_calibrated",
+   "stored": 0.04622608415512223,
+   "recomputed": 0.046226090870567754,
+   "ok": true
+  },
+  {
+   "name": "CSV table_B bilstm_attn: nll_calibrated",
+   "stored": 0.8834187388420105,
+   "recomputed": 0.8834188108871344,
+   "ok": true
+  },
+  {
+   "name": "CSV table_B bilstm_attn: brier_calibrated",
+   "stored": 0.340964743002126,
+   "recomputed": 0.34096474419157946,
+   "ok": true
+  },
+  {
+   "name": "CSV table_B lexrank: accuracy",
+   "stored": 0.8523316062176166,
+   "recomputed": 0.8523316062176166,
+   "ok": true
+  },
+  {
+   "name": "CSV table_B lexrank: macro_f1",
+   "stored": 0.8065918326782925,
+   "recomputed": 0.8065918326782925,
+   "ok": true
+  },
+  {
+   "name": "CSV table_B lexrank: macro_precision",
+   "stored": 0.9075446009224605,
+   "recomputed": 0.9075446009224605,
+   "ok": true
+  },
+  {
+   "name": "CSV table_B lexrank: macro_recall",
+   "stored": 0.7654523911801534,
+   "recomputed": 0.7654523911801534,
+   "ok": true
+  },
+  {
+   "name": "CSV table_B lexrank: weighted_f1",
+   "stored": 0.8453979318711925,
+   "recomputed": 0.8453979318711925,
+   "ok": true
+  },
+  {
+   "name": "CSV table_B lexrank: ece_calibrated",
+   "stored": 0.024275369946586647,
+   "recomputed": 0.024275369946586647,
+   "ok": true
+  },
+  {
+   "name": "CSV table_B lexrank: nll_calibrated",
+   "stored": 0.47438663204980563,
+   "recomputed": 0.47438663204980563,
+   "ok": true
+  },
+  {
+   "name": "CSV table_B lexrank: brier_calibrated",
+   "stored": 0.2049877127729246,
+   "recomputed": 0.2049877127729246,
+   "ok": true
+  },
+  {
+   "name": "CSV table_B xlmr: accuracy",
+   "stored": 0.8989637305699482,
+   "recomputed": 0.8989637305699482,
+   "ok": true
+  },
+  {
+   "name": "CSV table_B xlmr: macro_f1",
+   "stored": 0.8837708621521803,
+   "recomputed": 0.8837708621521803,
+   "ok": true
+  },
+  {
+   "name": "CSV table_B xlmr: macro_precision",
+   "stored": 0.9002846217110613,
+   "recomputed": 0.9002846217110613,
+   "ok": true
+  },
+  {
+   "name": "CSV table_B xlmr: macro_recall",
+   "stored": 0.8812725908360133,
+   "recomputed": 0.8812725908360133,
+   "ok": true
+  },
+  {
+   "name": "CSV table_B xlmr: weighted_f1",
+   "stored": 0.8995002046773072,
+   "recomputed": 0.8995002046773072,
+   "ok": true
+  },
+  {
+   "name": "CSV table_B xlmr: ece_calibrated",
+   "stored": 0.0410806349058843,
+   "recomputed": 0.04108061214980624,
+   "ok": true
+  },
+  {
+   "name": "CSV table_B xlmr: nll_calibrated",
+   "stored": 0.3952662944793701,
+   "recomputed": 0.3952662635163348,
+   "ok": true
+  },
+  {
+   "name": "CSV table_B xlmr: brier_calibrated",
+   "stored": 0.1550742345629264,
+   "recomputed": 0.15507423226105993,
+   "ok": true
+  },
+  {
+   "name": "CSV table_B layoutlmv3: accuracy",
+   "stored": 0.8626943005181347,
+   "recomputed": 0.8626943005181347,
+   "ok": true
+  },
+  {
+   "name": "CSV table_B layoutlmv3: macro_f1",
+   "stored": 0.7038129821737612,
+   "recomputed": 0.703812982173761,
+   "ok": true
+  },
+  {
+   "name": "CSV table_B layoutlmv3: macro_precision",
+   "stored": 0.7722983554535047,
+   "recomputed": 0.7722983554535047,
+   "ok": true
+  },
+  {
+   "name": "CSV table_B layoutlmv3: macro_recall",
+   "stored": 0.7122448105012924,
+   "recomputed": 0.7122448105012924,
+   "ok": true
+  },
+  {
+   "name": "CSV table_B layoutlmv3: weighted_f1",
+   "stored": 0.8565882999585903,
+   "recomputed": 0.8565882999585903,
+   "ok": true
+  },
+  {
+   "name": "CSV table_B layoutlmv3: ece_calibrated",
+   "stored": 0.04468613314813904,
+   "recomputed": 0.04468607501708108,
+   "ok": true
+  },
+  {
+   "name": "CSV table_B layoutlmv3: nll_calibrated",
+   "stored": 0.5610279440879822,
+   "recomputed": 0.5610279682527147,
+   "ok": true
+  },
+  {
+   "name": "CSV table_B layoutlmv3: brier_calibrated",
+   "stored": 0.20094511486403097,
+   "recomputed": 0.20094511183361619,
+   "ok": true
+  },
+  {
+   "name": "CSV table_B fusion: accuracy",
+   "stored": 0.9067357512953368,
+   "recomputed": 0.9067357512953368,
+   "ok": true
+  },
+  {
+   "name": "CSV table_B fusion: macro_f1",
+   "stored": 0.8388404625199756,
+   "recomputed": 0.8388404625199757,
+   "ok": true
+  },
+  {
+   "name": "CSV table_B fusion: macro_precision",
+   "stored": 0.9146712732987243,
+   "recomputed": 0.9146712732987243,
+   "ok": true
+  },
+  {
+   "name": "CSV table_B fusion: macro_recall",
+   "stored": 0.8141897646297328,
+   "recomputed": 0.8141897646297328,
+   "ok": true
+  },
+  {
+   "name": "CSV table_B fusion: weighted_f1",
+   "stored": 0.9027752432272185,
+   "recomputed": 0.9027752432272185,
+   "ok": true
+  },
+  {
+   "name": "CSV table_B fusion: ece_calibrated",
+   "stored": 0.019660974823299503,
+   "recomputed": 0.019660974823299503,
+   "ok": true
+  },
+  {
+   "name": "CSV table_B fusion: nll_calibrated",
+   "stored": 0.299498576955019,
+   "recomputed": 0.299498576955019,
+   "ok": true
+  },
+  {
+   "name": "CSV table_B fusion: brier_calibrated",
+   "stored": 0.13327443452317236,
+   "recomputed": 0.13327443452317236,
+   "ok": true
+  },
+  {
+   "name": "bootstrap tfidf: macro_f1_ci95 lo (stored 2,000 resamples vs independent 10,000; tol 0.012)",
+   "stored": 0.7519638238755889,
+   "recomputed": 0.7510821980681465,
+   "ok": true
+  },
+  {
+   "name": "bootstrap tfidf: macro_f1_ci95 hi (stored 2,000 resamples vs independent 10,000; tol 0.012)",
+   "stored": 0.8790643533940586,
+   "recomputed": 0.879437561430658,
+   "ok": true
+  },
+  {
+   "name": "bootstrap tfidf: accuracy_ci95 lo (stored 2,000 resamples vs independent 10,000; tol 0.012)",
+   "stored": 0.8507853403141361,
+   "recomputed": 0.8507853403141361,
+   "ok": true
+  },
+  {
+   "name": "bootstrap tfidf: accuracy_ci95 hi (stored 2,000 resamples vs independent 10,000; tol 0.012)",
+   "stored": 0.9128205128205128,
+   "recomputed": 0.9145077720207254,
+   "ok": true
+  },
+  {
+   "name": "bootstrap tfidf: delta d_f1 mean vs TF-IDF (tol 0.012)",
+   "stored": 0.0,
+   "recomputed": 0.0,
+   "ok": true
+  },
+  {
+   "name": "bootstrap tfidf: delta d_f1 lo vs TF-IDF (tol 0.012)",
+   "stored": 0.0,
+   "recomputed": 0.0,
+   "ok": true
+  },
+  {
+   "name": "bootstrap tfidf: delta d_f1 hi vs TF-IDF (tol 0.012)",
+   "stored": 0.0,
+   "recomputed": 0.0,
+   "ok": true
+  },
+  {
+   "name": "bootstrap tfidf: delta d_acc mean vs TF-IDF (tol 0.012)",
+   "stored": 0.0,
+   "recomputed": 0.0,
+   "ok": true
+  },
+  {
+   "name": "bootstrap tfidf: delta d_acc lo vs TF-IDF (tol 0.012)",
+   "stored": 0.0,
+   "recomputed": 0.0,
+   "ok": true
+  },
+  {
+   "name": "bootstrap tfidf: delta d_acc hi vs TF-IDF (tol 0.012)",
+   "stored": 0.0,
+   "recomputed": 0.0,
+   "ok": true
+  },
+  {
+   "name": "bootstrap tfidf: macro-F1 verdict identical (stored 'unresolved' vs independent 'unresolved')",
+   "stored": 0,
+   "recomputed": 0,
+   "ok": true
+  },
+  {
+   "name": "bootstrap bilstm: macro_f1_ci95 lo (stored 2,000 resamples vs independent 10,000; tol 0.012)",
+   "stored": 0.5096287416935312,
+   "recomputed": 0.5094450523175201,
+   "ok": true
+  },
+  {
+   "name": "bootstrap bilstm: macro_f1_ci95 hi (stored 2,000 resamples vs independent 10,000; tol 0.012)",
+   "stored": 0.6568856235507863,
+   "recomputed": 0.6590578436269751,
+   "ok": true
+  },
+  {
+   "name": "bootstrap bilstm: accuracy_ci95 lo (stored 2,000 resamples vs independent 10,000; tol 0.012)",
+   "stored": 0.6675386025991974,
+   "recomputed": 0.6666666666666666,
+   "ok": true
+  },
+  {
+   "name": "bootstrap bilstm: accuracy_ci95 hi (stored 2,000 resamples vs independent 10,000; tol 0.012)",
+   "stored": 0.756544502617801,
+   "recomputed": 0.756544502617801,
+   "ok": true
+  },
+  {
+   "name": "bootstrap bilstm: delta d_f1 mean vs TF-IDF (tol 0.012)",
+   "stored": -0.23665599813717397,
+   "recomputed": -0.23514629202466614,
+   "ok": true
+  },
+  {
+   "name": "bootstrap bilstm: delta d_f1 lo vs TF-IDF (tol 0.012)",
+   "stored": -0.31775920757947,
+   "recomputed": -0.3165122955551702,
+   "ok": true
+  },
+  {
+   "name": "bootstrap bilstm: delta d_f1 hi vs TF-IDF (tol 0.012)",
+   "stored": -0.15438314913459836,
+   "recomputed": -0.1557870292326355,
+   "ok": true
+  },
+  {
+   "name": "bootstrap bilstm: delta d_acc mean vs TF-IDF (tol 0.012)",
+   "stored": -0.1713491405767785,
+   "recomputed": -0.1707569525359701,
+   "ok": true
+  },
+  {
+   "name": "bootstrap bilstm: delta d_acc lo vs TF-IDF (tol 0.012)",
+   "stored": -0.21728596424599195,
+   "recomputed": -0.21502590673575128,
+   "ok": true
+  },
+  {
+   "name": "bootstrap bilstm: delta d_acc hi vs TF-IDF (tol 0.012)",
+   "stored": -0.1282051282051282,
+   "recomputed": -0.12690355329949243,
+   "ok": true
+  },
+  {
+   "name": "bootstrap bilstm: macro-F1 verdict identical (stored 'worse' vs independent 'worse')",
+   "stored": 0,
+   "recomputed": 0,
+   "ok": true
+  },
+  {
+   "name": "bootstrap bilstm_attn: macro_f1_ci95 lo (stored 2,000 resamples vs independent 10,000; tol 0.012)",
+   "stored": 0.5877349925498699,
+   "recomputed": 0.5909913848035833,
+   "ok": true
+  },
+  {
+   "name": "bootstrap bilstm_attn: macro_f1_ci95 hi (stored 2,000 resamples vs independent 10,000; tol 0.012)",
+   "stored": 0.742358301618543,
+   "recomputed": 0.7432953610820018,
+   "ok": true
+  },
+  {
+   "name": "bootstrap bilstm_attn: accuracy_ci95 lo (stored 2,000 resamples vs independent 10,000; tol 0.012)",
+   "stored": 0.7307692307692307,
+   "recomputed": 0.7305699481865285,
+   "ok": true
+  },
+  {
+   "name": "bootstrap bilstm_attn: accuracy_ci95 hi (stored 2,000 resamples vs independent 10,000; tol 0.012)",
+   "stored": 0.8219895287958116,
+   "recomputed": 0.8219895287958116,
+   "ok": true
+  },
+  {
+   "name": "bootstrap bilstm_attn: delta d_f1 mean vs TF-IDF (tol 0.012)",
+   "stored": -0.1502077700596736,
+   "recomputed": -0.15029505123760922,
+   "ok": true
+  },
+  {
+   "name": "bootstrap bilstm_attn: delta d_f1 lo vs TF-IDF (tol 0.012)",
+   "stored": -0.22388296766530333,
+   "recomputed": -0.22405036992048982,
+   "ok": true
+  },
+  {
+   "name": "bootstrap bilstm_attn: delta d_f1 hi vs TF-IDF (tol 0.012)",
+   "stored": -0.07832273657534083,
+   "recomputed": -0.07961948834409566,
+   "ok": true
+  },
+  {
+   "name": "bootstrap bilstm_attn: delta d_acc mean vs TF-IDF (tol 0.012)",
+   "stored": -0.10546891579414278,
+   "recomputed": -0.10629272350488476,
+   "ok": true
+  },
+  {
+   "name": "bootstrap bilstm_attn: delta d_acc lo vs TF-IDF (tol 0.012)",
+   "stored": -0.14871794871794874,
+   "recomputed": -0.1476683937823834,
+   "ok": true
+  },
+  {
+   "name": "bootstrap bilstm_attn: delta d_acc hi vs TF-IDF (tol 0.012)",
+   "stored": -0.06544502617801051,
+   "recomputed": -0.06735751295336789,
+   "ok": true
+  },
+  {
+   "name": "bootstrap bilstm_attn: macro-F1 verdict identical (stored 'worse' vs independent 'worse')",
+   "stored": 0,
+   "recomputed": 0,
+   "ok": true
+  },
+  {
+   "name": "bootstrap xlmr: macro_f1_ci95 lo (stored 2,000 resamples vs independent 10,000; tol 0.012)",
+   "stored": 0.8249999361393184,
+   "recomputed": 0.8270766996684038,
+   "ok": true
+  },
+  {
+   "name": "bootstrap xlmr: macro_f1_ci95 hi (stored 2,000 resamples vs independent 10,000; tol 0.012)",
+   "stored": 0.9197779347418664,
+   "recomputed": 0.9207562425061286,
+   "ok": true
+  },
+  {
+   "name": "bootstrap xlmr: accuracy_ci95 lo (stored 2,000 resamples vs independent 10,000; tol 0.012)",
+   "stored": 0.8678756476683938,
+   "recomputed": 0.8678756476683938,
+   "ok": true
+  },
+  {
+   "name": "bootstrap xlmr: accuracy_ci95 hi (stored 2,000 resamples vs independent 10,000; tol 0.012)",
+   "stored": 0.927461139896373,
+   "recomputed": 0.927461139896373,
+   "ok": true
+  },
+  {
+   "name": "bootstrap xlmr: delta d_f1 mean vs TF-IDF (tol 0.012)",
+   "stored": 0.05728821924425524,
+   "recomputed": 0.05723087607272232,
+   "ok": true
+  },
+  {
+   "name": "bootstrap xlmr: delta d_f1 lo vs TF-IDF (tol 0.012)",
+   "stored": -0.0037700586540758804,
+   "recomputed": -0.0029059842682481823,
+   "ok": true
+  },
+  {
+   "name": "bootstrap xlmr: delta d_f1 hi vs TF-IDF (tol 0.012)",
+   "stored": 0.12387509804727245,
+   "recomputed": 0.12676169288151037,
+   "ok": true
+  },
+  {
+   "name": "bootstrap xlmr: delta d_acc mean vs TF-IDF (tol 0.012)",
+   "stored": 0.015445449606247396,
+   "recomputed": 0.015414231445075387,
+   "ok": true
+  },
+  {
+   "name": "bootstrap xlmr: delta d_acc lo vs TF-IDF (tol 0.012)",
+   "stored": -0.015706806282722478,
+   "recomputed": -0.015706806282722474,
+   "ok": true
+  },
+  {
+   "name": "bootstrap xlmr: delta d_acc hi vs TF-IDF (tol 0.012)",
+   "stored": 0.04663212435233155,
+   "recomputed": 0.04712041884816753,
+   "ok": true
+  },
+  {
+   "name": "bootstrap xlmr: macro-F1 verdict identical (stored 'unresolved' vs independent 'unresolved')",
+   "stored": 0,
+   "recomputed": 0,
+   "ok": true
+  },
+  {
+   "name": "bootstrap layoutlmv3: macro_f1_ci95 lo (stored 2,000 resamples vs independent 10,000; tol 0.012)",
+   "stored": 0.6183350030600228,
+   "recomputed": 0.6198602394396172,
+   "ok": true
+  },
+  {
+   "name": "bootstrap layoutlmv3: macro_f1_ci95 hi (stored 2,000 resamples vs independent 10,000; tol 0.012)",
+   "stored": 0.7673700561118327,
+   "recomputed": 0.7695834433964404,
+   "ok": true
+  },
+  {
+   "name": "bootstrap layoutlmv3: accuracy_ci95 lo (stored 2,000 resamples vs independent 10,000; tol 0.012)",
+   "stored": 0.8219895287958116,
+   "recomputed": 0.8205128205128205,
+   "ok": true
+  },
+  {
+   "name": "bootstrap layoutlmv3: accuracy_ci95 hi (stored 2,000 resamples vs independent 10,000; tol 0.012)",
+   "stored": 0.8979057591623036,
+   "recomputed": 0.900523560209424,
+   "ok": true
+  },
+  {
+   "name": "bootstrap layoutlmv3: delta d_f1 mean vs TF-IDF (tol 0.012)",
+   "stored": -0.12649322020348458,
+   "recomputed": -0.1270914956546149,
+   "ok": true
+  },
+  {
+   "name": "bootstrap layoutlmv3: delta d_f1 lo vs TF-IDF (tol 0.012)",
+   "stored": -0.20951861806221303,
+   "recomputed": -0.21126777741079178,
+   "ok": true
+  },
+  {
+   "name": "bootstrap layoutlmv3: delta d_f1 hi vs TF-IDF (tol 0.012)",
+   "stored": -0.04337326786619237,
+   "recomputed": -0.04213095800560807,
+   "ok": true
+  },
+  {
+   "name": "bootstrap layoutlmv3: delta d_acc mean vs TF-IDF (tol 0.012)",
+   "stored": -0.02042679467943369,
+   "recomputed": -0.020591673620547327,
+   "ok": true
+  },
+  {
+   "name": "bootstrap layoutlmv3: delta d_acc lo vs TF-IDF (tol 0.012)",
+   "stored": -0.059585492227979264,
+   "recomputed": -0.060913705583756306,
+   "ok": true
+  },
+  {
+   "name": "bootstrap layoutlmv3: delta d_acc hi vs TF-IDF (tol 0.012)",
+   "stored": 0.015706806282722474,
+   "recomputed": 0.01832460732984298,
+   "ok": true
+  },
+  {
+   "name": "bootstrap layoutlmv3: macro-F1 verdict identical (stored 'worse' vs independent 'worse')",
+   "stored": 0,
+   "recomputed": 0,
+   "ok": true
+  },
+  {
+   "name": "bootstrap fusion: macro_f1_ci95 lo (stored 2,000 resamples vs independent 10,000; tol 0.012)",
+   "stored": 0.7528948996601232,
+   "recomputed": 0.7574515477014908,
+   "ok": true
+  },
+  {
+   "name": "bootstrap fusion: macro_f1_ci95 hi (stored 2,000 resamples vs independent 10,000; tol 0.012)",
+   "stored": 0.8891315392410744,
+   "recomputed": 0.8897699108205533,
+   "ok": true
+  },
+  {
+   "name": "bootstrap fusion: accuracy_ci95 lo (stored 2,000 resamples vs independent 10,000; tol 0.012)",
+   "stored": 0.8743589743589744,
+   "recomputed": 0.8743589743589744,
+   "ok": true
+  },
+  {
+   "name": "bootstrap fusion: accuracy_ci95 hi (stored 2,000 resamples vs independent 10,000; tol 0.012)",
+   "stored": 0.9352331606217616,
+   "recomputed": 0.93717277486911,
+   "ok": true
+  },
+  {
+   "name": "bootstrap fusion: delta d_f1 mean vs TF-IDF (tol 0.012)",
+   "stored": 0.007865490748473316,
+   "recomputed": 0.008081801257163493,
+   "ok": true
+  },
+  {
+   "name": "bootstrap fusion: delta d_f1 lo vs TF-IDF (tol 0.012)",
+   "stored": -0.04089867704327935,
+   "recomputed": -0.03968331403639277,
+   "ok": true
+  },
+  {
+   "name": "bootstrap fusion: delta d_f1 hi vs TF-IDF (tol 0.012)",
+   "stored": 0.05153471273957549,
+   "recomputed": 0.05469947259927959,
+   "ok": true
+  },
+  {
+   "name": "bootstrap fusion: delta d_acc mean vs TF-IDF (tol 0.012)",
+   "stored": 0.023224629141069868,
+   "recomputed": 0.023481510067063296,
+   "ok": true
+  },
+  {
+   "name": "bootstrap fusion: delta d_acc lo vs TF-IDF (tol 0.012)",
+   "stored": -0.004976374409360213,
+   "recomputed": -0.002590673575129543,
+   "ok": true
+  },
+  {
+   "name": "bootstrap fusion: delta d_acc hi vs TF-IDF (tol 0.012)",
+   "stored": 0.04973821989528793,
+   "recomputed": 0.04973821989528793,
+   "ok": true
+  },
+  {
+   "name": "bootstrap fusion: macro-F1 verdict identical (stored 'unresolved' vs independent 'unresolved')",
+   "stored": 0,
+   "recomputed": 0,
+   "ok": true
+  },
+  {
+   "name": "bootstrap lexrank: macro_f1_ci95 lo (stored 2,000 resamples vs independent 10,000; tol 0.012)",
+   "stored": 0.7201856519344558,
+   "recomputed": 0.7236667924158653,
+   "ok": true
+  },
+  {
+   "name": "bootstrap lexrank: macro_f1_ci95 hi (stored 2,000 resamples vs independent 10,000; tol 0.012)",
+   "stored": 0.8571882778302711,
+   "recomputed": 0.8578018293227343,
+   "ok": true
+  },
+  {
+   "name": "bootstrap lexrank: accuracy_ci95 lo (stored 2,000 resamples vs independent 10,000; tol 0.012)",
+   "stored": 0.816749651398353,
+   "recomputed": 0.8153846153846154,
+   "ok": true
+  },
+  {
+   "name": "bootstrap lexrank: accuracy_ci95 hi (stored 2,000 resamples vs independent 10,000; tol 0.012)",
+   "stored": 0.887434554973822,
+   "recomputed": 0.887434554973822,
+   "ok": true
+  },
+  {
+   "name": "bootstrap lexrank: delta d_f1 mean vs TF-IDF (tol 0.012)",
+   "stored": -0.025555482744799088,
+   "recomputed": -0.02511380178006445,
+   "ok": true
+  },
+  {
+   "name": "bootstrap lexrank: delta d_f1 lo vs TF-IDF (tol 0.012)",
+   "stored": -0.061447263549097686,
+   "recomputed": -0.059846657692682395,
+   "ok": true
+  },
+  {
+   "name": "bootstrap lexrank: delta d_f1 hi vs TF-IDF (tol 0.012)",
+   "stored": 0.0009215928503414215,
+   "recomputed": 0.0016749894121234387,
+   "ok": true
+  },
+  {
+   "name": "bootstrap lexrank: delta d_acc mean vs TF-IDF (tol 0.012)",
+   "stored": -0.03072114632445544,
+   "recomputed": -0.03107518450817904,
+   "ok": true
+  },
+  {
+   "name": "bootstrap lexrank: delta d_acc lo vs TF-IDF (tol 0.012)",
+   "stored": -0.051813471502590636,
+   "recomputed": -0.053299492385786795,
+   "ok": true
+  },
+  {
+   "name": "bootstrap lexrank: delta d_acc hi vs TF-IDF (tol 0.012)",
+   "stored": -0.010471204188481686,
+   "recomputed": -0.010471204188481686,
+   "ok": true
+  },
+  {
+   "name": "bootstrap lexrank: macro-F1 verdict identical (stored 'unresolved' vs independent 'unresolved')",
+   "stored": 0,
+   "recomputed": 0,
+   "ok": true
+  },
+  {
+   "name": "attention vs BiLSTM: delta macro-F1 mean (tol 0.012)",
+   "stored": 0.08644822807750042,
+   "recomputed": 0.0848512407870569,
+   "ok": true
+  },
+  {
+   "name": "attention vs BiLSTM: CI low (tol 0.012)",
+   "stored": 0.0034434315352268596,
+   "recomputed": -0.004288432204993299,
+   "ok": true
+  },
+  {
+   "name": "attention vs BiLSTM: CI high (tol 0.012)",
+   "stored": 0.17366270692823385,
+   "recomputed": 0.17362403281403022,
+   "ok": true
+  }
+ ],
+ "mismatches": [
+  {
+   "name": "bilstm_attn: raw/real/nll",
+   "stored": 1.384819746017456,
+   "recomputed": 1.3852153193943044
+  },
+  {
+   "name": "bilstm_attn: raw/all/nll",
+   "stored": 0.8498513698577881,
+   "recomputed": 0.8500941492321671
+  }
+ ],
+ "split": {
+  "n_train": 4848,
+  "n_val": 634,
+  "n_test": 629,
+  "n_real_test": 386,
+  "labels": [
+   "bus",
+   "electricity",
+   "flight",
+   "food",
+   "fuel",
+   "gas",
+   "hotel",
+   "internet",
+   "medical",
+   "miscellaneous",
+   "non_expense",
+   "parking",
+   "rent",
+   "train",
+   "transport",
+   "water"
+  ]
+ },
+ "leakage": {
+  "id_overlap_train_test": 0,
+  "id_overlap_val_test": 0,
+  "group_overlap_train_test": 0,
+  "group_overlap_val_test": 0,
+  "group_overlap_train_val": 0
+ },
+ "bootstrap_independent": {
+  "tfidf": {
+   "macro_f1_ci95": [
+    0.7510821980681465,
+    0.879437561430658
+   ],
+   "accuracy_ci95": [
+    0.8507853403141361,
+    0.9145077720207254
+   ],
+   "d_f1": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "d_acc": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "bilstm": {
+   "macro_f1_ci95": [
+    0.5094450523175201,
+    0.6590578436269751
+   ],
+   "accuracy_ci95": [
+    0.6666666666666666,
+    0.756544502617801
+   ],
+   "d_f1": [
+    -0.23514629202466614,
+    -0.3165122955551702,
+    -0.1557870292326355
+   ],
+   "d_acc": [
+    -0.1707569525359701,
+    -0.21502590673575128,
+    -0.12690355329949243
+   ]
+  },
+  "bilstm_attn": {
+   "macro_f1_ci95": [
+    0.5909913848035833,
+    0.7432953610820018
+   ],
+   "accuracy_ci95": [
+    0.7305699481865285,
+    0.8219895287958116
+   ],
+   "d_f1": [
+    -0.15029505123760922,
+    -0.22405036992048982,
+    -0.07961948834409566
+   ],
+   "d_acc": [
+    -0.10629272350488476,
+    -0.1476683937823834,
+    -0.06735751295336789
+   ]
+  },
+  "xlmr": {
+   "macro_f1_ci95": [
+    0.8270766996684038,
+    0.9207562425061286
+   ],
+   "accuracy_ci95": [
+    0.8678756476683938,
+    0.927461139896373
+   ],
+   "d_f1": [
+    0.05723087607272232,
+    -0.0029059842682481823,
+    0.12676169288151037
+   ],
+   "d_acc": [
+    0.015414231445075387,
+    -0.015706806282722474,
+    0.04712041884816753
+   ]
+  },
+  "layoutlmv3": {
+   "macro_f1_ci95": [
+    0.6198602394396172,
+    0.7695834433964404
+   ],
+   "accuracy_ci95": [
+    0.8205128205128205,
+    0.900523560209424
+   ],
+   "d_f1": [
+    -0.1270914956546149,
+    -0.21126777741079178,
+    -0.04213095800560807
+   ],
+   "d_acc": [
+    -0.020591673620547327,
+    -0.060913705583756306,
+    0.01832460732984298
+   ]
+  },
+  "fusion": {
+   "macro_f1_ci95": [
+    0.7574515477014908,
+    0.8897699108205533
+   ],
+   "accuracy_ci95": [
+    0.8743589743589744,
+    0.93717277486911
+   ],
+   "d_f1": [
+    0.008081801257163493,
+    -0.03968331403639277,
+    0.05469947259927959
+   ],
+   "d_acc": [
+    0.023481510067063296,
+    -0.002590673575129543,
+    0.04973821989528793
+   ]
+  },
+  "lexrank": {
+   "macro_f1_ci95": [
+    0.7236667924158653,
+    0.8578018293227343
+   ],
+   "accuracy_ci95": [
+    0.8153846153846154,
+    0.887434554973822
+   ],
+   "d_f1": [
+    -0.02511380178006445,
+    -0.059846657692682395,
+    0.0016749894121234387
+   ],
+   "d_acc": [
+    -0.03107518450817904,
+    -0.053299492385786795,
+    -0.010471204188481686
+   ]
+  }
+ },
+ "bootstrap_attention_vs_bilstm": [
+  0.0848512407870569,
+  -0.004288432204993299,
+  0.17362403281403022
+ ],
+ "sensitivity": {
+  "xlmr": {
+   "doc_level_delta_macro_f1": [
+    0.056543036181576724,
+    -0.003166683198136094,
+    0.1256785490347923
+   ],
+   "doc_level_delta_accuracy": [
+    0.015358808290155441,
+    -0.015544041450777257,
+    0.04663212435233166
+   ],
+   "mcnemar_only_model_correct": 22,
+   "mcnemar_only_tfidf_correct": 16,
+   "mcnemar_exact_p": 0.417692190836533
+  },
+  "fusion": {
+   "doc_level_delta_macro_f1": [
+    0.007164758874802283,
+    -0.04296654766591751,
+    0.0525728804013686
+   ],
+   "doc_level_delta_accuracy": [
+    0.023384067357512955,
+    -0.002590673575129543,
+    0.04922279792746109
+   ],
+   "mcnemar_only_model_correct": 17,
+   "mcnemar_only_tfidf_correct": 8,
+   "mcnemar_exact_p": 0.10775214433670044
+  },
+  "lexrank": {
+   "doc_level_delta_macro_f1": [
+    -0.025703388211320122,
+    -0.06107476132048622,
+    0.0003057379734312022
+   ],
+   "doc_level_delta_accuracy": [
+    -0.031020725388601036,
+    -0.051813471502590636,
+    -0.012953367875647603
+   ],
+   "mcnemar_only_model_correct": 2,
+   "mcnemar_only_tfidf_correct": 14,
+   "mcnemar_exact_p": 0.004180908203125
+  }
+ },
+ "n_real_test_groups": 382
+}

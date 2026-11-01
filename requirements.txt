@@ -1,0 +1,17 @@
+# Versions known to work in the project .venv (Python 3.12, CUDA 12.8 build of torch). Install torch/torchvision from the CUDA index you use.
+torch==2.9.1
+torchvision==0.24.1
+transformers==5.18.0
+timm==1.0.30
+scikit-learn==1.9.1
+numpy==2.5.2
+pandas==3.0.5
+pillow==12.3.0
+ImageHash==4.3.2
+safetensors==0.8.0
+streamlit==1.65.0
+requests==2.34.2          # local-LLM HTTP client (app/llm/client.py)
+rapidocr-onnxruntime==1.4.4
+onnxruntime-gpu==1.22.0   # or onnxruntime on CPU-only machines
+# System packages: poppler-utils (PDF input).  Optional local LLM runtime: Ollama (https://ollama.com) - see docs/TAX_AND_LLM.md
+# Tests use the standard library only:  .venv/bin/python -m unittest discover -s tests -v

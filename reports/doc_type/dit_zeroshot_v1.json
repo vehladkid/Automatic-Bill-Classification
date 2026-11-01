@@ -1,0 +1,165 @@
+{
+ "model": "microsoft/dit-base-finetuned-rvlcdip",
+ "device": "cuda",
+ "docs_per_class_max": 40,
+ "per_doc_type": {
+  "bank_statement": {
+   "n": 40,
+   "predicted_rvlcdip_class": {
+    "budget": 12,
+    "invoice": 11,
+    "form": 9,
+    "scientific report": 7,
+    "email": 1
+   },
+   "share_invoice": 0.275
+  },
+  "cheque": {
+   "n": 40,
+   "predicted_rvlcdip_class": {
+    "invoice": 18,
+    "form": 8,
+    "advertisement": 7,
+    "handwritten": 3,
+    "budget": 2,
+    "specification": 1,
+    "questionnaire": 1
+   },
+   "share_invoice": 0.45
+  },
+  "form_16": {
+   "n": 35,
+   "predicted_rvlcdip_class": {
+    "form": 26,
+    "questionnaire": 5,
+    "invoice": 2,
+    "scientific report": 1,
+    "email": 1
+   },
+   "share_invoice": 0.057
+  },
+  "fuel_receipt": {
+   "n": 40,
+   "predicted_rvlcdip_class": {
+    "invoice": 18,
+    "handwritten": 6,
+    "specification": 5,
+    "budget": 5,
+    "advertisement": 3,
+    "file folder": 1,
+    "questionnaire": 1,
+    "resume": 1
+   },
+   "share_invoice": 0.45
+  },
+  "hotel_bill": {
+   "n": 40,
+   "predicted_rvlcdip_class": {
+    "invoice": 27,
+    "form": 5,
+    "budget": 4,
+    "scientific report": 3,
+    "advertisement": 1
+   },
+   "share_invoice": 0.675
+  },
+  "invoice": {
+   "n": 40,
+   "predicted_rvlcdip_class": {
+    "invoice": 18,
+    "budget": 9,
+    "scientific report": 4,
+    "specification": 4,
+    "form": 4,
+    "handwritten": 1
+   },
+   "share_invoice": 0.45
+  },
+  "medical_bill": {
+   "n": 30,
+   "predicted_rvlcdip_class": {
+    "invoice": 15,
+    "budget": 11,
+    "form": 2,
+    "email": 1,
+    "specification": 1
+   },
+   "share_invoice": 0.5
+  },
+  "other": {
+   "n": 40,
+   "predicted_rvlcdip_class": {
+    "form": 15,
+    "memo": 4,
+    "email": 3,
+    "handwritten": 3,
+    "scientific report": 2,
+    "questionnaire": 2,
+    "advertisement": 2,
+    "news article": 2,
+    "specification": 2,
+    "presentation": 2,
+    "file folder": 1,
+    "letter": 1,
+    "scientific publication": 1
+   },
+   "share_invoice": 0.0
+  },
+  "receipt": {
+   "n": 40,
+   "predicted_rvlcdip_class": {
+    "invoice": 18,
+    "advertisement": 9,
+    "budget": 6,
+    "form": 2,
+    "handwritten": 1,
+    "letter": 1,
+    "file folder": 1,
+    "scientific publication": 1,
+    "specification": 1
+   },
+   "share_invoice": 0.45
+  },
+  "salary_slip": {
+   "n": 40,
+   "predicted_rvlcdip_class": {
+    "invoice": 17,
+    "form": 12,
+    "budget": 5,
+    "email": 3,
+    "advertisement": 2,
+    "specification": 1
+   },
+   "share_invoice": 0.425
+  },
+  "travel_document": {
+   "n": 40,
+   "predicted_rvlcdip_class": {
+    "form": 16,
+    "specification": 12,
+    "advertisement": 7,
+    "invoice": 3,
+    "scientific report": 1,
+    "budget": 1
+   },
+   "share_invoice": 0.075
+  },
+  "utility_bill": {
+   "n": 40,
+   "predicted_rvlcdip_class": {
+    "form": 16,
+    "invoice": 12,
+    "advertisement": 4,
+    "budget": 3,
+    "specification": 2,
+    "scientific report": 2,
+    "email": 1
+   },
+   "share_invoice": 0.3
+  }
+ },
+ "latency_ms_mean": 5.5,
+ "peak_gpu_mb": 193,
+ "n_images": 465,
+ "caveat": "zero-shot: RVL-CDIP classes (letter, form, email, handwritten, advertisement, scientific report/publication, specification, file folder, news article, budget, invoice, presentation, questionnaire, resume, memo) are not our label space"
+}

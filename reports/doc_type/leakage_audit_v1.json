@@ -1,0 +1,179 @@
+{
+ "n_docs": 8423,
+ "identical_bytes": {
+  "duplicate_groups": 0,
+  "docs_in_duplicate_groups": 0,
+  "groups_spanning_splits": 0,
+  "groups_spanning_sources": 0,
+  "spanning_splits_examples": []
+ },
+ "group_id_spanning_splits": 0,
+ "real_docs": 5753,
+ "undecodable_images_skipped": 0,
+ "phash_nearest_train_neighbour": {
+  "test|bank_statement": {
+   "n": 10,
+   "le4": 0,
+   "le8": 0,
+   "identical": 0
+  },
+  "test|cheque": {
+   "n": 6,
+   "le4": 0,
+   "le8": 0,
+   "identical": 0
+  },
+  "test|form_16": {
+   "n": 2,
+   "le4": 0,
+   "le8": 0,
+   "identical": 0
+  },
+  "test|fuel_receipt": {
+   "n": 15,
+   "le4": 0,
+   "le8": 1,
+   "identical": 0
+  },
+  "test|hotel_bill": {
+   "n": 22,
+   "le4": 0,
+   "le8": 2,
+   "identical": 0
+  },
+  "test|invoice": {
+   "n": 49,
+   "le4": 0,
+   "le8": 7,
+   "identical": 0
+  },
+  "test|medical_bill": {
+   "n": 4,
+   "le4": 0,
+   "le8": 0,
+   "identical": 0
+  },
+  "test|other": {
+   "n": 50,
+   "le4": 0,
+   "le8": 0,
+   "identical": 0
+  },
+  "test|receipt": {
+   "n": 314,
+   "le4": 0,
+   "le8": 18,
+   "identical": 0
+  },
+  "test|salary_slip": {
+   "n": 12,
+   "le4": 0,
+   "le8": 0,
+   "identical": 0
+  },
+  "test|travel_document": {
+   "n": 53,
+   "le4": 0,
+   "le8": 6,
+   "identical": 0
+  },
+  "test|utility_bill": {
+   "n": 34,
+   "le4": 0,
+   "le8": 3,
+   "identical": 0
+  },
+  "val|bank_statement": {
+   "n": 5,
+   "le4": 0,
+   "le8": 0,
+   "identical": 0
+  },
+  "val|cheque": {
+   "n": 10,
+   "le4": 0,
+   "le8": 0,
+   "identical": 0
+  },
+  "val|form_16": {
+   "n": 8,
+   "le4": 0,
+   "le8": 0,
+   "identical": 0
+  },
+  "val|fuel_receipt": {
+   "n": 13,
+   "le4": 0,
+   "le8": 0,
+   "identical": 0
+  },
+  "val|hotel_bill": {
+   "n": 22,
+   "le4": 0,
+   "le8": 2,
+   "identical": 0
+  },
+  "val|invoice": {
+   "n": 45,
+   "le4": 0,
+   "le8": 4,
+   "identical": 0
+  },
+  "val|medical_bill": {
+   "n": 4,
+   "le4": 0,
+   "le8": 0,
+   "identical": 0
+  },
+  "val|other": {
+   "n": 47,
+   "le4": 0,
+   "le8": 0,
+   "identical": 0
+  },
+  "val|receipt": {
+   "n": 317,
+   "le4": 0,
+   "le8": 16,
+   "identical": 0
+  },
+  "val|salary_slip": {
+   "n": 10,
+   "le4": 0,
+   "le8": 1,
+   "identical": 0
+  },
+  "val|travel_document": {
+   "n": 62,
+   "le4": 0,
+   "le8": 3,
+   "identical": 0
+  },
+  "val|utility_bill": {
+   "n": 35,
+   "le4": 0,
+   "le8": 3,
+   "identical": 0
+  }
+ },
+ "phash_totals": {
+  "val": {
+   "n": 578,
+   "le4": 0,
+   "le8": 29,
+   "identical": 0
+  },
+  "test": {
+   "n": 571,
+   "le4": 0,
+   "le8": 37,
+   "identical": 0
+  }
+ },
+ "external_synthetic_vs_real_val_test": {
+  "n_synthetic": 240,
+  "decoded": 240,
+  "min_hamming_to_any_real_val_test": 12,
+  "n_le8": 0
+ }
+}

@@ -1,0 +1,417 @@
+{
+ "manifest": "reports/doc_type/licensing_and_collection/collection_manifest.jsonl",
+ "n_records": 0,
+ "passed": true,
+ "errors": {},
+ "blocked_reason_counts": {},
+ "progress": [
+  {
+   "rank": 1,
+   "doc_type": "rent_receipt",
+   "collected": 0,
+   "usable_in_splits": 0,
+   "unique_issuers_all": 0,
+   "unique_issuers_usable": 0,
+   "annotation": {},
+   "splits": {
+    "train": 0,
+    "val": 0,
+    "test": 0
+   },
+   "issuers_per_split": {
+    "train": 0,
+    "val": 0,
+    "test": 0
+   },
+   "targets": {
+    "train": 100,
+    "val": 30,
+    "test": 30,
+    "issuers": {
+     "train": 15,
+     "val": 6,
+     "test": 6
+    }
+   },
+   "ready_for_per_class_metric": false
+  },
+  {
+   "rank": 2,
+   "doc_type": "insurance_premium_receipt",
+   "collected": 0,
+   "usable_in_splits": 0,
+   "unique_issuers_all": 0,
+   "unique_issuers_usable": 0,
+   "annotation": {},
+   "splits": {
+    "train": 0,
+    "val": 0,
+    "test": 0
+   },
+   "issuers_per_split": {
+    "train": 0,
+    "val": 0,
+    "test": 0
+   },
+   "targets": {
+    "train": 100,
+    "val": 30,
+    "test": 30,
+    "issuers": {
+     "train": 15,
+     "val": 6,
+     "test": 6
+    }
+   },
+   "ready_for_per_class_metric": false
+  },
+  {
+   "rank": 3,
+   "doc_type": "school_fee_receipt",
+   "collected": 0,
+   "usable_in_splits": 0,
+   "unique_issuers_all": 0,
+   "unique_issuers_usable": 0,
+   "annotation": {},
+   "splits": {
+    "train": 0,
+    "val": 0,
+    "test": 0
+   },
+   "issuers_per_split": {
+    "train": 0,
+    "val": 0,
+    "test": 0
+   },
+   "targets": {
+    "train": 100,
+    "val": 30,
+    "test": 30,
+    "issuers": {
+     "train": 15,
+     "val": 6,
+     "test": 6
+    }
+   },
+   "ready_for_per_class_metric": false
+  },
+  {
+   "rank": 4,
+   "doc_type": "loan_interest_certificate",
+   "collected": 0,
+   "usable_in_splits": 0,
+   "unique_issuers_all": 0,
+   "unique_issuers_usable": 0,
+   "annotation": {},
+   "splits": {
+    "train": 0,
+    "val": 0,
+    "test": 0
+   },
+   "issuers_per_split": {
+    "train": 0,
+    "val": 0,
+    "test": 0
+   },
+   "targets": {
+    "train": 100,
+    "val": 30,
+    "test": 30,
+    "issuers": {
+     "train": 15,
+     "val": 6,
+     "test": 6
+    }
+   },
+   "ready_for_per_class_metric": false
+  },
+  {
+   "rank": 5,
+   "doc_type": "salary_slip",
+   "collected": 0,
+   "usable_in_splits": 0,
+   "unique_issuers_all": 0,
+   "unique_issuers_usable": 0,
+   "annotation": {},
+   "splits": {
+    "train": 0,
+    "val": 0,
+    "test": 0
+   },
+   "issuers_per_split": {
+    "train": 0,
+    "val": 0,
+    "test": 0
+   },
+   "targets": {
+    "train": 100,
+    "val": 30,
+    "test": 30,
+    "issuers": {
+     "train": 15,
+     "val": 6,
+     "test": 6
+    }
+   },
+   "ready_for_per_class_metric": false
+  },
+  {
+   "rank": 6,
+   "doc_type": "form_16",
+   "collected": 0,
+   "usable_in_splits": 0,
+   "unique_issuers_all": 0,
+   "unique_issuers_usable": 0,
+   "annotation": {},
+   "splits": {
+    "train": 0,
+    "val": 0,
+    "test": 0
+   },
+   "issuers_per_split": {
+    "train": 0,
+    "val": 0,
+    "test": 0
+   },
+   "targets": {
+    "train": 100,
+    "val": 30,
+    "test": 30,
+    "issuers": {
+     "train": 15,
+     "val": 6,
+     "test": 6
+    }
+   },
+   "ready_for_per_class_metric": false
+  },
+  {
+   "rank": 7,
+   "doc_type": "investment_certificate",
+   "collected": 0,
+   "usable_in_splits": 0,
+   "unique_issuers_all": 0,
+   "unique_issuers_usable": 0,
+   "annotation": {},
+   "splits": {
+    "train": 0,
+    "val": 0,
+    "test": 0
+   },
+   "issuers_per_split": {
+    "train": 0,
+    "val": 0,
+    "test": 0
+   },
+   "targets": {
+    "train": 100,
+    "val": 30,
+    "test": 30,
+    "issuers": {
+     "train": 15,
+     "val": 6,
+     "test": 6
+    }
+   },
+   "ready_for_per_class_metric": false
+  },
+  {
+   "rank": 8,
+   "doc_type": "meal_voucher_statement",
+   "collected": 0,
+   "usable_in_splits": 0,
+   "unique_issuers_all": 0,
+   "unique_issuers_usable": 0,
+   "annotation": {},
+   "splits": {
+    "train": 0,
+    "val": 0,
+    "test": 0
+   },
+   "issuers_per_split": {
+    "train": 0,
+    "val": 0,
+    "test": 0
+   },
+   "targets": {
+    "train": 100,
+    "val": 30,
+    "test": 30,
+    "issuers": {
+     "train": 15,
+     "val": 6,
+     "test": 6
+    }
+   },
+   "ready_for_per_class_metric": false
+  },
+  {
+   "rank": 9,
+   "doc_type": "loan_statement",
+   "collected": 0,
+   "usable_in_splits": 0,
+   "unique_issuers_all": 0,
+   "unique_issuers_usable": 0,
+   "annotation": {},
+   "splits": {
+    "train": 0,
+    "val": 0,
+    "test": 0
+   },
+   "issuers_per_split": {
+    "train": 0,
+    "val": 0,
+    "test": 0
+   },
+   "targets": {
+    "train": 100,
+    "val": 30,
+    "test": 30,
+    "issuers": {
+     "train": 15,
+     "val": 6,
+     "test": 6
+    }
+   },
+   "ready_for_per_class_metric": false
+  },
+  {
+   "rank": 10,
+   "doc_type": "rental_agreement",
+   "collected": 0,
+   "usable_in_splits": 0,
+   "unique_issuers_all": 0,
+   "unique_issuers_usable": 0,
+   "annotation": {},
+   "splits": {
+    "train": 0,
+    "val": 0,
+    "test": 0
+   },
+   "issuers_per_split": {
+    "train": 0,
+    "val": 0,
+    "test": 0
+   },
+   "targets": {
+    "train": 100,
+    "val": 30,
+    "test": 30,
+    "issuers": {
+     "train": 15,
+     "val": 6,
+     "test": 6
+    }
+   },
+   "ready_for_per_class_metric": false
+  },
+  {
+   "rank": 11,
+   "doc_type": "ev_document",
+   "collected": 0,
+   "usable_in_splits": 0,
+   "unique_issuers_all": 0,
+   "unique_issuers_usable": 0,
+   "annotation": {},
+   "splits": {
+    "train": 0,
+    "val": 0,
+    "test": 0
+   },
+   "issuers_per_split": {
+    "train": 0,
+    "val": 0,
+    "test": 0
+   },
+   "targets": {
+    "train": 100,
+    "val": 30,
+    "test": 30,
+    "issuers": {
+     "train": 15,
+     "val": 6,
+     "test": 6
+    }
+   },
+   "ready_for_per_class_metric": false
+  },
+  {
+   "rank": 12,
+   "doc_type": "bank_statement",
+   "collected": 0,
+   "usable_in_splits": 0,
+   "unique_issuers_all": 0,
+   "unique_issuers_usable": 0,
+   "annotation": {},
+   "splits": {
+    "train": 0,
+    "val": 0,
+    "test": 0
+   },
+   "issuers_per_split": {
+    "train": 0,
+    "val": 0,
+    "test": 0
+   },
+   "targets": {
+    "train": 100,
+    "val": 30,
+    "test": 30,
+    "issuers": {
+     "train": 15,
+     "val": 6,
+     "test": 6
+    }
+   },
+   "ready_for_per_class_metric": false
+  },
+  {
+   "rank": 13,
+   "doc_type": "cheque",
+   "collected": 0,
+   "usable_in_splits": 0,
+   "unique_issuers_all": 0,
+   "unique_issuers_usable": 0,
+   "annotation": {},
+   "splits": {
+    "train": 0,
+    "val": 0,
+    "test": 0
+   },
+   "issuers_per_split": {
+    "train": 0,
+    "val": 0,
+    "test": 0
+   },
+   "targets": {
+    "train": 100,
+    "val": 30,
+    "test": 30,
+    "issuers": {
+     "train": 15,
+     "val": 6,
+     "test": 6
+    }
+   },
+   "ready_for_per_class_metric": false
+  }
+ ],
+ "queues": {
+  "label_review": {
+   "count": 0,
+   "doc_ids": []
+  },
+  "redaction_verification": {
+   "count": 0,
+   "doc_ids": []
+  },
+  "annotation_needed": {
+   "count": 0,
+   "doc_ids": []
+  },
+  "rejected": {
+   "count": 0,
+   "doc_ids": []
+  }
+ }
+}

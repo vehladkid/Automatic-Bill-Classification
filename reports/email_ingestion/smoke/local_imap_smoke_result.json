@@ -1,0 +1,203 @@
+{
+ "models_loaded": {
+  "ocr": true,
+  "task_a": true,
+  "task_b": true,
+  "errors": {}
+ },
+ "poll1_stats": {
+  "ingested": 5,
+  "rejected": 2,
+  "duplicate": 1
+ },
+ "emails_after_poll1": [
+  [
+   "<m1@x>",
+   "QUEUED",
+   null
+  ],
+  [
+   "<m2@x>",
+   "REJECTED",
+   "sender_not_authorised"
+  ],
+  [
+   "<m3@x>",
+   "COMPLETED",
+   null
+  ],
+  [
+   "<m4@x>",
+   "FAILED",
+   null
+  ],
+  [
+   "<m5@x>",
+   "REVIEW_REQUIRED",
+   "possible_bill_in_body"
+  ],
+  [
+   "<m7@x>",
+   "COMPLETED",
+   null
+  ],
+  [
+   "<m8@x>",
+   "REJECTED",
+   "sender_not_authenticated"
+  ]
+ ],
+ "attachments_after_ingest": [
+  [
+   "bill.pdf",
+   "QUEUED",
+   null
+  ],
+  [
+   "slip.jpg",
+   "QUEUED",
+   null
+  ],
+  [
+   "inner.pdf",
+   "DUPLICATE",
+   "duplicate_content"
+  ],
+  [
+   "a.zip",
+   "FAILED",
+   "unsupported_type"
+  ],
+  [
+   "bill2.pdf",
+   "DUPLICATE",
+   "duplicate_content"
+  ]
+ ],
+ "jobs_processed": 2,
+ "attachments_after_worker": [
+  [
+   "bill.pdf",
+   "COMPLETED",
+   null
+  ],
+  [
+   "slip.jpg",
+   "REVIEW_REQUIRED",
+   "invoice_date not found"
+  ],
+  [
+   "inner.pdf",
+   "DUPLICATE",
+   "Same file already submitted (attachment 1); not processed again."
+  ],
+  [
+   "a.zip",
+   "FAILED",
+   "zip/office archive files are not accepted. Send the bill as PDF, JPG or PNG."
+  ],
+  [
+   "bill2.pdf",
+   "DUPLICATE",
+   "Same file already submitted (attachment 1); not processed again."
+  ]
+ ],
+ "emails_after_worker": [
+  [
+   "<m1@x>",
+   "REVIEW_REQUIRED"
+  ],
+  [
+   "<m2@x>",
+   "REJECTED"
+  ],
+  [
+   "<m3@x>",
+   "COMPLETED"
+  ],
+  [
+   "<m4@x>",
+   "FAILED"
+  ],
+  [
+   "<m5@x>",
+   "REVIEW_REQUIRED"
+  ],
+  [
+   "<m7@x>",
+   "COMPLETED"
+  ],
+  [
+   "<m8@x>",
+   "REJECTED"
+  ]
+ ],
+ "poll2_stats(should ingest nothing)": {},
+ "cursor": {
+  "uidvalidity": "7",
+  "last_uid": 8
+ },
+ "employee_E1_documents": [
+  {
+   "status": "REVIEW_REQUIRED",
+   "category": "non_expense",
+   "document_type": "non_expense_document",
+   "channel": "email",
+   "has_email": true
+  },
+  {
+   "status": "COMPLETED",
+   "category": "food",
+   "document_type": "expense_bill",
+   "channel": "email",
+   "has_email": true
+  }
+ ],
+ "employee_E2_documents": 0,
+ "sample_fields_present": [
+  "currency",
+  "invoice_number",
+  "merchant_address",
+  "merchant_name",
+  "total_amount"
+ ],
+ "sample_ocr_source": "rapidocr",
+ "raw_inbox_files_left": 0,
+ "imap_commands_sent": [
+  "CAPABILITY",
+  "EXAMINE",
+  "LOGIN",
+  "LOGOUT",
+  "UID FETCH",
+  "UID SEARCH"
+ ],
+ "mailbox_modified": false,
+ "permission_violations_under_HRBC_OUT": 0,
+ "poison_poll_stats": {
+  "failed": 1,
+  "ingested": 1
+ },
+ "poison_failure_rows": [
+  {
+   "key": "imap:7:9",
+   "state": "retry",
+   "attempts": 1,
+   "error_code": "validation_tool_unavailable"
+  }
+ ],
+ "later_valid_message_ingested": true,
+ "failed_message_not_recorded_as_email": true,
+ "poll_after_backoff_recovers": {
+  "ingested": 1,
+  "recovered": 1
+ },
+ "health_after_recovery": {
+  "jobs_dead": 0,
+  "messages_retrying": 0,
+  "messages_dead": 0,
+  "problems": [
+   "worker_not_running"
+  ]
+ },
+ "elapsed_s": 13.5
+}

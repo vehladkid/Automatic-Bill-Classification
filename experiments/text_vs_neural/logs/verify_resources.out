@@ -1,0 +1,143 @@
+
+
+latency tfidf_cpu                    stored     2.05  now     2.08  ratio 1.01  within 2x: True
+latency bilstm_cpu                   stored     4.70  now     4.79  ratio 1.02  within 2x: True
+latency bilstm_gpu                   stored     1.74  now     1.81  ratio 1.04  within 2x: True
+latency bilstm_attn_cpu              stored     4.93  now     5.20  ratio 1.05  within 2x: True
+latency bilstm_attn_gpu              stored     1.92  now     1.94  ratio 1.01  within 2x: True
+latency xlmr_cpu_pretrained_proxy    stored    75.56  now   110.01  ratio 1.46  within 2x: True
+latency xlmr_gpu_pretrained_proxy    stored     5.85  now     6.39  ratio 1.09  within 2x: True
+latency layoutlmv3_gpu               stored    53.36  now    51.95  ratio 0.97  within 2x: True
+{
+ "bilstm": {
+  "max_abs_logit_diff": 0.12479925155639648,
+  "same_argmax_share": 1.0,
+  "vocab_rows_match": true
+ },
+ "bilstm_attn": {
+  "max_abs_logit_diff": 0.009553074836730957,
+  "same_argmax_share": 1.0,
+  "vocab_rows_match": true
+ },
+ "tfidf": {
+  "max_abs_logit_diff": 0.0,
+  "same_argmax_share": 1.0
+ },
+ "layoutlmv3_first40_test_docs": {
+  "max_abs_logit_diff": 1.9375,
+  "same_argmax_share": 1.0,
+  "note": "production checkpoint, bf16, first 40 test pages"
+ }
+}
+{
+ "xlmr_stored": 405.43137803100035,
+ "xlmr_history_last_elapsed": 404.8308340120002,
+ "xlmr_epochs_run": 6,
+ "xlmr_best_epoch": 6,
+ "xlmr_best_equals_last_epoch": true,
+ "layoutlm_stored": 3310,
+ "layoutlm_log_last_sec": 3310,
+ "bilstm_selected_seed": 2,
+ "bilstm_stored": 44.69803745599984,
+ "bilstm_seed_times": [
+  [
+   0,
+   36.01948423399972
+  ],
+  [
+   1,
+   30.404835427999842
+  ],
+  [
+   2,
+   44.69803745599984
+  ]
+ ],
+ "attn_selected_seed": 1,
+ "attn_stored": 72.40355588900002,
+ "attn_seed_times": [
+  [
+   0,
+   31.483519098000215
+  ],
+  [
+   1,
+   72.40355588900002
+  ],
+  [
+   2,
+   29.487661742
+  ]
+ ],
+ "bilstm_matches_selected_seed": true,
+ "attn_matches_selected_seed": true,
+ "xlmr_time_consistent_with_history": true
+}
+{
+ "tfidf production joblib": {
+  "exists": true,
+  "bytes": 50765602,
+  "stored_bytes": 50765602,
+  "match": true,
+  "mib": 48.41
+ },
+ "bilstm state": {
+  "exists": true,
+  "bytes": 8270031,
+  "stored_bytes": 8270031,
+  "match": true,
+  "mib": 7.89
+ },
+ "bilstm_attn state": {
+  "exists": true,
+  "bytes": 8403091,
+  "stored_bytes": 8403091,
+  "match": true,
+  "mib": 8.01
+ },
+ "layoutlmv3 production": {
+  "exists": true,
+  "bytes": 503810345,
+  "stored_bytes": 503810345,
+  "match": true,
+  "mib": 480.47
+ },
+ "xlm-roberta-base pretrained": {
+  "exists": true,
+  "bytes": 1115567652,
+  "stored_bytes": 1115567652,
+  "match": true,
+  "mib": 1063.89,
+  "hf_size": 1115567652,
+  "hf_sha256": "6fd4797bc397c3b8b55d6bb5740366b57e6a3ce91c04c77f22aafc0c128e6feb",
+  "local_sha256": "6fd4797bc397c3b8b55d6bb5740366b57e6a3ce91c04c77f22aafc0c128e6feb",
+  "sha256_match": true,
+  "size_matches_hf": true
+ },
+ "trocr-small-printed": {
+  "exists": true,
+  "bytes": 245839136,
+  "stored_bytes": 245839136,
+  "match": true,
+  "mib": 234.45,
+  "hf_size": 245839136,
+  "hf_sha256": "49350a39968df83e5a1adc90fc0ede02ff247671aed70b842af350fd4a7103f3",
+  "local_sha256": "49350a39968df83e5a1adc90fc0ede02ff247671aed70b842af350fd4a7103f3",
+  "sha256_match": true,
+  "size_matches_hf": true
+ },
+ "crnn ocr state": {
+  "exists": true,
+  "bytes": 32972549,
+  "stored_bytes": 32972549,
+  "match": true,
+  "mib": 31.45
+ },
+ "rapidocr rec onnx": {
+  "exists": true,
+  "bytes": 10857958,
+  "stored_bytes": 10857958,
+  "match": true,
+  "mib": 10.35
+ }
+}

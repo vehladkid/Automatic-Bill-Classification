@@ -1,0 +1,358 @@
+{
+ "levenshtein_known_cases": [
+  true,
+  true,
+  true,
+  true,
+  true,
+  true
+ ],
+ "levenshtein_fuzz_400_agree": true,
+ "test_docs": {
+  "total": 29,
+  "sroie": 11,
+  "funsd": 18,
+  "lines": 2862,
+  "sroie_lines": 530,
+  "masked_gt_lines": 2
+ },
+ "train_test_doc_overlap": 0,
+ "crnn_state_matches_architecture_and_charset": true,
+ "lines_scored": {
+  "rapidocr": 2862,
+  "crnn": 2862,
+  "trocr": 2862
+ },
+ "stored_samples_reproduced": {
+  "rapidocr": 0.8333333333333334,
+  "crnn": 0.9166666666666666,
+  "trocr": 1.0
+ },
+ "comparison": [
+  {
+   "model": "rapidocr",
+   "subset": "all",
+   "metric": "cer",
+   "stored": 0.1348957165283696,
+   "recomputed": 0.1348957165283696,
+   "abs_diff": 0.0,
+   "ok": true
+  },
+  {
+   "model": "rapidocr",
+   "subset": "all",
+   "metric": "wer",
+   "stored": 0.30213903743315507,
+   "recomputed": 0.30213903743315507,
+   "abs_diff": 0.0,
+   "ok": true
+  },
+  {
+   "model": "rapidocr",
+   "subset": "all",
+   "metric": "cer_normalised",
+   "stored": 0.03611816293561043,
+   "recomputed": 0.03611816293561043,
+   "abs_diff": 0.0,
+   "ok": true
+  },
+  {
+   "model": "rapidocr",
+   "subset": "all",
+   "metric": "wer_casefold",
+   "stored": 0.2162804515745692,
+   "recomputed": 0.2162804515745692,
+   "abs_diff": 0.0,
+   "ok": true
+  },
+  {
+   "model": "rapidocr",
+   "subset": "sroie",
+   "metric": "cer",
+   "stored": 0.31920553289590353,
+   "recomputed": 0.31920553289590353,
+   "abs_diff": 0.0,
+   "ok": true
+  },
+  {
+   "model": "rapidocr",
+   "subset": "sroie",
+   "metric": "wer",
+   "stored": 0.6007827788649707,
+   "recomputed": 0.6007827788649707,
+   "abs_diff": 0.0,
+   "ok": true
+  },
+  {
+   "model": "rapidocr",
+   "subset": "sroie",
+   "metric": "cer_normalised",
+   "stored": 0.011657276083155236,
+   "recomputed": 0.011657276083155236,
+   "abs_diff": 0.0,
+   "ok": true
+  },
+  {
+   "model": "rapidocr",
+   "subset": "sroie",
+   "metric": "wer_casefold",
+   "stored": 0.33268101761252444,
+   "recomputed": 0.33268101761252444,
+   "abs_diff": 0.0,
+   "ok": true
+  },
+  {
+   "model": "rapidocr",
+   "subset": "funsd",
+   "metric": "cer",
+   "stored": 0.04968434861031401,
+   "recomputed": 0.04968434861031401,
+   "abs_diff": 0.0,
+   "ok": true
+  },
+  {
+   "model": "rapidocr",
+   "subset": "funsd",
+   "metric": "wer",
+   "stored": 0.1719283276450512,
+   "recomputed": 0.1719283276450512,
+   "abs_diff": 0.0,
+   "ok": true
+  },
+  {
+   "model": "rapidocr",
+   "subset": "funsd",
+   "metric": "cer_normalised",
+   "stored": 0.046450553959786624,
+   "recomputed": 0.046450553959786624,
+   "abs_diff": 0.0,
+   "ok": true
+  },
+  {
+   "model": "rapidocr",
+   "subset": "funsd",
+   "metric": "wer_casefold",
+   "stored": 0.16552901023890784,
+   "recomputed": 0.16552901023890784,
+   "abs_diff": 0.0,
+   "ok": true
+  },
+  {
+   "model": "crnn",
+   "subset": "all",
+   "metric": "cer",
+   "stored": 0.05640278089257681,
+   "recomputed": 0.05640278089257681,
+   "abs_diff": 0.0,
+   "ok": true
+  },
+  {
+   "model": "crnn",
+   "subset": "all",
+   "metric": "wer",
+   "stored": 0.18775995246583482,
+   "recomputed": 0.18775995246583482,
+   "abs_diff": 0.0,
+   "ok": true
+  },
+  {
+   "model": "crnn",
+   "subset": "all",
+   "metric": "cer_normalised",
+   "stored": 0.04996538195245788,
+   "recomputed": 0.04996538195245788,
+   "abs_diff": 0.0,
+   "ok": true
+  },
+  {
+   "model": "crnn",
+   "subset": "all",
+   "metric": "wer_casefold",
+   "stored": 0.17439096850861557,
+   "recomputed": 0.17439096850861557,
+   "abs_diff": 0.0,
+   "ok": true
+  },
+  {
+   "model": "crnn",
+   "subset": "sroie",
+   "metric": "cer",
+   "stored": 0.04362475616244015,
+   "recomputed": 0.04362475616244015,
+   "abs_diff": 0.0,
+   "ok": true
+  },
+  {
+   "model": "crnn",
+   "subset": "sroie",
+   "metric": "wer",
+   "stored": 0.18101761252446183,
+   "recomputed": 0.18101761252446183,
+   "abs_diff": 0.0,
+   "ok": true
+  },
+  {
+   "model": "crnn",
+   "subset": "sroie",
+   "metric": "cer_normalised",
+   "stored": 0.0320575092286769,
+   "recomputed": 0.0320575092286769,
+   "abs_diff": 0.0,
+   "ok": true
+  },
+  {
+   "model": "crnn",
+   "subset": "sroie",
+   "metric": "wer_casefold",
+   "stored": 0.16731898238747553,
+   "recomputed": 0.16731898238747553,
+   "abs_diff": 0.0,
+   "ok": true
+  },
+  {
+   "model": "crnn",
+   "subset": "funsd",
+   "metric": "cer",
+   "stored": 0.06231040419775354,
+   "recomputed": 0.06231040419775354,
+   "abs_diff": 0.0,
+   "ok": true
+  },
+  {
+   "model": "crnn",
+   "subset": "funsd",
+   "metric": "wer",
+   "stored": 0.19069965870307168,
+   "recomputed": 0.19069965870307168,
+   "abs_diff": 0.0,
+   "ok": true
+  },
+  {
+   "model": "crnn",
+   "subset": "funsd",
+   "metric": "cer_normalised",
+   "stored": 0.057529749692244565,
+   "recomputed": 0.057529749692244565,
+   "abs_diff": 0.0,
+   "ok": true
+  },
+  {
+   "model": "crnn",
+   "subset": "funsd",
+   "metric": "wer_casefold",
+   "stored": 0.17747440273037543,
+   "recomputed": 0.17747440273037543,
+   "abs_diff": 0.0,
+   "ok": true
+  },
+  {
+   "model": "trocr",
+   "subset": "all",
+   "metric": "cer",
+   "stored": 0.30416012558869704,
+   "recomputed": 0.30416012558869704,
+   "abs_diff": 0.0,
+   "ok": true
+  },
+  {
+   "model": "trocr",
+   "subset": "all",
+   "metric": "wer",
+   "stored": 0.3918597742127154,
+   "recomputed": 0.3918597742127154,
+   "abs_diff": 0.0,
+   "ok": true
+  },
+  {
+   "model": "trocr",
+   "subset": "all",
+   "metric": "cer_normalised",
+   "stored": 0.034791137779829215,
+   "recomputed": 0.034791137779829215,
+   "abs_diff": 0.0,
+   "ok": true
+  },
+  {
+   "model": "trocr",
+   "subset": "all",
+   "metric": "wer_casefold",
+   "stored": 0.15151515151515152,
+   "recomputed": 0.15151515151515152,
+   "abs_diff": 0.0,
+   "ok": true
+  },
+  {
+   "model": "trocr",
+   "subset": "sroie",
+   "metric": "cer",
+   "stored": 0.005320092214931725,
+   "recomputed": 0.005320092214931725,
+   "abs_diff": 0.0,
+   "ok": true
+  },
+  {
+   "model": "trocr",
+   "subset": "sroie",
+   "metric": "wer",
+   "stored": 0.046966731898238745,
+   "recomputed": 0.046966731898238745,
+   "abs_diff": 0.0,
+   "ok": true
+  },
+  {
+   "model": "trocr",
+   "subset": "sroie",
+   "metric": "cer_normalised",
+   "stored": 0.002137167281911793,
+   "recomputed": 0.002137167281911793,
+   "abs_diff": 0.0,
+   "ok": true
+  },
+  {
+   "model": "trocr",
+   "subset": "sroie",
+   "metric": "wer_casefold",
+   "stored": 0.046966731898238745,
+   "recomputed": 0.046966731898238745,
+   "abs_diff": 0.0,
+   "ok": true
+  },
+  {
+   "model": "trocr",
+   "subset": "funsd",
+   "metric": "cer",
+   "stored": 0.4423218824301058,
+   "recomputed": 0.4423218824301058,
+   "abs_diff": 0.0,
+   "ok": true
+  },
+  {
+   "model": "trocr",
+   "subset": "funsd",
+   "metric": "wer",
+   "stored": 0.5422354948805461,
+   "recomputed": 0.5422354948805461,
+   "abs_diff": 0.0,
+   "ok": true
+  },
+  {
+   "model": "trocr",
+   "subset": "funsd",
+   "metric": "cer_normalised",
+   "stored": 0.04858432498974149,
+   "recomputed": 0.04858432498974149,
+   "abs_diff": 0.0,
+   "ok": true
+  },
+  {
+   "model": "trocr",
+   "subset": "funsd",
+   "metric": "wer_casefold",
+   "stored": 0.197098976109215,
+   "recomputed": 0.197098976109215,
+   "abs_diff": 0.0,
+   "ok": true
+  }
+ ],
+ "hypotheses_saved_for_audit": true
+}

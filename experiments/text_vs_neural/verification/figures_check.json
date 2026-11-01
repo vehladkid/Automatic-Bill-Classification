@@ -1,0 +1,21 @@
+{
+ "figures": {
+  "fig1_macro_f1.png": true,
+  "fig2_accuracy.png": true,
+  "fig3_ece.png": true,
+  "fig4_latency.png": true,
+  "fig5_training_time.png": true,
+  "fig6_model_size.png": true,
+  "fig7_per_class_f1.png": true,
+  "fig8_ocr_cer_wer.png": true,
+  "fig9_lexrank_tradeoff.png": true
+ },
+ "csv": {
+  "table_A_ocr.csv": true,
+  "table_B_classification.csv": true,
+  "table_C_resources.csv": true,
+  "table_D_per_class.csv": true,
+  "table_E_lexrank.csv": true
+ },
+ "results_json_identical": true
+}

@@ -1,0 +1,24 @@
+{
+ "_note": "Keyword evidence for SUGGESTING a tax section from a bill. A suggestion is never an eligibility decision; the engine and HR decide. Edit freely.",
+ "candidates": {
+  "hra_rent": {"strong": ["rent receipt", "received rent", "rent received", "rent for the month", "monthly rent"], "weak": ["landlord", "tenant", "lessor", "lessee", "rent"],
+               "caveats": ["Rent receipts over ₹1,00,000/year need the landlord's PAN.", "HRA exemption exists only if salary has an HRA component; old regime only."]},
+  "meal_voucher": {"strong": ["sodexo", "pluxee", "zaggle", "meal card", "meal voucher", "food coupon"], "weak": ["meal pass", "food card"],
+               "caveats": ["Exemption is per meal and only for employer-provided vouchers; state the number of meals."]},
+  "school_fee": {"strong": ["tuition fee", "tuition fees", "school fee", "school fees", "fee receipt"], "weak": ["academic year", "admission no", "student name", "class", "school", "college", "university"],
+               "negative": ["transport", "development fee", "donation", "hostel", "building fund", "uniform", "books", "annual day", "activity", "capital fee"],
+               "caveats": ["Only the TUITION component of full-time education in India qualifies (80C, old regime, max 2 children).", "Development, transport, hostel, donation and other fees are not deductible."]},
+  "health_insurance": {"strong": ["health insurance", "mediclaim", "premium receipt", "premium paid", "policy no", "policy number"], "weak": ["insurance", "sum insured", "star health", "care health", "niva bupa", "hdfc ergo", "policy"],
+               "caveats": ["80D covers PREMIUM (non-cash) and ₹5,000 preventive check-up; a hospital treatment bill is not an 80D premium."]},
+  "invest_80c": {"strong": ["ppf", "elss", "national savings certificate", "nsc", "sukanya", "tax saver", "life insurance premium", "lic premium"], "weak": ["life insurance", "mutual fund"],
+               "caveats": ["80C total is capped at ₹1,50,000 across all instruments (old regime)."]},
+  "home_loan_interest": {"strong": ["interest certificate", "home loan", "housing loan", "interest paid on housing"], "weak": ["principal repaid", "emi", "loan account"],
+               "caveats": ["Self-occupied interest limit ₹2,00,000 (old regime). The certificate has separate interest and principal figures - enter each as its own claim."]},
+  "education_loan_interest": {"strong": ["education loan", "student loan", "interest on education"], "weak": ["interest certificate", "loan account"],
+               "caveats": ["Only INTEREST is deductible (80E), for up to 8 years from start of repayment; lender must be a bank/financial institution."]},
+  "ev_loan_interest": {"strong": ["electric vehicle loan", "ev loan"], "weak": ["electric vehicle", "ev "],
+               "caveats": ["80EEB applies only to loans sanctioned 1-Apr-2019 to 31-Mar-2023."]},
+  "ev_lease": {"strong": ["ev lease", "electric vehicle lease", "lease rental"], "weak": ["electric vehicle", "ola electric", "ather", "tata.ev", "lease"],
+               "caveats": ["Employer EV lease / reimbursement tax treatment is NOT auto-computed; payroll/tax team must decide."]}
+ }
+}

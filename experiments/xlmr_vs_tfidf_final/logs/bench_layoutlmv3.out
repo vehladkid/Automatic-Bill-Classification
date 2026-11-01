@@ -1,0 +1,92 @@
+Loading weights:   0%|          | 0/212 [00:00<?, ?it/s]Loading weights: 100%|██████████| 212/212 [00:00<00:00, 14714.42it/s]
+[transformers] [1mLayoutLMv3ForSequenceClassification LOAD REPORT[0m from: microsoft/layoutlmv3-base
+Key                        | Status  | 
+---------------------------+---------+-
+classifier.dense.weight    | MISSING | 
+classifier.out_proj.bias   | MISSING | 
+classifier.dense.bias      | MISSING | 
+classifier.out_proj.weight | MISSING | 
+
+Notes:
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+layoutlmv3 cpu model-only 829.95 ms | end-to-end 848.59 ms | docs/s bs1/8/32: {1: 1.2, 8: 1.2, 32: 1.1}
+Traceback (most recent call last):
+  File "/home/tejvir-singh/Desktop/ML-project/experiments/xlmr_vs_tfidf_final/resource_bench.py", line 103, in <module>
+    r["throughput_docs_per_s_end_to_end"] = {bs: tput(lambda idx: fwd(prep(idx), dev), bs, 96, sy) for bs in (1, 8, 32)}
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tejvir-singh/Desktop/ML-project/experiments/xlmr_vs_tfidf_final/resource_bench.py", line 27, in tput
+    batches = [list(range(i, min(i + bs, total))) for i in range(0, total, bs)]; fn_batch(batches[0])
+                                                                                 ^^^^^^^^^^^^^^^^^^^^
+  File "/home/tejvir-singh/Desktop/ML-project/experiments/xlmr_vs_tfidf_final/resource_bench.py", line 103, in <lambda>
+    r["throughput_docs_per_s_end_to_end"] = {bs: tput(lambda idx: fwd(prep(idx), dev), bs, 96, sy) for bs in (1, 8, 32)}
+                                                                  ^^^^^^^^^^^^^^^^^^^
+  File "/home/tejvir-singh/Desktop/ML-project/experiments/xlmr_vs_tfidf_final/resource_bench.py", line 87, in fwd
+    with torch.no_grad(), torch.autocast(dev, dtype=torch.bfloat16, enabled=(dev == "cuda")): return net(**{k: v.to(dev) for k, v in inp.items()}).logits.float()
+                                                                                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tejvir-singh/Desktop/ML-project/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tejvir-singh/Desktop/ML-project/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tejvir-singh/Desktop/ML-project/.venv/lib/python3.12/site-packages/transformers/utils/generic.py", line 939, in wrapper
+    output = func(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tejvir-singh/Desktop/ML-project/.venv/lib/python3.12/site-packages/transformers/models/layoutlmv3/modeling_layoutlmv3.py", line 1107, in forward
+    outputs: BaseModelOutput = self.layoutlmv3(
+                               ^^^^^^^^^^^^^^^^
+  File "/home/tejvir-singh/Desktop/ML-project/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tejvir-singh/Desktop/ML-project/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tejvir-singh/Desktop/ML-project/.venv/lib/python3.12/site-packages/transformers/utils/generic.py", line 1068, in wrapper
+    output = func(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tejvir-singh/Desktop/ML-project/.venv/lib/python3.12/site-packages/transformers/utils/output_capturing.py", line 287, in wrapper
+    outputs = func(self, *args, **kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tejvir-singh/Desktop/ML-project/.venv/lib/python3.12/site-packages/transformers/models/layoutlmv3/modeling_layoutlmv3.py", line 782, in forward
+    encoder_outputs = self.encoder(
+                      ^^^^^^^^^^^^^
+  File "/home/tejvir-singh/Desktop/ML-project/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tejvir-singh/Desktop/ML-project/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tejvir-singh/Desktop/ML-project/.venv/lib/python3.12/site-packages/transformers/models/layoutlmv3/modeling_layoutlmv3.py", line 473, in forward
+    hidden_states = layer_module(
+                    ^^^^^^^^^^^^^
+  File "/home/tejvir-singh/Desktop/ML-project/.venv/lib/python3.12/site-packages/transformers/modeling_layers.py", line 110, in __call__
+    return super().__call__(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tejvir-singh/Desktop/ML-project/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tejvir-singh/Desktop/ML-project/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tejvir-singh/Desktop/ML-project/.venv/lib/python3.12/site-packages/transformers/models/layoutlmv3/modeling_layoutlmv3.py", line 352, in forward
+    attention_output = self.attention(
+                       ^^^^^^^^^^^^^^^
+  File "/home/tejvir-singh/Desktop/ML-project/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tejvir-singh/Desktop/ML-project/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tejvir-singh/Desktop/ML-project/.venv/lib/python3.12/site-packages/transformers/models/layoutlmv3/modeling_layoutlmv3.py", line 322, in forward
+    attention_output, _ = self.self(
+                          ^^^^^^^^^^
+  File "/home/tejvir-singh/Desktop/ML-project/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tejvir-singh/Desktop/ML-project/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tejvir-singh/Desktop/ML-project/.venv/lib/python3.12/site-packages/transformers/models/layoutlmv3/modeling_layoutlmv3.py", line 266, in forward
+    attention_scores += (rel_pos + rel_2d_pos) / math.sqrt(self.attention_head_size)
+                        ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 738.00 MiB. GPU 0 has a total capacity of 5.64 GiB of which 501.31 MiB is free. Process 132599 has 1.26 GiB memory in use. Including non-PyTorch memory, this process has 3.86 GiB memory in use. Of the allocated memory 3.26 GiB is allocated by PyTorch, and 500.68 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)

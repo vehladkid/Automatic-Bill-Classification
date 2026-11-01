@@ -1,0 +1,29 @@
+run primary256 seed 7 | maxlen 256 (incl. special tokens) chunk False | train samples 4848 (docs 4848), val 634, test 629
+Loading weights:   0%|          | 0/197 [00:00<?, ?it/s]Loading weights: 100%|██████████| 197/197 [00:00<00:00, 11157.17it/s]
+[transformers] [1mXLMRobertaForSequenceClassification LOAD REPORT[0m from: /home/tejvir-singh/Desktop/ML-project/experiments/text_vs_neural/pretrained/xlm-roberta-base
+Key                         | Status     | 
+----------------------------+------------+-
+lm_head.dense.weight        | UNEXPECTED | 
+roberta.pooler.dense.weight | UNEXPECTED | 
+lm_head.dense.bias          | UNEXPECTED | 
+roberta.pooler.dense.bias   | UNEXPECTED | 
+lm_head.layer_norm.bias     | UNEXPECTED | 
+lm_head.bias                | UNEXPECTED | 
+lm_head.layer_norm.weight   | UNEXPECTED | 
+classifier.out_proj.bias    | MISSING    | 
+classifier.dense.bias       | MISSING    | 
+classifier.dense.weight     | MISSING    | 
+classifier.out_proj.weight  | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+trainable params 86054416 of 278055952
+epoch 1: train loss 1.6772  val real macro-F1 0.7239  (67s)
+epoch 2: train loss 0.3269  val real macro-F1 0.8230  (135s)
+epoch 3: train loss 0.1506  val real macro-F1 0.8424  (205s)
+epoch 4: train loss 0.1036  val real macro-F1 0.8807  (274s)
+epoch 5: train loss 0.0503  val real macro-F1 0.8581  (344s)
+epoch 6: train loss 0.0261  val real macro-F1 0.8792  (413s)
+early stop
+done: completed | selected epoch 4 | val real macro-F1 0.8807 | train 413s | peak GPU 3568 MB

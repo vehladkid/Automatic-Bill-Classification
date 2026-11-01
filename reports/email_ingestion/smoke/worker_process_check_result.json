@@ -1,0 +1,28 @@
+{
+ "check_config_rc": 0,
+ "email_status_after_worker_ran": "REVIEW_REQUIRED",
+ "seconds_to_process": 20.0,
+ "health_rc_while_running": 0,
+ "health_while_running": "ok",
+ "second_worker_rc(3=refused)": 3,
+ "worker_exit_code_after_SIGTERM": 0,
+ "log_lines": [
+  "ingest worker started (imap=True, interval=2s)",
+  "ingest ingested email 1: 1 attachments -> QUEUED",
+  "ingest worker stopped cleanly"
+ ],
+ "clean_stop_logged": true,
+ "password_value_in_log": false,
+ "stopped_at_recorded": true,
+ "last_poll_error": null,
+ "lock_released(third_worker_can_start_once)": true,
+ "mailbox_commands": [
+  "CAPABILITY",
+  "EXAMINE",
+  "LOGIN",
+  "LOGOUT",
+  "UID FETCH",
+  "UID SEARCH"
+ ],
+ "mailbox_modified": false
+}

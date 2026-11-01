@@ -1,0 +1,240 @@
+{
+ "A_files": {
+  "rows": 9833,
+  "page_files": 10009,
+  "missing_files": 0,
+  "checksum_mismatch": 0,
+  "unique_doc_ids": 9833,
+  "unique_page_sha256": 10009,
+  "unique_doc_sha256": 9833,
+  "per_source": {
+   "agami": {
+    "rows": 240,
+    "files_on_disk": 240
+   },
+   "cord": {
+    "rows": 998
+   },
+   "fatura": {
+    "rows": 200,
+    "files_on_disk": 200
+   },
+   "funsd": {
+    "rows": 199
+   },
+   "hf_medical": {
+    "rows": 15
+   },
+   "in_financial": {
+    "rows": 390
+   },
+   "in_grocery_gst": {
+    "rows": 169
+   },
+   "invoices_pt": {
+    "rows": 109
+   },
+   "manual_in": {
+    "rows": 368
+   },
+   "my_receipts": {
+    "rows": 1162
+   },
+   "receiptbench": {
+    "rows": 867
+   },
+   "rvl_cdip": {
+    "rows": 320
+   },
+   "sroie": {
+    "rows": 958
+   },
+   "synthgen_v1": {
+    "rows": 1210,
+    "files_on_disk": 1386,
+    "index_rows": 1210
+   },
+   "synthetic_in": {
+    "rows": 2430
+   },
+   "user_real": {
+    "rows": 198
+   }
+  },
+  "examples_missing": [],
+  "examples_bad": []
+ },
+ "B_separation_and_approval": {
+  "synthetic_with_eval_eligible": 0,
+  "real_not_eval_eligible": 0,
+  "real_synthetic_same_sha": 0,
+  "approved_rows": 7405,
+  "approved_file_rows": 7405,
+  "approved_file_matches": true,
+  "approved_with_unresolved_licence": [],
+  "approved_sources": [
+   "agami",
+   "cord",
+   "fatura",
+   "funsd",
+   "in_grocery_gst",
+   "invoices_pt",
+   "manual_in",
+   "my_receipts",
+   "rvl_cdip",
+   "synthetic_in",
+   "synthgen_v1"
+  ],
+  "excluded_sources": [
+   "hf_medical",
+   "in_financial",
+   "receiptbench",
+   "sroie",
+   "user_real"
+  ],
+  "blocked_or_not_acquired_sources_present": [],
+  "eligibility_status_values": {
+   "not_applicable": 8497,
+   "pending_verification": 1336
+  },
+  "expense_category_equals_a_doc_type": []
+ },
+ "C_labels_preserved": {
+  "joined": 8183,
+  "inherited_rows_not_in_manifest_jsonl": 0,
+  "rows_without_mapping_rule": 0,
+  "examples": [],
+  "mapping_rules": {
+   "AgamiAI/Indian-Bank-Statements.*": 240,
+   "manifest.document_type": 7560,
+   "fatura.*": 200,
+   "in_financial.subcategory": 303,
+   "rvl_cdip.invoice_vs_other": 320,
+   "synthgen-v1.doc_type": 1210
+  },
+  "review_status": {
+   "generator_exact": 4080,
+   "needs_mapping_review": 5052,
+   "source_label": 623,
+   "flagged_for_review": 78
+  }
+ },
+ "D_protected": {
+  "task_b_test_sha256": "fd8bafb3ad1383e90a2f8de6a30260db2847d64eb74b6d5ab5f9e57e9dbab88c",
+  "task_b_test_expected_prefix_fd8bafb3ad13": true,
+  "v1_snapshot_sha256sums": "34 OK",
+  "v2_manifest_unchanged_vs_v2_1_source_fields": 0,
+  "original_manifest_files": {
+   "manifest.jsonl": {
+    "sha256": "1353521b9dea1da5",
+    "mtime": "2026-10-05 07:36"
+   },
+   "manifest_dedup.jsonl": {
+    "sha256": "a7f464db81c93962",
+    "mtime": "2026-10-04 23:16"
+   },
+   "doc_type_manifest_v2.jsonl": {
+    "sha256": "5319cd3722fa550a",
+    "mtime": "2026-10-19 20:46"
+   }
+  },
+  "real_and_synthetic_in_splits_equal_v2_for_non_modified_sources": true,
+  "protected_test_docs_all_still_test": true,
+  "protected_test_docs": 814,
+  "v2_track_dirs_untouched_note": "annotation/answer-sheet files not read or written by any v2.1 tool"
+ },
+ "E_generated_leakage": {
+  "v2_issuer_split": {
+   "test|layout_ABC": {
+    "n": 161,
+    "phash_le4": 116,
+    "ncc_ge_0.90": 112,
+    "ncc_ge_0.95": 71,
+    "trigram_jaccard_ge_0.6": 61,
+    "same_template_in_train": 161
+   },
+   "test|layout_D": {
+    "n": 174,
+    "phash_le4": 3,
+    "ncc_ge_0.90": 3,
+    "ncc_ge_0.95": 0,
+    "trigram_jaccard_ge_0.6": 58,
+    "same_template_in_train": 0
+   },
+   "val|layout_ABC": {
+    "n": 155,
+    "phash_le4": 114,
+    "ncc_ge_0.90": 110,
+    "ncc_ge_0.95": 74,
+    "trigram_jaccard_ge_0.6": 47,
+    "same_template_in_train": 155
+   }
+  },
+  "v2_1_template_split": {
+   "val|layout_ABC": {
+    "n": 337,
+    "phash_le4": 28,
+    "ncc_ge_0.90": 122,
+    "ncc_ge_0.95": 39,
+    "trigram_jaccard_ge_0.6": 50,
+    "same_template_in_train": 0
+   },
+   "test|layout_D": {
+    "n": 174,
+    "phash_le4": 3,
+    "ncc_ge_0.90": 3,
+    "ncc_ge_0.95": 0,
+    "trigram_jaccard_ge_0.6": 51,
+    "same_template_in_train": 0
+   }
+  }
+ },
+ "E_template_ids_spanning_splits": {
+  "templates": 99,
+  "spanning": 1
+ },
+ "E_group_ids_spanning_splits": {
+  "groups": 6520,
+  "spanning": 0
+ },
+ "F_real_val_test_vs_train_phash": {
+  "val": {
+   "n": 578,
+   "le4": 0,
+   "le8": 29,
+   "identical": 0
+  },
+  "test": {
+   "n": 571,
+   "le4": 0,
+   "le8": 37,
+   "identical": 0
+  }
+ },
+ "F_synthetic_vs_real_val_test_phash": {
+  "synthgen_v1": {
+   "n": 1210,
+   "min": 8,
+   "le4": 0,
+   "le8": 1
+  },
+  "agami": {
+   "n": 240,
+   "min": 12,
+   "le4": 0,
+   "le8": 0
+  },
+  "fatura": {
+   "n": 200,
+   "min": 6,
+   "le4": 0,
+   "le8": 10
+  },
+  "synthetic_in": {
+   "n": 2430,
+   "min": 10,
+   "le4": 0,
+   "le8": 0
+  }
+ }
+}

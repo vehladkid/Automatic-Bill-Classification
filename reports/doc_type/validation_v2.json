@@ -1,0 +1,15 @@
+{
+ "manifest": "/home/tejvir-singh/Desktop/ML-project/datasets/metadata/doc_type_manifest_v2.jsonl",
+ "n_rows": 9833,
+ "files_checked": {
+  "images": 9769,
+  "pdfs": 240,
+  "checksums_recomputed": 2126,
+  "legacy_full_hash": false,
+  "legacy_sample": 300
+ },
+ "generated_docs_checked": 1210,
+ "errors": {},
+ "warnings": {},
+ "passed": true
+}

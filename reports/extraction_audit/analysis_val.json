@@ -1,0 +1,635 @@
+{
+ "systems": {
+  "v1": {
+   "micro": {
+    "precision": 0.8459,
+    "recall": 0.7841,
+    "f1": 0.8138,
+    "tp": 247,
+    "fp": 45,
+    "fn": 68
+   },
+   "per_field": {
+    "merchant_name": {
+     "f1": 0.6716,
+     "tp": 45,
+     "fp": 21,
+     "fn": 23,
+     "n_gt": 68,
+     "halluc": null
+    },
+    "invoice_date": {
+     "f1": 0.9375,
+     "tp": 60,
+     "fp": 0,
+     "fn": 8,
+     "n_gt": 68,
+     "halluc": null
+    },
+    "total_amount": {
+     "f1": 0.824,
+     "tp": 96,
+     "fp": 21,
+     "fn": 20,
+     "n_gt": 116,
+     "halluc": 1.0
+    },
+    "subtotal": {
+     "f1": 0.7945,
+     "tp": 29,
+     "fp": 3,
+     "fn": 12,
+     "n_gt": 41,
+     "halluc": 0.125
+    },
+    "tax_total": {
+     "f1": 0.8718,
+     "tp": 17,
+     "fp": 0,
+     "fn": 5,
+     "n_gt": 22,
+     "halluc": 0.0
+    }
+   },
+   "slices": {
+    "all": {
+     "n_docs": 117,
+     "precision": 0.8459,
+     "recall": 0.7841,
+     "f1": 0.8138,
+     "tp": 247,
+     "fp": 45,
+     "fn": 68
+    },
+    "gt_ocr_source(sroie+cord)": {
+     "n_docs": 117,
+     "precision": 0.8459,
+     "recall": 0.7841,
+     "f1": 0.8138,
+     "tp": 247,
+     "fp": 45,
+     "fn": 68
+    },
+    "rapidocr_source(receiptbench+invoices_pt)": {
+     "n_docs": 0,
+     "precision": 0,
+     "recall": 0,
+     "f1": 0.0,
+     "tp": 0,
+     "fp": 0,
+     "fn": 0
+    },
+    "real_indian": {
+     "n_docs": 0,
+     "precision": 0,
+     "recall": 0,
+     "f1": 0.0,
+     "tp": 0,
+     "fp": 0,
+     "fn": 0
+    }
+   }
+  },
+  "llm_raw": {
+   "micro": {
+    "precision": 0.5577,
+    "recall": 0.5524,
+    "f1": 0.555,
+    "tp": 174,
+    "fp": 138,
+    "fn": 141
+   },
+   "per_field": {
+    "merchant_name": {
+     "f1": 0.5294,
+     "tp": 36,
+     "fp": 32,
+     "fn": 32,
+     "n_gt": 68,
+     "halluc": null
+    },
+    "invoice_date": {
+     "f1": 0.9474,
+     "tp": 63,
+     "fp": 2,
+     "fn": 5,
+     "n_gt": 68,
+     "halluc": null
+    },
+    "total_amount": {
+     "f1": 0.5551,
+     "tp": 63,
+     "fp": 48,
+     "fn": 53,
+     "n_gt": 116,
+     "halluc": 0.0
+    },
+    "subtotal": {
+     "f1": 0.241,
+     "tp": 10,
+     "fp": 32,
+     "fn": 31,
+     "n_gt": 41,
+     "halluc": 0.625
+    },
+    "tax_total": {
+     "f1": 0.0833,
+     "tp": 2,
+     "fp": 24,
+     "fn": 20,
+     "n_gt": 22,
+     "halluc": 0.4444
+    }
+   },
+   "slices": {
+    "all": {
+     "n_docs": 117,
+     "precision": 0.5577,
+     "recall": 0.5524,
+     "f1": 0.555,
+     "tp": 174,
+     "fp": 138,
+     "fn": 141
+    },
+    "gt_ocr_source(sroie+cord)": {
+     "n_docs": 117,
+     "precision": 0.5577,
+     "recall": 0.5524,
+     "f1": 0.555,
+     "tp": 174,
+     "fp": 138,
+     "fn": 141
+    },
+    "rapidocr_source(receiptbench+invoices_pt)": {
+     "n_docs": 0,
+     "precision": 0,
+     "recall": 0,
+     "f1": 0.0,
+     "tp": 0,
+     "fp": 0,
+     "fn": 0
+    },
+    "real_indian": {
+     "n_docs": 0,
+     "precision": 0,
+     "recall": 0,
+     "f1": 0.0,
+     "tp": 0,
+     "fp": 0,
+     "fn": 0
+    }
+   }
+  },
+  "llm_validated": {
+   "micro": {
+    "precision": 0.7336,
+    "recall": 0.5333,
+    "f1": 0.6176,
+    "tp": 168,
+    "fp": 61,
+    "fn": 147
+   },
+   "per_field": {
+    "merchant_name": {
+     "f1": 0.5294,
+     "tp": 36,
+     "fp": 32,
+     "fn": 32,
+     "n_gt": 68,
+     "halluc": null
+    },
+    "invoice_date": {
+     "f1": 0.9457,
+     "tp": 61,
+     "fp": 0,
+     "fn": 7,
+     "n_gt": 68,
+     "halluc": null
+    },
+    "total_amount": {
+     "f1": 0.6114,
+     "tp": 59,
+     "fp": 18,
+     "fn": 57,
+     "n_gt": 116,
+     "halluc": 0.0
+    },
+    "subtotal": {
+     "f1": 0.3636,
+     "tp": 10,
+     "fp": 4,
+     "fn": 31,
+     "n_gt": 41,
+     "halluc": 0.25
+    },
+    "tax_total": {
+     "f1": 0.129,
+     "tp": 2,
+     "fp": 7,
+     "fn": 20,
+     "n_gt": 22,
+     "halluc": 0.2222
+    }
+   },
+   "slices": {
+    "all": {
+     "n_docs": 117,
+     "precision": 0.7336,
+     "recall": 0.5333,
+     "f1": 0.6176,
+     "tp": 168,
+     "fp": 61,
+     "fn": 147
+    },
+    "gt_ocr_source(sroie+cord)": {
+     "n_docs": 117,
+     "precision": 0.7336,
+     "recall": 0.5333,
+     "f1": 0.6176,
+     "tp": 168,
+     "fp": 61,
+     "fn": 147
+    },
+    "rapidocr_source(receiptbench+invoices_pt)": {
+     "n_docs": 0,
+     "precision": 0,
+     "recall": 0,
+     "f1": 0.0,
+     "tp": 0,
+     "fp": 0,
+     "fn": 0
+    },
+    "real_indian": {
+     "n_docs": 0,
+     "precision": 0,
+     "recall": 0,
+     "f1": 0.0,
+     "tp": 0,
+     "fp": 0,
+     "fn": 0
+    }
+   }
+  },
+  "fused_add": {
+   "micro": {
+    "precision": 0.817,
+    "recall": 0.7937,
+    "f1": 0.8052,
+    "tp": 250,
+    "fp": 56,
+    "fn": 65
+   },
+   "per_field": {
+    "merchant_name": {
+     "f1": 0.6618,
+     "tp": 45,
+     "fp": 23,
+     "fn": 23,
+     "n_gt": 68,
+     "halluc": null
+    },
+    "invoice_date": {
+     "f1": 0.9538,
+     "tp": 62,
+     "fp": 0,
+     "fn": 6,
+     "n_gt": 68,
+     "halluc": null
+    },
+    "total_amount": {
+     "f1": 0.824,
+     "tp": 96,
+     "fp": 21,
+     "fn": 20,
+     "n_gt": 116,
+     "halluc": 1.0
+    },
+    "subtotal": {
+     "f1": 0.7792,
+     "tp": 30,
+     "fp": 6,
+     "fn": 11,
+     "n_gt": 41,
+     "halluc": 0.375
+    },
+    "tax_total": {
+     "f1": 0.7556,
+     "tp": 17,
+     "fp": 6,
+     "fn": 5,
+     "n_gt": 22,
+     "halluc": 0.2222
+    }
+   },
+   "slices": {
+    "all": {
+     "n_docs": 117,
+     "precision": 0.817,
+     "recall": 0.7937,
+     "f1": 0.8052,
+     "tp": 250,
+     "fp": 56,
+     "fn": 65
+    },
+    "gt_ocr_source(sroie+cord)": {
+     "n_docs": 117,
+     "precision": 0.817,
+     "recall": 0.7937,
+     "f1": 0.8052,
+     "tp": 250,
+     "fp": 56,
+     "fn": 65
+    },
+    "rapidocr_source(receiptbench+invoices_pt)": {
+     "n_docs": 0,
+     "precision": 0,
+     "recall": 0,
+     "f1": 0.0,
+     "tp": 0,
+     "fp": 0,
+     "fn": 0
+    },
+    "real_indian": {
+     "n_docs": 0,
+     "precision": 0,
+     "recall": 0,
+     "f1": 0.0,
+     "tp": 0,
+     "fp": 0,
+     "fn": 0
+    }
+   }
+  },
+  "fused_default": {
+   "micro": {
+    "precision": 0.8459,
+    "recall": 0.7841,
+    "f1": 0.8138,
+    "tp": 247,
+    "fp": 45,
+    "fn": 68
+   },
+   "per_field": {
+    "merchant_name": {
+     "f1": 0.6716,
+     "tp": 45,
+     "fp": 21,
+     "fn": 23,
+     "n_gt": 68,
+     "halluc": null
+    },
+    "invoice_date": {
+     "f1": 0.9375,
+     "tp": 60,
+     "fp": 0,
+     "fn": 8,
+     "n_gt": 68,
+     "halluc": null
+    },
+    "total_amount": {
+     "f1": 0.824,
+     "tp": 96,
+     "fp": 21,
+     "fn": 20,
+     "n_gt": 116,
+     "halluc": 1.0
+    },
+    "subtotal": {
+     "f1": 0.7945,
+     "tp": 29,
+     "fp": 3,
+     "fn": 12,
+     "n_gt": 41,
+     "halluc": 0.125
+    },
+    "tax_total": {
+     "f1": 0.8718,
+     "tp": 17,
+     "fp": 0,
+     "fn": 5,
+     "n_gt": 22,
+     "halluc": 0.0
+    }
+   },
+   "slices": {
+    "all": {
+     "n_docs": 117,
+     "precision": 0.8459,
+     "recall": 0.7841,
+     "f1": 0.8138,
+     "tp": 247,
+     "fp": 45,
+     "fn": 68
+    },
+    "gt_ocr_source(sroie+cord)": {
+     "n_docs": 117,
+     "precision": 0.8459,
+     "recall": 0.7841,
+     "f1": 0.8138,
+     "tp": 247,
+     "fp": 45,
+     "fn": 68
+    },
+    "rapidocr_source(receiptbench+invoices_pt)": {
+     "n_docs": 0,
+     "precision": 0,
+     "recall": 0,
+     "f1": 0.0,
+     "tp": 0,
+     "fp": 0,
+     "fn": 0
+    },
+    "real_indian": {
+     "n_docs": 0,
+     "precision": 0,
+     "recall": 0,
+     "f1": 0.0,
+     "tp": 0,
+     "fp": 0,
+     "fn": 0
+    }
+   }
+  },
+  "v1_current_app_ocr": {
+   "micro": {
+    "precision": 0.8302,
+    "recall": 0.6984,
+    "f1": 0.7586,
+    "tp": 220,
+    "fp": 45,
+    "fn": 95
+   },
+   "per_field": {
+    "merchant_name": {
+     "f1": 0.6567,
+     "tp": 44,
+     "fp": 22,
+     "fn": 24,
+     "n_gt": 68,
+     "halluc": null
+    },
+    "invoice_date": {
+     "f1": 0.5941,
+     "tp": 30,
+     "fp": 3,
+     "fn": 38,
+     "n_gt": 68,
+     "halluc": null
+    },
+    "total_amount": {
+     "f1": 0.8498,
+     "tp": 99,
+     "fp": 18,
+     "fn": 17,
+     "n_gt": 116,
+     "halluc": 1.0
+    },
+    "subtotal": {
+     "f1": 0.8056,
+     "tp": 29,
+     "fp": 2,
+     "fn": 12,
+     "n_gt": 41,
+     "halluc": 0.125
+    },
+    "tax_total": {
+     "f1": 0.9,
+     "tp": 18,
+     "fp": 0,
+     "fn": 4,
+     "n_gt": 22,
+     "halluc": 0.0
+    }
+   },
+   "slices": {
+    "all": {
+     "n_docs": 117,
+     "precision": 0.8302,
+     "recall": 0.6984,
+     "f1": 0.7586,
+     "tp": 220,
+     "fp": 45,
+     "fn": 95
+    },
+    "gt_ocr_source(sroie+cord)": {
+     "n_docs": 117,
+     "precision": 0.8302,
+     "recall": 0.6984,
+     "f1": 0.7586,
+     "tp": 220,
+     "fp": 45,
+     "fn": 95
+    },
+    "rapidocr_source(receiptbench+invoices_pt)": {
+     "n_docs": 0,
+     "precision": 0,
+     "recall": 0,
+     "f1": 0.0,
+     "tp": 0,
+     "fp": 0,
+     "fn": 0
+    },
+    "real_indian": {
+     "n_docs": 0,
+     "precision": 0,
+     "recall": 0,
+     "f1": 0.0,
+     "tp": 0,
+     "fp": 0,
+     "fn": 0
+    }
+   }
+  }
+ },
+ "llm_taxonomy": {
+  "merchant_name": {
+   "proposed": 68,
+   "grounded": 68,
+   "ungrounded_or_invalid": 0,
+   "correct": 36,
+   "wrong": 32,
+   "llm_ok_v1_ok": 34,
+   "llm_ok_v1_wrong": 2,
+   "llm_wrong_v1_ok": 11,
+   "llm_wrong_v1_wrong": 19,
+   "v1_missing_llm_ok": 0,
+   "v1_missing_llm_wrong": 2,
+   "proposed_on_unannotated_field": 21
+  },
+  "invoice_number": {
+   "proposed_on_unannotated_field": 90
+  },
+  "invoice_date": {
+   "proposed": 68,
+   "grounded": 61,
+   "ungrounded_or_invalid": 7,
+   "correct": 63,
+   "wrong": 5,
+   "llm_ok_v1_ok": 59,
+   "llm_ok_v1_wrong": 0,
+   "llm_wrong_v1_ok": 1,
+   "llm_wrong_v1_wrong": 0,
+   "v1_missing_llm_ok": 4,
+   "v1_missing_llm_wrong": 4,
+   "proposed_on_unannotated_field": 13
+  },
+  "total_amount": {
+   "proposed": 112,
+   "grounded": 77,
+   "ungrounded_or_invalid": 35,
+   "correct": 63,
+   "wrong": 49,
+   "llm_ok_v1_ok": 61,
+   "llm_ok_v1_wrong": 2,
+   "llm_wrong_v1_ok": 32,
+   "llm_wrong_v1_wrong": 17
+  },
+  "subtotal": {
+   "proposed_on_unannotated_field": 67,
+   "proposed": 42,
+   "grounded": 14,
+   "ungrounded_or_invalid": 28,
+   "correct": 10,
+   "wrong": 27,
+   "v1_missing_llm_ok": 1,
+   "v1_missing_llm_wrong": 9,
+   "llm_ok_v1_ok": 9,
+   "llm_ok_v1_wrong": 0,
+   "llm_wrong_v1_ok": 16,
+   "llm_wrong_v1_wrong": 2,
+   "value_where_gt_absent": 5
+  },
+  "tax_total": {
+   "proposed_on_unannotated_field": 67,
+   "proposed": 26,
+   "grounded": 9,
+   "ungrounded_or_invalid": 17,
+   "correct": 2,
+   "wrong": 12,
+   "llm_ok_v1_ok": 2,
+   "llm_ok_v1_wrong": 0,
+   "llm_wrong_v1_ok": 9,
+   "llm_wrong_v1_wrong": 0,
+   "value_where_gt_absent": 12,
+   "v1_missing_llm_ok": 0,
+   "v1_missing_llm_wrong": 3
+  },
+  "gstin": {
+   "proposed_on_unannotated_field": 77
+  },
+  "currency": {
+   "proposed_on_unannotated_field": 93
+  },
+  "cgst": {
+   "proposed_on_unannotated_field": 71
+  },
+  "sgst": {
+   "proposed_on_unannotated_field": 70
+  },
+  "igst": {
+   "proposed_on_unannotated_field": 69
+  }
+ },
+ "n_docs": 117,
+ "llm_no_answer": 0
+}

@@ -1,0 +1,661 @@
+[
+ {
+  "document_id": "3_HotelBill_06",
+  "n_words": 72,
+  "fields": {
+   "merchant_name": {
+    "value": "Hotel Poonam Mahal",
+    "raw_text": "Hotel Poonam Mahal",
+    "confidence": 0.8333333333333334,
+    "model_score": 0.9957354664802551,
+    "source": "layoutlmv3",
+    "bbox": [
+     43,
+     33,
+     319,
+     63
+    ]
+   },
+   "invoice_number": {
+    "value": "NO39",
+    "raw_text": "No.39",
+    "confidence": 0.3157894736842105,
+    "model_score": 0.5163688659667969,
+    "source": "layoutlmv3",
+    "bbox": [
+     1059,
+     82,
+     1129,
+     115
+    ]
+   },
+   "subtotal": {
+    "value": 892.86,
+    "raw_text": "892.86",
+    "confidence": 0.7692307692307693,
+    "model_score": 0.7323947932782893,
+    "source": "ranker",
+    "bbox": [
+     334,
+     748,
+     403,
+     772
+    ]
+   },
+   "total_amount": {
+    "value": 1000.0,
+    "raw_text": "1,000",
+    "confidence": 0.6190476190476191,
+    "model_score": 0.4090251922607422,
+    "source": "layoutlmv3",
+    "bbox": [
+     1002,
+     907,
+     1106,
+     950
+    ]
+   },
+   "gstin": {
+    "value": "23ANMPB9891M1ZD",
+    "raw_text": "23ANMPB9891M1ZD",
+    "confidence": 0.995,
+    "model_score": 0.9920167922973633,
+    "source": "layoutlmv3",
+    "bbox": [
+     110,
+     167,
+     272,
+     187
+    ]
+   }
+  },
+  "notes": "confidence = isotonic-calibrated P(correct) on validation; null where the selected system has no calibrated score. Missing fields are omitted, never guessed."
+ },
+ {
+  "document_id": "Screenshot from 2026-09-20 14-01-02",
+  "n_words": 22,
+  "fields": {
+   "merchant_name": {
+    "value": "Pure Veg.",
+    "raw_text": "Pure Veg.",
+    "confidence": 0.3076923076923077,
+    "model_score": 0.7157039642333984,
+    "source": "layoutlmv3",
+    "bbox": [
+     241,
+     46,
+     357,
+     85
+    ]
+   }
+  },
+  "notes": "confidence = isotonic-calibrated P(correct) on validation; null where the selected system has no calibrated score. Missing fields are omitted, never guessed."
+ },
+ {
+  "document_id": "train_sample_10",
+  "n_words": 222,
+  "fields": {
+   "merchant_name": {
+    "value": "VIDAL HEALTH",
+    "raw_text": "VIDAL HEALTH",
+    "confidence": 0.3076923076923077,
+    "model_score": 0.7184557914733887,
+    "source": "layoutlmv3",
+    "bbox": [
+     137,
+     380,
+     213,
+     392
+    ]
+   },
+   "invoice_number": {
+    "value": "INT2043376",
+    "raw_text": "INT2043376",
+    "confidence": 0.6578947368421053,
+    "model_score": 0.8609390258789062,
+    "source": "layoutlmv3",
+    "bbox": [
+     632,
+     277,
+     707,
+     293
+    ]
+   },
+   "invoice_date": {
+    "value": "2028-08-03",
+    "raw_text": "3-Aug-28",
+    "confidence": 0.6363636363636364,
+    "model_score": 0.5386312007904053,
+    "source": "layoutlmv3",
+    "bbox": [
+     764,
+     56,
+     820,
+     71
+    ]
+   },
+   "subtotal": {
+    "value": 999311.0,
+    "raw_text": "Pharmacy(999311",
+    "confidence": 0.6666666666666666,
+    "model_score": 0.2599516033849394,
+    "source": "ranker",
+    "bbox": [
+     119,
+     743,
+     231,
+     757
+    ]
+   },
+   "gstin": {
+    "value": "19AAECA5407E1ZY",
+    "raw_text": "19AAECA5407E1ZY",
+    "confidence": 0.75,
+    "model_score": 0.7522354125976562,
+    "source": "layoutlmv3",
+    "bbox": [
+     91,
+     83,
+     217,
+     99
+    ]
+   },
+   "doctor_name": {
+    "value": "Dr. Nilanchal",
+    "raw_text": "Dr. Nilanchal",
+    "confidence": null,
+    "model_score": 0.9515174031257629,
+    "source": "layoutlmv3",
+    "bbox": [
+     148,
+     276,
+     226,
+     291
+    ]
+   }
+  },
+  "notes": "confidence = isotonic-calibrated P(correct) on validation; null where the selected system has no calibrated score. Missing fields are omitted, never guessed."
+ },
+ {
+  "document_id": "adrija_bescom_jpg.rf.pXvXN5v0rENFr4EdHbdW",
+  "n_words": 104,
+  "fields": {
+   "merchant_name": {
+    "value": "Jordddwodoaa",
+    "raw_text": "Jordddwodoaa",
+    "confidence": 0.3076923076923077,
+    "model_score": 0.6215610504150391,
+    "source": "layoutlmv3",
+    "bbox": [
+     421,
+     280,
+     708,
+     300
+    ]
+   },
+   "invoice_number": {
+    "value": "113340245020343",
+    "raw_text": "113340245020343",
+    "confidence": 0.3157894736842105,
+    "model_score": 0.54998779296875,
+    "source": "layoutlmv3",
+    "bbox": [
+     585,
+     693,
+     722,
+     722
+    ]
+   },
+   "invoice_date": {
+    "value": "2021-05-02",
+    "raw_text": "02/05/2021",
+    "confidence": 0.6666666666666666,
+    "model_score": 0.9009193181991577,
+    "source": "layoutlmv3",
+    "bbox": [
+     628,
+     673,
+     722,
+     702
+    ]
+   },
+   "subtotal": {
+    "value": 615.0,
+    "raw_text": "615.0",
+    "confidence": 0.6666666666666666,
+    "model_score": 0.34889740265012414,
+    "source": "ranker",
+    "bbox": [
+     382,
+     1042,
+     428,
+     1063
+    ]
+   },
+   "total_amount": {
+    "value": 0.0,
+    "raw_text": "0.00",
+    "confidence": 0.5714285714285714,
+    "model_score": 0.2273406982421875,
+    "source": "layoutlmv3",
+    "bbox": [
+     704,
+     1173,
+     743,
+     1192
+    ]
+   },
+   "currency": {
+    "value": "INR",
+    "raw_text": "INR",
+    "confidence": null,
+    "model_score": null,
+    "source": "baseline",
+    "bbox": null
+   }
+  },
+  "notes": "confidence = isotonic-calibrated P(correct) on validation; null where the selected system has no calibrated score. Missing fields are omitted, never guessed."
+ },
+ {
+  "document_id": "X00016469670",
+  "n_words": 60,
+  "fields": {
+   "merchant_name": {
+    "value": "OJCMARKETINGSDNBHD",
+    "raw_text": "OJCMARKETINGSDNBHD",
+    "confidence": 0.5,
+    "model_score": 0.9775257110595703,
+    "source": "layoutlmv3",
+    "bbox": [
+     90,
+     122,
+     325,
+     138
+    ]
+   },
+   "merchant_address": {
+    "value": "NO2&4,JALANBAYU4 BANDARSERIALAM, 81750 MASAI,JOHOR",
+    "raw_text": "NO2&4,JALANBAYU4 BANDARSERIALAM, 81750 MASAI,JOHOR",
+    "confidence": 0.01,
+    "model_score": 0.9238499402999878,
+    "source": "layoutlmv3",
+    "bbox": [
+     110,
+     166,
+     303,
+     226
+    ]
+   },
+   "invoice_number": {
+    "value": "PEGIV1030765",
+    "raw_text": "PEGIV-1030765",
+    "confidence": 0.6666666666666666,
+    "model_score": 0.9807920455932617,
+    "source": "layoutlmv3",
+    "bbox": [
+     126,
+     326,
+     255,
+     344
+    ]
+   },
+   "total_amount": {
+    "value": 193.0,
+    "raw_text": "193.00",
+    "confidence": 0.9444444444444444,
+    "model_score": 0.9986562728881836,
+    "source": "layoutlmv3",
+    "bbox": [
+     290,
+     700,
+     357,
+     719
+    ]
+   }
+  },
+  "notes": "confidence = isotonic-calibrated P(correct) on validation; null where the selected system has no calibrated score. Missing fields are omitted, never guessed."
+ },
+ {
+  "document_id": "synth_miscellaneous_0003",
+  "n_words": 44,
+  "fields": {
+   "merchant_name": {
+    "value": "SHARMASTATIONERS",
+    "raw_text": "SHARMASTATIONERS",
+    "confidence": 0.9259259259259259,
+    "model_score": 0.9993586540222168,
+    "source": "layoutlmv3",
+    "bbox": [
+     309,
+     92,
+     589,
+     116
+    ]
+   },
+   "merchant_address": {
+    "value": "88,Gandhi Nagar,Ahmedabad,Gujarat-380316",
+    "raw_text": "88,Gandhi Nagar,Ahmedabad,Gujarat-380316",
+    "confidence": 0.5,
+    "model_score": 0.992840588092804,
+    "source": "layoutlmv3",
+    "bbox": [
+     202,
+     119,
+     698,
+     145
+    ]
+   },
+   "invoice_number": {
+    "value": "BL2024697510",
+    "raw_text": "BL2024/697510",
+    "confidence": 0.995,
+    "model_score": 1.0,
+    "source": "layoutlmv3",
+    "bbox": [
+     106,
+     271,
+     261,
+     292
+    ]
+   },
+   "invoice_date": {
+    "value": "2024-11-15",
+    "raw_text": "15/11/2024",
+    "confidence": 0.995,
+    "model_score": 0.9995428919792175,
+    "source": "layoutlmv3",
+    "bbox": [
+     82,
+     301,
+     202,
+     322
+    ]
+   },
+   "subtotal": {
+    "value": 2399.91,
+    "raw_text": "Rs. 2,399.91",
+    "confidence": 0.995,
+    "model_score": 0.9996824463542474,
+    "source": "ranker",
+    "bbox": [
+     756,
+     450,
+     878,
+     474
+    ]
+   },
+   "total_amount": {
+    "value": 2749.0,
+    "raw_text": "2,749.00",
+    "confidence": 0.8444444444444444,
+    "model_score": 0.995849609375,
+    "source": "layoutlmv3",
+    "bbox": [
+     741,
+     571,
+     877,
+     598
+    ]
+   },
+   "currency": {
+    "value": "INR",
+    "raw_text": "INR",
+    "confidence": null,
+    "model_score": null,
+    "source": "baseline",
+    "bbox": null
+   },
+   "payment_method": {
+    "value": "net_banking",
+    "raw_text": "Net Banking",
+    "confidence": null,
+    "model_score": 1.0,
+    "source": "layoutlmv3",
+    "bbox": [
+     116,
+     598,
+     233,
+     625
+    ]
+   },
+   "gstin": {
+    "value": "24HUUQJ4998Z9ZE",
+    "raw_text": "24HUUQJ4998Z9ZE",
+    "confidence": 0.995,
+    "model_score": 1.0,
+    "source": "layoutlmv3",
+    "bbox": [
+     391,
+     180,
+     586,
+     204
+    ]
+   },
+   "cgst": {
+    "value": 174.44,
+    "raw_text": "Rs.174.44",
+    "confidence": 0.995,
+    "model_score": 0.9997028112411499,
+    "source": "layoutlmv3",
+    "bbox": [
+     773,
+     480,
+     879,
+     504
+    ]
+   },
+   "sgst": {
+    "value": 174.44,
+    "raw_text": "Rs.174.44",
+    "confidence": 0.995,
+    "model_score": 1.0,
+    "source": "layoutlmv3",
+    "bbox": [
+     773,
+     511,
+     878,
+     532
+    ]
+   }
+  },
+  "notes": "confidence = isotonic-calibrated P(correct) on validation; null where the selected system has no calibrated score. Missing fields are omitted, never guessed."
+ },
+ {
+  "document_id": "20210213_140607",
+  "n_words": 106,
+  "fields": {
+   "merchant_address": {
+    "value": "Av.Dr.Jorge Anjinho,Lote 7/8 3030-482COIMBRA",
+    "raw_text": "Av.Dr.Jorge Anjinho,Lote 7/8 3030-482COIMBRA",
+    "confidence": 0.5,
+    "model_score": 0.9950281977653503,
+    "source": "layoutlmv3",
+    "bbox": [
+     1090,
+     607,
+     1884,
+     730
+    ]
+   },
+   "invoice_number": {
+    "value": "92A2019329679",
+    "raw_text": "92A/2019329679",
+    "confidence": 0.6578947368421053,
+    "model_score": 0.8928108215332031,
+    "source": "layoutlmv3",
+    "bbox": [
+     1623,
+     1010,
+     2180,
+     1087
+    ]
+   },
+   "invoice_date": {
+    "value": "2020-11-20",
+    "raw_text": "20-11-2020",
+    "confidence": 0.8888888888888888,
+    "model_score": 0.997130274772644,
+    "source": "layoutlmv3",
+    "bbox": [
+     925,
+     1132,
+     1189,
+     1197
+    ]
+   },
+   "tax_total": {
+    "value": 0.94,
+    "raw_text": "0,94",
+    "confidence": 0.8,
+    "model_score": 0.9409031867980957,
+    "source": "layoutlmv3",
+    "bbox": [
+     2082,
+     2552,
+     2212,
+     2625
+    ]
+   },
+   "total_amount": {
+    "value": 6.14,
+    "raw_text": "6,14",
+    "confidence": 0.84,
+    "model_score": 0.9776757955551147,
+    "source": "layoutlmv3",
+    "bbox": [
+     2023,
+     2792,
+     2220,
+     2892
+    ]
+   }
+  },
+  "notes": "confidence = isotonic-calibrated P(correct) on validation; null where the selected system has no calibrated score. Missing fields are omitted, never guessed."
+ },
+ {
+  "document_id": "20190119_002",
+  "n_words": 144,
+  "fields": {
+   "merchant_name": {
+    "value": "THE",
+    "raw_text": "THE",
+    "confidence": 0.2857142857142857,
+    "model_score": 0.4083213806152344,
+    "source": "layoutlmv3",
+    "bbox": [
+     621,
+     58,
+     733,
+     85
+    ]
+   },
+   "subtotal": {
+    "value": 550.0,
+    "raw_text": "550．00",
+    "confidence": 0.7692307692307693,
+    "model_score": 0.4925187922550137,
+    "source": "ranker",
+    "bbox": [
+     440,
+     779,
+     475,
+     788
+    ]
+   },
+   "total_amount": {
+    "value": 550.0,
+    "raw_text": "550.00",
+    "confidence": 0.7037037037037037,
+    "model_score": 0.8662109375,
+    "source": "layoutlmv3",
+    "bbox": [
+     807,
+     751,
+     845,
+     760
+    ]
+   },
+   "currency": {
+    "value": "EUR",
+    "raw_text": "EUR",
+    "confidence": null,
+    "model_score": null,
+    "source": "baseline",
+    "bbox": null
+   }
+  },
+  "notes": "confidence = isotonic-calibrated P(correct) on validation; null where the selected system has no calibrated score. Missing fields are omitted, never guessed."
+ },
+ {
+  "document_id": "20251117_234133",
+  "n_words": 366,
+  "fields": {
+   "merchant_name": {
+    "value": "SHIV SHANKAR EDIBLE PVT.LTD.",
+    "raw_text": "SHIV SHANKAR EDIBLE PVT.LTD.",
+    "confidence": 0.3076923076923077,
+    "model_score": 0.8277497291564941,
+    "source": "layoutlmv3",
+    "bbox": [
+     3650,
+     98,
+     3720,
+     777
+    ]
+   },
+   "invoice_date": {
+    "value": "2025-09-02",
+    "raw_text": ":2-Sep-25",
+    "confidence": 0.6363636363636364,
+    "model_score": 0.2753084897994995,
+    "source": "layoutlmv3",
+    "bbox": [
+     351,
+     563,
+     418,
+     792
+    ]
+   },
+   "subtotal": {
+    "value": 500.0,
+    "raw_text": "500",
+    "confidence": 0.8947368421052632,
+    "model_score": 0.9897072273672285,
+    "source": "ranker",
+    "bbox": [
+     1610,
+     1847,
+     1619,
+     2619
+    ]
+   },
+   "total_amount": {
+    "value": 61490.82,
+    "raw_text": "61,490.82",
+    "confidence": 0.7037037037037037,
+    "model_score": 0.868931770324707,
+    "source": "layoutlmv3",
+    "bbox": [
+     3370,
+     2184,
+     3401,
+     2440
+    ]
+   },
+   "gstin": {
+    "value": "19AAPCS8731C1Z0",
+    "raw_text": ":19AAPCS8731C1Z0",
+    "confidence": 0.5131442315587131,
+    "model_score": 0.3757972717285156,
+    "source": "layoutlmv3",
+    "bbox": [
+     443,
+     2038,
+     510,
+     2629
+    ]
+   }
+  },
+  "notes": "confidence = isotonic-calibrated P(correct) on validation; null where the selected system has no calibrated score. Missing fields are omitted, never guessed."
+ }
+]

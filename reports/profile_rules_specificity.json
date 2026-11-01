@@ -1,0 +1,136 @@
+{
+ "ALL": {
+  "n": 3285,
+  "false_positive_primary": 13,
+  "needs_review": 16,
+  "fp_rate_primary": 0.004,
+  "needs_review_rate": 0.0049
+ },
+ "train": {
+  "n": 2899,
+  "false_positive_primary": 10,
+  "needs_review": 13,
+  "fp_rate_primary": 0.0034,
+  "needs_review_rate": 0.0045
+ },
+ "test": {
+  "n": 386,
+  "false_positive_primary": 3,
+  "needs_review": 3,
+  "fp_rate_primary": 0.0078,
+  "needs_review_rate": 0.0078
+ },
+ "triggers_by_(expense_category, claim)": {
+  "non_expense|health_insurance": 5,
+  "fuel|invest_80c": 4,
+  "transport|health_insurance": 2,
+  "non_expense|hra_rent": 1,
+  "bus|health_insurance": 1
+ },
+ "examples": [
+  {
+   "doc": "sroie__X51005742068",
+   "cat": "fuel",
+   "claim": "invest_80c",
+   "matched": [
+    "ppf"
+   ]
+  },
+  {
+   "doc": "sroie__X51006414533",
+   "cat": "fuel",
+   "claim": "invest_80c",
+   "matched": [
+    "ppf"
+   ]
+  },
+  {
+   "doc": "sroie__X51006414512",
+   "cat": "fuel",
+   "claim": "invest_80c",
+   "matched": [
+    "ppf"
+   ]
+  },
+  {
+   "doc": "sroie__X51006912998",
+   "cat": "fuel",
+   "claim": "invest_80c",
+   "matched": [
+    "ppf"
+   ]
+  },
+  {
+   "doc": "in_financial__ITR_Form_16_32",
+   "cat": "non_expense",
+   "claim": "hra_rent",
+   "matched": [
+    "rent received",
+    "tenant",
+    "rent"
+   ]
+  },
+  {
+   "doc": "in_financial__Salary_Slip_12",
+   "cat": "non_expense",
+   "claim": "health_insurance",
+   "matched": [
+    "health insurance",
+    "insurance"
+   ]
+  },
+  {
+   "doc": "in_financial__Salary_Slip_36",
+   "cat": "non_expense",
+   "claim": "health_insurance",
+   "matched": [
+    "mediclaim"
+   ]
+  },
+  {
+   "doc": "in_financial__Salary_Slip_53",
+   "cat": "non_expense",
+   "claim": "health_insurance",
+   "matched": [
+    "health insurance",
+    "insurance"
+   ]
+  },
+  {
+   "doc": "in_financial__Salary_Slip_79",
+   "cat": "non_expense",
+   "claim": "health_insurance",
+   "matched": [
+    "policy no",
+    "policy"
+   ]
+  },
+  {
+   "doc": "in_financial__Salary_Slip_85",
+   "cat": "non_expense",
+   "claim": "health_insurance",
+   "matched": [
+    "mediclaim"
+   ]
+  },
+  {
+   "doc": "receiptbench__3_BusTicket_96",
+   "cat": "bus",
+   "claim": "health_insurance",
+   "matched": [
+    "policy no",
+    "insurance",
+    "policy"
+   ]
+  },
+  {
+   "doc": "receiptbench__3_TaxiTicket_460",
+   "cat": "transport",
+   "claim": "health_insurance",
+   "matched": [
+    "premium receipt"
+   ]
+  }
+ ],
+ "caveat": "specificity only; recall for the new categories is unmeasurable (no labelled examples exist). Rules were written from domain knowledge, not tuned on these documents."
+}
